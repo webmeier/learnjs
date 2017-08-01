@@ -23,7 +23,7 @@ Here are the ready chapters:
 1. Basics
     1. [For loop](core/01.basics/12.for-loops.md)
 
-Once your JavaScript basics are firm, you'd want to begin reading the Web lessons.
+**Once your JavaScript basics are firm, you'd want to begin reading the Web lessons.**
 
 Here's are the ready chapters:
 
@@ -36,7 +36,7 @@ Here's are the ready chapters:
     6. [Changing classes](lessons/02.dom-basics/06.changing-classes.md)
     7. [Changing attributes](lessons/02.dom-basics/07.changing-attributes.md)
 
-Then, as and when you encounter advanced lessons, you'll want to read more about them.
+**Then, as and when you encounter advanced lessons, you'll want to read more about them.**
 
 Here are the ready chapters:
 
