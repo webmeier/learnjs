@@ -2,9 +2,7 @@
 
 In JavaScript Fundamentals (let's call it JSF), you'll learn how to take your JavaScript skills from a novice to a ninja.
 
-You'll learn the necessary lessons, you'll build stuff.
-
-This private Github repo is a temporary place for you to read the lessons. I want to make this first, and give you access to the lessons before creating a portal. I want to give you access first, so you can learn without waiting for the course to be completely ready.
+This private Github repo is a temporary place for you to read the lessons. I want to give you access to the lessons before creating a portal first, so you can learn without waiting for the course to be completely ready.
 
 ## Here's how JSF is structured
 
@@ -45,7 +43,7 @@ Here are the ready chapters:
 
 ## Slack Channel
 
-Since you pre-ordered JSF, you have access to the Slack channel to learn together with your peers. To join the slack channel, head over to [this link]() and fill in your best email.
+Since you pre-ordered JSF, you have access to the Slack channel to learn together with your peers. To join the slack channel, head over to [this link](https://zellwk-slack.herokuapp.com) and fill in your best email.
 
 You'll get an invitation to join a Slack group. Once you've signed in, send me a private message and I'll add you to the jsf-preorder Slack channel. It's secret, only for awesome people like you.
 
