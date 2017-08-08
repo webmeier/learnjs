@@ -19,7 +19,13 @@ If your JavaScript basics (like loops, closures, arrays, etc) are shaky, you'd w
 Here are the ready chapters:
 
 1. Basics
-    1. [For loop](core/01.basics/12.for-loops.md)
+    1. [Linking your JavaScript file](core/01.basics/01.linking.md)
+    2. [The Console](core/01.basics/02.console.md)
+    3. [Strings, numbers and booleans](core/01.basics/03.primitives.md)
+    4. [Comments](core/01.basics/04.comments.md)
+    5. [Declaring variables](core/01.basics/05.variables.md)
+    6. [You don't need semicolons](core/01.basics/06.semicolons.md)
+    7. [For loop](core/01.basics/12.for-loops.md)
 
 **Once your JavaScript basics are firm, you'd want to begin reading the Web lessons.**
 
