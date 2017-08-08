@@ -27,7 +27,7 @@ Here's are the ready chapters:
 
 1. Dom Basics
     1. [Dom and Bom](lessons/02.dom-basics/01.dom-and-bom.md)
-    2. [Selecting an element](lessons/02.dom-basics/02.selecting-an-element.md.md)
+    2. [Selecting an element](lessons/02.dom-basics/02.selecting-an-element.md)
     3. [Changing style](lessons/02.dom-basics/03.changing-style.md)
     4. [Selecting multiple elements](lessons/04.dom-basics/04.selecting-multiple-elements.md)
     5. [Nodes vs Elements](lessons/02.dom-basics/05.nodes-vs-elements.md)
