@@ -17,10 +17,9 @@ Module 13: Next steps
 
 0. Before you begin:
   1. How to use this course
-  2. How to learn JavaScript quickly
-  3. Prep your text editor
-  4. JavaScript and ES6
-  5. How to think like a developer
+  2. Prep your text editor
+  3. JavaScript and ES6
+  4. How to learn JavaScript quickly
 1. What can JavaScript do?
   1. What is JavaScript used for
   2. Two JavaScript environments
@@ -33,14 +32,16 @@ Module 13: Next steps
   5. Nodes vs Elements
   6. Changing classes
   7. Changing attributes
-  8. ID, Classes, Tags or Attributes?
-  9. DOM Traversals
+  8. DOM Traversals
+  9. ID, Classes, Tags or Attributes
 3. Events
   1. What is an event (Asynchronous JavaScript)
   2. Event Listeners (Adding and removing)
   3. `this` in event listeners
   4. Event propagation (bubbling, capturing)
   5. The event object
+4. Building stuff!
+  1. How to think like a developer
   6. Build these stuff
     1. Off-canvas sidebar menu
     2. Modal window
@@ -128,3 +129,6 @@ https://www.smashingmagazine.com/2017/06/designing-perfect-accordion-checklist/
 https://www.smashingmagazine.com/2017/07/designing-perfect-slider/
 
 Add/remove classes, scroll-stuff, fade-outs, flexibel textarea (that expands when the user writes more text).
+
+Manipulating the URL or Query String
+Retrieving the current page URL
