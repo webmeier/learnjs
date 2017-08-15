@@ -25,7 +25,13 @@ Here are the ready chapters:
     4. [Comments](core/01.basics/04.comments.md)
     5. [Declaring variables](core/01.basics/05.variables.md)
     6. [You don't need semicolons](core/01.basics/06.semicolons.md)
+    7. [All about functions](core/01.basics/07.functions.md)
     7. [For loop](core/01.basics/12.for-loops.md)
+
+You may also want to read up a little about ES6 once you're done with the basics, since we'll be using them a lot throughout the course. Feel free to skip this at first and return to them when you need them.
+
+2. Useful ES6 features
+    1. [Arrow functions](core/02.es6/02.arrow-functions.md)
 
 **Once your JavaScript basics are firm, you'd want to begin reading the Web lessons.**
 
@@ -39,13 +45,15 @@ Here's are the ready chapters:
     5. [Nodes vs Elements](lessons/02.dom-basics/05.nodes-vs-elements.md)
     6. [Changing classes](lessons/02.dom-basics/06.changing-classes.md)
     7. [Changing attributes](lessons/02.dom-basics/07.changing-attributes.md)
+    7. [Dom Traversals](lessons/02.dom-basics/08.dom-traversals.md)
 
 **Then, as and when you encounter advanced lessons, you'll want to read more about them.**
 
 Here are the ready chapters:
 
 3. Advanced Arrays
-    1. [Array.forEach](core/03.advanced-arrays/04.foreach.md)
+    1. [Array.from](core/03.advanced-arrays/02.from.md)
+    2. [Array.forEach](core/03.advanced-arrays/04.foreach.md)
 
 ## Slack Channel
 
