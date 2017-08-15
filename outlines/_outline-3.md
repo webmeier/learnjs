@@ -39,7 +39,8 @@ Module 13: Next steps
   2. Event Listeners (Adding and removing)
   3. `this` in event listeners
   4. Event propagation (bubbling, capturing)
-  5. The event object
+  5. Event delegation (Probably need Element.matches)
+  6. The event object
 4. Building stuff!
   1. How to think like a developer
   6. Build these stuff
@@ -132,3 +133,13 @@ Add/remove classes, scroll-stuff, fade-outs, flexibel textarea (that expands whe
 
 Manipulating the URL or Query String
 Retrieving the current page URL
+
+I want to have the ability to potentially build my own small libraries instead of just being in awe of those who build these great tools.
+
+What elements of a website can I intervene and what not. Also, is it secure? Is there anything I should watch out for when working with JavaScript?
+
+simple weather app where I can use AJAX
+
+What are these frameworks about?!
+
+ajax and push state to load page content
