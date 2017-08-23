@@ -26,7 +26,10 @@ Here are the ready chapters:
     5. [Declaring variables](core/01.basics/05.variables.md)
     6. [You don't need semicolons](core/01.basics/06.semicolons.md)
     7. [All about functions](core/01.basics/07.functions.md)
-    7. [For loop](core/01.basics/12.for-loops.md)
+    8. [Scopes and closures](core/01.basics/08.scopes-and-closures.md)
+    9. [Intro to Objects](core/01.basics/9.objects.md)
+    10. [Intro to Arrays](core/01.basics/10.arrays.md)
+    11. [For loop](core/01.basics/12.for-loops.md)
 
 You may also want to read up a little about ES6 once you're done with the basics, since we'll be using them a lot throughout the course. Feel free to skip this at first and return to them when you need them.
 
