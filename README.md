@@ -29,7 +29,12 @@ Here are the ready chapters:
     8. [Scopes and closures](core/01.basics/08.scopes-and-closures.md)
     9. [Intro to Objects](core/01.basics/9.objects.md)
     10. [Intro to Arrays](core/01.basics/10.arrays.md)
-    11. [For loop](core/01.basics/12.for-loops.md)
+    11. [If/else statements](core/01.basics/11.if-else.md)
+    12. [&&, || and !](core/01.basics/12.and-or-exclaim.md)
+    13. [Null and undefined](core/01.basics/13.null-and-undefined.md)
+    14. [For loops](core/01.basics/14.for-loops.md)
+    15. [Debugging errors](core/01.basics/15.debugging-errors.md)
+    16. [Callbacks](core/01.basics/16.callbacks.md)
 
 You may also want to read up a little about ES6 once you're done with the basics, since we'll be using them a lot throughout the course. Feel free to skip this at first and return to them when you need them.
 
