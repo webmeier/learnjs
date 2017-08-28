@@ -8,49 +8,44 @@ Core JavaScript Concepts
   5. Declaring Variables - done
   6. On semicolons - done
   7. All about Functions - done
-  8. Scopes and Closures
-  9. Intro to objects (props, values, methods)
-  10. Intro to arrays (length, push, pop...)
-  11. If/else statements
-  12. Truthy and Falsey
-  13. Null and undefined
-  14. For loops
-  15. Debugging errors (How to use console log to debug errors)
-2. Useful ES6 features
+  8. Scopes and Closures - done
+  9. Intro to objects - done
+  10. Intro to arrays - done
+  11. If/else statements - done
+  12. &&, || and ! - done
+  13. Null and undefined - done
+  14. For loops - done
+  15. Debugging errors - done
+  16. Callbacks
+3. Useful ES6 features
   1. Template Strings
   2. Arrow Functions
   3. Destructuring
   4. Default parameters
   5. Rest and Spread
-3. Asynchronous JavaScript
-  1. Callbacks
-  2. The event loop
-  3. Promises
-  4. Async/Await
 4. Advanced Concepts
   1. Write immutable code
   2. Avoid side effects (Control side effects with closures)
   3. Write pure functions
   4. Intermediate debugging? (Basically intermediate debugging. Watchers. Call Stack etc. Maybe?) Also console.table?
-  5. this in JavaScript
-  6. call, bind, apply
-  7. Primitives are not objects
-  8. Ternary operators (Do we need?)
+  5. Shorten code with ternary operators
 5. Advanced Arrays
   1. Checking for Arrays
   2. Array.from
-  3. Joining arrays (Array.concat / spread operator)
-  4. Splitting up an array (Array.slice)
-  5. Copying an array (Array slice)
-  6. Array.forEach
-  7. Array.map
-  8. Array.filter
-  9. Array.reduce
+  3. Array.forEach
+  4. Array.map
+  5. Array.filter
+  6. Array.reduce
 6. Advanced Objects
   1. Looping through an Object
-  2. Method chaining
-  2. Prototypes
-  3. Inheritance
-  4. (Mixins we can use lego block analogy)
-  5. Comparing objects (maybe in truthy and falsey)
-  6. Private and public variables (and how to create private variables with closures)
+  2. Comparing objects values
+  3. Prototypes
+  4. this in JavaScript
+  5. call, bind, apply
+  6. Method chaining
+  7. Inheritance
+  8. (Mixins we can use lego block analogy)
+  9. Private and public variables (and how to create private variables with closures)
+7. Advanced Async
+  2. Promises
+  3. Async/Await
