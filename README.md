@@ -27,7 +27,7 @@ Here are the ready chapters:
     6. [You don't need semicolons](core/01.basics/06.semicolons.md)
     7. [All about functions](core/01.basics/07.functions.md)
     8. [Scopes and closures](core/01.basics/08.scopes-and-closures.md)
-    9. [Intro to Objects](core/01.basics/9.objects.md)
+    9. [Intro to Objects](core/01.basics/09.objects.md)
     10. [Intro to Arrays](core/01.basics/10.arrays.md)
     11. [If/else statements](core/01.basics/11.if-else.md)
     12. [&&, || and !](core/01.basics/12.and-or-exclaim.md)
