@@ -11,6 +11,7 @@
 11. a Google Maps component
 12. a loading indicator
 13. Twitter feed
+14. Gif/video search etc
 14. Form field that persists across refresh
 15. Infinite Scoll
 16. Sticky navigation (that hides automatically when you scroll)
