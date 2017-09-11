@@ -32,14 +32,13 @@ Module 14: Next steps
   6. Changing classes - done
   7. Changing attributes - done
   8. DOM Traversals - done
-  9. ID, Classes, Tags or Attributes
+  9. ID, Classes, Tags or Attributes - done
 3. Events
-  1. What is an event (Asynchronous JavaScript)
-  2. Adding and removing Event Listeners
-  3. Event propagation (bubbling, capturing)
-  4. Event delegation (Probably need Element.matches)
-  3. `this` in event listeners
-  6. The event object
+  1. Events in JavaScript
+  2. This in event listeners
+  3. Removing event listeners
+  4. Event propagation
+  5. Event delegation
 4. Building Real Components
   1. How to think like a developer
   2. How to build an off-canvas sidebar menu
@@ -58,11 +57,11 @@ Module 14: Next steps
   8. Improving the Accordions
   9. Improving the Tabs
   10. Improving the Carousel
-5. Text, Content and Forms
+6. Text, Content and Forms
   1. Getting and setting text and html
   2. Creating HTML Elements
   3. Adding and removing HTML Elements
-  4. Keyboard events
+  4. Keyboard events (cmd key is not a modifier key)
   5. Form events and methods
   6. Building a todo-list
   7. Building an autocomplete input

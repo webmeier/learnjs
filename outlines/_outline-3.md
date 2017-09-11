@@ -35,15 +35,13 @@ Module 13: Next steps
   8. DOM Traversals
   9. ID, Classes, Tags or Attributes
 3. Events
-  1. What is an event (Asynchronous JavaScript)
-  2. Event Listeners (Adding and removing)
-  3. `this` in event listeners
-  4. Event propagation (bubbling, capturing)
-  5. Event delegation (Probably need Element.matches)
-  6. The event object
+  1. Events in JavaScript
+  2. The event object
+  3. Removing event listeners
+  4. Event propagation and delegation (bubbling, capturing)(Probably need Element.matches)
 4. Building stuff!
   1. How to think like a developer
-  6. Build these stuff
+  2. Build these stuff
     1. Off-canvas sidebar menu
     2. Modal window
     3. Accordions
@@ -143,3 +141,7 @@ simple weather app where I can use AJAX
 What are these frameworks about?!
 
 ajax and push state to load page content
+
+https://javascript.info/ui ??
+
+twitter feeds
