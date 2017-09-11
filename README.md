@@ -53,7 +53,12 @@ Here's are the ready chapters:
     5. [Nodes vs Elements](lessons/02.dom-basics/05.nodes-vs-elements.md)
     6. [Changing classes](lessons/02.dom-basics/06.changing-classes.md)
     7. [Changing attributes](lessons/02.dom-basics/07.changing-attributes.md)
-    7. [Dom Traversals](lessons/02.dom-basics/08.dom-traversals.md)
+    8. [Dom Traversals](lessons/02.dom-basics/08.dom-traversals.md)
+    9. [Id vs classes vs tags vs attributes](lessons/02.dom-basics/09.id-class-tag-attribute.md)
+2. Events
+    1. [Events in JavaScript](lessons/03.events/01.events.md)
+    2. [The listening element](lessons/03.events/02.listening-element.md)
+    3. [Removing event listeners](lessons/03.events/03.removing-el.md)
 
 **Then, as and when you encounter advanced lessons, you'll want to read more about them.**
 
