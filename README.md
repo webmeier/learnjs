@@ -59,6 +59,7 @@ Here's are the ready chapters:
     1. [Events in JavaScript](lessons/03.events/01.events.md)
     2. [The listening element](lessons/03.events/02.listening-element.md)
     3. [Removing event listeners](lessons/03.events/03.removing-el.md)
+    4. [Event propagation](lessons/03.events/04.event-propagation.md)
 
 **Then, as and when you encounter advanced lessons, you'll want to read more about them.**
 
