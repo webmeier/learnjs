@@ -34,11 +34,12 @@ Module 14: Next steps
   8. DOM Traversals - done
   9. ID, Classes, Tags or Attributes - done
 3. Events
-  1. Events in JavaScript
-  2. This in event listeners
-  3. Removing event listeners
+  1. Events in JavaScript - done
+  2. The listening element - done
+  3. Removing event listeners - done
   4. Event propagation
   5. Event delegation
+  6. Preventing Default Behavior
 4. Building Real Components
   1. How to think like a developer
   2. How to build an off-canvas sidebar menu
