@@ -32,20 +32,21 @@
   5. Declaring Variables - done
   6. On semicolons - done
   7. All about Functions - done
-  8. Scopes and Closures - done
-  9. Intro to objects - done
-  10. Intro to arrays - done
-  11. If/else statements - done
-  12. &&, || and ! - done
-  13. Null and undefined - done
-  14. For loops - done
-  15. Debugging errors - done
-  16. Callbacks - done
+  8. Arrow functions - done
+  9. Scopes and Closures - done
+  10. Intro to objects - done
+  11. Intro to arrays - done
+  12. If/else statements - done
+  13. &&, || and ! - done
+  14. Null and undefined - done
+  15. For loops - done
+  16. Debugging errors - done
+  17. Callbacks - done
 3. DOM basics
-  1. Intro to DOM
-  2. DOM and BOM (Window and document variables) - done
-  3. Selecting an element - done
-  4. Changing CSS with JavaScript - done
+  1. DOM and BOM (Window and document variables) - done
+  2. Selecting an element - done
+  3. Changing CSS with JavaScript - done
+  4. Array.forEach
   5. Selecting multiple elements - done
   6. Nodes vs Elements - done
   7. Changing classes - done
