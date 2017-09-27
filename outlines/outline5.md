@@ -56,7 +56,7 @@
   1. Events in JavaScript - done
   2. The listening element - done
   3. Removing event listeners - done
-  4. Event propagation
+  4. Event propagation - done
   5. Event delegation
   6. Default Behaviors
 5. Building real components
@@ -68,7 +68,7 @@
   6. Hands on: build a carousel
 6. Spicing components with animations
   1. Animating with CSS (Safe properties, separate style and logic, transitionend)
-  2. Animating with JavaScript (When to use JS animations, GSAP, say won't be using! Muahaha)
+  2. Animating with JavaScript (When to use JS animations, GSAP, etc)
   3. Hands on: improving the off canvas menu
   4. Hands on: improving the modal window
   5. Hands on: improving the accordions
