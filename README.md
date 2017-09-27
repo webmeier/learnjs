@@ -42,11 +42,8 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     2. [The listening element](lessons/04.events/02.listening-element.md)
     3. [Removing event listeners](lessons/04.events/03.removing-el.md)
     4. [Default actions](lessons/04.events/04.default-actions.md)
-    5. [Event propagation](lessons/04.events/04.event-propagation.md)
+    5. [Event propagation](lessons/04.events/05.event-propagation.md)
     6. [Event delegation](lessons/04.events/06.event-delegation.md)
-
-2. Useful ES6 features
-    1. [Arrow functions](core/02.es6/02.arrow-functions.md)
 
 ## Slack Channel
 
