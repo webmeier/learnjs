@@ -57,9 +57,9 @@
   1. Events in JavaScript - done
   2. The listening element - done
   3. Removing event listeners - done
-  4. Event propagation - done
-  5. Event delegation
-  6. Default Behaviors
+  4. Default Behaviors
+  5. Event propagation - done
+  6. Event delegation
 5. Building real components
   1. How to think like a developer
   2. Hands on: build an off-canvas sidebar menu
