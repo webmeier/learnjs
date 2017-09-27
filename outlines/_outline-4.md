@@ -115,3 +115,5 @@ Module 14: Next steps
 14. Next steps
   1. Accessibility
   2. Learn framework/Node
+
+Notes: Consider HyperHTML! (https://github.com/WebReflection/hyperHTML)
