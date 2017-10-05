@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modal window</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <div>
+      <button class="jsModalToggle">Click me!</button>
+      <svg viewBox="0 0 58 66"><use xlink:href="images/svgsprite.svg#click-hand" /></svg>
+    </div>
+  </div>
+
+  <div class="modal-container jsModalContainer">
+    <div class="modal jsModal">
+      <div class="modal__close jsModalClose">X</div>
+      <div class="modal__content">
+        <h2>Hello!</h2>
+        <svg ><use xlink:href="images/svgsprite.svg#wave-hand" /></svg>
+      </div>
+    </div>
+  </div>
+
+  <script src="/main.js"></script>
+</body>
+</html>

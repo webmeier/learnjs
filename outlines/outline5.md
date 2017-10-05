@@ -1,3 +1,5 @@
+Short outline
+
 0. Before you begin
 1. JavaScript and its ecosystem
 2. JavaScript basics - done
@@ -16,6 +18,8 @@
 15. Single page applications
 16. Webpack and Asset compilation
 17. Next steps
+
+Detailed outline
 
 0. Before you begin
   1. How to use this course (Learning JavaScript quickly + no overwhelm)
@@ -46,7 +50,7 @@
   1. DOM and BOM (Window and document variables) - done
   2. Selecting an element - done
   3. Changing CSS with JavaScript - done
-  4. Array.forEach
+  4. Array.forEach - done
   5. Selecting multiple elements - done
   6. Nodes vs Elements - done
   7. Changing classes - done
@@ -57,16 +61,17 @@
   1. Events in JavaScript - done
   2. The listening element - done
   3. Removing event listeners - done
-  4. Default Behaviors
+  4. Default Behaviors - done
   5. Event propagation - done
-  6. Event delegation
+  6. Event delegation - done
 5. Building real components
-  1. How to think like a developer
-  2. Hands on: build an off-canvas sidebar menu
-  3. Hands on: build a modal window
-  4. Hands on: build accordions
-  5. Hands on: build tabs
-  6. Hands on: build a carousel
+  1. How to think like a developer - done
+  2. Using starter template - done
+  3. Hands on: build an off-canvas sidebar menu
+  4. Hands on: build a modal window
+  5. Hands on: build accordions
+  6. Hands on: build tabs
+  7. Hands on: build a carousel
 6. Spicing components with animations
   1. Animating with CSS (Safe properties, separate style and logic, transitionend)
   2. Animating with JavaScript (When to use JS animations, GSAP, etc)
@@ -96,7 +101,7 @@
   7. Hands on: building an autocomplete input
   8. Hands on: building a calculator
   9. Hands on: building a tooltip
-  10. Hands on: building a calendar widget
+  10. Hands on: building a calendar widget/date picker
 10. Asynchronous JavaScript
   1. AJAX, JSON and requests
   2. Understanding REST APIs
@@ -135,14 +140,16 @@
   2. Hands on: improving the accordion component
   2. Hands on: improving the tabs component
 14. Creating libraries and plugins
-  1. How to think about creating libraries and plugins – minimial things to write.
+  1. How to think about creating libraries and plugin – minimal things to write.
   2. Default variables and extending options (ES6 Default Params)
   3. Method chaining (maybe)
+  4. Hands-on: plugin-ify the calendar widget (theme maybe)
 15. Single page applications
   1. The foundations to frontend frameworks
   2. Routing
   3. Authentication
   4. Displaying and changing content (Consider HyperHTML! (https://github.com/WebReflection/hyperHTML))
+  5. Hands on: building the card generator
 16. Webpack and Asset management
   1. Introduction to webpack
   2. Importing modules with Webpack
@@ -150,7 +157,6 @@
   4. Minification with webpack
 17. Next steps
 
-Notes:
-1. Add check for array in Basics
+TODO:
 2. Add loop through object in Basics
 3. Comparing objects did I mention yet?

@@ -1,0 +1,97 @@
+@import 'resets';
+
+// base styles and typography
+// ---------------
+:root {
+  --color-purp: #8da1ff;
+  --color-lily: #e9fbff;
+}
+
+html {
+  font-size: 155%;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+
+body {
+  background-color: var(--color-lily);
+}
+
+h2 {
+  font-weight: 400;
+}
+
+button {
+  padding: 0.5em 0.75em;
+  border-radius: 6px;
+  background-color: var(--color-purp);
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  > * {
+    position: relative;
+  }
+
+  button {
+    display: block;
+  }
+
+  svg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-width: vr(3);
+    margin-top: vr(1);
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+// # START EDITING HERE!
+// ===============
+.modal-container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: vr(3);
+  border-radius: 12px;
+  background-color: var(--color-purp);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+  color: #fff;
+  min-width: 50vmin;
+  min-height: 50vmin;
+}
+
+.modal__close {
+  position: absolute;
+  top: vr(0.75);
+  right: vr(0.75);
+}
+
+.modal__content {
+  text-align: center;
+
+  > * + * {
+    margin-top: vr(0.75);
+  }
+}

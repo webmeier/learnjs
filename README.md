@@ -8,7 +8,7 @@ This private Github repo is a temporary place for you to read the lessons. I wan
 
 You may check out the [course outline](outlines/outlines5.md) if you're curious about what's in store for you in JSF. Otherwise, feel free to go through these lessons that are ready for you:
 
-1. JavaScript basics
+2. JavaScript basics
     1. [Linking your JavaScript file](lessons/02.js-basics/01.linking.md)
     2. [The Console](lessons/02.js-basics/02.console.md)
     3. [Strings, numbers and booleans](lessons/02.js-basics/03.primitives.md)
@@ -26,7 +26,7 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     15. [For loops](lessons/02.js-basics/15.for-loops.md)
     16. [Debugging errors](lessons/02.js-basics/16.debugging-errors.md)
     17. [Callbacks](lessons/02.js-basics/17.callbacks.md)
-2. Dom Basics
+3. Dom Basics
     1. [Dom and Bom](lessons/03.dom-basics/01.dom-and-bom.md)
     2. [Selecting an element](lessons/03.dom-basics/02.selecting-an-element.md)
     3. [Changing style](lessons/03.dom-basics/03.changing-style.md)
@@ -37,13 +37,19 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     8. [Changing attributes](lessons/03.dom-basics/08.changing-attributes.md)
     9. [Dom Traversals](lessons/03.dom-basics/09.dom-traversals.md)
     10. [Id vs classes vs tags vs attributes](lessons/03.dom-basics/10.id-class-tag-attribute.md)
-3. Events
+4. Events
     1. [Events in JavaScript](lessons/04.events/01.events.md)
     2. [The listening element](lessons/04.events/02.listening-element.md)
     3. [Removing event listeners](lessons/04.events/03.removing-el.md)
     4. [Default actions](lessons/04.events/04.default-actions.md)
     5. [Event propagation](lessons/04.events/05.event-propagation.md)
     6. [Event delegation](lessons/04.events/06.event-delegation.md)
+5. Building real components
+    1. [How to think like a developer](lessons/05.building-real-components/01.think-like-dev.md)
+    2. [Using the starter template](lessons/05.building-real-components/02.starter-template.md)
+    3. [Before you begin building](lessons/05.building-real-components/03.before-you-begin.md)
+    4. [🛠️ Building an off-canvas menu](lessons/05.building-real-components/04.building-off-canvas.md)
+
 
 ## Slack Channel
 
