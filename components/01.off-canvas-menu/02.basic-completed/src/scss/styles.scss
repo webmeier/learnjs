@@ -55,6 +55,13 @@ a {
   background-color: var(--color-grey);
 }
 
+.offsite-is-open {
+  .site-container,
+  .offsite-container {
+    transform: translateX(14rem)
+  }
+}
+
 // Menu button
 // ---------------
 .menu-button {

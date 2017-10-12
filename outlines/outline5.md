@@ -4,7 +4,7 @@ Short outline
 1. JavaScript and its ecosystem
 2. JavaScript basics - done
 3. DOM basics - done
-4. Events
+4. Events - done
 5. Building real components
 6. Spicing components with animations
 7. Functional Programming
@@ -13,11 +13,12 @@ Short outline
 10. Asynchronous JavaScript
 11. Scroll, mouse, and touch events
 12. Keyboard events
-13. Accessibility
-14. Creating libraries and plugins
-15. Single page applications
-16. Webpack and Asset compilation
-17. Next steps
+13. Lazy loading ?????? (Undecided)
+14. Accessibility
+15. Creating libraries and plugins
+16. Single page applications
+17. Webpack and Asset compilation
+18. Next steps
 
 Detailed outline
 
@@ -46,7 +47,7 @@ Detailed outline
   15. For loops - done
   16. Debugging errors - done
   17. Callbacks - done
-3. DOM basics
+3. DOM basics - done
   1. DOM and BOM (Window and document variables) - done
   2. Selecting an element - done
   3. Changing CSS with JavaScript - done
@@ -57,7 +58,7 @@ Detailed outline
   8. Changing attributes - done
   9. DOM Traversals - done
   10. ID, Classes, Tags or Attributes - done
-4. JavaScript events
+4. JavaScript events - done
   1. Events in JavaScript - done
   2. The listening element - done
   3. Removing event listeners - done
@@ -67,11 +68,12 @@ Detailed outline
 5. Building real components
   1. How to think like a developer - done
   2. Using starter template - done
-  3. Hands on: build an off-canvas sidebar menu
+  3. Hands on: build an off-canvas sidebar menu - done
   4. Hands on: build a modal window
   5. Hands on: build accordions
   6. Hands on: build tabs
   7. Hands on: build a carousel
+  7. Lessons from the building process
 6. Spicing components with animations
   1. Animating with CSS (Safe properties, separate style and logic, transitionend)
   2. Animating with JavaScript (When to use JS animations, GSAP, etc)
@@ -160,3 +162,12 @@ Detailed outline
 TODO:
 2. Add loop through object in Basics
 3. Comparing objects did I mention yet?
+
+http://nikgrozev.com/2017/10/01/async-await/
+
+Accessibility (Keyboard) for modal window
+https://www.smashingmagazine.com/2014/09/making-modal-windows-better-for-everyone/
+
+https://docs.google.com/spreadsheets/d/1Q-apLCPEyV-hJYVBN-wN3FS7AOSx9YqQJGj-Y2rW6No/edit#gid=1129708278
+
+Safari accessibility need to open the tabbing functionality. Also need to update the tabs so they become moar obvious.

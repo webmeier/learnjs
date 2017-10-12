@@ -2,6 +2,7 @@
 const offsiteToggle = document.querySelector('.jsOffsiteToggle')
 
 offsiteToggle.addEventListener('click', _ => {
+  console.log('snthe')
   document.body.classList.toggle('offsite-is-open')
 })
 

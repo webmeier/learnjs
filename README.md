@@ -49,7 +49,7 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     2. [Using the starter template](lessons/05.building-real-components/02.starter-template.md)
     3. [Before you begin building](lessons/05.building-real-components/03.before-you-begin.md)
     4. [🛠️ Building an off-canvas menu](lessons/05.building-real-components/04.building-off-canvas.md)
-
+    5. [🛠️ Building a modal window](lessons/05.building-real-components/05.building-modal-window.md)
 
 ## Slack Channel
 
