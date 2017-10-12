@@ -1,0 +1,133 @@
+@import 'resets';
+
+// base styles and typography
+// ---------------
+:root {
+  --color-purp: #8da1ff;
+  --color-lily: #e9fbff;
+}
+
+html {
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  padding: 3em 1.5em;
+  min-height: 100vh
+}
+
+h2 {
+  font-size: 4.5em;
+  font-family: 'Teko', sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 40em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.tablist__item {
+  position: relative;
+  left: 1.2em;
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  background-color: #DADBDC;
+  font-weight: bold;
+
+  & + & {
+    margin-left: 1.2em;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    content: '';
+  }
+
+  &::before {
+    left: -1.2em;
+    border-width: 0 0 2.4em 1.2em;
+    border-color: transparent transparent #DADBDC transparent;
+  }
+
+  &::after {
+    right: -1.2em;
+    border-width: 0 1.2em 2.4em 0;
+    border-color: transparent transparent #DADBDC transparent;
+  }
+
+  &.is-active {
+    background-color: #F1F2F2;
+    z-index: 1;
+
+    &::before, &::after {
+      border-color: transparent transparent #F1F2F2 transparent;
+    }
+  }
+
+  > a {
+    color: black;
+  }
+}
+
+.tab-container {
+  padding: 1.5em;
+  background-color: #F1F2F2;
+}
+
+$colors: (
+  radioactive: #FFDA42,
+  flammable: #FE7C00,
+  biohazard: #39B54A,
+  );
+
+@each $color, $value in $colors {
+  .tab[data-color="#{$color}"] {
+    background-color: $value;
+    @if $color == 'biohazard' {
+      color: white;
+    }
+  }
+}
+
+.tab {
+  display: none;
+  padding: 1.5em;
+}
+
+.tab.is-active {
+  display: grid;
+  grid-template-columns: minmax(5em, auto) minmax(auto, 20em);
+  align-items: center;
+  grid-row-gap: 0.5em;
+  grid-column-gap: 3em;
+
+  > h2 {
+    line-height: 1;
+    align-self: end;
+  }
+
+  > svg {
+    grid-column: 2;
+    grid-row: span 2;
+  }
+
+  > p {
+    align-self: start;
+  }
+}
+

@@ -2,15 +2,15 @@
 // ===============
 
 const toggleButton = document.querySelector('.jsModalToggle')
-const overlay = document.querySelector('.jsModalContainer')
-const content = document.querySelector('.jsModal')
 const closeButton = document.querySelector('.jsModalClose')
+const overlay = document.querySelector('.jsModalContainer')
+const modal = document.querySelector('.jsModal')
 
 const openModal = _ => document.body.classList.add('modal-is-open')
 const closeModal = _ => document.body.classList.remove('modal-is-open')
 
 toggleButton.addEventListener('click', openModal)
-content.addEventListener('click', e => e.stopPropagation())
+modal.addEventListener('click', e => e.stopPropagation())
 overlay.addEventListener('click', closeModal)
 closeButton.addEventListener('click', closeModal)
 
