@@ -1,16 +1,13 @@
 // # START EDITING YOUR JAVASCRIPT HERE
 // ===============
 
-// const accordions = document.querySelectorAll('.jsAccordion')
+const accordionHeaders = document.querySelectorAll('.jsAccordionHeader')
 
-// accordions.forEach(accordion => {
-//   const header = accordion.querySelector('.jsAccordionHeader')
-
-//   header.addEventListener('click', e => {
-//     e.preventDefault()
-//     e.target.parentNode.classList.toggle('is-open')
-//   })
-// })
+accordionHeaders.forEach(header => {
+  header.addEventListener('click', _ => {
+    header.parentNode.classList.toggle('is-open')
+  })
+})
 
 const accordionContainer = document.querySelector('.jsAccordionContainer')
 accordionContainer.addEventListener('click', e => {
