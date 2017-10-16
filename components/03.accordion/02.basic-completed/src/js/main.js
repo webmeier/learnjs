@@ -1,21 +1,21 @@
 // # START EDITING YOUR JAVASCRIPT HERE
 // ===============
 
-// const accordionHeaders = document.querySelectorAll('.jsAccordionHeader')
+const accordionHeaders = document.querySelectorAll('.jsAccordionHeader')
 
-// accordionHeaders.forEach(header => {
-//   header.addEventListener('click', _ => {
-//     header.parentNode.classList.toggle('is-open')
-//   })
-// })
-
-const accordionContainer = document.querySelector('.jsAccordionContainer')
-accordionContainer.addEventListener('click', e => {
-  e.preventDefault()
-  if (e.target.classList.contains('jsAccordionHeader')) {
-    e.target.parentNode.classList.toggle('is-open')
-  }
+accordionHeaders.forEach(header => {
+  header.addEventListener('click', _ => {
+    header.parentNode.classList.toggle('is-open')
+  })
 })
+
+// const accordionContainer = document.querySelector('.jsAccordionContainer')
+// accordionContainer.addEventListener('click', e => {
+//   e.preventDefault()
+//   if (e.target.classList.contains('jsAccordionHeader')) {
+//     e.target.parentNode.classList.toggle('is-open')
+//   }
+// })
 
 // Enables Hot module replacement for Webpack. Leave this alone
 if (process.env.NODE_ENV === 'development') {

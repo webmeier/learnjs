@@ -1,4 +1,4 @@
-@import 'resets';
+@import "resets";
 
 // base styles and typography
 // ---------------
@@ -37,79 +37,89 @@ svg {
 
 .accordion {
   position: relative;
+}
 
-  &::before {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 1em;
-    background-color: rgba(#7D5945, 0.6);
-    content: '';
-  }
+.accordion::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 1em;
+  background-color: rgba(#7D5945, 0.6);
+  content: '';
 }
 
 // # Start editing here
 // ===============
 .accordion__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-width: 100%;
   padding-top: 1.5em;
   padding-right: 3em;
   padding-left: 3em;
   padding-bottom: 1.5em;
-
-  * {
-    pointer-events: none;
-  }
+  color: var(--color-brown);
 }
 
-.accordion__indicator {
-  > * {
-    width: 1em;
-  }
-
-  .indicator__plus {
-    display: block;
-  }
-
-  .indicator__minus {
-    display: none;
-  }
+.accordion__header * {
+  pointer-events: none;
 }
 
-.accordion.is-open {
-  .indicator__plus {
-    display: none;
-  }
-
-  .indicator__minus {
-    display: block;
-  }
+.accordion__button {
+  display: block;
+  min-width: 100%;
 }
 
 .accordion__title {
-  color: var(--color-brown);
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 1.5rem);
   font-size: 1.5rem;
   text-transform: uppercase;
+  font-weight: bold;
+}
+
+.accordion__indicator {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.accordion__indicator > * {
+  width: 1rem;
+}
+
+.accordion__indicator .indicator__plus {
+  display: block;
+}
+
+.accordion__indicator .indicator__minus {
+  display: none;
+}
+
+.accordion.is-open .indicator__plus {
+  display: none;
+}
+
+.accordion.is-open .indicator__minus {
+  display: block;
 }
 
 .accordion__content {
   display: none;
+  grid-row-gap: 1rem;
   padding-right: 3em;
   padding-bottom: 1.5em;
   padding-left: 3em;
-  grid-row-gap: 1rem;
+}
 
-  @media screen and (min-width: 700px) {
+@media screen and (min-width: 700px) {
+  .accordion__content {
     grid-template-columns: 7.5em 1fr;
     grid-column-gap: 2rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
+}
 
-  .accordion.is-open & {
-    display: grid;
-  }
+.accordion.is-open .accordion__content {
+  display: grid;
 }
