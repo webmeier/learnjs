@@ -69,7 +69,7 @@ Detailed outline
     1. How to think like a developer - done
     2. Using starter template - done
     3. Hands on: build an off-canvas sidebar menu - done
-    4. Hands on: build a modal window
+    4. Hands on: build a modal window - done
     5. Hands on: build accordions
     6. Hands on: build tabs
     7. Hands on: build a carousel
@@ -171,3 +171,7 @@ https://www.smashingmagazine.com/2014/09/making-modal-windows-better-for-everyon
 https://docs.google.com/spreadsheets/d/1Q-apLCPEyV-hJYVBN-wN3FS7AOSx9YqQJGj-Y2rW6No/edit#gid=1129708278
 
 Safari accessibility need to open the tabbing functionality. Also need to update the tabs so they become moar obvious.
+
+
+https://www.w3.org/WAI/tutorials/
+https://www.w3.org/TR/using-aria/#second
