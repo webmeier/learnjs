@@ -70,23 +70,28 @@ Detailed outline
     2. Using starter template - done
     3. Hands on: build an off-canvas sidebar menu - done
     4. Hands on: build a modal window - done
-    5. Hands on: build accordions
+    5. Hands on: build accordions - done
     6. Hands on: build tabs
     7. Hands on: build a carousel
-    7. Lessons from the building process
+    8. Lessons from the building process
 6. Spicing components with animations
-    1. Animating with CSS (Safe properties, separate style and logic, transitionend)
-    2. Animating with JavaScript (When to use JS animations, GSAP, etc)
-    3. Hands on: improving the off canvas menu
-    4. Hands on: improving the modal window
-    5. Hands on: improving the accordions
-    6. Hands on: improving the tabs
-    7. Hands on: improving the carousel
+    1. CSS transitions
+    2. CSS animations
+    3. Safe properties
+    4. Animating with JavaScript (When to use JS animations, GSAP, etc)
+    6. Tying CSS transitions and animations with Javascript
+    6. Getting element positions
+    7. Hands on: improving the off canvas menu
+    8. Hands on: improving the modal window
+    9. Hands on: improving the accordions
+    10. Hands on: improving the tabs
+    11. Hands on: improving the carousel
 7. Functional Programming
     1. What is Functional Programming (Immutable, pure, side effects)
     2. Functional arrays (filter, map, reduce, rest and spread)
     3. Functional objects (Object assign)
     4. Call, bind, apply
+    5. What to learn later
 8. Object oriented programming
     1. OOP vs FP
     2. This in JavaScript
@@ -109,8 +114,6 @@ Detailed outline
     2. Understanding REST APIs
     3. JavaScript Promises
     4. The Fetch API
-    5. Lazyloading
-    6. Async/Await (Might not write this)
     7. Hands on: building a loading indicator
     8. Hands on: building a twitter feed
     9. Hands on: building a Google Maps component
@@ -175,3 +178,10 @@ Safari accessibility need to open the tabbing functionality. Also need to update
 
 https://www.w3.org/WAI/tutorials/
 https://www.w3.org/TR/using-aria/#second
+
+
+http://whatsock.com
+Accessibility: http://whatsock.com/training/matrices/
+http://heydonworks.com/practical_aria_examples/#input-tooltip
+
+https://a11ywins.tumblr.com/post/166008481313/dragon-drop-accessible-reordering-library
