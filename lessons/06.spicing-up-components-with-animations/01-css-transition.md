@@ -57,7 +57,7 @@ You can trigger CSS transitions directly with pseudo classes like `:hover` (acti
 }
 ```
 
-http://codepen.io/api/https://codepen.io/zellwk/pen/Qqzzxd/
+http://codepen.io/api/oembed?url=https://codepen.io/zellwk/pen/Qqzzxd/
 
 
 <p data-height="300" data-theme-id="7929" data-slug-hash="Qqzzxd" data-default-tab="css,result" data-user="zellwk" data-embed-version="2" data-pen-title="CSS Transition" class="codepen">See the Pen <a href="https://codepen.io/zellwk/pen/Qqzzxd/">CSS Transition</a> by Zell Liew (<a href="https://codepen.io/zellwk">@zellwk</a>) on <a href="https://codepen.io">CodePen</a>.</p>
