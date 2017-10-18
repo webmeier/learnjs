@@ -1,4 +1,4 @@
-@import 'resets';
+@import "resets";
 
 // base styles and typography
 // ---------------
@@ -73,12 +73,16 @@ h2 {
   left: 0;
   opacity: 0;
   z-index: -1;
+  transition-property: opacity, z-index;
+  transition-duration: 0.3s, 0s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s, 0.3s;
 }
-
 
 body.modal-is-open .modal-container {
   opacity: 1;
   z-index: 1;
+  transition-delay: 0s;
 }
 
 .modal {
