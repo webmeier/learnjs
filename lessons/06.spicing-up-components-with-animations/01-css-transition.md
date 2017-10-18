@@ -57,10 +57,9 @@ You can trigger CSS transitions directly with pseudo classes like `:hover` (acti
 }
 ```
 
-http://codepen.io/api/oembed?url=https://codepen.io/zellwk/pen/Qqzzxd/
+See this Pen for a demo: https://codepen.io/zellwk/pen/Qqzzxd/
 
-
-<p data-height="300" data-theme-id="7929" data-slug-hash="Qqzzxd" data-default-tab="css,result" data-user="zellwk" data-embed-version="2" data-pen-title="CSS Transition" class="codepen">See the Pen <a href="https://codepen.io/zellwk/pen/Qqzzxd/">CSS Transition</a> by Zell Liew (<a href="https://codepen.io/zellwk">@zellwk</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+(I wish I could embed the Codepen directly in Github, but I can't. Unfortunately, you'll have to make do with clicking on the Codepen links until I'm done making an app for this course, which could take some time. In the meantime, I'm sorry about making you click somewhere else to view the content. Thank you so much for your patience).
 
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
@@ -82,8 +81,7 @@ const button = document.querySelector('.button')
 button.addEventListener('click', _ => button.classList.toggle('is-active'))
 ```
 
-<p data-height="300" data-theme-id="7929" data-slug-hash="GMPPBg" data-default-tab="css,result" data-user="zellwk" data-embed-version="2" data-pen-title="CSS Transition with JavaScript" class="codepen">See the Pen <a href="https://codepen.io/zellwk/pen/GMPPBg/">CSS Transition with JavaScript</a> by Zell Liew (<a href="https://codepen.io/zellwk">@zellwk</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+See this Pen for a demo: https://codepen.io/zellwk/pen/GMPPBg/
 
 ## Understanding transition-timing-function
 
@@ -100,8 +98,6 @@ The `transition-timing-function` governs how a transition occurs. All transition
 }
 ```
 
-CODEPEN
-
 The thing is, nothing moves linearly in life. That's not how real objects move. Sometimes, we accelerate; Sometimes, we decelerate. The `transition-timing-function` allows you to capture all of that.
 
 Imagine yourself throwing a tennis ball into an open field. The ball leaves your hand with the maximum speed. As it moves, it loses energy, it decelerates and eventually comes to a halt. This is called `ease-out`. There's a timing function for it.
@@ -112,8 +108,6 @@ Imagine yourself throwing a tennis ball into an open field. The ball leaves your
 }
 ```
 
-CODEPEN
-
 Now imagine you're in a car. It's not moving right now. When you move the car, it accelerates and goes toward its top speed. This is called `ease-in`. There's also a timing function for it.
 
 ```css
@@ -121,8 +115,6 @@ Now imagine you're in a car. It's not moving right now. When you move the car, i
   transition-timing-function: ease-in;
 }
 ```
-
-CODEPEN
 
 Since you have `ease-in` and `ease-out`, there's also a timing function that combines the two together, `ease-in-out`. (I advise against using `ease-in-out` in your transitions unless your transitions last longer than a second. Nothing eases in and out within a second. It simply looks weird.)
 
@@ -132,7 +124,7 @@ Since you have `ease-in` and `ease-out`, there's also a timing function that com
 }
 ```
 
-CODEPEN
+See this pen for a demo of the timing functions you've learned so far: https://codepen.io/zellwk/pen/Oxrqpo.
 
 Finally, if you don't like any of the above choices, you can create your own timing function with `cubic-bezier`.
 
@@ -151,11 +143,13 @@ Don't worry about the `x1`, `y1,`, `x2` and `y2`. You'll never create cubic-bezi
 You can rely on both Chrome and Firefox's trusty developer tools to help you create your curves. To use it, you add a `transition-timing-function` into an element, then open up devtools and click on the timing function.
 
 <figure>
-  <img src="/images/2017/" alt="">
-  <figcaption></figcaption>
+  <img src="../../images/animations/transitions/cubic-bezier.png" alt="Both Chrome and Firefox provides you with a cubic-bezier tool">
+  <figcaption>Both Chrome and Firefox provides you with a cubic-bezier tool</figcaption>
 </figure>
 
-You can find more information about cubic-bezier curves in this [Smashing Magazine article](https://www.smashingmagazine.com/2014/04/understanding-css-timing-functions/).
+See this pen for a demo on cubic-beziers: https://codepen.io/zellwk/pen/gGZqNo
+
+Going in-depth about creating your own bezier curves for your animations is out of scope for this lesson. We're mostly sticking with the default ones like `ease-out` and `ease-in` in the course. If you're interested, you can find more information about cubic-bezier curves in this [Smashing Magazine article](https://www.smashingmagazine.com/2014/04/understanding-css-timing-functions/).
 
 ## Transitioning two or more properties
 
@@ -174,8 +168,6 @@ You can do the same with duration, timing-functions and delays as well. If the v
   transition-timing-function: ease-out;
 }
 ```
-
-CODEPEN
 
 You may be tempted to transition every CSS property with `all`. Don't ever do this. This is bad for performance. Always specify the property you're trying to transition.
 
