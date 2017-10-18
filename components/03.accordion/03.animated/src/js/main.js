@@ -6,17 +6,17 @@ accordionContainer.addEventListener('click', e => {
   const header = e.target.closest('.jsAccordionHeader')
   if (!header) return
 
-  const headerClass = header.parentNode.classList
+  const accordionClassList = header.parentNode.classList
   const content = header.nextElementSibling
   const height = content.firstElementChild.getBoundingClientRect().height
 
-  if (headerClass.contains('is-open')) {
+  if (accordionClassList.contains('is-open')) {
     content.style.height = '0px'
+    accordionClassList.remove('is-open')
   } else {
     content.style.height = height + 'px'
+    accordionClassList.add('is-open')
   }
-
-  header.parentNode.classList.toggle('is-open')
 })
 
 // Enables Hot module replacement for Webpack. Leave this alone
