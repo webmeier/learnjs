@@ -56,8 +56,9 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     1. [CSS Transitions](lessons/06.spicing-up-components-with-animations/01.css-transition.md) - new
     2. [CSS Animations](lessons/06.spicing-up-components-with-animations/02.css-animation.md) - new
     3. [Jank free animations](lessons/06.spicing-up-components-with-animations/03.jank-free-animations.md) - new
-    4. [🛠 Animating the off-canvas menu](lessons/06.spicing-up-components-with-animations/07.animating-off-canvas.md) - new
-    5. [🛠 Animating the modal window](lessons/06.spicing-up-components-with-animations/08.animating-the-modal.md) - new
+    4. [Getting the position of an element](lessons/06.spicing-up-components-with-animations/05.getting-element-position-information.md) - new
+    4. [🛠 Animating the off-canvas menu](lessons/06.spicing-up-components-with-animations/09.animating-off-canvas.md) - new
+    <!-- 5. [🛠 Animating the modal window](lessons/06.spicing-up-components-with-animations/10.animating-the-modal.md) - new -->
 
 ## Slack Channel
 
