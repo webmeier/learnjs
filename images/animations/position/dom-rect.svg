@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="703px" height="496px" viewBox="0 0 703 496" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="703" height="496" rx="21"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <rect stroke="#717171" stroke-width="6" x="3" y="3" width="697" height="490" rx="21"></rect>
+            <rect id="Rectangle-Copy" stroke="#717171" stroke-width="6" mask="url(#mask-2)" x="3" y="48" width="697" height="445"></rect>
+            <text id="top" mask="url(#mask-2)" font-family="FreightSansProMedium-Regular, FreightSans Pro" font-size="46" font-weight="400" fill="#0C99CC">
+                <tspan x="380" y="147">top</tspan>
+            </text>
+            <text id="left" mask="url(#mask-2)" font-family="FreightSansProMedium-Regular, FreightSans Pro" font-size="46" font-weight="400" fill="#0C99CC">
+                <tspan x="79" y="295">left</tspan>
+            </text>
+            <text id="bottom" mask="url(#mask-2)" font-family="FreightSansProMedium-Regular, FreightSans Pro" font-size="46" font-weight="400" fill="#0C99CC">
+                <tspan x="541" y="206">bottom</tspan>
+            </text>
+            <text id="right" mask="url(#mask-2)" font-family="FreightSansProMedium-Regular, FreightSans Pro" font-size="46" font-weight="400" fill="#0C99CC">
+                <tspan x="205" y="408">right</tspan>
+            </text>
+            <circle id="Oval" fill="#D0011B" mask="url(#mask-2)" cx="28" cy="27" r="9"></circle>
+            <circle id="Oval-Copy" fill="#F6A623" mask="url(#mask-2)" cx="54" cy="27" r="9"></circle>
+            <circle id="Oval-Copy-2" fill="#57CC20" mask="url(#mask-2)" cx="80" cy="27" r="9"></circle>
+            <rect id="Rectangle-2" stroke="#2AC6FF" stroke-width="6" mask="url(#mask-2)" x="225" y="217" width="254" height="108"></rect>
+            <path d="M462.5,62.5 L462.5,201.730025" id="Line" stroke="#0C99CC" stroke-width="3" stroke-linecap="square" mask="url(#mask-2)"></path>
+            <path id="Line-decoration-1" d="M459.5,73.3 L462.5,62.5 L465.5,73.3" stroke="#0C99CC" stroke-width="3" stroke-linecap="square"></path>
+            <path id="Line-decoration-2" d="M459.5,190.930025 L462.5,201.730025 L465.5,190.930025" stroke="#0C99CC" stroke-width="3" stroke-linecap="square"></path>
+            <path d="M200.5,320.5 L19.5,320.5" id="Line-Copy-2" stroke="#0C99CC" stroke-width="3" stroke-linecap="square" mask="url(#mask-2)"></path>
+            <path id="Line-Copy-2-decoration-1" d="M189.7,317.5 L200.5,320.5 L189.7,323.5" stroke="#0C99CC" stroke-width="3" stroke-linecap="square"></path>
+            <path id="Line-Copy-2-decoration-2" d="M30.3,317.5 L19.5,320.5 L30.3,323.5" stroke="#0C99CC" stroke-width="3" stroke-linecap="square"></path>
+            <path d="M523.5,62.5 L523.5,321.517374" id="Line-Copy" stroke="#0C99CC" stroke-width="3" stroke-linecap="square" mask="url(#mask-2)"></path>
+            <path id="Line-Copy-decoration-1" d="M520.5,73.3 L523.5,62.5 L526.5,73.3" stroke="#0C99CC" stroke-width="3" stroke-linecap="square"></path>
+            <path id="Line-Copy-decoration-2" d="M520.5,310.717374 L523.5,321.517374 L526.5,310.717374" stroke="#0C99CC" stroke-width="3" stroke-linecap="square"></path>
+            <path d="M480.5,353.5 L19.4956616,353.5" id="Line-Copy-3" stroke="#0C99CC" stroke-width="3" stroke-linecap="square" mask="url(#mask-2)"></path>
+            <path id="Line-Copy-3-decoration-1" d="M469.7,350.5 L480.5,353.5 L469.7,356.5" stroke="#0C99CC" stroke-width="3" stroke-linecap="square"></path>
+            <path id="Line-Copy-3-decoration-2" d="M30.2956616,350.5 L19.4956616,353.5 L30.2956616,356.5" stroke="#0C99CC" stroke-width="3" stroke-linecap="square"></path>
+        </g>
+    </g>
+</svg>
