@@ -48,8 +48,13 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     1. [How to think like a developer](lessons/05.building-real-components/01.think-like-dev.md)
     2. [Using the starter template](lessons/05.building-real-components/02.starter-template.md)
     3. [Before you begin building](lessons/05.building-real-components/03.before-you-begin.md)
-    4. [🛠️ Building an off-canvas menu](lessons/05.building-real-components/04.building-off-canvas.md)
-    5. [🛠️ Building a modal window](lessons/05.building-real-components/05.building-modal-window.md)
+    4. [🛠 Building an off-canvas menu](lessons/05.building-real-components/04.building-off-canvas.md)
+    5. [🛠 Building a modal window](lessons/05.building-real-components/05.building-modal-window.md)
+6. Spicing up your components with animations
+    1. [CSS Transitions](lessons/06.spicing-up-components-with-animations/01.css-transition.md)
+    2. [CSS Animations](lessons/06.spicing-up-components-with-animations/02.css-animation.md)
+    3. [Jank free animations](lessons/06.spicing-up-components-with-animations/03.jank-free-animations.md)
+    2. [🛠 Animating the off-canvas menu](lessons/06.spicing-up-components-with-animations/06.animating-off-canvas.md)
 
 ## Slack Channel
 
