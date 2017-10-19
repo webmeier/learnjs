@@ -115,3 +115,20 @@ body.modal-is-open .modal-container {
     margin-top: 0.75em;
   }
 }
+
+// Animations
+@keyframes point {
+  0% {
+    transform: translateY(3em);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.click-hand {
+  animation: point 1s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
