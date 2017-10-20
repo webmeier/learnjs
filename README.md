@@ -50,14 +50,15 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     3. [Before you begin building](lessons/05.building-real-components/03.before-you-begin.md)
     4. [🛠 Building an off-canvas menu](lessons/05.building-real-components/04.building-off-canvas.md)
     5. [🛠 Building a modal window](lessons/05.building-real-components/05.building-modal-window.md)
-    6. [🛠 Building a accordions](lessons/05.building-real-components/06.building-accordions.md) - new
-    7. [Lessons from building the components](lessons/05.building-real-components/09.lessons-from-the-building-process.md) - new
+    6. [🛠 Building a accordions](lessons/05.building-real-components/06.building-accordions.md) - new!
+    7. [Lessons from building the components](lessons/05.building-real-components/09.lessons-from-the-building-process.md) - new!
 6. Spicing up your components with animations
-    1. [CSS Transitions](lessons/06.spicing-up-components-with-animations/01.css-transition.md) - new
-    2. [CSS Animations](lessons/06.spicing-up-components-with-animations/02.css-animation.md) - new
-    3. [Jank free animations](lessons/06.spicing-up-components-with-animations/03.jank-free-animations.md) - new
-    5. [Getting the position of an element](lessons/06.spicing-up-components-with-animations/05.getting-element-position-information.md) - new
-    6. [Animating with JavaScript](lessons/06.spicing-up-components-with-animations/06.animating-with-js.md) - new
+    1. [CSS Transitions](lessons/06.spicing-up-components-with-animations/01.css-transition.md) - new!
+    2. [CSS Animations](lessons/06.spicing-up-components-with-animations/02.css-animation.md) - new!
+    3. [Jank free animations](lessons/06.spicing-up-components-with-animations/03.jank-free-animations.md) - new!
+    5. [Getting the position of an element](lessons/06.spicing-up-components-with-animations/05.getting-element-position-information.md) - new!
+    6. [Animating with JavaScript](lessons/06.spicing-up-components-with-animations/06.animating-with-js.md) - new!
+    7. [Greensock Animation API (GSAP)](lessons/06.spicing-up-components-with-animations/08.gsap.md) - new!
     9. [🛠 Animating the off-canvas menu](lessons/06.spicing-up-components-with-animations/09.animating-off-canvas.md) - new
     <!-- 5. [🛠 Animating the modal window](lessons/06.spicing-up-components-with-animations/10.animating-the-modal.md) - new -->
 
