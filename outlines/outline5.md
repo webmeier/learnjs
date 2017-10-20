@@ -75,17 +75,17 @@ Detailed outline
     7. Hands on: build a carousel
     8. Lessons from the building process
 6. Spicing components with animations
-    1. CSS transitions
-    2. CSS animations
-    3. Safe properties
-    4. Animating with JavaScript (When to use JS animations, GSAP, etc)
-    6. Tying CSS transitions and animations with Javascript
-    6. Getting element positions
-    7. Hands on: improving the off canvas menu
-    8. Hands on: improving the modal window
-    9. Hands on: improving the accordions
-    10. Hands on: improving the tabs
-    11. Hands on: improving the carousel
+    1. CSS transitions - done
+    2. CSS animations - done
+    3. Safe properties - done
+    5. Tying CSS transitions and animations with Javascript
+    6. Animating with JavaScript (When to use JS animations, GSAP, etc)
+    7. Getting element positions
+    8. Hands on: improving the off canvas menu
+    9. Hands on: improving the modal window
+    10. Hands on: improving the accordions
+    11. Hands on: improving the tabs
+    12. Hands on: improving the carousel
 7. Functional Programming
     1. What is Functional Programming (Immutable, pure, side effects)
     2. Functional arrays (filter, map, reduce, rest and spread)
