@@ -1,6 +1,5 @@
 Short outline
 
-0. Before you begin
 1. JavaScript and its ecosystem
 2. JavaScript basics - done
 3. DOM basics - done
@@ -11,14 +10,14 @@ Short outline
 8. Object oriented programming
 9. Text, Content and Forms
 10. Asynchronous JavaScript
+11. Progressive Enhancement
 11. Scroll, mouse, and touch events
 12. Keyboard events
-13. Lazy loading ?????? (Undecided)
-14. Accessibility
-15. Creating libraries and plugins
+13. Accessibility
+14. Creating libraries and plugins
+15. Webpack and Asset compilation
 16. Single page applications
-17. Webpack and Asset compilation
-18. Next steps
+17. Next steps
 
 Detailed outline
 
@@ -77,14 +76,15 @@ Detailed outline
 6. Spicing components with animations
     1. CSS transitions - done
     2. CSS animations - done
-    3. Safe properties - done
-    5. Tying CSS transitions and animations with Javascript
-    6. Animating with JavaScript (When to use JS animations, GSAP, etc) - done
-    7. Getting element positions - done
-    8. Hands on: improving the off canvas menu - done
-    9. Hands on: improving the modal window - done
-    10. Hands on: improving the accordions
-    11. Hands on: improving the tabs
+    3. Jank free animations - done
+    4. Integrating CSS transitions and animations with Javascript
+    5. Getting the positional information of an element - done
+    6. Detecting vendor prefixes
+    7. Animating with JavaScript (When to use JS animations, GSAP, etc) - done
+    8. Getting element positions - done
+    9. Hands on: improving the off canvas menu - done
+    10. Hands on: improving the modal window - done
+    11. Hands on: improving the accordions
     12. Hands on: improving the carousel
 7. Functional Programming
     1. What is Functional Programming (Immutable, pure, side effects)
