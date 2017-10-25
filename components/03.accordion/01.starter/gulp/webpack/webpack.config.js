@@ -15,15 +15,6 @@ module.exports = {
         presets: ['env'],
         plugins: []
       }
-    }, {
-      enforce: 'pre',
-      test: /\.jsx?$/,
-      loader: 'standard-loader',
-      exclude: /node_modules/,
-      options: {
-        error: true,
-        snazzy: true
-      }
     }]
   },
   plugins: [

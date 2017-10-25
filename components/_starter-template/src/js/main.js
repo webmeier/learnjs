@@ -1,7 +1,3 @@
-// Load your vendor libraries. When you do so, make sure you
-// change the 'vendor' entry in `gulp/webpack/webpack.entry.js`
-import 'isomorphic-fetch'
-
 // Your JavaScript goes here
 console.log('Hello 123!')
 
