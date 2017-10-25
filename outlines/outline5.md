@@ -79,10 +79,10 @@ Detailed outline
     2. CSS animations - done
     3. Safe properties - done
     5. Tying CSS transitions and animations with Javascript
-    6. Animating with JavaScript (When to use JS animations, GSAP, etc)
-    7. Getting element positions
-    8. Hands on: improving the off canvas menu
-    9. Hands on: improving the modal window
+    6. Animating with JavaScript (When to use JS animations, GSAP, etc) - done
+    7. Getting element positions - done
+    8. Hands on: improving the off canvas menu - done
+    9. Hands on: improving the modal window - done
     10. Hands on: improving the accordions
     11. Hands on: improving the tabs
     12. Hands on: improving the carousel
