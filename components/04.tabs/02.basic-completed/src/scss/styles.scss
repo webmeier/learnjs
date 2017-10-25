@@ -126,6 +126,10 @@ p + p {
   padding: 1em;
 }
 
+.tab.is-active > a {
+  background-color: #323232;
+}
+
 @media screen and (min-width: 450px) {
   .tab {
     text-align: left;
@@ -223,10 +227,6 @@ p + p {
 
 .tab-content {
   display: none;
-}
-
-.tab.is-active > a {
-  background-color: #323232;
 }
 
 .tab-content.is-active {

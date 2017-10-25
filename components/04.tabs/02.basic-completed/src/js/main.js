@@ -1,17 +1,15 @@
 // # START EDITING YOUR JAVASCRIPT HERE
 // ===============
 
-const tabList = document.querySelector('.jsTabs')
+const tabList = document.querySelector('.jsTabList')
 
 tabList.addEventListener('click', e => {
   if (!e.target.matches('a')) { return }
+  e.preventDefault()
 
   const href = e.target.getAttribute('href')
-
-  // Get new tab
   const newTab = e.target.parentNode
   const newTabContent = tabList.parentNode.querySelector(href)
-
   const prevTabAndContent = tabList.parentNode.querySelectorAll('.is-active')
 
   // Hide prev tab and content
