@@ -130,6 +130,10 @@ p + p {
   background-color: #323232;
 }
 
+.tab > a * {
+  pointer-events: none
+}
+
 @media screen and (min-width: 450px) {
   .tab {
     text-align: left;
@@ -157,6 +161,11 @@ p + p {
   vertical-align: middle;
 }
 
+/* Set inactive tab icons to 50% white */
+.tab:not(.is-active) .tab__icon {
+  color: rgba(255, 255, 255, 0.25);
+}
+
 // Tab Content
 // ===============
 @media screen and (min-width: 850px) {
@@ -167,9 +176,13 @@ p + p {
 }
 
 .tab-content {
-  display: grid;
+  display: none;
   padding: 2em;
   justify-content: center;
+}
+
+.tab-content.is-active {
+  display: grid;
 }
 
 @media screen and (min-width: 850px) {
@@ -220,15 +233,3 @@ p + p {
   margin-bottom: 1rem;
 }
 
-/* Set inactive tab icons to 50% white */
-.tab:not(.is-active) .tab__icon {
-  color: rgba(255, 255, 255, 0.25);
-}
-
-.tab-content {
-  display: none;
-}
-
-.tab-content.is-active {
-  display: grid;
-}

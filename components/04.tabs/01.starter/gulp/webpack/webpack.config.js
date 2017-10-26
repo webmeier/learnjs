@@ -4,7 +4,7 @@ const config = require('../config')
 const dest = config.dest
 
 module.exports = {
-  devtool: 'cheap-source-map',
+  devtool: 'source-map',
   entry: './src/js/main.js',
   module: {
     rules: [{

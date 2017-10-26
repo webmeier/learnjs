@@ -215,20 +215,3 @@ p + p {
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
-
-/* Set inactive tab icons to 50% white */
-.tab:not(.is-active) .tab__icon {
-  color: rgba(255, 255, 255, 0.25);
-}
-
-.tab-content {
-  display: none;
-}
-
-.tab.is-active > a {
-  background-color: #323232;
-}
-
-.tab-content.is-active {
-  display: grid;
-}

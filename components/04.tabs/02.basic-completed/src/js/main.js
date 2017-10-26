@@ -7,15 +7,17 @@ tabList.addEventListener('click', e => {
   if (!e.target.matches('a')) { return }
   e.preventDefault()
 
-  const href = e.target.getAttribute('href')
-  const newTab = e.target.parentNode
-  const newTabContent = tabList.parentNode.querySelector(href)
-  const prevTabAndContent = tabList.parentNode.querySelectorAll('.is-active')
+  const link = e.target
+  const href = link.getAttribute('href')
+  const component = tabList.parentNode
 
-  // Hide prev tab and content
+  // Hides previous tab and tabbed content
+  const prevTabAndContent = component.querySelectorAll('.is-active')
   prevTabAndContent.forEach(elem => elem.classList.remove('is-active'))
 
-  // show new tab and tab content
+  // Shows new tab and tabbed content
+  const newTab = link.parentNode
+  const newTabContent = component.querySelector(href)
   newTab.classList.add('is-active')
   newTabContent.classList.add('is-active')
 })
