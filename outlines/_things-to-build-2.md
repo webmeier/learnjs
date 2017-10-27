@@ -17,5 +17,4 @@
 17. Infinite-scrolling page
 18. Scrollspy component
 19. Drag and Drop component
-20. Swipe-able component
-21. A simple single page app
+20. A simple single page app
