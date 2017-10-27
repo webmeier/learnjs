@@ -31,7 +31,7 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     2. [Selecting an element](lessons/03.dom-basics/02.selecting-an-element.md)
     3. [Changing style](lessons/03.dom-basics/03.changing-style.md)
     4. [Array.forEach](lessons/03.dom-basics/04.foreach.md)
-    5. [Selecting multiple elements](lessons/04.dom-basics/05.selecting-multiple-elements.md)
+    5. [Selecting multiple elements](lessons/03.dom-basics/05.selecting-multiple-elements.md)
     6. [Nodes vs Elements](lessons/03.dom-basics/06.nodes-vs-elements.md)
     7. [Changing classes](lessons/03.dom-basics/07.changing-classes.md)
     8. [Changing attributes](lessons/03.dom-basics/08.changing-attributes.md)
@@ -58,10 +58,12 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     2. [CSS Animations](lessons/06.spicing-up-components-with-animations/02.css-animation.md)
     3. [Jank free animations](lessons/06.spicing-up-components-with-animations/03.jank-free-animations.md)
     5. [Getting the position of an element](lessons/06.spicing-up-components-with-animations/05.getting-element-position-information.md)
-    6. [Animating with JavaScript](lessons/06.spicing-up-components-with-animations/06.animating-with-js.md)
+    6. [Animating with JavaScript](lessons/06.spicing-up-components-with-animations/07.animating-with-js.md)
     7. [Greensock Animation API (GSAP)](lessons/06.spicing-up-components-with-animations/08.gsap.md)
     9. [🛠 Animating the off-canvas menu](lessons/06.spicing-up-components-with-animations/09.animating-off-canvas.md)
-    5. [🛠 Animating the modal window](lessons/06.spicing-up-components-with-animations/10.animating-the-modal.md) - new
+    5. [🛠 Animating the modal window](lessons/06.spicing-up-components-with-animations/10.animating-the-modal.md) - new!
+7. Function Programming
+    1. [What is Functional Programming](lessons/07.functional-programming/01.what-is-functional-programming.md) - new!
 
 ## Slack Channel
 
