@@ -70,7 +70,7 @@ Detailed outline
     3. Hands on: build an off-canvas sidebar menu - done
     4. Hands on: build a modal window - done
     5. Hands on: build accordions - done
-    6. Hands on: build tabs
+    6. Hands on: build tabs - done
     7. Hands on: build a carousel
     8. Lessons from the building process
 6. Spicing components with animations
@@ -87,16 +87,18 @@ Detailed outline
     11. Hands on: improving the accordions
     12. Hands on: improving the carousel
 7. Functional Programming
-    1. What is Functional Programming (Immutable, pure, side effects)
-    2. Functional arrays (filter, map, reduce, rest and spread)
-    3. Functional objects (Object assign)
-    4. Call, bind, apply
-    5. What to learn later
+    1. What is Functional Programming - done
+    2. Declarative vs Imperative programming - done
+    3. Higher-order-functions - done
+    4. Functional objects (Object assign, shallow clone, deep clone)
+    5. Functional arrays (filter, map, reduce, rest and spread)
+    6. Call, bind, apply
+    7. Currying and advanced Functional Programming
 8. Object oriented programming
-    1. OOP vs FP
+    1. What is Object Oriented Programming?
     2. This in JavaScript
     3. Private and public variables
-    4. Prototypes
+    4. JavaScript Prototypes
     5. Inheritance and mixins
 9. Text, Content and Forms
     1. Template Strings
@@ -120,6 +122,11 @@ Detailed outline
     10. Hands on: improving autocomplete
     11. Hands on: improving the tooltip
     12. Hands on: improving the carousel
+11. Progressive Enhancement
+    1. The progressive enhancement mindset
+    2. What if there's no JavaScript
+    3. From mobile to desktop
+    4. Feature detection and polyfilling
 11. Scroll, mouse and touch events
     1. Detecting element positions
     2. Handling Scroll
@@ -131,9 +138,9 @@ Detailed outline
     8. Hands on: building an infinite-scrolling page
     9. Hands on: building a scrollspy
     10. Hands on: building a drag & drop component
-    11. Hands on: building a swipe-able component
-    12. Hands on: improving the calendar widget
+    11. Hands on: improving the calendar widget
 12. Keyboard events
+    1. Keyboard power user.
     1. Handling keyboard events
     2. Hands on: improving the modal window and off canvas menu
     3. Hands on: improving tabs
