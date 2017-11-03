@@ -51,7 +51,7 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     4. [🛠 Building an off-canvas menu](lessons/05.building-real-components/04.building-off-canvas.md)
     5. [🛠 Building a modal window](lessons/05.building-real-components/05.building-modal-window.md)
     6. [🛠 Building a accordions](lessons/05.building-real-components/06.building-accordions.md)
-    7. [🛠 Building a tabbed interface](lessons/05.building-real-components/07.building-tabs.md) - new!
+    7. [🛠 Building a tabbed interface](lessons/05.building-real-components/07.building-tabs.md)
     7. [Lessons from building the components](lessons/05.building-real-components/09.lessons-from-the-building-process.md)
 6. Spicing up your components with animations
     1. [CSS Transitions](lessons/06.spicing-up-components-with-animations/01.css-transition.md)
@@ -61,9 +61,17 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     6. [Animating with JavaScript](lessons/06.spicing-up-components-with-animations/07.animating-with-js.md)
     7. [Greensock Animation API (GSAP)](lessons/06.spicing-up-components-with-animations/08.gsap.md)
     9. [🛠 Animating the off-canvas menu](lessons/06.spicing-up-components-with-animations/09.animating-off-canvas.md)
-    5. [🛠 Animating the modal window](lessons/06.spicing-up-components-with-animations/10.animating-the-modal.md) - new!
+    5. [🛠 Animating the modal window](lessons/06.spicing-up-components-with-animations/10.animating-the-modal.md)
 7. Function Programming
-    1. [What is Functional Programming](lessons/07.functional-programming/01.what-is-functional-programming.md) - new!
+    1. [What is Functional Programming](lessons/07.functional-programming/01.what-is-functional-programming.md)
+    2. [Higher order functions](lessons/07.functional-programming/02.higher-order-functions.md) - new!
+    3. [Preventing objects from mutating](lessons/07.functional-programming/03.prevent-objects-from-mutating.md) - new!
+    4. [Preventing arrays from mutating](lessons/07.functional-programming/04.prevent-arrays-from-mutating.md) - new!
+    5. [Imperative vs Declarative Programming](lessons/07.functional-programming/05.imperative-vs-declarative.md) - new!
+    <!-- 6. [Function composition](lessons/07.functional-programming/06.function-composition.md) - new! -->
+    <!-- 7. [Functional array methods](lessons/07.functional-programming/07.functional-array-methods.md) - new! -->
+    9. [Destructuring](lessons/07.functional-programming/09.destructuring.md) - new!
+    10. [Spread and Rest operators](lessons/07.functional-programming/10.spread-and-rest.md) - new!
 
 ## Slack Channel
 
