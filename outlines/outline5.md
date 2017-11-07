@@ -81,11 +81,10 @@ Detailed outline
     5. Getting the positional information of an element - done
     6. Detecting vendor prefixes
     7. Animating with JavaScript (When to use JS animations, GSAP, etc) - done
-    8. Getting element positions - done
-    9. Hands on: improving the off canvas menu - done
-    10. Hands on: improving the modal window - done
-    11. Hands on: improving the accordions
-    12. Hands on: improving the carousel
+    8. Hands on: improving the off canvas menu - done
+    9. Hands on: improving the modal window - done
+    10. Hands on: improving the accordions
+    11. Hands on: improving the carousel
 7. Functional Programming
     1. What is Functional Programming - done
     2. Declarative vs Imperative programming - done

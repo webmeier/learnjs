@@ -64,14 +64,15 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     5. [🛠 Animating the modal window](lessons/06.spicing-up-components-with-animations/10.animating-the-modal.md)
 7. Function Programming
     1. [What is Functional Programming](lessons/07.functional-programming/01.what-is-functional-programming.md)
-    2. [Higher order functions](lessons/07.functional-programming/02.higher-order-functions.md) - new!
-    3. [Preventing objects from mutating](lessons/07.functional-programming/03.prevent-objects-from-mutating.md) - new!
-    4. [Preventing arrays from mutating](lessons/07.functional-programming/04.prevent-arrays-from-mutating.md) - new!
-    5. [Imperative vs Declarative Programming](lessons/07.functional-programming/05.imperative-vs-declarative.md) - new!
-    <!-- 6. [Function composition](lessons/07.functional-programming/06.function-composition.md) - new! -->
-    <!-- 7. [Functional array methods](lessons/07.functional-programming/07.functional-array-methods.md) - new! -->
-    9. [Destructuring](lessons/07.functional-programming/09.destructuring.md) - new!
-    10. [Spread and Rest operators](lessons/07.functional-programming/10.spread-and-rest.md) - new!
+    2. [Higher order functions](lessons/07.functional-programming/02.higher-order-functions.md)
+    3. [Preventing objects from mutating](lessons/07.functional-programming/03.prevent-objects-from-mutating.md)
+    4. [Preventing arrays from mutating](lessons/07.functional-programming/04.prevent-arrays-from-mutating.md)
+    5. [Imperative vs Declarative Programming](lessons/07.functional-programming/05.imperative-vs-declarative.md)
+    6. [Function composition](lessons/07.functional-programming/06.function-composition.md) - new!
+    7. [Functional array methods](lessons/07.functional-programming/07.functional-array-methods.md) - new!
+    <!-- 8. [Call, bind and apply](lessons/07.functional-programming/08.call-bind-apply.md) - new! -->
+    9. [Destructuring](lessons/07.functional-programming/09.destructuring.md)
+    10. [Spread and Rest operators](lessons/07.functional-programming/10.spread-and-rest.md)
 
 ## Slack Channel
 
