@@ -70,9 +70,17 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     5. [Imperative vs Declarative Programming](lessons/07.functional-programming/05.imperative-vs-declarative.md)
     6. [Function composition](lessons/07.functional-programming/06.function-composition.md) - new!
     7. [Functional array methods](lessons/07.functional-programming/07.functional-array-methods.md) - new!
-    <!-- 8. [Call, bind and apply](lessons/07.functional-programming/08.call-bind-apply.md) - new! -->
-    9. [Destructuring](lessons/07.functional-programming/09.destructuring.md)
-    10. [Spread and Rest operators](lessons/07.functional-programming/10.spread-and-rest.md)
+    8. [Destructuring](lessons/07.functional-programming/09.destructuring.md)
+    9. [Spread and Rest operators](lessons/07.functional-programming/10.spread-and-rest.md)
+8. Object Oriented Programming
+    1. [Enhanced Object Literals](lessons/08.object-oriented-programming/01.enhanced-object-literals.md) - new!
+    2. [Template literals](lessons/08.object-oriented-programming/02.template-literals.md) - new!
+    3. [What is Object Oriented Programming](lessons/08.object-oriented-programming/03.what-is-oop.md) - new!
+    4. [This in Javascript](lessons/08.object-oriented-programming/04.this.md) - new!
+    5. [Javascript Classes](lessons/08.object-oriented-programming/05.classes.md) - new!
+    6. [Inheritance](lessons/08.object-oriented-programming/06.inheritance.md) - new!
+    7. [Prototype](lessons/08.object-oriented-programming/07.prototype.md) - new!
+    8. [Inheritance through Prototype](lessons/08.object-oriented-programming/08.inheritance-through-prototype.md) - new!
 
 ## Slack Channel
 
