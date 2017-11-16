@@ -1,4 +1,4 @@
-Short outline
+lShort outline
 
 1. JavaScript and its ecosystem
 2. JavaScript basics - done
@@ -87,28 +87,37 @@ Detailed outline
     11. Hands on: improving the carousel
 7. Functional Programming
     1. What is Functional Programming - done
-    2. Declarative vs Imperative programming - done
-    3. Higher-order-functions - done
-    4. Functional objects (Object assign, shallow clone, deep clone)
-    5. Functional arrays (filter, map, reduce, rest and spread)
-    6. Call, bind, apply
-    7. Currying and advanced Functional Programming
+    2. Higher-order-functions - done
+    3. Preventing objects from mutating - done
+    4. Preventing arrays from mutating - done
+    5. Declarative vs Imperative programming - done
+    6. Composing functions - done
+    7. Functional arrays methods - done
+    8. Destructuring - done
+    9. Rest and spread - done
 8. Object oriented programming
-    1. What is Object Oriented Programming?
-    2. This in JavaScript
-    3. Private and public variables
-    4. JavaScript Prototypes
-    5. Inheritance and mixins
+    1. Object literal shorthands - done
+    2. Template Strings - done
+    3. What is Object Oriented Programming? - done
+    4. This in Javascript - done
+    5. Javascript Classes - done
+    6. Inheritance
+    7. Prototype in Javascript - done
+    8. Inheritance with Prototype - done
+    9. Constructing objects
+    10. Composition and inheritance
+    11. Private and public variables (+ Getters and setters)
+    12. Call, bind and apply
+    13. OOP Best Practices
 9. Text, Content and Forms
-    1. Template Strings
     2. Getting and setting text and html
     3. Creating HTML Elements
     4. Adding and removing HTML Elements
     5. Form events and methods
-    6. Hands on: building a todo-list
+    6. Hands on: building a tooltip
     7. Hands on: building an autocomplete input
     8. Hands on: building a calculator
-    9. Hands on: building a tooltip
+    9. Hands on: building a todo-list
     10. Hands on: building a Date picker
 10. Asynchronous JavaScript
     1. AJAX, JSON and requests
@@ -116,7 +125,7 @@ Detailed outline
     3. JavaScript Promises
     4. The Fetch API
     7. Hands on: building a loading indicator
-    8. Hands on: building a twitter feed
+    8. Hands on: building a twitter feed/instagram
     9. Hands on: building a Google Maps component
     10. Hands on: improving autocomplete
     11. Hands on: improving the tooltip
@@ -176,7 +185,7 @@ http://nikgrozev.com/2017/10/01/async-await/
 
 Accessibility (Keyboard) for modal window
 https://www.smashingmagazine.com/2014/09/making-modal-windows-better-for-everyone/
-
+£¢
 https://docs.google.com/spreadsheets/d/1Q-apLCPEyV-hJYVBN-wN3FS7AOSx9YqQJGj-Y2rW6No/edit#gid=1129708278
 
 Safari accessibility need to open the tabbing functionality. Also need to update the tabs so they become moar obvious.
