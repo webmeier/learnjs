@@ -1,13 +1,19 @@
-## Welcome to JavaScript Fundamentals!
+## Welcome to Learn JavaScript
 
-In JavaScript Fundamentals (let's call it JSF), you'll learn how to take your JavaScript skills from a novice to a ninja.
+You'll learn how to take your JavaScript skills from a novice to a ninja in this course.
 
-This private Github repo is a temporary place for you to read the lessons. I wanted to give you access before working on the course portal so you can learn without waiting for the course to be completely ready.
+This private Github repo is a temporary place for you to read the lessons. I wanted to give you access before working on the course portal so you can learn without waiting for the course to be 100% ready.
 
 ## The lessons
 
-You may check out the [course outline](outlines/outlines5.md) if you're curious about what's in store for you in JSF. Otherwise, feel free to go through these lessons that are ready for you:
+You may check out the [course outline](outlines/outlines5.md) if you're curious about what's in store for you in Learn JavaScript. Otherwise, feel free to go through these lessons that are ready for you:
 
+1. JavaScript and its ecosystem
+    1. [Welcome to Learn JavaScript!](lessons/01.javascript-and-its-ecosystem/01.how-to-use-this-course.md)—new!
+    2. [What is JavaScript used for?](lessons/01.javascript-and-its-ecosystem/02.what-is-javascript.md)—new!
+    3. [The JavaScript ecosystem](lessons/01.javascript-and-its-ecosystem/03.the-ecosystem.md)—new!
+    4. [Varying versions of JavaScript](lessons/01.javascript-and-its-ecosystem/04.varying-versions-of-javascript.md)—new!
+    5. [Preparing your text editor](lessons/01.javascript-and-its-ecosystem/04.preparing-your-text-editor.md)—new!
 2. JavaScript basics
     1. [Linking your JavaScript file](lessons/02.js-basics/01.linking.md)
     2. [The Console](lessons/02.js-basics/02.console.md)
@@ -68,19 +74,19 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     3. [Preventing objects from mutating](lessons/07.functional-programming/03.prevent-objects-from-mutating.md)
     4. [Preventing arrays from mutating](lessons/07.functional-programming/04.prevent-arrays-from-mutating.md)
     5. [Imperative vs Declarative Programming](lessons/07.functional-programming/05.imperative-vs-declarative.md)
-    6. [Function composition](lessons/07.functional-programming/06.function-composition.md) - new!
-    7. [Functional array methods](lessons/07.functional-programming/07.functional-array-methods.md) - new!
+    6. [Function composition](lessons/07.functional-programming/06.function-composition.md)
+    7. [Functional array methods](lessons/07.functional-programming/07.functional-array-methods.md)
     8. [Destructuring](lessons/07.functional-programming/09.destructuring.md)
     9. [Spread and Rest operators](lessons/07.functional-programming/10.spread-and-rest.md)
 8. Object Oriented Programming
-    1. [Enhanced Object Literals](lessons/08.object-oriented-programming/01.enhanced-object-literals.md) - new!
+    1. [Enhanced Object Literals](lessons/08.object-oriented-programming/01.enhanced-object-literals.md)
     2. [Template literals](lessons/08.object-oriented-programming/02.template-literals.md) - new!
-    3. [What is Object Oriented Programming](lessons/08.object-oriented-programming/03.what-is-oop.md) - new!
-    4. [This in Javascript](lessons/08.object-oriented-programming/04.this.md) - new!
-    5. [Javascript Classes](lessons/08.object-oriented-programming/05.classes.md) - new!
-    6. [Inheritance](lessons/08.object-oriented-programming/06.inheritance.md) - new!
-    7. [Prototype](lessons/08.object-oriented-programming/07.prototype.md) - new!
-    8. [Inheritance through Prototype](lessons/08.object-oriented-programming/08.inheritance-through-prototype.md) - new!
+    3. [What is Object Oriented Programming](lessons/08.object-oriented-programming/03.what-is-oop.md)
+    4. [This in Javascript](lessons/08.object-oriented-programming/04.this.md)
+    5. [Javascript Classes](lessons/08.object-oriented-programming/05.classes.md)
+    6. [Inheritance](lessons/08.object-oriented-programming/06.inheritance.md)
+    7. [Prototype](lessons/08.object-oriented-programming/07.prototype.md)
+    8. [Inheritance through Prototype](lessons/08.object-oriented-programming/08.inheritance-through-prototype.md)
 
 ## Slack Channel
 
