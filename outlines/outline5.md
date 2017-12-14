@@ -1,4 +1,4 @@
-lShort outline
+Short outline
 
 1. JavaScript and its ecosystem
 2. JavaScript basics - done
@@ -123,6 +123,7 @@ Detailed outline
     1. AJAX, JSON and requests
     2. Understanding REST APIs
     3. JavaScript Promises
+    4. Async/await
     4. The Fetch API
     7. Hands on: building a loading indicator
     8. Hands on: building a twitter feed/instagram
@@ -156,6 +157,7 @@ Detailed outline
     5. Hands on: improving the calculator
     6. Hands on: improving same-page-scroll link
 13. Accessibility
+    1. Live regions?
     1. Creating accessible interfaces (Use HTML whenever possible. ARIA simple intro)
     2. Hands on: improving the accordion component
     2. Hands on: improving the tabs component
