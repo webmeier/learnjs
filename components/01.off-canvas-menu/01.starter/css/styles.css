@@ -1,0 +1,92 @@
+/* base styles and typography */
+
+:root {
+  --color-mint: #dbfffa;
+  --color-jade: #25c2a8;
+  --color-grey: #3f424c;
+}
+
+html {
+  font-size: 125%;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+body {
+  background-color: var(--color-jade);
+  color: var(--color-mint);
+}
+
+h1 {
+  margin-top: 3rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+a {
+  color: var(--color-mint);
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #fff;
+}
+
+/* 
+ * BEGIN EDITING FROM THIS POINT OWWARDS
+ * =====================================
+ */
+
+/**
+ * Containers
+ * ----------
+ */
+
+.site-container {
+  padding-top: 3rem;
+  padding-left: 2.5rem;
+  max-width: 33rem;
+}
+
+.offsite-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -14rem;
+  width: 14rem;
+  background-color: var(--color-grey);
+}
+
+/**
+ * Menu button
+ * -----------
+ */
+
+.menu-button {
+  cursor: pointer;
+}
+
+.menu-button > * {
+  display: block;
+  pointer-events: none;
+}
+
+.menu-button__text {
+  font-size: 0.6em;
+  margin-top: 0.5rem;
+}
+
+/**
+ *  Navigation
+ */
+
+.nav {
+  margin-top: 8rem;
+}
+
+.nav a {
+  display: block;
+  margin: 0;
+  padding: 0.5rem 3rem;
+}
