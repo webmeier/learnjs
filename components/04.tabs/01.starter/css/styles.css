@@ -1,6 +1,6 @@
-@import "resets";
+/* Need to add visually hidden class? */
 
-@mixin visually-hidden {
+.visually-hidden {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
@@ -11,20 +11,23 @@
   border: 0;
 }
 
-// base styles and typography
-// ---------------
+/**
+ * base styles and typography
+ * --------------------------
+ */
+
 :root {
   --bg-radioactive: linear-gradient(to right, #fd8d62, #fecb42);
   --color-radioactive: #fecb42;
-  --bg-flammable: linear-gradient(to right, #C53404, #FE4D42);
-  --color-flammable: #FE4D42;
+  --bg-flammable: linear-gradient(to right, #c53404, #fe4d42);
+  --color-flammable: #fe4d42;
   --bg-biohazard: linear-gradient(to right, #55a9aa, #3ffdb6);
   --color-biohazard: #3ffdb6;
 }
 
 html {
   font-size: 100%;
-  font-family: 'Helvetica', sans-serif;
+  font-family: "Helvetica", sans-serif;
   line-height: 1.4;
 }
 
@@ -55,7 +58,7 @@ body {
 
 h2 {
   font-size: 3.75em;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 500;
 }
 
@@ -70,7 +73,11 @@ p + p {
   margin-left: auto;
 }
 
-// SVG icons color
+/**
+ * SVG icons color
+ * ---------------
+ */
+
 [data-icon-color="radioactive"] {
   color: var(--color-radioactive);
 }
@@ -96,11 +103,11 @@ p + p {
   background-image: var(--bg-biohazard);
 }
 
-// # START EDITING HERE
-// ===============
+/**
+ * # START EDITING HERE
+ * ====================
+ */
 
-// Tab
-// ===============
 .tabs {
   display: flex;
   position: relative;
@@ -113,7 +120,7 @@ p + p {
 
 .tab {
   font-size: 1em;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 500;
   text-transform: capitalize;
   text-align: center;
@@ -122,7 +129,7 @@ p + p {
 .tab > a {
   display: block;
   color: white;
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
   padding: 1em;
 }
 
@@ -146,15 +153,19 @@ p + p {
   }
 }
 
-// Tab icon
+/**
+ * Tab icon
+ */
 .tab__icon {
   width: 1.75rem;
   height: auto;
   vertical-align: middle;
 }
 
-// Tab Content
-// ===============
+/**
+ * Tab Content
+ * -----------
+ */
 @media screen and (min-width: 850px) {
   .tab-content-container {
     background-color: #323232;
@@ -176,11 +187,9 @@ p + p {
     padding-top: 2em;
     background-color: black;
   }
-
   .tab-content > .tab-content__image {
     grid-column: 2;
   }
-
   .tab-content > .tab-content__info {
     grid-column: 1;
     grid-row: 1;

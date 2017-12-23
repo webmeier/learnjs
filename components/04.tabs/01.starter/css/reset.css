@@ -1,5 +1,5 @@
-// Use border-box for everything
-// ---------------
+/* Use border-box for everything */
+
 html {
   box-sizing: border-box;
 }
@@ -14,8 +14,8 @@ body {
   margin: 0;
 }
 
-// Responsive Images
-// ---------------
+/* Responsive Images */
+
 embed,
 iframe,
 img,
@@ -45,10 +45,10 @@ hr {
 
 a {
   text-decoration: none;
+}
 
-  &:focus {
-    outline: none;
-  }
+a:focus {
+  outline: none;
 }
 
 h1,
@@ -60,33 +60,44 @@ h6 {
   display: block;
 }
 
-// Removes all decimals and discs from li
-li {
+/* Removes all decimals and discs from lists */
+
+ol,
+ul {
   list-style: none;
 }
 
-// Completely resets form items
-// - Super hard reset that removes all borders
-//   and radiuses of all form items (including
-//   checkboxes and radios)
-// ---------------
+/* 
+ * Completely resets form items
+ * ----------------------------
+ * Super hard reset that removes all borders
+ *   and radiuses of all form items (including
+ *   checkboxes and radios)
+ */
+
 input,
 textarea,
 button {
-  margin: 0;
-  padding: 0;
   border: 0;
   border-radius: 0;
   background-color: transparent;
   font-size: inherit;
   font-family: inherit;
   outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   text-align: left;
+}
 
-  &:hover,
-  &:active,
-  &:focus {
-    outline: none;
-  }
+input:hover,
+input:active,
+input:focus,
+textarea:hover,
+textarea:active,
+textarea:focus,
+button:hover,
+button:active,
+button:focus {
+  outline: none;
 }
