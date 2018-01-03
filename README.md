@@ -13,7 +13,7 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     2. [What is JavaScript used for?](lessons/01.javascript-and-its-ecosystem/02.what-is-javascript.md)
     3. [The JavaScript ecosystem](lessons/01.javascript-and-its-ecosystem/03.the-ecosystem.md)
     4. [Varying versions of JavaScript](lessons/01.javascript-and-its-ecosystem/04.varying-versions-of-javascript.md)
-    5. [Preparing your text editor](lessons/01.javascript-and-its-ecosystem/04.preparing-your-text-editor.md)
+    5. [Preparing your text editor](lessons/01.javascript-and-its-ecosystem/05.preparing-your-text-editor.md)
 2. JavaScript basics
     1. [Linking your JavaScript file](lessons/02.js-basics/01.linking.md)
     2. [The Console](lessons/02.js-basics/02.console.md)
