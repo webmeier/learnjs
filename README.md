@@ -9,11 +9,11 @@ This private Github repo is a temporary place for you to read the lessons. I wan
 You may check out the [course outline](outlines/outlines5.md) if you're curious about what's in store for you in Learn JavaScript. Otherwise, feel free to go through these lessons that are ready for you:
 
 1. JavaScript and its ecosystem
-    1. [Welcome to Learn JavaScript!](lessons/01.javascript-and-its-ecosystem/01.how-to-use-this-course.md)—new!
-    2. [What is JavaScript used for?](lessons/01.javascript-and-its-ecosystem/02.what-is-javascript.md)—new!
-    3. [The JavaScript ecosystem](lessons/01.javascript-and-its-ecosystem/03.the-ecosystem.md)—new!
-    4. [Varying versions of JavaScript](lessons/01.javascript-and-its-ecosystem/04.varying-versions-of-javascript.md)—new!
-    5. [Preparing your text editor](lessons/01.javascript-and-its-ecosystem/04.preparing-your-text-editor.md)—new!
+    1. [Welcome to Learn JavaScript!](lessons/01.javascript-and-its-ecosystem/01.how-to-use-this-course.md)
+    2. [What is JavaScript used for?](lessons/01.javascript-and-its-ecosystem/02.what-is-javascript.md)
+    3. [The JavaScript ecosystem](lessons/01.javascript-and-its-ecosystem/03.the-ecosystem.md)
+    4. [Varying versions of JavaScript](lessons/01.javascript-and-its-ecosystem/04.varying-versions-of-javascript.md)
+    5. [Preparing your text editor](lessons/01.javascript-and-its-ecosystem/04.preparing-your-text-editor.md)
 2. JavaScript basics
     1. [Linking your JavaScript file](lessons/02.js-basics/01.linking.md)
     2. [The Console](lessons/02.js-basics/02.console.md)
@@ -56,9 +56,10 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     3. [Before you begin building](lessons/05.building-real-components/03.before-you-begin.md)
     4. [🛠 Building an off-canvas menu](lessons/05.building-real-components/04.building-off-canvas.md)
     5. [🛠 Building a modal window](lessons/05.building-real-components/05.building-modal-window.md)
-    6. [🛠 Building a accordions](lessons/05.building-real-components/06.building-accordions.md)
+    6. [🛠 Building an accordion](lessons/05.building-real-components/06.building-accordions.md)
     7. [🛠 Building a tabbed interface](lessons/05.building-real-components/07.building-tabs.md)
-    7. [Lessons from building the components](lessons/05.building-real-components/09.lessons-from-the-building-process.md)
+    8. [🛠 Building a carousel (part 1)](lessons/05.building-real-components/08.building-carousel.md)—new!
+    9. [Lessons from building the components](lessons/05.building-real-components/09.lessons-from-the-building-process.md)
 6. Spicing up your components with animations
     1. [CSS Transitions](lessons/06.spicing-up-components-with-animations/01.css-transition.md)
     2. [CSS Animations](lessons/06.spicing-up-components-with-animations/02.css-animation.md)
@@ -80,7 +81,7 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     9. [Spread and Rest operators](lessons/07.functional-programming/10.spread-and-rest.md)
 8. Object Oriented Programming
     1. [Enhanced Object Literals](lessons/08.object-oriented-programming/01.enhanced-object-literals.md)
-    2. [Template literals](lessons/08.object-oriented-programming/02.template-literals.md) - new!
+    2. [Template literals](lessons/08.object-oriented-programming/02.template-literals.md)
     3. [What is Object Oriented Programming](lessons/08.object-oriented-programming/03.what-is-oop.md)
     4. [This in Javascript](lessons/08.object-oriented-programming/04.this.md)
     5. [Javascript Classes](lessons/08.object-oriented-programming/05.classes.md)
