@@ -52,19 +52,19 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     6. [Event delegation](lessons/04.events/06.event-delegation.md)
 5. Building real components
     1. [How to think like a developer](lessons/05.building-real-components/01.think-like-dev.md)
-    2. [Using the starter template](lessons/05.building-real-components/02.starter-template.md)
-    3. [Before you begin building](lessons/05.building-real-components/03.before-you-begin.md)
-    4. [🛠 Building an off-canvas menu](lessons/05.building-real-components/04.building-off-canvas.md)
-    5. [🛠 Building a modal window](lessons/05.building-real-components/05.building-modal-window.md)
-    6. [🛠 Building an accordion](lessons/05.building-real-components/06.building-accordions.md)
-    7. [🛠 Building a tabbed interface](lessons/05.building-real-components/07.building-tabs.md)
-    8. [🛠 Building a carousel (part 1)](lessons/05.building-real-components/08.building-carousel.md)—new!
-    9. [Lessons from building the components](lessons/05.building-real-components/09.lessons-from-the-building-process.md)
+    2. [Getting the position of an element](lessons/05.building-real-components/02.getting-element-position-information.md)
+    3. [Using the starter template](lessons/05.building-real-components/03.starter-template.md)
+    4. [Before you begin building](lessons/05.building-real-components/04.before-you-begin.md)
+    5. [🛠 Building an off-canvas menu](lessons/05.building-real-components/05.building-off-canvas.md)
+    6. [🛠 Building a modal window](lessons/05.building-real-components/06.building-modal-window.md)
+    7. [🛠 Building an accordion](lessons/05.building-real-components/07.building-accordions.md)
+    8. [🛠 Building a tabbed interface](lessons/05.building-real-components/08.building-tabs.md)
+    9. [🛠 Building a carousel (part 1)](lessons/05.building-real-components/09.building-carousel.md)—new!
+    11. [Lessons from building the components](lessons/05.building-real-components/11.lessons-from-the-building-process.md)
 6. Spicing up your components with animations
     1. [CSS Transitions](lessons/06.spicing-up-components-with-animations/01.css-transition.md)
     2. [CSS Animations](lessons/06.spicing-up-components-with-animations/02.css-animation.md)
     3. [Jank free animations](lessons/06.spicing-up-components-with-animations/03.jank-free-animations.md)
-    5. [Getting the position of an element](lessons/06.spicing-up-components-with-animations/05.getting-element-position-information.md)
     6. [Animating with JavaScript](lessons/06.spicing-up-components-with-animations/07.animating-with-js.md)
     7. [Greensock Animation API (GSAP)](lessons/06.spicing-up-components-with-animations/08.gsap.md)
     9. [🛠 Animating the off-canvas menu](lessons/06.spicing-up-components-with-animations/09.animating-off-canvas.md)
