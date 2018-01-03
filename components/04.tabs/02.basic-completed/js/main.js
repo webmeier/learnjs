@@ -12,7 +12,7 @@ tabList.addEventListener('click', e => {
 
   // Hides previous tab and tabbed content
   const prevTabAndContent = component.querySelectorAll('.is-active')
-  prevTabAndContent.forEach(elem => elem.classList.remove('is-active'))
+  prevTabAndContent.forEach(el => el.classList.remove('is-active'))
 
   // Shows new tab and tabbed content
   const newTab = link.parentNode
