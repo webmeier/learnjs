@@ -178,6 +178,9 @@ Detailed outline
     3. Using new JavaScript features (Babel)
     4. Minification with webpack
 17. Next steps
+    1. What to remember
+    2. What to Google
+    3. How to Google
 
 TODO:
 2. Add loop through object in Basics
