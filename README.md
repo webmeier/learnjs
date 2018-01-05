@@ -95,15 +95,6 @@ Since you pre-ordered JSF, you have access to the Slack channel to learn togethe
 
 You'll get an invitation to join a Slack group. Once you've signed in, send me a private message and I'll add you to the jsf-preorder Slack channel. It's secret, only for awesome people like you.
 
-## Questions?
-
-If you have any questions, feel free to ask them in two ways:
-
-1. Create a new issue. Ask it there, adding as much detail as you can to the question. Here's [some guidelines](https://zellwk.com/blog/asking-questions/) to help you craft good questions.
-2. Ask them directly in the Slack channel. This way, your peers can answer it for you as well.
-
-Note: If you happen to know an answer to a question in Slack, it is to your benefit to answer the question. This is because we learn best when we teach. If you can explain it well, you've understood the concept.
-
 ## Lesson Updates
 
 I'll push new lessons to this repo whenever they're ready for you. Make sure you watch the repo if you want the latest updates. I'll also send you an email and ping you on slack.
