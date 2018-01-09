@@ -75,7 +75,7 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     3. [Preventing objects from mutating](lessons/07.functional-programming/03.prevent-objects-from-mutating.md)
     4. [Preventing arrays from mutating](lessons/07.functional-programming/04.prevent-arrays-from-mutating.md)
     5. [Imperative vs Declarative Programming](lessons/07.functional-programming/05.imperative-vs-declarative.md)
-    6. [Function composition](lessons/07.functional-programming/06.function-composition.md)
+    6. [Function composition](lessons/07.functional-programming/06.composition.md)
     7. [Functional array methods](lessons/07.functional-programming/07.functional-array-methods.md)
     8. [Destructuring](lessons/07.functional-programming/09.destructuring.md)
     9. [Spread and Rest operators](lessons/07.functional-programming/10.spread-and-rest.md)
