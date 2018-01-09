@@ -77,7 +77,7 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     5. [Imperative vs Declarative Programming](lessons/07.functional-programming/05.imperative-vs-declarative.md)
     6. [Function composition](lessons/07.functional-programming/06.composition.md)
     7. [Functional array methods](lessons/07.functional-programming/07.functional-array-methods.md)
-    8. [Destructuring](lessons/07.functional-programming/09.destructuring.md)
+    8. [Destructuring](lessons/07.functional-programming/09.desctructuring.md)
     9. [Spread and Rest operators](lessons/07.functional-programming/10.spread-and-rest.md)
 8. Object Oriented Programming
     1. [Enhanced Object Literals](lessons/08.object-oriented-programming/01.enhanced-object-literals.md)
