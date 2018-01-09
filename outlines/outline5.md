@@ -185,6 +185,7 @@ Detailed outline
 TODO:
 2. Add loop through object in Basics
 3. Comparing objects did I mention yet?
+4. Reminder: Callbacks should talk about writing custom callbacks
 
 http://nikgrozev.com/2017/10/01/async-await/
 
