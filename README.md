@@ -93,7 +93,7 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
 
 Since you pre-ordered JSF, you have access to the Slack channel to learn together with your peers. To join the slack channel, head over to [this link](https://zellwk-slack.herokuapp.com) and fill in your best email.
 
-You'll get an invitation to join a Slack group. Once you've signed in, send me a private message and I'll add you to the jsf-preorder Slack channel. It's secret, only for awesome people like you.
+You'll get an invitation to join a Slack group. Once you've signed in, join the #learn-javascript Slack channel.
 
 ## Lesson Updates
 
