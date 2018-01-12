@@ -4,7 +4,10 @@
 const track = document.querySelector('.jsTrack')
 const slides = Array.from(track.children)
 const slideWidth = slides[0].getBoundingClientRect().width
-slides.forEach((slide, index) => { slide.style.left = index * slideWidth + `px` })
+
+slides.forEach((slide, index) => {
+  slide.style.left = index * slideWidth + `px`
+})
 
 const nextButton = document.querySelector('.jsNext')
 nextButton.addEventListener('click', e => {
