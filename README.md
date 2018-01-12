@@ -4,6 +4,8 @@ You'll learn how to take your JavaScript skills from a novice to a ninja in this
 
 This private Github repo is a temporary place for you to read the lessons. I wanted to give you access before working on the course portal so you can learn without waiting for the course to be 100% ready.
 
+You can contribute to the quality of the material and practice the same steps as you would to contributing to an open source project. See the last section on [contributing assistance](#spot-a-typo).
+
 ## The lessons
 
 You may check out the [course outline](outlines/outlines5.md) if you're curious about what's in store for you in Learn JavaScript. Otherwise, feel free to go through these lessons that are ready for you:
