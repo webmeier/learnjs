@@ -6,6 +6,14 @@ This private Github repo is a temporary place for you to read the lessons. I wan
 
 You can contribute to the quality of the material and practice the same steps as you would to contributing to an open source project. See the last section on [contributing assistance](#spot-a-typo).
 
+## Lesson Updates
+
+I'll push new lessons to this repo whenever they're ready for you. Make sure you watch the repo if you want the latest updates. I'll also send you an email and ping you on slack (if I remember 😅).
+
+Protip: You'll want to disable "Automatically watch repositories" or you'll get flooded with emails when students' create forks of the course repo.
+
+<img src="images/dont-watch-repo.png" alt="Automatically watch repositories should be unchecked">
+
 ## The lessons
 
 You may check out the [course outline](outlines/outlines5.md) if you're curious about what's in store for you in Learn JavaScript. Otherwise, feel free to go through these lessons that are ready for you:
@@ -99,9 +107,7 @@ Since you pre-ordered JSF, you have access to the Slack channel to learn togethe
 
 You'll get an invitation to join a Slack group. Once you've signed in, join the #learn-javascript Slack channel.
 
-## Lesson Updates
 
-I'll push new lessons to this repo whenever they're ready for you. Make sure you watch the repo if you want the latest updates. I'll also send you an email and ping you on slack.
 
 ## Spot a typo?
 
