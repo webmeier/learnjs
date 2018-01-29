@@ -101,13 +101,11 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     7. [Prototype](lessons/08.object-oriented-programming/07.prototype.md)
     8. [Inheritance through Prototype](lessons/08.object-oriented-programming/08.inheritance-through-prototype.md)
 
-## Slack Channel
+## Private Community
 
-Since you pre-ordered JSF, you have access to the Slack channel to learn together with your peers. To join the slack channel, head over to [this link](https://zellwk-slack.herokuapp.com) and fill in your best email.
+Since you pre-ordered Learn JavaScript, you have access to the Slack (the app we're using for the private community) to learn together with your peers. To join the slack group, head over to [this link](https://zellwk-slack.herokuapp.com) and fill in your best email.
 
-You'll get an invitation to join a Slack group. Once you've signed in, join the #learn-javascript Slack channel.
-
-
+You'll get an invitation to join a Slack group. **Once you've signed in, join the #learn-javascript Slack channel**.
 
 ## Spot a typo?
 
