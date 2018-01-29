@@ -1,10 +1,10 @@
 Short outline
 
-1. JavaScript and its ecosystem
+1. JavaScript and its ecosystem - done
 2. JavaScript basics - done
 3. DOM basics - done
 4. Events - done
-5. Building real components
+5. Building real components - done
 6. Spicing components with animations
 7. Functional Programming
 8. Object oriented programming
@@ -21,13 +21,12 @@ Short outline
 
 Detailed outline
 
-0. Before you begin
-    1. How to use this course (Learning JavaScript quickly + no overwhelm)
-    2. Preparing your text editor
 1. JavaScript and its ecosystem
-    1. What is JavaScript and what its used for
-    2. Varying versions of JavaScript (Point to ES6 article. Others can be found here. Things we need will be explained to you)
-    3. JavaScript frameworks and libraries
+    1. How to use this course (Learning JavaScript quickly + no overwhelm) - done
+    2. What is JavaScript and what its used for - done
+    3. Varying versions of JavaScript (Point to ES6 article. Others can be found here. Things we need will be explained to you) - done
+    4. JavaScript frameworks and libraries - done
+    5. Preparing your text editor - done
 2. JavaScript basics - done
     1. Your JavaScript File - done
     2. The console - done
@@ -101,7 +100,7 @@ Detailed outline
     3. What is Object Oriented Programming? - done
     4. This in Javascript - done
     5. Javascript Classes - done
-    6. Inheritance
+    6. Inheritance - done
     7. Prototype in Javascript - done
     8. Inheritance with Prototype - done
     9. Constructing objects
