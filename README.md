@@ -78,10 +78,11 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     2. [CSS Animations](lessons/06.spicing-up-components-with-animations/02.css-animation.md)
     3. [Jank free animations](lessons/06.spicing-up-components-with-animations/03.jank-free-animations.md)
     4. [Integrating transitions and animations with JavaScript](lessons/06.spicing-up-components-with-animations/04.integrating-transitions-and-animations-with-js.md)—new!
-    5. [Animating with JavaScript](lessons/06.spicing-up-components-with-animations/05.animating-with-js.md)
-    6. [Greensock Animation API (GSAP)](lessons/06.spicing-up-components-with-animations/06.gsap.md)
-    7. [🛠 Animating the off-canvas menu](lessons/06.spicing-up-components-with-animations/07.animating-off-canvas.md)
-    8. [🛠 Animating the modal window](lessons/06.spicing-up-components-with-animations/8.animating-the-modal.md)
+    5. [Detecting Vendor Prefixes](lessons/06.spicing-up-components-with-animations/05.detecting-vendor-prefixes.md)—new!
+    6. [Animating with JavaScript](lessons/06.spicing-up-components-with-animations/06.animating-with-js.md)
+    7. [Greensock Animation API (GSAP)](lessons/06.spicing-up-components-with-animations/07.gsap.md)
+    8. [🛠 Animating the off-canvas menu](lessons/06.spicing-up-components-with-animations/08.animating-off-canvas.md)
+    9. [🛠 Animating the modal window](lessons/06.spicing-up-components-with-animations/9.animating-the-modal.md)
 7. Function Programming
     1. [What is Functional Programming](lessons/07.functional-programming/01.what-is-functional-programming.md)
     2. [Higher order functions](lessons/07.functional-programming/02.higher-order-functions.md)
