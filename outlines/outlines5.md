@@ -165,12 +165,14 @@ Detailed outline
     2. Default variables and extending options (ES6 Default Params)
     3. Method chaining (maybe)
     4. Hands-on: plugin-ify the calendar widget (theme maybe)
+    5. Using plugins (your own vs others)
   15. Single page applications
     1. The foundations to frontend frameworks
     2. Routing
     3. Authentication
     4. Displaying and changing content (Consider HyperHTML! (https://github.com/WebReflection/hyperHTML))
     5. Hands on: building the card generator
+    6. History API/Page transitions
 16. Webpack and Asset management
     1. Introduction to webpack
     2. Importing modules with Webpack
@@ -180,6 +182,7 @@ Detailed outline
     1. What to remember
     2. What to Google
     3. How to Google
+    4. Benefits of using frameworks
 
 TODO:
 2. Add loop through object in Basics
