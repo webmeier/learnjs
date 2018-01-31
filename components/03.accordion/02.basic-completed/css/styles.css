@@ -10,7 +10,6 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -33,7 +32,6 @@ svg {
 
 .accordion-container {
   border-radius: 24px;
-  overflow: hidden;
   max-width: 30em;
 }
 
