@@ -10,7 +10,6 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -105,7 +104,6 @@ svg {
 
 .accordion__content {
   height: 0;
-  -webkit-transition: height 0.35s ease-out;
   transition: height 0.35s ease-out;
 }
 
@@ -121,8 +119,6 @@ svg {
   .accordion__inner {
     grid-template-columns: 7.5em 1fr;
     grid-column-gap: 2rem;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
   }
 }
