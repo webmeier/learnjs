@@ -156,10 +156,11 @@ Detailed outline
     5. Hands on: improving the calculator
     6. Hands on: improving same-page-scroll link
 13. Accessibility
-    1. Live regions?
-    1. Creating accessible interfaces (Use HTML whenever possible. ARIA simple intro)
-    2. Hands on: improving the accordion component
-    2. Hands on: improving the tabs component
+    1. Accessibility principles
+    2. Aria attributes to use (labelled-by, aria-live, aria-collapsed, etc)
+    3. Accessible animations (onEnter, onEnterComplete, etc, because use hidden attribute. Alternatively, use visibility hidden)
+    3. Hands on: improving the accordion component
+    4. Hands on: improving the tabs component
 14. Creating libraries and plugins
     1. How to think about creating libraries and plugin – minimal things to write.
     2. Default variables and extending options (ES6 Default Params)
