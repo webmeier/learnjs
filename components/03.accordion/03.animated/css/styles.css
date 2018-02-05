@@ -104,7 +104,12 @@ svg {
 
 .accordion__content {
   height: 0;
-  transition: height 0.35s ease-out;
+  overflow: hidden;
+  transition: height 0.3s ease-out;
+}
+
+.accordion.is-open .accordion__content {
+  height: auto;
 }
 
 .accordion__inner {
