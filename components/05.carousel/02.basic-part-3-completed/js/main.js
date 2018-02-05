@@ -20,7 +20,7 @@
     for (let index = 0; index < dots.length; index++) {
       const slide = slides[index]
       if (slide.classList.contains('is-selected')) {
-        currentIndex = slide
+        currentIndex = index
       }
     }
 
