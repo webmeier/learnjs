@@ -83,6 +83,7 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     7. [Greensock Animation API (GSAP)](lessons/06.spicing-up-components-with-animations/07.gsap.md)
     8. [🛠 Animating the off-canvas menu](lessons/06.spicing-up-components-with-animations/08.animating-off-canvas.md)
     9. [🛠 Animating the modal window](lessons/06.spicing-up-components-with-animations/9.animating-the-modal.md)
+    10. [🛠 Animating the accordion](lessons/06.spicing-up-components-with-animations/10.animating-accordions.md)—new!
 7. Function Programming
     1. [What is Functional Programming](lessons/07.functional-programming/01.what-is-functional-programming.md)
     2. [Higher order functions](lessons/07.functional-programming/02.higher-order-functions.md)
