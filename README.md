@@ -104,6 +104,7 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     6. [Inheritance](lessons/08.object-oriented-programming/06.inheritance.md)
     7. [Prototype](lessons/08.object-oriented-programming/07.prototype.md)
     8. [Inheritance through Prototype](lessons/08.object-oriented-programming/08.inheritance-through-prototype.md)
+    9. [The Object.create method](lessons/08.object-oriented-programming/09.object-create-method.md)—new!
 
 ## Private Community
 
