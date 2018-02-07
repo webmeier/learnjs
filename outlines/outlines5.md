@@ -1,10 +1,10 @@
 Short outline
 
-1. JavaScript and its ecosystem
+1. JavaScript and its ecosystem - done
 2. JavaScript basics - done
 3. DOM basics - done
 4. Events - done
-5. Building real components
+5. Building real components - done
 6. Spicing components with animations
 7. Functional Programming
 8. Object oriented programming
@@ -21,13 +21,12 @@ Short outline
 
 Detailed outline
 
-0. Before you begin
-    1. How to use this course (Learning JavaScript quickly + no overwhelm)
-    2. Preparing your text editor
 1. JavaScript and its ecosystem
-    1. What is JavaScript and what its used for
-    2. Varying versions of JavaScript (Point to ES6 article. Others can be found here. Things we need will be explained to you)
-    3. JavaScript frameworks and libraries
+    1. How to use this course (Learning JavaScript quickly + no overwhelm) - done
+    2. What is JavaScript and what its used for - done
+    3. Varying versions of JavaScript (Point to ES6 article. Others can be found here. Things we need will be explained to you) - done
+    4. JavaScript frameworks and libraries - done
+    5. Preparing your text editor - done
 2. JavaScript basics - done
     1. Your JavaScript File - done
     2. The console - done
@@ -101,7 +100,7 @@ Detailed outline
     3. What is Object Oriented Programming? - done
     4. This in Javascript - done
     5. Javascript Classes - done
-    6. Inheritance
+    6. Inheritance - done
     7. Prototype in Javascript - done
     8. Inheritance with Prototype - done
     9. Constructing objects
@@ -157,21 +156,24 @@ Detailed outline
     5. Hands on: improving the calculator
     6. Hands on: improving same-page-scroll link
 13. Accessibility
-    1. Live regions?
-    1. Creating accessible interfaces (Use HTML whenever possible. ARIA simple intro)
-    2. Hands on: improving the accordion component
-    2. Hands on: improving the tabs component
+    1. Accessibility principles
+    2. Aria attributes to use (labelled-by, aria-live, aria-collapsed, etc)
+    3. Accessible animations (onEnter, onEnterComplete, etc, because use hidden attribute. Alternatively, use visibility hidden)
+    3. Hands on: improving the accordion component
+    4. Hands on: improving the tabs component
 14. Creating libraries and plugins
     1. How to think about creating libraries and plugin – minimal things to write.
     2. Default variables and extending options (ES6 Default Params)
     3. Method chaining (maybe)
     4. Hands-on: plugin-ify the calendar widget (theme maybe)
+    5. Using plugins (your own vs others)
   15. Single page applications
     1. The foundations to frontend frameworks
     2. Routing
     3. Authentication
     4. Displaying and changing content (Consider HyperHTML! (https://github.com/WebReflection/hyperHTML))
     5. Hands on: building the card generator
+    6. History API/Page transitions
 16. Webpack and Asset management
     1. Introduction to webpack
     2. Importing modules with Webpack
@@ -181,11 +183,13 @@ Detailed outline
     1. What to remember
     2. What to Google
     3. How to Google
+    4. Benefits of using frameworks
 
 TODO:
 2. Add loop through object in Basics
 3. Comparing objects did I mention yet?
-4. Reminder: Callbacks should talk about writing custom callbacks
+5. Recursion
+6. Ternary operators
 
 http://nikgrozev.com/2017/10/01/async-await/
 

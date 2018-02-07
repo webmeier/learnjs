@@ -6,6 +6,14 @@ This private Github repo is a temporary place for you to read the lessons. I wan
 
 You can contribute to the quality of the material and practice the same steps as you would to contributing to an open source project. See the last section on [contributing assistance](#spot-a-typo).
 
+## Lesson Updates
+
+I'll push new lessons to this repo whenever they're ready for you. Make sure you watch the repo if you want the latest updates. I'll also send you an email and ping you on slack (if I remember 😅).
+
+Protip: You'll want to disable "Automatically watch repositories" or you'll get flooded with emails when students' create forks of the course repo.
+
+<img src="images/dont-watch-repo.png" alt="Automatically watch repositories should be unchecked">
+
 ## The lessons
 
 You may check out the [course outline](outlines/outlines5.md) if you're curious about what's in store for you in Learn JavaScript. Otherwise, feel free to go through these lessons that are ready for you:
@@ -61,18 +69,22 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     6. [🛠 Building a modal window](lessons/05.building-real-components/06.building-modal-window.md)
     7. [🛠 Building an accordion](lessons/05.building-real-components/07.building-accordions.md)
     8. [🛠 Building a tabbed interface](lessons/05.building-real-components/08.building-tabs.md)
-    9. [🛠 Building a carousel (part 1)](lessons/05.building-real-components/09.building-carousel.md)—new!
-    10. [🛠 Building a carousel (part 2)](lessons/05.building-real-components/10.building-carousel-2.md)—new!
-    11. [🛠 Building a carousel (part 3)](lessons/05.building-real-components/11.building-carousel-4.md)—new!
+    9. [🛠 Building a carousel (part 1)](lessons/05.building-real-components/09.building-carousel.md)
+    10. [🛠 Building a carousel (part 2)](lessons/05.building-real-components/10.building-carousel-2.md)
+    11. [🛠 Building a carousel (part 3)](lessons/05.building-real-components/11.building-carousel-4.md)
     12. [Lessons from building the components](lessons/05.building-real-components/12.lessons-from-the-building-process.md)
 6. Spicing up your components with animations
     1. [CSS Transitions](lessons/06.spicing-up-components-with-animations/01.css-transition.md)
     2. [CSS Animations](lessons/06.spicing-up-components-with-animations/02.css-animation.md)
     3. [Jank free animations](lessons/06.spicing-up-components-with-animations/03.jank-free-animations.md)
-    6. [Animating with JavaScript](lessons/06.spicing-up-components-with-animations/07.animating-with-js.md)
-    7. [Greensock Animation API (GSAP)](lessons/06.spicing-up-components-with-animations/08.gsap.md)
-    9. [🛠 Animating the off-canvas menu](lessons/06.spicing-up-components-with-animations/09.animating-off-canvas.md)
-    5. [🛠 Animating the modal window](lessons/06.spicing-up-components-with-animations/10.animating-the-modal.md)
+    4. [Integrating transitions and animations with JavaScript](lessons/06.spicing-up-components-with-animations/04.integrating-transitions-and-animations-with-js.md)—new!
+    5. [Detecting Vendor Prefixes](lessons/06.spicing-up-components-with-animations/05.detecting-vendor-prefixes.md)—new!
+    6. [Animating with JavaScript](lessons/06.spicing-up-components-with-animations/06.animating-with-js.md)
+    7. [Greensock Animation API (GSAP)](lessons/06.spicing-up-components-with-animations/07.gsap.md)
+    8. [🛠 Animating the off-canvas menu](lessons/06.spicing-up-components-with-animations/08.animating-off-canvas.md)
+    9. [🛠 Animating the modal window](lessons/06.spicing-up-components-with-animations/9.animating-the-modal.md)
+    10. [🛠 Animating the accordion](lessons/06.spicing-up-components-with-animations/10.animating-accordions.md)—new!
+    11. [🛠 Animating the carousel](lessons/06.spicing-up-components-with-animations/11.animating-accordions.md)—new!
 7. Function Programming
     1. [What is Functional Programming](lessons/07.functional-programming/01.what-is-functional-programming.md)
     2. [Higher order functions](lessons/07.functional-programming/02.higher-order-functions.md)
@@ -92,16 +104,13 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     6. [Inheritance](lessons/08.object-oriented-programming/06.inheritance.md)
     7. [Prototype](lessons/08.object-oriented-programming/07.prototype.md)
     8. [Inheritance through Prototype](lessons/08.object-oriented-programming/08.inheritance-through-prototype.md)
+    9. [The Object.create method](lessons/08.object-oriented-programming/09.object-create-method.md)—new!
 
-## Slack Channel
+## Private Community
 
-Since you pre-ordered JSF, you have access to the Slack channel to learn together with your peers. To join the slack channel, head over to [this link](https://zellwk-slack.herokuapp.com) and fill in your best email.
+Since you pre-ordered Learn JavaScript, you have access to the Slack (the app we're using for the private community) to learn together with your peers. To join the slack group, head over to [this link](https://zellwk-slack.herokuapp.com) and fill in your best email.
 
-You'll get an invitation to join a Slack group. Once you've signed in, join the #learn-javascript Slack channel.
-
-## Lesson Updates
-
-I'll push new lessons to this repo whenever they're ready for you. Make sure you watch the repo if you want the latest updates. I'll also send you an email and ping you on slack.
+You'll get an invitation to join a Slack group. **Once you've signed in, join the #learn-javascript Slack channel**.
 
 ## Spot a typo?
 
