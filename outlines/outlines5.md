@@ -1,13 +1,13 @@
-Short outline
+## Short outline
 
 1. JavaScript and its ecosystem - done
 2. JavaScript basics - done
 3. DOM basics - done
 4. Events - done
 5. Building real components - done
-6. Spicing components with animations
-7. Functional Programming
-8. Object oriented programming
+6. Spicing components with animations - done
+7. Functional Programming - done
+8. Object oriented programming - ALMOST done
 9. Text, Content and Forms
 10. Asynchronous JavaScript
 11. Progressive Enhancement
@@ -19,9 +19,9 @@ Short outline
 16. Single page applications
 17. Next steps
 
-Detailed outline
+## Detailed outline
 
-1. JavaScript and its ecosystem
+1. JavaScript and its ecosystem - done
     1. How to use this course (Learning JavaScript quickly + no overwhelm) - done
     2. What is JavaScript and what its used for - done
     3. Varying versions of JavaScript (Point to ES6 article. Others can be found here. Things we need will be explained to you) - done
@@ -76,15 +76,15 @@ Detailed outline
     1. CSS transitions - done
     2. CSS animations - done
     3. Jank free animations - done
-    4. Integrating CSS transitions and animations with Javascript
+    4. Integrating CSS transitions and animations with Javascript - done
     5. Getting the positional information of an element - done
-    6. Detecting vendor prefixes
+    6. Detecting vendor prefixes - done
     7. Animating with JavaScript (When to use JS animations, GSAP, etc) - done
     8. Hands on: improving the off canvas menu - done
     9. Hands on: improving the modal window - done
-    10. Hands on: improving the accordions
-    11. Hands on: improving the carousel
-7. Functional Programming
+    10. Hands on: improving the accordions - done
+    11. Hands on: improving the carousel - done
+7. Functional Programming - done
     1. What is Functional Programming - done
     2. Higher-order-functions - done
     3. Preventing objects from mutating - done
@@ -106,18 +106,18 @@ Detailed outline
     9. Constructing objects
     10. Composition and inheritance
     11. Private and public variables (+ Getters and setters)
-    12. Call, bind and apply
-    13. OOP Best Practices
+    12. A note on OOP patterns (Don't try to remember OOP)
+    13. Call, bind and apply
 9. Text, Content and Forms
-    2. Getting and setting text and html
-    3. Creating HTML Elements
-    4. Adding and removing HTML Elements
-    5. Form events and methods
-    6. Hands on: building a tooltip
-    7. Hands on: building an autocomplete input
-    8. Hands on: building a calculator
-    9. Hands on: building a todo-list
-    10. Hands on: building a Date picker
+    1. Changing Text and HTML
+    2. Creating HTML Elements
+    3. Adding and removing HTML Elements
+    4. Forms, form methods and form events
+    5. Hands on: building a tooltip
+    6. Hands on: building an autocomplete input
+    7. Hands on: building a calculator
+    8. Hands on: building a todo-list
+    9. Hands on: building a Date picker
 10. Asynchronous JavaScript
     1. AJAX, JSON and requests
     2. Understanding REST APIs
@@ -200,10 +200,8 @@ https://docs.google.com/spreadsheets/d/1Q-apLCPEyV-hJYVBN-wN3FS7AOSx9YqQJGj-Y2rW
 
 Safari accessibility need to open the tabbing functionality. Also need to update the tabs so they become moar obvious.
 
-
 https://www.w3.org/WAI/tutorials/
 https://www.w3.org/TR/using-aria/#second
-
 
 http://whatsock.com
 Accessibility: http://whatsock.com/training/matrices/
