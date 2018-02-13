@@ -107,6 +107,7 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     9. [The Object.create method](lessons/08.object-oriented-programming/09.object-create-method.md)
     10. [Composition and Inheritance](lessons/08.object-oriented-programming/10.composition-and-inheritance.md)
     11. [Private variables](lessons/08.object-oriented-programming/11.private-variables.md)—new!
+    12. [Call, Bind and Apply](lessons/08.object-oriented-programming/12.call-bind-apply.md)—new!
 
 ## Private Community
 
