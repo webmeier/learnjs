@@ -77,14 +77,14 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     1. [CSS Transitions](lessons/06.spicing-up-components-with-animations/01.css-transition.md)
     2. [CSS Animations](lessons/06.spicing-up-components-with-animations/02.css-animation.md)
     3. [Jank free animations](lessons/06.spicing-up-components-with-animations/03.jank-free-animations.md)
-    4. [Integrating transitions and animations with JavaScript](lessons/06.spicing-up-components-with-animations/04.integrating-transitions-and-animations-with-js.md)—new!
-    5. [Detecting Vendor Prefixes](lessons/06.spicing-up-components-with-animations/05.detecting-vendor-prefixes.md)—new!
+    4. [Integrating transitions and animations with JavaScript](lessons/06.spicing-up-components-with-animations/04.integrating-transitions-and-animations-with-js.md)
+    5. [Detecting Vendor Prefixes](lessons/06.spicing-up-components-with-animations/05.detecting-vendor-prefixes.md)
     6. [Animating with JavaScript](lessons/06.spicing-up-components-with-animations/06.animating-with-js.md)
     7. [Greensock Animation API (GSAP)](lessons/06.spicing-up-components-with-animations/07.gsap.md)
     8. [🛠 Animating the off-canvas menu](lessons/06.spicing-up-components-with-animations/08.animating-off-canvas.md)
     9. [🛠 Animating the modal window](lessons/06.spicing-up-components-with-animations/09.animating-the-modal.md)
-    10. [🛠 Animating the accordion](lessons/06.spicing-up-components-with-animations/10.animating-accordions.md)—new!
-    11. [🛠 Animating the carousel](lessons/06.spicing-up-components-with-animations/11.animating-carousel.md)—new!
+    10. [🛠 Animating the accordion](lessons/06.spicing-up-components-with-animations/10.animating-accordions.md)
+    11. [🛠 Animating the carousel](lessons/06.spicing-up-components-with-animations/11.animating-carousel.md)
 7. Function Programming
     1. [What is Functional Programming](lessons/07.functional-programming/01.what-is-functional-programming.md)
     2. [Higher order functions](lessons/07.functional-programming/02.higher-order-functions.md)
@@ -104,8 +104,9 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     6. [Inheritance](lessons/08.object-oriented-programming/06.inheritance.md)
     7. [Prototype](lessons/08.object-oriented-programming/07.prototype.md)
     8. [Inheritance through Prototype](lessons/08.object-oriented-programming/08.inheritance-through-prototypes.md)
-    9. [The Object.create method](lessons/08.object-oriented-programming/09.object-create-method.md)—new!
-    10. [Composition and Inheritance](lessons/08.object-oriented-programming/10.composition-and-inheritance.md)—new!
+    9. [The Object.create method](lessons/08.object-oriented-programming/09.object-create-method.md)
+    10. [Composition and Inheritance](lessons/08.object-oriented-programming/10.composition-and-inheritance.md)
+    11. [Private variables](lessons/08.object-oriented-programming/11.private-variables.md)—new!
 
 ## Private Community
 
