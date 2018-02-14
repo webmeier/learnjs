@@ -108,6 +108,11 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     10. [Composition and Inheritance](lessons/08.object-oriented-programming/10.composition-and-inheritance.md)
     11. [Private variables](lessons/08.object-oriented-programming/11.private-variables.md)—new!
     12. [Call, Bind and Apply](lessons/08.object-oriented-programming/12.call-bind-apply.md)—new!
+9. Content and Forms
+    1. [Changing text and HTML content](lessons/09.handling-content-and-forms/01.changing-text-and-html.md)—new!
+    2. [Creating HTML Elements](lessons/09.handling-content-and-forms/02.create-html-elements.md)—new!
+    3. [Adding multiple Elements](lessons/09.handling-content-and-forms/03.adding-multiple-elements.md)—new!
+    4. [Removing HTML Elements](lessons/09.handling-content-and-forms/04.removing-elements.md)—new!
 
 ## Private Community
 
