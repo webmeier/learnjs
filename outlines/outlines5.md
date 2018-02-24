@@ -103,33 +103,32 @@
     6. Inheritance - done
     7. Prototype in Javascript - done
     8. Inheritance with Prototype - done
-    9. Constructing objects
-    10. Composition and inheritance
-    11. Private and public variables (+ Getters and setters)
-    12. A note on OOP patterns (Don't try to remember OOP)
-    13. Call, bind and apply
+    9. Constructing objects - done
+    10. Composition and inheritance - done
+    11. Private and public variables - done
+    12. Call, bind and apply - done
 9. Text, Content and Forms
-    1. Changing Text and HTML
-    2. Creating HTML Elements
-    3. Adding and removing HTML Elements
+    1. Changing Text and HTML - done
+    2. Creating HTML Elements - done
+    3. Adding and removing HTML Elements - done
     4. Forms, form methods and form events
-    5. Hands on: building a tooltip
-    6. Hands on: building an autocomplete input
+    5. Hands on: building an autocomplete input
+    6. Hands on: building a popover
     7. Hands on: building a calculator
     8. Hands on: building a todo-list
-    9. Hands on: building a Date picker
+    9. Hands on: building a date picker
 10. Asynchronous JavaScript
     1. AJAX, JSON and requests
     2. Understanding REST APIs
     3. JavaScript Promises
     4. Async/await
-    4. The Fetch API
-    7. Hands on: building a loading indicator
-    8. Hands on: building a twitter feed/instagram
-    9. Hands on: building a Google Maps component
-    10. Hands on: improving autocomplete
-    11. Hands on: improving the tooltip
-    12. Hands on: improving the carousel
+    5. The Fetch API
+    6. Hands on: building a loading indicator
+    7. Hands on: building a twitter feed/instagram
+    8. Hands on: building a Google Maps component
+    9. Hands on: improving autocomplete
+    10. Hands on: improving the popover
+    11. Hands on: improving the carousel
 11. Progressive Enhancement
     1. The progressive enhancement mindset
     2. What if there's no JavaScript
@@ -205,6 +204,6 @@ https://www.w3.org/TR/using-aria/#second
 
 http://whatsock.com
 Accessibility: http://whatsock.com/training/matrices/
-http://heydonworks.com/practical_aria_examples/#input-tooltip
+http://heydonworks.com/practical_aria_examples/#input-popover
 
 https://a11ywins.tumblr.com/post/166008481313/dragon-drop-accessible-reordering-library
