@@ -113,6 +113,8 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     2. [Creating HTML Elements](lessons/09.handling-content-and-forms/02.create-html-elements.md)—new!
     3. [Adding multiple Elements](lessons/09.handling-content-and-forms/03.adding-multiple-elements.md)—new!
     4. [Removing HTML Elements](lessons/09.handling-content-and-forms/04.removing-elements.md)—new!
+    5. [Forms, form events, and form methods](lessons/09.handling-content-and-forms/05.forms.md)—new!
+    6. [Getting form fields](lessons/09.handling-content-and-forms/06.getting-form-fields.md)—new!
 
 ## Private Community
 
