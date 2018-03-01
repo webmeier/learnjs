@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Autocomplete</title>
+
+  <!-- Add a bloody font file to this for IBM Plex -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/prefixfree.js"></script>
+</head>
+
+<body>
+  <div class="autocomplete">
+    <h1>"I shall autocomplete you."</h1>
+    <p>Hey there, lazy typers! Where are you from? Start typing the name of your country (or country code) and let me finish the word for you.</p>
+
+    <form action="" method="get">
+      <label for="country">Country:</label>
+      <input type="text" name="country" id="country" placeholder="Your country">
+    </form>
+
+    <ol class="popover"></ol>
+
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
