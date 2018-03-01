@@ -112,8 +112,8 @@
     2. Creating HTML Elements - done
     3. Adding and removing HTML Elements - done
     4. Forms, form methods and form events
-    5. Hands on: building an autocomplete input
-    6. Hands on: building a popover
+    5. Hands on: building a popover
+    6. Hands on: building an autocomplete input
     7. Hands on: building a calculator
     8. Hands on: building a todo-list
     9. Hands on: building a date picker
@@ -184,26 +184,3 @@
     3. How to Google
     4. Benefits of using frameworks
 
-TODO:
-2. Add loop through object in Basics
-3. Comparing objects did I mention yet?
-5. Recursion
-6. Ternary operators
-
-http://nikgrozev.com/2017/10/01/async-await/
-
-Accessibility (Keyboard) for modal window
-https://www.smashingmagazine.com/2014/09/making-modal-windows-better-for-everyone/
-£¢
-https://docs.google.com/spreadsheets/d/1Q-apLCPEyV-hJYVBN-wN3FS7AOSx9YqQJGj-Y2rW6No/edit#gid=1129708278
-
-Safari accessibility need to open the tabbing functionality. Also need to update the tabs so they become moar obvious.
-
-https://www.w3.org/WAI/tutorials/
-https://www.w3.org/TR/using-aria/#second
-
-http://whatsock.com
-Accessibility: http://whatsock.com/training/matrices/
-http://heydonworks.com/practical_aria_examples/#input-popover
-
-https://a11ywins.tumblr.com/post/166008481313/dragon-drop-accessible-reordering-library
