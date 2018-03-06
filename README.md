@@ -85,16 +85,26 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     9. [🛠 Animating the modal window](lessons/06.spicing-up-components-with-animations/09.animating-the-modal.md)
     10. [🛠 Animating the accordion](lessons/06.spicing-up-components-with-animations/10.animating-accordions.md)
     11. [🛠 Animating the carousel](lessons/06.spicing-up-components-with-animations/11.animating-carousel.md)
-7. Function Programming
-    1. [What is Functional Programming](lessons/07.functional-programming/01.what-is-functional-programming.md)
-    2. [Higher order functions](lessons/07.functional-programming/02.higher-order-functions.md)
-    3. [Preventing objects from mutating](lessons/07.functional-programming/03.prevent-objects-from-mutating.md)
-    4. [Preventing arrays from mutating](lessons/07.functional-programming/04.prevent-arrays-from-mutating.md)
-    5. [Imperative vs Declarative Programming](lessons/07.functional-programming/05.imperative-vs-declarative.md)
-    6. [Function composition](lessons/07.functional-programming/06.composition.md)
-    7. [Functional array methods](lessons/07.functional-programming/07.functional-array-methods.md)
-    8. [Destructuring](lessons/07.functional-programming/09.desctructuring.md)
-    9. [Spread and Rest operators](lessons/07.functional-programming/10.rest-and-spread.md)
+7. Content and Forms
+    1. [Changing text and HTML](lessons/07.text-and-content/01.changing-text-and-html.md)
+    2. [Creating HTML Elements](lessons/07.text-and-content/02.create-html-elements.md)
+    3. [Adding multiple Elements](lessons/07.text-and-content/03.adding-multiple-elements.md)
+    4. [Removing HTML Elements](lessons/07.handling-content-and-forms/04.removing-elements.md)
+8. Best practice espresso shot
+    1. [Template Literals](lessons/08.best-practice-espresso-shot/01.template-literals.md)
+    2. [Prevent Mutation](lessons/08.best-practice-espresso-shot/02.prevent-mutation.md)
+    3. [Prevent objects from mutating](lessons/08.best-practice-espresso-shot/03.prevent-objects-from-mutating.md)
+    4. [Prevent arrays from mutating](lessons/08.best-practice-espresso-shot/04.prevent-arrays-from-mutating.md)
+    5. [Functional array methods](lessons/08.best-practice-espresso-shot/05.functional-array-methods.md)
+    <!-- 6. [Chain arrays](lessons/08.best-practice-espresso-shot/06.chain-arrays.md) -->
+    7. [Pure functions](lessons/08.best-practice-espresso-shot/07.pure-functions.md)
+    8. [Reduce side effects](lessons/08.best-practice-espresso-shot/08.reduce-side-effects.md)
+    <!-- 9. [Reduce assignments](lessons/08.best-practice-espresso-shot/9.reduce-reassignments.md) -->
+    10. [Write declarative code](lessons/08.best-practice-espresso-shot/10.write-declarative-code.md)
+    11. [One function, one purpose](lessons/08.best-practice-espresso-shot/11.one-purpose.md)
+    <!-- 12. [Destructure objects and function arguments](lessons/08.best-practice-espresso-shot/12.destructure.md) -->
+    <!-- 13. [Provide default arguments](lessons/08.best-practice-espresso-shot/13.provide-default-arguments.md) -->
+    <!-- 14. [Rest and Spread](lessons/08.best-practice-espresso-shot/14.rest-and-spread.md) -->
 8. Object Oriented Programming
     1. [Enhanced Object Literals](lessons/08.object-oriented-programming/01.enhanced-object-literals.md)
     2. [Template literals](lessons/08.object-oriented-programming/02.template-literals.md)
