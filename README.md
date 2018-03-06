@@ -102,29 +102,25 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     <!-- 9. [Reduce assignments](lessons/08.best-practice-espresso-shot/9.reduce-reassignments.md) -->
     10. [Write declarative code](lessons/08.best-practice-espresso-shot/10.write-declarative-code.md)
     11. [One function, one purpose](lessons/08.best-practice-espresso-shot/11.one-purpose.md)
-    <!-- 12. [Destructure objects and function arguments](lessons/08.best-practice-espresso-shot/12.destructure.md) -->
+    12. [Destructure objects and function arguments](lessons/08.best-practice-espresso-shot/12.destructure.md)
     <!-- 13. [Provide default arguments](lessons/08.best-practice-espresso-shot/13.provide-default-arguments.md) -->
     <!-- 14. [Rest and Spread](lessons/08.best-practice-espresso-shot/14.rest-and-spread.md) -->
-8. Object Oriented Programming
-    1. [Enhanced Object Literals](lessons/08.object-oriented-programming/01.enhanced-object-literals.md)
-    2. [Template literals](lessons/08.object-oriented-programming/02.template-literals.md)
-    3. [What is Object Oriented Programming](lessons/08.object-oriented-programming/03.what-is-oop.md)
-    4. [This in Javascript](lessons/08.object-oriented-programming/04.this.md)
-    5. [Javascript Classes](lessons/08.object-oriented-programming/05.classes.md)
-    6. [Inheritance](lessons/08.object-oriented-programming/06.inheritance.md)
-    7. [Prototype](lessons/08.object-oriented-programming/07.prototype.md)
-    8. [Inheritance through Prototype](lessons/08.object-oriented-programming/08.inheritance-through-prototypes.md)
-    9. [The Object.create method](lessons/08.object-oriented-programming/09.object-create-method.md)
-    10. [Composition and Inheritance](lessons/08.object-oriented-programming/10.composition-and-inheritance.md)
-    11. [Private variables](lessons/08.object-oriented-programming/11.private-variables.md)—new!
-    12. [Call, Bind and Apply](lessons/08.object-oriented-programming/12.call-bind-apply.md)—new!
+
 9. Content and Forms
-    1. [Changing text and HTML content](lessons/09.handling-content-and-forms/01.changing-text-and-html.md)—new!
-    2. [Creating HTML Elements](lessons/09.handling-content-and-forms/02.create-html-elements.md)—new!
-    3. [Adding multiple Elements](lessons/09.handling-content-and-forms/03.adding-multiple-elements.md)—new!
-    4. [Removing HTML Elements](lessons/09.handling-content-and-forms/04.removing-elements.md)—new!
-    5. [Forms, form events, and form methods](lessons/09.handling-content-and-forms/05.forms.md)—new!
-    6. [Getting form fields](lessons/09.handling-content-and-forms/06.getting-form-fields.md)—new!
+    1. [Forms, form events, and form methods](lessons/09.handling-content-and-forms/05.forms.md)
+    2. [Getting form fields](lessons/09.handling-content-and-forms/06.getting-form-fields.md)
+11. Object Oriented Programming
+    1. [Enhanced Object Literals](lessons/08.object-oriented-programming/01.enhanced-object-literals.md)
+    2. [What is Object Oriented Programming](lessons/08.object-oriented-programming/02.what-is-oop.md)
+    3. [This in Javascript](lessons/08.object-oriented-programming/03.this.md)
+    4. [Javascript Classes](lessons/08.object-oriented-programming/04.classes.md)
+    5. [Inheritance](lessons/08.object-oriented-programming/05.inheritance.md)
+    6. [Prototype](lessons/08.object-oriented-programming/06.prototype.md)
+    7. [Inheritance through Prototype](lessons/08.object-oriented-programming/07.inheritance-through-prototypes.md)
+    8. [The Object.create method](lessons/08.object-oriented-programming/08.object-create-method.md)
+    9. [Composition and Inheritance](lessons/08.object-oriented-programming/9.composition-and-inheritance.md)
+    10. [Private variables](lessons/08.object-oriented-programming/10.private-variables.md)
+    11. [Call, Bind and Apply](lessons/08.object-oriented-programming/11.call-bind-apply.md)
 
 ## Private Community
 
