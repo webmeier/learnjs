@@ -15,21 +15,21 @@
   3. Adding multiple elements - done
   4. Removing elements - done
   5. 🛠 Building a calculator
-8. Best Practice espresso shot
-  1. Ternary operators
-    - Remove if else
-  2. Declarative vs Imperative programming
-    - Remove else if
+8. Best Practice espresso
+  1. One function, one purpose
+  2. Build pure functions
+  3. Prevent side effects
+  4. Prevent objects from mutating
+  5. Prevent arrays from mutating
+  6. Stop reassignments
+    1. Ternary operators
+    2. Early returns
+  7. Declarative programming
     - Remove for loops and forEach
     - Use functional array methods whenever possible
-  3. Functional array methods
-  4. One function, one purpose
-  5. Build pure functions
-  6. Destructure objects and functions
-  7. Prevent mutation
-  8. Preventing objects from mutating
-  9. Preventing arrays from mutating
-  10. Array chaining
+  8. Functional array methods
+  9. Chain array methods
+  10. Destructure objects and functions
   11. Rest and spread operators
   12. A note on Functional Programming
     - composing functions
@@ -43,7 +43,6 @@
   4. 🛠 building a popover
   5. 🛠 building an autocomplete input
   6. 🛠 building a todo-list
-  7. 🛠 building a date picker
 10. Asynchronous JavaScript
     1. AJAX, JSON and requests
     2. Understanding REST APIs
@@ -83,6 +82,9 @@
     9. Hands on: building a scrollspy
     10. Hands on: building a drag & drop component
     11. Hands on: improving the calendar widget
+Date and time
+    1. Calculating dates
+    2. 🛠 building a date picker
 13. Keyboard events
     1. Keyboard power user.
     1. Handling keyboard events
@@ -95,11 +97,15 @@
     1. Why is accessibility and why it is important
     2. How to use a screen reader (Mac OS)
     3. Accessibility principles??
-    2. Aria attributes to use (labelled-by, aria-live, aria-collapsed, etc)
-    3. Accessible animations (onEnter, onEnterComplete, etc, because use hidden attribute. Alternatively, use visibility hidden)
-    3. Hands on: improving the accordion component
-    4. Hands on: improving the tabs component
-    5. Improve almost every component there is... and hammer accessibility into everyone 😈.
+      1. Right elements (h1, h2, h3 etc)
+    4. Source order
+    5. Buttons vs links
+    6. Aria attributes to use (labelled-by, aria-live, aria-collapsed, etc)
+    7. Accessible animations (onEnter, onEnterComplete, etc, because use hidden attribute. Alternatively, use visibility hidden)
+    8. Removing animations for motion sickness peeps
+    9. Hands on: improving the accordion component
+    10. Hands on: improving the tabs component
+    11. Improve almost every component there is... and hammer accessibility into everyone 😈.
 15. Progressive Enhancement
     1. The progressive enhancement mindset
     2. What if there's no JavaScript
@@ -113,8 +119,8 @@
     5. Using plugins (your own vs others)
 17. Single page applications
     1. The foundations to frontend frameworks
-    2. Routing
-    3. Authentication
+    2. Routing (location + history API)
+    3. Authentication (localStorage)
     4. Displaying and changing content (Consider HyperHTML! (https://github.com/WebReflection/hyperHTML))
     5. Hands on: building the card generator
     6. History API/Page transitions
@@ -135,7 +141,7 @@
   3. Tasks, microtasks and paint tasks?? (Maybe not)
   4. Recursion
   5. Calculating parse string method!
-
+  6. localStorage?? When should I put this in?
 
 Accessibility (Keyboard) for modal window
 https://www.smashingmagazine.com/2014/09/making-modal-windows-better-for-everyone/
