@@ -64,16 +64,19 @@ const createResultString = (key, displayedNum, state) => {
   }
 
   if (action === 'calculate') return calculate(displayedNum, state)
-  if (action === 'clear') result.textContent = 0
+  if (action === 'clear') return 0
 }
 
 const updateState = (calculator, key, displayedNum, calculatedValue) => {
   const { action } = key.dataset
   const { firstValue, modValue, operator } = calculator.dataset
 
+  Array.from(key.parentNode.children).forEach(el => el.classList.remove('is-depressed'))
+
   // Update Operator (+, -, *, /)
   if (isOperator(action)) {
     calculator.dataset.operator = action
+    key.classList.add('is-depressed')
   }
 
   // Update firstValue
@@ -100,16 +103,20 @@ const updateState = (calculator, key, displayedNum, calculatedValue) => {
     calculator.dataset.operator = ''
   }
 
-  if (action === 'clear' && key.textContent === 'C') key.textContent = 'C'
+  if (action === 'clear' && key.textContent === 'CE') {
+    key.textContent = 'AC'
+  }
 
   if (action !== 'clear') {
     const clearButton = calculator.querySelector('[data-action=clear]')
-    clearButton.textContent = 'C'
+    clearButton.textContent = 'CE'
   }
 }
 
 keys.addEventListener('click', e => {
   const key = e.target
+  if (!key.matches('button')) return
+
   const displayedNum = result.textContent
   const calculatedValue = createResultString(key, displayedNum, calculator.dataset)
 

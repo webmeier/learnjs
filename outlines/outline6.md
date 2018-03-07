@@ -16,26 +16,22 @@
   4. Removing elements - done
   5. 🛠 Building a calculator
 8. Best Practice espresso
-  1. One function, one purpose
-  2. Build pure functions
-  3. Prevent side effects
-  4. Prevent objects from mutating
-  5. Prevent arrays from mutating
-  6. Stop reassignments
-    1. Ternary operators
-    2. Early returns
-  7. Declarative programming
-    - Remove for loops and forEach
-    - Use functional array methods whenever possible
-  8. Functional array methods
-  9. Chain array methods
-  10. Destructure objects and functions
-  11. Rest and spread operators
-  12. A note on Functional Programming
-    - composing functions
-    - higher order functions
-  13. 🛠 Improving the carousel (shift part 3 down here)
-  14. 🛠 Improving the calculator
+  1. Use template literals - done
+  2. Prevent mutation - done
+  3. Prevent objects from mutating - done
+  4. Prevent arrays from mutating - done
+  5. Functional array methods - done
+  6. Chaining arrays
+  7. Pure functions - done
+  8. Reduce side effects - done
+  9. Reduce reassignments
+  10. Write declarative code - done
+  11. One function, one purpose - done
+  12. Destructure
+  13. Provide default arguments
+  14. Rest and spread
+  15. 🛠 Improving the carousel (shift part 3 down here)
+  16. 🛠 Improving the calculator
 9. Forms
   1. Intro to Forms
   2. Getting form fields
