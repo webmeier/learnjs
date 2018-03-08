@@ -90,7 +90,7 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     2. [Creating HTML Elements](lessons/07.text-and-content/02.create-html-elements.md)
     3. [Adding multiple Elements](lessons/07.text-and-content/03.adding-multiple-elements.md)
     4. [Removing HTML Elements](lessons/07.handling-content-and-forms/04.removing-elements.md)
-    5. [🛠 Building a calculator (part 1)](lessons/07.handling-content-and-forms/05.building-calculator.md)—new!
+    5. [🛠 Building a calculator (part 1)](lessons/07.handling-content-and-forms/05.building-calculator.md)
     6. [🛠 Building a calculator (part 2)](lessons/07.handling-content-and-forms/06.building-calculator-2.md)—new!
 8. Best practice espresso shot
     1. [Template Literals](lessons/08.best-practice-espresso-shot/01.template-literals.md)
@@ -98,15 +98,15 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     3. [Prevent objects from mutating](lessons/08.best-practice-espresso-shot/03.prevent-objects-from-mutating.md)
     4. [Prevent arrays from mutating](lessons/08.best-practice-espresso-shot/04.prevent-arrays-from-mutating.md)
     5. [Functional array methods](lessons/08.best-practice-espresso-shot/05.functional-array-methods.md)
-    6. [Chain arrays](lessons/08.best-practice-espresso-shot/06.chain-arrays.md)—new!
+    6. [Chain arrays](lessons/08.best-practice-espresso-shot/06.chain-arrays.md)
     7. [Pure functions](lessons/08.best-practice-espresso-shot/07.pure-functions.md)
     8. [Reduce side effects](lessons/08.best-practice-espresso-shot/08.reduce-side-effects.md)
-    9. [Reduce assignments](lessons/08.best-practice-espresso-shot/9.reduce-reassignments.md)—new!
+    9. [Reduce assignments](lessons/08.best-practice-espresso-shot/9.reduce-reassignments.md)
     10. [Write declarative code](lessons/08.best-practice-espresso-shot/10.write-declarative-code.md)
     11. [One function, one purpose](lessons/08.best-practice-espresso-shot/11.one-purpose.md)
     12. [Destructure objects and function arguments](lessons/08.best-practice-espresso-shot/12.destructure.md)
-    13. [Default arguments](lessons/08.best-practice-espresso-shot/13.default-arguments.md)—new!
-    <!-- 14. [Rest and Spread](lessons/08.best-practice-espresso-shot/14.rest-and-spread.md) -->
+    13. [Default arguments](lessons/08.best-practice-espresso-shot/13.default-arguments.md)
+    14. [Rest and Spread](lessons/08.best-practice-espresso-shot/14.rest-and-spread.md)
 9. Content and Forms
     1. [Forms, form events, and form methods](lessons/09.handling-content-and-forms/05.forms.md)
     2. [Getting form fields](lessons/09.handling-content-and-forms/06.getting-form-fields.md)
