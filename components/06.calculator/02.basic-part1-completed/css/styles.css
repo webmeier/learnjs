@@ -17,9 +17,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 100vh; */
+  height: 100vh;
   background-image: linear-gradient(236deg, #74ebd5, #acb6e5);
-  padding: 2em;
 }
 
 .container {
