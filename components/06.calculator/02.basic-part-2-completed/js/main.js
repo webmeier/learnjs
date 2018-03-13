@@ -108,11 +108,12 @@ keys.addEventListener('click', e => {
       const operator = calculator.dataset.operator
       let secondValue = displayedNum
 
-      if (previousKeyType === 'calculate') {
-        firstValue = displayedNum
-        secondValue = calculator.dataset.modValue
-        display.textContent = calculate(firstValue, operator, secondValue)
-      } else if (firstValue) {
+      if (firstValue) {
+        if (previousKeyType === 'calculate') {
+          firstValue = displayedNum
+          secondValue = calculator.dataset.modValue
+        }
+
         display.textContent = calculate(firstValue, operator, secondValue)
       }
 
