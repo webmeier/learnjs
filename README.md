@@ -107,6 +107,7 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     12. [Destructure objects and function arguments](lessons/08.best-practice-espresso-shot/12.destructure.md)
     13. [Default arguments](lessons/08.best-practice-espresso-shot/13.default-arguments.md)
     14. [Rest and Spread](lessons/08.best-practice-espresso-shot/14.rest-and-spread.md)
+    16. [🛠 Refactoring the calculator](lessons/08.best-practice-espresso-shot/16.refactor-calculator.md)
 9. Content and Forms
     1. [Forms, form events, and form methods](lessons/09.handling-content-and-forms/05.forms.md)
     2. [Getting form fields](lessons/09.handling-content-and-forms/06.getting-form-fields.md)
