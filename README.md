@@ -71,8 +71,7 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     8. [🛠 Building a tabbed interface](lessons/05.building-real-components/08.building-tabs.md)
     9. [🛠 Building a carousel (part 1)](lessons/05.building-real-components/09.building-carousel.md)
     10. [🛠 Building a carousel (part 2)](lessons/05.building-real-components/10.building-carousel-2.md)
-    11. [🛠 Building a carousel (part 3)](lessons/05.building-real-components/11.building-carousel-3.md)
-    12. [Lessons from building the components](lessons/05.building-real-components/12.lessons-from-the-building-process.md)
+    11. [Lessons from building the components](lessons/05.building-real-components/11.lessons-from-the-building-process.md)
 6. Spicing up your components with animations
     1. [CSS Transitions](lessons/06.spicing-up-components-with-animations/01.css-transition.md)
     2. [CSS Animations](lessons/06.spicing-up-components-with-animations/02.css-animation.md)
@@ -107,6 +106,7 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     12. [Destructure objects and function arguments](lessons/08.best-practice-espresso-shot/12.destructure.md)
     13. [Default arguments](lessons/08.best-practice-espresso-shot/13.default-arguments.md)
     14. [Rest and Spread](lessons/08.best-practice-espresso-shot/14.rest-and-spread.md)
+    15. [🛠 Refactoring the carousel](lessons/08.best-practice-espresso-shot/15.refactor-carousel.md)—new!
     16. [🛠 Refactoring the calculator](lessons/08.best-practice-espresso-shot/16.refactor-calculator.md)—new!
 9. Content and Forms
     1. [Forms, form events, and form methods](lessons/09.handling-content-and-forms/05.forms.md)

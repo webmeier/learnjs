@@ -1,95 +1,126 @@
 // # START EDITING YOUR JAVASCRIPT HERE
 // ===============
-{
-  const track = document.querySelector('.jsTrack')
-  const slides = Array.from(track.children)
-  const nextButton = document.querySelector('.jsNext')
-  const previousButton = document.querySelector('.jsPrevious')
+
+const track = document.querySelector('.jsTrack')
+const slides = Array.from(track.children)
+const slideWidth = slides[0].getBoundingClientRect().width
+
+slides.forEach((slide, index) => {
+  slide.style.left = index * slideWidth + `px`
+})
+
+const nextButton = document.querySelector('.jsNext')
+nextButton.addEventListener('click', e => {
+  let currentSlide
+
+  for (let slide of slides) {
+    if (slide.classList.contains('is-selected')) {
+      currentSlide = slide
+    }
+  }
+
+  const nextSlide = currentSlide.nextElementSibling
+
+  // Update selected slide
+  const amountToMove = nextSlide.style.left
+  track.style.transform = 'translateX(-' + amountToMove + ')'
+  currentSlide.classList.remove('is-selected')
+  nextSlide.classList.add('is-selected')
+
+  // Update dots
   const dotContainer = document.querySelector('.jsDotContainer')
-  const dots = Array.from(dotContainer.children)
+  const currentDot = dotContainer.querySelector('.is-selected')
+  const nextDot = currentDot.nextElementSibling
+  currentDot.classList.remove('is-selected')
+  nextDot.classList.add('is-selected')
 
-  const slideWidth = slides[0].getBoundingClientRect().width
-
-  slides.forEach((slide, index) => {
-    slide.style.left = index * slideWidth + `px`
-  })
-
-  const getCurrentIndex = slides => {
-    let currentIndex
-
-    for (let index = 0; index < dots.length; index++) {
-      const slide = slides[index]
-      if (slide.classList.contains('is-selected')) {
-        currentIndex = index
-      }
-    }
-
-    return currentIndex
+  // Update arrows
+  const isFinalSlide = !nextSlide.nextElementSibling
+  if (isFinalSlide) {
+    nextButton.classList.add('is-hidden')
   }
 
-  const updateSlides = (track, currentIndex, targetIndex) => {
-    const currentSlide = slides[currentIndex]
-    const targetSlide = slides[targetIndex]
-    track.style.transform = 'translateX(-' + targetSlide.style.left + ')'
-    currentSlide.classList.remove('is-selected')
-    targetSlide.classList.add('is-selected')
-  }
+  previousButton.classList.remove('is-hidden')
+})
 
-  const updateDots = (currentIndex, targetIndex) => {
-    dots[currentIndex].classList.remove('is-selected')
-    dots[targetIndex].classList.add('is-selected')
-  }
+const previousButton = document.querySelector('.jsPrevious')
+previousButton.addEventListener('click', e => {
+  let currentSlide
 
-  const updateArrows = targetIndex => {
-    if (targetIndex === 0) {
-      previousButton.classList.add('is-hidden')
-      nextButton.classList.remove('is-hidden')
-    } else if (targetIndex === slides.length - 1) {
-      previousButton.classList.remove('is-hidden')
-      nextButton.classList.add('is-hidden')
-    } else {
-      previousButton.classList.remove('is-hidden')
-      nextButton.classList.remove('is-hidden')
+  for (let slide of slides) {
+    if (slide.classList.contains('is-selected')) {
+      currentSlide = slide
     }
   }
 
-  const nextSlide = e => {
-    const currentIndex = getCurrentIndex(slides)
-    const nextIndex = currentIndex + 1
+  const previousSlide = currentSlide.previousElementSibling
 
-    updateSlides(track, currentIndex, nextIndex)
-    updateDots(currentIndex, nextIndex)
-    updateArrows(nextIndex)
+  // Update selected slide
+  const amountToMove = previousSlide.style.left
+  track.style.transform = 'translateX(-' + amountToMove + ')'
+  currentSlide.classList.remove('is-selected')
+  previousSlide.classList.add('is-selected')
+
+  // Update dots
+  const dotContainer = document.querySelector('.jsDotContainer')
+  const currentDot = dotContainer.querySelector('.is-selected')
+  const previousDot = currentDot.previousElementSibling
+  currentDot.classList.remove('is-selected')
+  previousDot.classList.add('is-selected')
+
+  // Update arrows
+  const isFirstSlide = !previousSlide.previousElementSibling
+  if (isFirstSlide) {
+    previousButton.classList.add('is-hidden')
   }
 
-  const previousSlide = e => {
-    const currentIndex = getCurrentIndex(slides)
-    const previousIndex = currentIndex - 1
+  nextButton.classList.remove('is-hidden')
+})
 
-    updateSlides(track, currentIndex, previousIndex)
-    updateDots(currentIndex, previousIndex)
-    updateArrows(previousIndex)
-  }
+const dotContainer = document.querySelector('.jsDotContainer')
+dotContainer.addEventListener('click', e => {
+  if (!e.target.matches('button')) return
 
-  const setSlide = e => {
-    if (!e.target.matches('button')) return
+  let currentSlide
 
-    const currentIndex = getCurrentIndex(slides)
-    const clickedDot = e.target
-    let targetIndex
-
-    for (let index = 0; index < dots.length; index++) {
-      if (dots[index] === clickedDot) {
-        targetIndex = index
-      }
+  for (let slide of slides) {
+    if (slide.classList.contains('is-selected')) {
+      currentSlide = slide
     }
-
-    updateSlides(track, currentIndex, targetIndex)
-    updateDots(currentIndex, targetIndex)
-    updateArrows(targetIndex)
   }
 
-  nextButton.addEventListener('click', nextSlide)
-  previousButton.addEventListener('click', previousSlide)
-  dotContainer.addEventListener('click', setSlide)
-}
+  const clickedDot = e.target
+  const dots = dotContainer.children
+  let targetIndex
+
+  for (let index = 0; index < dots.length; index++) {
+    if (dots[index] === clickedDot) {
+      targetIndex = index
+    }
+  }
+
+  const targetSlide = slides[targetIndex]
+
+  // Update selected slideslide
+  const amountToMove = targetSlide.style.left
+  track.style.transform = 'translateX(-' + amountToMove + ')'
+  currentSlide.classList.remove('is-selected')
+  targetSlide.classList.add('is-selected')
+
+  // Update dots
+  const currentDot = dotContainer.querySelector('.is-selected')
+  currentDot.classList.remove('is-selected')
+  clickedDot.classList.add('is-selected')
+
+  // update arrows
+  if (targetIndex === 0) {
+    previousButton.classList.add('is-hidden')
+    nextButton.classList.remove('is-hidden')
+  } else if (targetIndex === slides.length - 1) {
+    previousButton.classList.remove('is-hidden')
+    nextButton.classList.add('is-hidden')
+  } else {
+    previousButton.classList.remove('is-hidden')
+    nextButton.classList.remove('is-hidden')
+  }
+})
