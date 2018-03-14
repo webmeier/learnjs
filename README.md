@@ -109,8 +109,9 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     15. [🛠 Refactoring the carousel](lessons/08.best-practice-espresso-shot/15.refactor-carousel.md)—new!
     16. [🛠 Refactoring the calculator](lessons/08.best-practice-espresso-shot/16.refactor-calculator.md)—new!
 9. Content and Forms
-    1. [Forms, form events, and form methods](lessons/09.handling-content-and-forms/05.forms.md)
-    2. [Getting form fields](lessons/09.handling-content-and-forms/06.getting-form-fields.md)
+    1. [Forms, form events, and form methods](lessons/09.forms/01.forms.md)
+    2. [Getting form fields](lessons/09.forms/02.getting-form-fields.md)
+    3. [Form fields and their events](lessons/09.forms/03.types-of-fields.md)—new!
 11. Object Oriented Programming
     1. [Enhanced Object Literals](lessons/08.object-oriented-programming/01.enhanced-object-literals.md)
     2. [What is Object Oriented Programming](lessons/08.object-oriented-programming/02.what-is-oop.md)
