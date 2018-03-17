@@ -6,7 +6,7 @@
 6. To-do list
 7. Autocomplete input
 8. Calculator UI
-9. Tooltip
+9. Popover
 10. Date picker
 11. A Google Maps component
 12. A loading indicator
