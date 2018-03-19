@@ -1,5 +1,7 @@
 ## The outline (draft 7)
 
+Note to self: Focus on doing things slowly. Replace stuff and let people see how code flows. Remember how Michiko had problems!
+
 1. JavaScript and its ecosystem
     1. How to use this course
     2. What is JavaScript and what its used for
@@ -53,7 +55,7 @@
     8. 🛠 Improving the accordion
     9. 🛠 Improving the tabbed component
     10. 🛠 Improving the carousel
-5. Transitions and Animations
+6. Transitions and Animations
     1. CSS transitions
     2. CSS animations
     3. Jank-free animations
@@ -65,7 +67,7 @@
     9. 🛠 Animating the modal window
     10. 🛠 Animating the accordions
     11. 🛠 Animating the carousel
-6. DOM Deep dive
+7. DOM Deep dive
     1. Nodes vs Elements
     2. DOM Traversals
     3. Changing attributes
@@ -77,7 +79,7 @@
     9. 🛠 Improving the accordion
     10. 🛠 Improving the carousel
     11. 🛠 Building a calculator
-7. Best Practices
+8. Best Practices
     1. Use template literals
     2. Prevent mutation
     3. Prevent objects from mutating
@@ -97,7 +99,7 @@
     17. 🛠 Refactoring the tabbed component
     18. 🛠 Refactoring the carousel
     19. 🛠 Refactoring the calculator
-8. Forms and dates
+9. Forms and dates
     1. Intro to Forms
     2. Getting form fields
     3. Form fields and their events
@@ -108,7 +110,7 @@
     8. 🛠 Persisting contents of todo-list
     9. Handling dates in JavaScript
     10. 🛠 building a date picker
-9. Asynchronous JavaScript (Ajax)
+10. Asynchronous JavaScript (Ajax)
     1. What is AJAX?
     2. Understanding JSON
     3. JavaScript promises
@@ -121,7 +123,7 @@
     6. 🛠 improving loading indicator with async/await
     6. 🛠 improving twitter feed with async/await
     6. 🛠 improving google maps component with async/await
-10. Adding keyboard support
+11. Adding keyboard support
     1. Why add keyboard support
     2. keyboard events
     3. Default keyboard behaviors (button, tab, and enter)
@@ -135,7 +137,7 @@
     10. 🛠 Keyboard support for todo-list
     11. 🛠 Keyboard support for autocomplete input
     12. 🛠 Keyboard support for date picker
-11. Scroll and browser resize events
+12. Scroll and browser resize events
     1. Scroll events
     2. The resize event
     3. Debouncing and throttling
@@ -144,7 +146,7 @@
     6. 🛠 building an infinite-scrolling page
     7. 🛠 building a scrollspy
     8. 🛠 building a drag & drop component
-11. Accessibility
+13. Accessibility
     1. What is accessibility
     2. The relationship between JavaScript and accessibility
     3. How to use a screen reader
@@ -152,11 +154,16 @@
     5. Live regions
     6. Accessibility and animations
     7. 🛠 Accessibility for everything that comes before...
-12. Integrating components
+14. Progressive enhancement
+    1. What is progressive enhancement
+    2. Feature detection and polyfilling
+    3. What if there's no JavaScript
+    4. 🛠 Enhancing everything that comes before...
+15. Integrating components
     1. PubSub pattern
     2. Custom events
     3. Organizing code with ES6 imports
-13. Object Oriented Programming
+16. Object Oriented Programming
     1. Object literal shorthands
     2. What is Object Oriented Programming?
     3. This in Javascript
@@ -169,16 +176,13 @@
     10. Closures
     11. Private and public variables
     12. Call, bind and apply
-14. Creating libraries
+17. Creating libraries
     1. TBC
-15. Single page applications
+18. Single page applications
     1. Authentication
     2. Routing
     3. 🛠 Card generator application
     4. Transitioning to frameworks
-
-
-
 
 Extra thoughts that I haven't managed to consolidate:
 
