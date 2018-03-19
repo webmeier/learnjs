@@ -11,15 +11,15 @@ Note to self: Focus on doing things slowly. Replace stuff and let people see how
     1. Your JavaScript file
     2. Preparing your text editor
     3. The console
-    4. Strings, numbers, and booleans
-    5. Null and undefined
-    6. Comments
-    7. On semicolons
-    8. Declaring variables
-    9. All about functions
-    10. Arrow functions
-    11. Intro to objects
-    12. If/else statements
+    4. Comments
+    5. You don't need semicolons
+    6. Strings, numbers, and booleans
+    7. Declaring variables
+    8. Functions
+    9. Arrow functions
+    10. Intro to objects
+    11. If/else statements
+    12. Null and undefined
     13. The BOM and the DOM
     14. Selecting an element
     15. Changing classes
