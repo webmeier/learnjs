@@ -17,7 +17,7 @@ Note to self: Focus on doing things slowly. Replace stuff and let people see how
     7. Declaring variables
     8. Functions
     9. Arrow functions
-    10. Intro to objects
+    10. Objects
     11. If/else statements
     12. Null and undefined
     13. The BOM and the DOM
