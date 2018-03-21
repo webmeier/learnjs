@@ -1,7 +1,5 @@
 ## The outline (draft 7)
 
-Note to self: Focus on doing things slowly. Replace stuff and let people see how code flows. Remember how Michiko had problems!
-
 1. JavaScript and its ecosystem
     1. How to use this course
     2. What is JavaScript and what its used for
@@ -35,7 +33,7 @@ Note to self: Focus on doing things slowly. Replace stuff and let people see how
     6. Lessons from the building process
     7. Debugging errors
     8. How to use a linter
-4. Advanced basics
+4. Arrays and loops
     1. Intro to arrays
     2. For loops
     3. The forEach loop
@@ -44,6 +42,7 @@ Note to self: Focus on doing things slowly. Replace stuff and let people see how
     6. 🛠 Building an accordion
     7. 🛠 Building a tabbed component
     8. 🛠 Building a carousel
+    9. 🛠 Building a carousel (part 2)
 5. Events deep dive
     1. The listening element
     2. Default behaviors
@@ -80,27 +79,27 @@ Note to self: Focus on doing things slowly. Replace stuff and let people see how
     10. 🛠 Improving the carousel
     11. 🛠 Building a calculator
 8. Best Practices
-    6. Scopes
-    7. AND and OR operators
-    1. Use template literals
-    2. Prevent mutation
-    3. Prevent objects from mutating
-    4. Prevent arrays from mutating
-    5. Functional array methods
-    6. Chaining arrays
-    7. Pure functions
-    8. Reduce side effects
-    9. Reduce reassignments
-    10. Write declarative code
-    11. One function, one purpose
-    12. Destructure
-    13. Provide default arguments
-    14. Rest and spread
-    15. 🛠 Refactoring the modal window
-    16. 🛠 Refactoring the accordion
-    17. 🛠 Refactoring the tabbed component
-    18. 🛠 Refactoring the carousel
-    19. 🛠 Refactoring the calculator
+    3. Use template literals
+    1. Manage scopes
+    2. Use AND and OR operators
+    4. Prevent mutation
+    5. Prevent objects from mutating
+    6. Prevent arrays from mutating
+    7. Use functional array methods
+    8. Chain arrays
+    9. Write pure functions
+    10. Reduce side effects
+    11. Don't reassign
+    12. Write declarative code
+    13. One function, one purpose
+    14. Destructure
+    15. Provide default arguments
+    16. Rest and spread
+    17. 🛠 Refactoring the modal window
+    18. 🛠 Refactoring the accordion
+    19. 🛠 Refactoring the tabbed component
+    20. 🛠 Refactoring the carousel
+    21. 🛠 Refactoring the calculator
 9. Forms and dates
     1. Intro to Forms
     2. Getting form fields
