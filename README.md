@@ -10,7 +10,7 @@ You can contribute to the quality of the material and practice the same steps as
 
 I'll push new lessons to this repo whenever they're ready for you. Make sure you watch the repo if you want the latest updates. I'll also send you an email and ping you on slack (if I remember 😅).
 
-Protip: You'll want to disable "Automatically watch repositories" or you'll get flooded with emails when students' create forks of the course repo.
+Protip: you'll want to disable "Automatically watch repositories" or you'll get flooded with emails when students' create forks of the course repo.
 
 <img src="images/dont-watch-repo.png" alt="Automatically watch repositories should be unchecked">
 
@@ -23,38 +23,38 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     2. [What is JavaScript used for?](lessons/01.javascript-and-its-ecosystem/02.what-is-javascript.md)
     3. [The JavaScript ecosystem](lessons/01.javascript-and-its-ecosystem/03.the-ecosystem.md)
     4. [Varying versions of JavaScript](lessons/01.javascript-and-its-ecosystem/04.varying-versions-of-javascript.md)
-    5. [Preparing your text editor](lessons/01.javascript-and-its-ecosystem/05.preparing-your-text-editor.md)
 2. JavaScript basics
     1. [Linking your JavaScript file](lessons/02.js-basics/01.linking.md)
-    2. [The Console](lessons/02.js-basics/02.console.md)
-    3. [Strings, numbers and booleans](lessons/02.js-basics/03.primitives.md)
+    2. [Preparing your text editor](lessons/02.js-basics/02.preparing-your-text-editor.md)
+    3. [The console](lessons/02.js-basics/03.console.md)
     4. [Comments](lessons/02.js-basics/04.comments.md)
-    5. [Declaring variables](lessons/02.js-basics/05.variables.md)
-    6. [You don't need semicolons](lessons/02.js-basics/06.semicolons.md)
-    7. [All about functions](lessons/02.js-basics/07.functions.md)
-    8. [Arrow functions](lessons/02.js-basics/08.arrow-functions.md)
-    9. [Scopes and closures](lessons/02.js-basics/09.scopes-and-closures.md)
+    5. [You don't need semicolons](lessons/02.js-basics/05.semicolons.md)
+    6. [Strings, numbers and booleans](lessons/02.js-basics/06.str-num-bool.md)
+    7. [Declaring variables](lessons/02.js-basics/07.variables.md)
+    8. [Functions](lessons/02.js-basics/08.functions.md)
+    9. [Arrow functions](lessons/02.js-basics/09.arrow-functions.md)
     10. [Intro to Objects](lessons/02.js-basics/10.objects.md)
-    11. [Intro to Arrays](lessons/02.js-basics/11.arrays.md)
-    12. [If/else statements](lessons/02.js-basics/12.if-else.md)
-    13. [&&, || and !](lessons/02.js-basics/13.and-or-exclaim.md)
-    14. [Null and undefined](lessons/02.js-basics/14.null-and-undefined.md)
-    15. [For loops](lessons/02.js-basics/15.for-loops.md)
-    16. [Debugging errors](lessons/02.js-basics/16.debugging-errors.md)
-    17. [Callbacks](lessons/02.js-basics/17.callbacks.md)
-3. Dom Basics
-    1. [Dom and Bom](lessons/03.dom-basics/01.dom-and-bom.md)
-    2. [Selecting an element](lessons/03.dom-basics/02.selecting-an-element.md)
+    11. [If/else statements](lessons/02.js-basics/11.if-else.md)
+    12. [The NOT operator](lessons/02.js-basics/12.not-operator.md)
+    13. [Null and undefined](lessons/02.js-basics/13.null-and-undefined.md)
+    14. [The BOM and the DOM](lessons/02.js-basics/14.bom-and-dom.md)
+    15. [Selecting an element](lessons/02.js-basics/15.selecting-an-element.md)
+    16. [Changing classes](lessons/02.js-basics/16.changing-classes.md)
+    17. [Listening to events](lessons/02.js-basics/17.listening-to-events.md)
+    18. [Callbacks](lessons/02.js-basics/18.callbacks.md)
+3. Building simple components
+    1.
+
+Old stuff
     3. [Changing style](lessons/03.dom-basics/03.changing-style.md)
     4. [Array.forEach](lessons/03.dom-basics/04.foreach.md)
     5. [Selecting multiple elements](lessons/03.dom-basics/05.selecting-multiple-elements.md)
     6. [Nodes vs Elements](lessons/03.dom-basics/06.nodes-vs-elements.md)
-    7. [Changing classes](lessons/03.dom-basics/07.changing-classes.md)
+    7.
     8. [Changing attributes](lessons/03.dom-basics/08.changing-attributes.md)
     9. [Dom Traversals](lessons/03.dom-basics/09.dom-traversals.md)
     10. [Id vs classes vs tags vs attributes](lessons/03.dom-basics/10.id-class-tag-attribute.md)
 4. Events
-    1. [Events in JavaScript](lessons/04.events/01.events.md)
     2. [The listening element](lessons/04.events/02.listening-element.md)
     3. [Removing event listeners](lessons/04.events/03.removing-el.md)
     4. [Default actions](lessons/04.events/04.default-actions.md)

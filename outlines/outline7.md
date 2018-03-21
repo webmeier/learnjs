@@ -17,14 +17,15 @@ Note to self: Focus on doing things slowly. Replace stuff and let people see how
     7. Declaring variables
     8. Functions
     9. Arrow functions
-    10. Objects
+    10. Intro to objects
     11. If/else statements
-    12. Null and undefined
-    13. The BOM and the DOM
-    14. Selecting an element
-    15. Changing classes
-    16. Callbacks
+    12. The NOT operator
+    13. Null and undefined
+    14. The BOM and the DOM
+    15. Selecting an element
+    16. Changing classes
     17. Listening to events
+    18. Callbacks
 3. Building simple components
     1. How to think like a developer
     2. Using starter template
