@@ -36,17 +36,14 @@ Note to self: Focus on doing things slowly. Replace stuff and let people see how
     7. Debugging errors
     8. How to use a linter
 4. Advanced basics
-    1. Scopes
-    2. And, or, and not
-    3. Intro to arrays
-    4. For loops
-    5. The forEach loop
-    6. What to do when you're confused
-    6. Selecting multiple elements
-    7. Changing CSS with JavaScript
-    8. 🛠 Building an accordion
-    9. 🛠 Building a tabbed component
-    10. 🛠 Building a carousel
+    1. Intro to arrays
+    2. For loops
+    3. The forEach loop
+    4. Selecting multiple elements
+    5. Changing CSS with JavaScript
+    6. 🛠 Building an accordion
+    7. 🛠 Building a tabbed component
+    8. 🛠 Building a carousel
 5. Events deep dive
     1. The listening element
     2. Default behaviors
@@ -83,6 +80,8 @@ Note to self: Focus on doing things slowly. Replace stuff and let people see how
     10. 🛠 Improving the carousel
     11. 🛠 Building a calculator
 8. Best Practices
+    6. Scopes
+    7. AND and OR operators
     1. Use template literals
     2. Prevent mutation
     3. Prevent objects from mutating
