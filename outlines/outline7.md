@@ -28,18 +28,19 @@ Note to self: Focus on doing things slowly. Replace stuff and let people see how
     18. Callbacks
 3. Building simple components
     1. How to think like a developer
-    2. Using starter template
-    3. 🛠 building an off-canvas menu
-    4. 🛠 building a modal window
-    5. What to do when you're confused
-    6. Debugging errors
-    7. Lessons from the building process
+    2. How to use the starter template
+    3. Do this for every component
+    4. 🛠 building an off-canvas menu
+    5. 🛠 building a modal window
+    6. Lessons from the building process
+    7. Debugging errors
 4. Advanced basics
     1. Scopes
     2. And, or, and not
     3. Intro to arrays
     4. For loops
     5. The forEach loop
+    6. What to do when you're confused
     6. Selecting multiple elements
     7. Changing CSS with JavaScript
     8. 🛠 Building an accordion
