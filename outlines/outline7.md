@@ -34,6 +34,7 @@ Note to self: Focus on doing things slowly. Replace stuff and let people see how
     5. 🛠 building a modal window
     6. Lessons from the building process
     7. Debugging errors
+    8. How to use a linter
 4. Advanced basics
     1. Scopes
     2. And, or, and not

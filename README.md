@@ -43,7 +43,14 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     17. [Listening to events](lessons/02.js-basics/17.listening-to-events.md)
     18. [Callbacks](lessons/02.js-basics/18.callbacks.md)
 3. Building simple components
-    1.
+    1. [How to think like a developer](lessons/03.building-simple-components/01.think-like-dev.md)
+    2. [How to use the starter template](lessons/03.building-simple-components/02.starter-template.md)
+    3. [Do this for every component](lessons/03.building-simple-components/03.do-this.md)
+    4. [🛠 Building an off-canvas menu](lessons/03.building-simple-components/04.building-off-canvas.md)
+    5. [🛠 Building a modal window](lessons/03.building-simple-components/05.building-modal-window.md)
+    6. [Lessons from the building process](lessons/03.building-simple-components/06.lessons-from-the-building-process.md)
+    7. [Debugging errors](lessons/03.building-simple-components/07.debugging-errors.md)
+    8. [How to use a linter](lessons/03.building-simple-components/08.linter.md)
 
 Old stuff
     3. [Changing style](lessons/03.dom-basics/03.changing-style.md)
@@ -61,7 +68,6 @@ Old stuff
     5. [Event propagation](lessons/04.events/05.event-propagation.md)
     6. [Event delegation](lessons/04.events/06.event-delegation.md)
 5. Building real components
-    1. [How to think like a developer](lessons/05.building-real-components/01.think-like-dev.md)
     2. [Getting the position of an element](lessons/05.building-real-components/02.getting-element-position-information.md)
     3. [Using the starter template](lessons/05.building-real-components/03.starter-template.md)
     4. [Before you begin building](lessons/05.building-real-components/04.before-you-begin.md)
