@@ -52,7 +52,9 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     7. [Debugging errors](lessons/03.building-simple-components/07.debugging-errors.md)
     8. [How to use a linter](lessons/03.building-simple-components/08.linter.md)
 
-Old stuff
+Old stuff (Order is in a mess right now. Do not use!)
+
+3. DOM basics
     3. [Changing style](lessons/03.dom-basics/03.changing-style.md)
     4. [Array.forEach](lessons/03.dom-basics/04.foreach.md)
     5. [Selecting multiple elements](lessons/03.dom-basics/05.selecting-multiple-elements.md)
