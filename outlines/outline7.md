@@ -40,33 +40,21 @@
     4. Selecting multiple elements
     5. Node vs Elements
     6. 🛠 Building an accordion
-    7. 🛠 Building a carousel
-    8. 🛠 Building a carousel (part 2)
-5. Transitions and Animations
-    1. CSS transitions
-    2. CSS animations
-    3. Jank-free animations
-    4. Changing CSS with JavaScript
-    5. Detecting vendor prefixes
-    6. Animating with JavaScript
-    7. Getting positional information
-    8. Integrating CSS transitions and animations with Javascript
-    8. 🛠 Animating the off canvas menu
-    9. 🛠 Animating the modal window
-    10. 🛠 Animating the accordions
-    11. 🛠 Animating the carousel
-6. DOM Deep dive
-    1. DOM Traversals
-    2. Changing attributes
-    3. Id, classes, tags, and attributes
-    4. Changing text and HTML
-    5. Creating HTML elements
-    6. Adding multiple HTML elements at once
-    7. Removing elements
-    8. 🛠 Improving the accordion
-    9. 🛠 Improving the carousel
+5. DOM Deep dive
+    1. Id, classes, tags, and attributes
+    2. Changing CSS with JavaScript
+    3. Getting CSS with JavaScript
+    4. Changing attributes
+    5. Changing text and HTML
+    6. Creating HTML elements
+    7. Adding multiple HTML elements at once
+    8. Removing elements
+    9. Getting positional information
+    10. DOM Traversals
     10. 🛠 Building a tabbed component
-    11. 🛠 Building a calculator
+    12. 🛠 Building a carousel
+    13. 🛠 Building a carousel (part 2)
+    14. 🛠 Building a calculator
 7. Events deep dive
     1. The listening element
     2. Default behaviors
@@ -78,6 +66,17 @@
     8. 🛠 Improving the accordion
     9. 🛠 Improving the tabbed component
     10. 🛠 Improving the carousel
+8. Transitions and Animations
+    1. CSS transitions
+    2. CSS animations
+    3. Jank-free animations
+    4. Integrating CSS transitions and animations with Javascript
+    6. Detecting vendor prefixes
+    7. Animating with JavaScript
+    8. 🛠 Animating the off canvas menu
+    9. 🛠 Animating the modal window
+    10. 🛠 Animating the accordions
+    11. 🛠 Animating the carousel
 8. Best Practices
     1. Use template literals
     2. Manage scopes
