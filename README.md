@@ -51,6 +51,13 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     6. [Lessons from the building process](lessons/03.building-simple-components/06.lessons-from-the-building-process.md)
     7. [Debugging errors](lessons/03.building-simple-components/07.debugging-errors.md)
     8. [How to use a linter](lessons/03.building-simple-components/08.linter.md)
+4. Arrays and loops
+    1. [Intro to arrays](lessons/04.arrays-and-loops/01.arrays.md)
+    2. [For loops](lessons/04.arrays-and-loops/02.for-loops.md)
+    3. [The forEach loop](lessons/04.arrays-and-loops/03.foreach.md)
+    4. [Selecting multiple elements](lessons/04.arrays-and-loops/04.selecting-multiple-elements.md)
+    5. [Nodes vs elements](lessons/04.arrays-and-loops/05.nodes-vs-elements.md)
+    6. [🛠 Building an accordion](lessons/04.arrays-and-loops/06.building-accordion.md)
 
 Old stuff (Order is in a mess right now. Do not use!)
 
