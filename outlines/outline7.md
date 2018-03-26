@@ -58,10 +58,11 @@
     1. CSS transitions
     2. CSS animations
     3. Jank-free animations
-    4. Detecting vendor prefixes
-    5. Animating with JavaScript
-    6. Integrating CSS transitions and animations with Javascript
+    4. Changing CSS with JavaScript
+    5. Detecting vendor prefixes
+    6. Animating with JavaScript
     7. Getting positional information
+    8. Integrating CSS transitions and animations with Javascript
     8. 🛠 Animating the off canvas menu
     9. 🛠 Animating the modal window
     10. 🛠 Animating the accordions
@@ -79,9 +80,9 @@
     10. 🛠 Improving the carousel
     11. 🛠 Building a calculator
 8. Best Practices
-    3. Use template literals
-    1. Manage scopes
-    2. Use AND and OR operators
+    1. Use template literals
+    2. Manage scopes
+    3. Use AND and OR operators
     4. Prevent mutation
     5. Prevent objects from mutating
     6. Prevent arrays from mutating
