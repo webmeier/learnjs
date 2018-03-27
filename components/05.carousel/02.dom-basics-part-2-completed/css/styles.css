@@ -105,10 +105,6 @@ body {
   background-color: var(--color-selected-state);
 }
 
-.carousel__dot > * {
-  pointer-events: none;
-}
-
 .is-hidden {
   display: none;
 }
