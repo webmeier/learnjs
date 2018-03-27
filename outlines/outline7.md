@@ -58,11 +58,11 @@
     4. Event delegation
     5. Matching HTML Elements
     6. Removing event listeners
-    6. 🛠 Improving the off-canvas menu
-    7. 🛠 Improving the modal window
-    8. 🛠 Improving the accordion
-    9. 🛠 Improving the tabbed component
-    10. 🛠 Improving the carousel
+    7. 🛠 Improving the off-canvas menu
+    8. 🛠 Improving the modal window
+    9. 🛠 Improving the accordion
+    10. 🛠 Improving the tabbed component
+    11. 🛠 Improving the carousel
 7. Transitions and Animations
     1. CSS transitions
     2. CSS animations
