@@ -40,65 +40,71 @@
     4. Selecting multiple elements
     5. Node vs Elements
     6. 🛠 Building an accordion
-5. DOM Deep dive
+5. DOM basics
     1. Id, classes, tags, and attributes
     2. Changing CSS with JavaScript
     3. Getting CSS with JavaScript
     4. Changing attributes
-    5. Changing text and HTML
-    6. Creating HTML elements
-    7. Adding multiple HTML elements at once
-    8. Removing elements
-    9. Getting positional information
-    10. DOM Traversals
-    10. 🛠 Building a tabbed component
-    12. 🛠 Building a carousel
-    13. 🛠 Building a carousel (part 2)
-    14. 🛠 Building a calculator
-7. Events deep dive
+    5. Finding an element's size and position
+    6. DOM Traversals
+    7. 🛠 Building a tabbed component
+    8. 🛠 Building a carousel
+    9. 🛠 Building a carousel (part 2)
+    10. 🛠 Building a calculator
+6. Events deep dive
     1. The listening element
     2. Default behaviors
     3. Event propagation
     4. Event delegation
-    5. Removing event listeners
+    5. Matching HTML Elements
+    6. Removing event listeners
     6. 🛠 Improving the off-canvas menu
     7. 🛠 Improving the modal window
     8. 🛠 Improving the accordion
     9. 🛠 Improving the tabbed component
     10. 🛠 Improving the carousel
-8. Transitions and Animations
+7. Transitions and Animations
     1. CSS transitions
     2. CSS animations
     3. Jank-free animations
     4. Integrating CSS transitions and animations with Javascript
-    6. Detecting vendor prefixes
-    7. Animating with JavaScript
-    8. 🛠 Animating the off canvas menu
-    9. 🛠 Animating the modal window
-    10. 🛠 Animating the accordions
-    11. 🛠 Animating the carousel
+    5. Detecting vendor prefixes
+    6. Animating with JavaScript
+    7. 🛠 Animating the off canvas menu
+    8. 🛠 Animating the modal window
+    9. 🛠 Animating the accordions
+    10. 🛠 Animating the carousel
 8. Best Practices
-    1. Use template literals
-    2. Manage scopes
-    3. Use AND and OR operators
-    4. Prevent mutation
-    5. Prevent objects from mutating
-    6. Prevent arrays from mutating
-    7. Use functional array methods
-    8. Chain arrays
-    9. Write pure functions
-    10. Reduce side effects
-    11. Don't reassign
-    12. Write declarative code
-    13. One function, one purpose
-    14. Destructure
-    15. Provide default arguments
-    16. Rest and spread
-    17. 🛠 Refactoring the modal window
-    18. 🛠 Refactoring the accordion
-    19. 🛠 Refactoring the tabbed component
-    20. 🛠 Refactoring the carousel
-    21. 🛠 Refactoring the calculator
+    1. One function, one purpose
+    2. Write declarative code
+    3. Reduce state changes
+    4. Understanding scope
+    5. Write pure functions
+    6. Reduce side effects
+    7. Don't reassign
+    8. Ternary operators
+    9. AND and OR operators
+    10. Early returns
+    11. Don't mutate
+    11. Prevent objects from mutating
+    12. Prevent arrays from mutating
+    13. Functional array methods
+    14. Chaining arrays
+    15. Destructuring
+    16. Providing default arguments
+    17. Rest and spread operators
+    18. 🛠 Refactoring the modal window
+    19. 🛠 Refactoring the accordion
+    20. 🛠 Refactoring the tabbed component
+    21. 🛠 Refactoring the carousel
+    22. 🛠 Refactoring the calculator
+9. Creating HTML Elements
+    1. Template literals
+    1. Changing text and HTML
+    2. Creating HTML elements
+    3. Adding multiple HTML elements at once
+    4. Removing elements
+    5. 🛠 Improving carousel
 9. Forms and dates
     1. Intro to Forms
     2. Getting form fields
