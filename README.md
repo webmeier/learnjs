@@ -75,6 +75,7 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     4. [Event delegation](lessons/06.events-deep-dive/04.event-delegation.md)
     5. [Removing listeners](lessons/06.events-deep-dive/05.remove-listeners.md)
     6. [🛠 Improving the modal](lessons/06.events-deep-dive/06.improving-modal.md)
+    7. [🛠 Improving the accordion](lessons/06.events-deep-dive/07.improving-accordion.md)
 
 ## Private Community
 
