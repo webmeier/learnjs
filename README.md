@@ -68,6 +68,13 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     7. [🛠 Building a tabbed component](lessons/05.dom-basics/07.building-tabbed-component.md)
     8. [🛠 Building a carousel](lessons/05.dom-basics/08.building-carousel.md)
     9. [🛠 Building a carousel (part 2)](lessons/05.dom-basics/09.building-carousel-2.md)
+6. Events deep dive
+    1. [The listening element](lessons/06.events-deep-dive/01.listening-element.md)
+    2. [Default behaviors](lessons/06.events-deep-dive/02.default-behaviors.md)
+    3. [Event propagation](lessons/06.events-deep-dive/03.event-propagation.md)
+    4. [Event delegation](lessons/06.events-deep-dive/04.event-delegation.md)
+    5. [Removing listeners](lessons/06.events-deep-dive/05.remove-listeners.md)
+    6. [🛠 Improving the modal](lessons/06.events-deep-dive/06.improving-modal.md)
 
 ## Private Community
 
