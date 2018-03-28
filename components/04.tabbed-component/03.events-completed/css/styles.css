@@ -133,7 +133,7 @@ p + p {
   padding: 1em;
 }
 
-.tab.is-active > a {
+.tab.is-selected > a {
   background-color: #323232;
 }
 
@@ -173,7 +173,7 @@ p + p {
 
 /* Set inactive tab icons to 50% white */
 
-.tab:not(.is-active) .tab__icon {
+.tab:not(.is-selected) .tab__icon {
   color: rgba(255, 255, 255, 0.25);
 }
 
@@ -214,7 +214,7 @@ p + p {
   }
 }
 
-.tab-content.is-active {
+.tab-content.is-selected {
   display: grid;
 }
 

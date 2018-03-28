@@ -76,6 +76,8 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     5. [Removing listeners](lessons/06.events-deep-dive/05.remove-listeners.md)
     6. [🛠 Improving the modal](lessons/06.events-deep-dive/06.improving-modal.md)
     7. [🛠 Improving the accordion](lessons/06.events-deep-dive/07.improving-accordion.md)
+    8. [🛠 Improving the tabbed component](lessons/06.events-deep-dive/08.improving-tabbed-component.md)
+    9. [🛠 Improving the carousel](lessons/06.events-deep-dive/08.improving-carousel.md)
 
 ## Private Community
 
