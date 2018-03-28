@@ -67,6 +67,7 @@
     4. Integrating CSS transitions and animations with Javascript
     5. Detecting vendor prefixes
     6. Animating with JavaScript
+    7. The Greensock Animation API (gsap)
     7. 🛠 Animating the off canvas menu
     8. 🛠 Animating the modal window
     9. 🛠 Animating the accordions
