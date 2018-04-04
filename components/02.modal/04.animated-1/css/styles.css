@@ -77,7 +77,7 @@ h2 {
   left: 0;
   opacity: 0;
   z-index: -1;
-  transition: opacity 0.3s ease-out, z-index 0s linear 0.3s;
+  transition: opacity 0.3s ease-out, z-index 0s 0.3s;
 }
 
 body.modal-is-open .modal-container {
@@ -121,14 +121,15 @@ body.modal-is-open .modal-container {
   margin-top: 0.75em;
 }
 
+/* Point hand animation */
 @keyframes point {
   0% {
-    transform: translateY(3em);
     opacity: 0;
+    transform: translateY(3em);
   }
   100% {
-    transform: translateY(0);
     opacity: 1;
+    transform: translateY(0);
   }
 }
 

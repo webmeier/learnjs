@@ -1,31 +1,4 @@
-# JavaScript animations
-
-When it becomes hard for you to animate your components with CSS transitions or CSS Animations, JavaScript animations come in handy. They are very useful and very easy to configure.
-
-The ideal way to animate elements with pure JavaScript is to use the [Web Animations API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API).
-
-Unfortunately, the Web Animations API is not well supported right now.
-
-<figure>
-  <img src="../../images/animations/jsanimation/support.png" alt="The Web Animations API is not well supported yet">
-  <figcaption>The Web Animations API is not well supported yet</figcaption>
-</figure>
-
-If you want to create animations with JavaScript, the easiest way is to use animation libraries.
-
-## Animations libraries
-
-There are many libraries you can use to animate with JavaScript, including but not limited to:
-
-1. Greensock Animation API
-2. jQuery.animate
-3. Velocity.js
-
-Of the three (and many others not listed here), I highly recommend you use Greensock Animation API. You'll learn how to use it in the next lesson.
-
 ## What if your user doesn't have JavaScript enabled?
-
-Great question!
 
 If your user doesn't have JavaScript enabled, they won't be able to see your JavaScript animations.
 

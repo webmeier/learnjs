@@ -1,4 +1,4 @@
-## The outline (draft 7)
+## The outline (draft 8)
 
 1. JavaScript and its ecosystem
     1. How to use this course
@@ -65,7 +65,6 @@
     2. CSS animations
     3. Jank-free animations
     4. Integrating CSS transitions and animations with Javascript
-    5. Detecting vendor prefixes
     6. 🛠 Animating the off canvas menu
     7. 🛠 Animating the accordions
     8. 🛠 Animating the carousel
@@ -75,58 +74,46 @@
 8. Useful JavaScript features
     1. Ternary Operators
     2. And and OR operators
-    3. Method chaining
+    3. Early returns
     4. Template literals
     5. Destructuring
-    6. default arguments
+    6. Default arguments
     7. Rest and spread operators
-8. Best Practices
-    1. One function, one purpose
-    2. Write declarative code
-    3. Reduce state changes
-        1. Understanding scope
-        2. Lists:
-            1. Reduce side effects
-            2. Don't reassign
-            3. Don't mutate
-    5. Write pure functions
-    6. Reduce side effects
-    7. Don't reassign
-    8. Ternary operators
-    9. AND and OR operators
-    10. Early returns
-    11. Don't mutate
-    11. Prevent objects from mutating
-    12. Prevent arrays from mutating
-    13. Functional array methods
-    14. Chaining arrays
-    15. Destructuring
-    16. Providing default arguments
-    17. Rest and spread operators
-    18. 🛠 Refactoring the modal window
-    19. 🛠 Refactoring the accordion
-    20. 🛠 Refactoring the tabbed component
-    21. 🛠 Refactoring the carousel
-9. Creating HTML Elements
-    1. Template literals
+    8. Functional array methods
+    9. Method chaining
+9. Best Practices
+    1. Write declarative code
+    2. Build functions with one purpose
+    3. Understanding State
+    4. Understanding Scope
+    5. Reduce side effects
+    6. Don't reassign
+    7. Don't mutate
+    8. Prevent objects from mutating
+    9. Prevent arrays from mutating
+    10. Write pure functions
+    11. 🛠 Refactoring the modal window
+    12. 🛠 Refactoring the accordion
+    13. 🛠 Refactoring the tabbed component
+    14. 🛠 Refactoring the carousel
+10. Creating HTML Elements
     1. Changing text and HTML
     2. Creating HTML elements
     3. Adding multiple HTML elements at once
     4. Removing elements
     5. 🛠 Improving carousel
-    7. 🛠 Building a calculator
-    8. 🛠 building a popover
-9. Forms and dates
+    6. 🛠 Building a calculator
+    7. 🛠 building a popover
+11. Forms and dates
     1. Intro to Forms
     2. Getting form fields
     3. Form fields and their events
+    4. Persistent data
     4. 🛠 building an autocomplete input
     5. 🛠 building a todo-list
-    6. Persistent data
-    7. 🛠 Persisting contents of todo-list
-    8. Handling dates in JavaScript
-    9. 🛠 building a date picker
-10. Asynchronous JavaScript (Ajax)
+    6. Handling dates in JavaScript
+    7. 🛠 building a date picker
+12. Asynchronous JavaScript (Ajax)
     1. What is AJAX?
     2. Understanding JSON
     3. JavaScript promises
@@ -139,7 +126,7 @@
     6. 🛠 improving loading indicator with async/await
     6. 🛠 improving twitter feed with async/await
     6. 🛠 improving google maps component with async/await
-11. Adding keyboard support
+13. Adding keyboard support
     1. Why add keyboard support
     2. keyboard events
     3. Default keyboard behaviors (button, tab, and enter)
@@ -153,7 +140,7 @@
     10. 🛠 Keyboard support for todo-list
     11. 🛠 Keyboard support for autocomplete input
     12. 🛠 Keyboard support for date picker
-12. Scroll and browser resize events
+14. Scroll and browser resize events
     1. Scroll events
     2. The resize event
     3. Debouncing and throttling
@@ -162,7 +149,7 @@
     6. 🛠 building an infinite-scrolling page
     7. 🛠 building a scrollspy
     8. 🛠 building a drag & drop component
-13. Accessibility
+15. Accessibility
     1. What is accessibility
     2. The relationship between JavaScript and accessibility
     3. How to use a screen reader
@@ -170,16 +157,18 @@
     5. Live regions
     6. Accessibility and animations
     7. 🛠 Accessibility for everything that comes before...
-14. Progressive enhancement
+16. Progressive enhancement
     1. What is progressive enhancement
     2. Feature detection and polyfilling
     3. What if there's no JavaScript
+    4. Detecting vendor prefixes
+    5. 🛠 Carousel transform vendor prefix
     4. 🛠 Enhancing everything that comes before...
-15. Integrating components
+17. Integrating components
     1. PubSub pattern
     2. Custom events
     3. Organizing code with ES6 imports
-16. Object Oriented Programming
+18. Object Oriented Programming
     1. Object literal shorthands
     2. What is Object Oriented Programming?
     3. This in Javascript
@@ -192,9 +181,9 @@
     10. Closures
     11. Private and public variables
     12. Call, bind and apply
-17. Creating libraries
+19. Creating libraries
     1. TBC
-18. Single page applications
+20. Single page applications
     1. Authentication
     2. Routing
     3. 🛠 Card generator application

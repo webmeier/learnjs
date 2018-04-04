@@ -78,7 +78,18 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     7. [🛠 Improving the accordion](lessons/06.events-deep-dive/07.improving-accordion.md)
     8. [🛠 Improving the tabbed component](lessons/06.events-deep-dive/08.improving-tabbed-component.md)
     9. [🛠 Improving the carousel](lessons/06.events-deep-dive/08.improving-carousel.md)
-
+7. Animations and Transitions
+    1. [CSS Transitions](lessons/7.animations-and-transitions/01.css-transition.md)
+    2. [CSS Animations](lessons/7.animations-and-transitions/02.css-animation.md)
+    3. [Jank free animations](lessons/7.animations-and-transitions/03.jank-free-animations.md)
+    4. [Integrating transitions and animations with JavaScript](lessons/7.animations-and-transitions/04.integrating-transitions-and-animations-with-js.md)
+    5. [Detecting Vendor Prefixes](lessons/7.animations-and-transitions/05.detecting-vendor-prefixes.md)
+    6. [Animating with JavaScript](lessons/7.animations-and-transitions/06.animating-with-js.md)
+    7. [Greensock Animation API (gsap)](lessons/7.animations-and-transitions/07.gsap.md)
+    8. [🛠 Animating the off-canvas menu](lessons/7.animations-and-transitions/08.animating-off-canvas.md)
+    9. [🛠 Animating the modal window](lessons/7.animations-and-transitions/09.animating-the-modal.md)
+    10. [🛠 Animating the accordion](lessons/7.animations-and-transitions/10.animating-accordions.md)
+    11. [🛠 Animating the carousel](lessons/7.animations-and-transitions/11.animating-carousel.md)
 ## Private Community
 
 Since you pre-ordered Learn JavaScript, you have access to the Slack (the app we're using for the private community) to learn together with your peers. To join the slack group, head over to [this link](https://zellwk-slack.herokuapp.com) and fill in your best email.
