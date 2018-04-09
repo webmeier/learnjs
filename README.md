@@ -90,6 +90,8 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     9. [Greensock Animation API (gsap)](lessons/7.animations-and-transitions/09.gsap.md)
     10. [🛠 Animating the modal (part 1)](lessons/7.animations-and-transitions/10.animating-the-modal.md)
     11. [🛠 Animating the modal (part 2)](lessons/7.animations-and-transitions/11.animating-the-modal.md)
+8. Useful JavaScript features
+    1.
 
 Note: some content that has been made, but doesn't fit into current structure. I'll complete the restructure by April 20.
 
