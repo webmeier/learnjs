@@ -16,7 +16,7 @@ Protip: you'll want to disable "Automatically watch repositories" or you'll get 
 
 ## The lessons
 
-You may check out the [course outline](outlines/outlines5.md) if you're curious about what's in store for you in Learn JavaScript. Otherwise, feel free to go through these lessons that are ready for you:
+You may check out the [course outline](outlines/outline8.md) if you're curious about what's in store for you in Learn JavaScript. Otherwise, feel free to go through these lessons that are ready for you:
 
 1. JavaScript and its ecosystem
     1. [Welcome to Learn JavaScript!](lessons/01.javascript-and-its-ecosystem/01.how-to-use-this-course.md)
