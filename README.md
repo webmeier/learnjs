@@ -91,6 +91,8 @@ You may check out the [course outline](outlines/outlines5.md) if you're curious 
     10. [🛠 Animating the modal (part 1)](lessons/7.animations-and-transitions/10.animating-the-modal.md)
     11. [🛠 Animating the modal (part 2)](lessons/7.animations-and-transitions/11.animating-the-modal.md)
 
+Note: some content that has been made, but doesn't fit into current structure. I'll complete the restructure by April 20.
+
 ## Private Community
 
 Since you pre-ordered Learn JavaScript, you have access to the Slack (the app we're using for the private community) to learn together with your peers. To join the slack group, head over to [this link](https://zellwk-slack.herokuapp.com) and fill in your best email.

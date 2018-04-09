@@ -181,6 +181,7 @@
     10. Closures
     11. Private and public variables
     12. Call, bind and apply
+    13. How to use OOP?
 19. Creating libraries
     1. TBC
 20. Single page applications
@@ -201,3 +202,4 @@ Extra thoughts that I haven't managed to consolidate.
 
 Modal accessibility: https://css-tricks.slack.com/archives/C7VGZ9UGK/p1522088746000015
 Focus trapping (esp modal: https://css-tricks.com/a-css-approach-to-trap-focus-inside-of-an-element/)
+Accessible animations: https://twitter.com/zellwk/status/960371089615368192
