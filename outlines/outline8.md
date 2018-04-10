@@ -81,7 +81,6 @@
     7. Default arguments
     8. Rest and spread operators
     9. Functional array methods
-    10. Method chaining
 9. Best Practices
     1. Write declarative code
     2. Build functions with one purpose
