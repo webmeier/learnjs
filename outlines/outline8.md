@@ -114,15 +114,19 @@
             2. Fetch API
         2. With libraries (like jQuery.ajax, Axios)
     2. Promises
-    3. Async/await
+        1. What is a promise
+        2. How to make a promise
+        3. How to use a promise
+        4. Promise vs Callbacks
     4. The Fetch API
     5. Understanding JSON
     6. Understanding REST APIs
     7. Handling errors
     8. Using Axios
-    9. 🛠 building a loading indicator
-    10. 🛠 building a twitter feed
-    11. 🛠 building a google maps component
+    9. Async/await
+    10. 🛠 building a loading indicator
+    11. 🛠 building a twitter feed
+    12. 🛠 building a google maps component
 13. Scroll and browser resize events
     1. Scroll and resize events
     2. Debouncing and throttling
@@ -140,7 +144,8 @@
         6. Getting seconds
         7. Unix Timestamps
 15. Drag and drop
-    8. 🛠 building a drag & drop component
+    1. Drag events
+    2. 🛠 building a drag & drop component
 16. Accessibility
     1. Accessibility and JavaScript
     2. How to use a screen reader
@@ -164,35 +169,37 @@
     6. Building...
 17. Keyboard support
     1. Keyboard events
-        1. Why add keyboard support
+        1. Detecting key
     2. Building...
 18. Progressive enhancement
-    1. What is progressive enhancement
-    2. Feature detection and polyfilling
-    3. What if there's no JavaScript
-    4. Detecting vendor prefixes
+    1. The progressive enhancement mindset
+        1. Progressive enhancement vs graceful degradation
+    2. Polyfilling
+        1. Detect features
+        2. Polyfill if none
+    3. Vendor prefixes
+    4. If JavaScript is turned off...
     5. 🛠 Carousel transform vendor prefix
     4. 🛠 Enhancing everything that comes before...
-19. Integrating components
+19. Object Oriented Programming
+    1. What is Object Oriented Programming?
+    2. This in Javascript
+    3. Javascript Classes
+    4. Inheritance
+    5. Prototype in Javascript
+    6. Inheritance with Prototype
+    7. Constructing objects
+    8. Composition and inheritance
+    9. Closures
+    10. Private and public variables
+    11. Call, bind and apply
+20. Integrating components
     1. PubSub pattern
     2. Custom events
-    3. Organizing code with ES6 imports
-20. Object Oriented Programming
-    1. Object literal shorthands
-    2. What is Object Oriented Programming?
-    3. This in Javascript
-    4. Javascript Classes
-    5. Inheritance
-    6. Prototype in Javascript
-    7. Inheritance with Prototype
-    8. Constructing objects
-    9. Composition and inheritance
-    10. Closures
-    11. Private and public variables
-    12. Call, bind and apply
-    13. How to use OOP?
-21. Creating libraries
-    1. TBC
+    3. ES6 imports
+    4. Decoupling
+21. The MVC Pattern (Possibly here, for Carousel, Todo, etc. But might not need. Depends on their actual complexity)
+    1. MVC, MVP and MVVM
 22. Single page applications
     1. Authentication
     2. Routing
@@ -201,14 +208,22 @@
 
 Extra thoughts that I haven't managed to consolidate.
 
-1. String methods
-2. requestAnimationFrame
-3. Tasks, microtasks and paint tasks
-4. Regular expressions
-5. Recursion
+String manipulation
+    1. String methods
+    2. Regular expressions
+    3. Creating calculator (advanced)
+
+1. requestAnimationFrame
+2. Tasks, microtasks and paint tasks
+3. Recursion
+4. Bonus: Creating libraries?
 
 ## Notes to self:
 
 Modal accessibility: https://css-tricks.slack.com/archives/C7VGZ9UGK/p1522088746000015
 Focus trapping (esp modal: https://css-tricks.com/a-css-approach-to-trap-focus-inside-of-an-element/)
 Easier animations: https://twitter.com/zellwk/status/960371089615368192
+
+In MVP, the P observes models and updates views when models change. The P effectively binds models to views, a responsibility which was previously held by controllers in MVC.
+
+MVVM = two-way data binding
