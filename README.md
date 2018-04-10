@@ -100,6 +100,11 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     7. [Enhanced object literals](lessons/08.useful-javascript-features/07.enhanced-object-literals.md)
     8. [Rest and spread](lessons/08.useful-javascript-features/08.resd-and-spread.md)
     9. [Useful array methods](lessons/08.useful-javascript-features/09.useful-array-methods.md)
+9. JavaScript best practices
+    1. [Write declarative code](lessons/09.javascript-best-practices/01.write-declarative-code.md)
+    2. [Functions should have one purpose](lessons/09.javascript-best-practices/02.one-purpose.md)
+    3. [Understanding scope](lessons/09.javascript-best-practices/03.understanding-scope.md)
+    4. [Reduce state changes](lessons/09.javascript-best-practices/04.reduce-state-changes.md)
 
 Note: some content that has been made, but doesn't fit into current structure. I'll complete the restructure by April 20.
 
