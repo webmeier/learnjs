@@ -71,31 +71,29 @@
     9. Animating with JavaScript
     10. The Greensock Animation API (gsap)
     11. 🛠 Animating the modal window
-8. Useful JavaScript features
-    1. Ternary Operators
-    2. And and OR operators
-    3. Early returns
-    4. Template literals
-    5. Destructuring
-    6. Default arguments
-    7. Rest and spread operators
-    8. Functional array methods
-    9. Method chaining
-9. Best Practices
+8. Best Practices
     1. Write declarative code
     2. Build functions with one purpose
-    3. Understanding State
-    4. Understanding Scope
+    3. Understanding Scope
+    4. Understanding State
     5. Reduce side effects
     6. Don't reassign
     7. Don't mutate
     8. Prevent objects from mutating
     9. Prevent arrays from mutating
-    10. Write pure functions
-    11. 🛠 Refactoring the modal window
-    12. 🛠 Refactoring the accordion
-    13. 🛠 Refactoring the tabbed component
-    14. 🛠 Refactoring the carousel
+    10. Refactoring the off-canvas
+    11. Refactoring modal window
+    12. Refactoring carousel
+9. Useful JavaScript features
+    1. Ternary Operators
+    2. And and OR operators
+    3. Early returns
+    4. Template literals
+    5. Enhanced object literals
+    6. Destructuring
+    7. Default arguments
+    8. Rest and spread operators
+    9. Functional array methods
 10. Creating HTML Elements
     1. Changing text and HTML
     2. Creating HTML elements
@@ -111,80 +109,100 @@
     4. Persistent data
     4. 🛠 building an autocomplete input
     5. 🛠 building a todo-list
-    6. Handling dates in JavaScript
-    7. 🛠 building a date picker
 12. Asynchronous JavaScript (Ajax)
-    1. What is AJAX?
-    2. Understanding JSON
-    3. JavaScript promises
-    4. Fetching resources
-    5. Understanding REST APIs
-    6. 🛠 building a loading indicator
-    6. 🛠 building a twitter feed
-    7. 🛠 building a google maps component
-    5. Async and await
-    6. 🛠 improving loading indicator with async/await
-    6. 🛠 improving twitter feed with async/await
-    6. 🛠 improving google maps component with async/await
-13. Adding keyboard support
-    1. Why add keyboard support
-    2. keyboard events
-    3. Default keyboard behaviors (button, tab, and enter)
-    3. 🛠 Keyboard support for off-canvas menu
-    4. 🛠 Keyboard support for modal window
-    5. 🛠 Keyboard support for accordions
-    6. 🛠 Keyboard support for tabbed component
-    7. 🛠 Keyboard support for carousel
-    8. 🛠 Keyboard support for calculator
-    9. 🛠 Keyboard support for popover
-    10. 🛠 Keyboard support for todo-list
-    11. 🛠 Keyboard support for autocomplete input
-    12. 🛠 Keyboard support for date picker
-14. Scroll and browser resize events
-    1. Scroll events
-    2. The resize event
-    3. Debouncing and throttling
+    1. What is AJAX
+        1. Two ways to do AJAX
+            1. XHR
+            2. Fetch API
+        2. With libraries (like jQuery.ajax, Axios)
+    2. Promises
+        1. What is a promise
+        2. How to make a promise
+        3. How to use a promise
+        4. Promise vs Callbacks
+    4. The Fetch API
+    5. Understanding JSON
+    6. Understanding REST APIs
+    7. Handling errors
+    8. Using Axios
+    9. Async/await
+    10. 🛠 building a loading indicator
+    11. 🛠 building a twitter feed
+    12. 🛠 building a google maps component
+13. Scroll and browser resize events
+    1. Scroll and resize events
+    2. Debouncing and throttling
     4. 🛠 building an auto-hiding sticky nav
     5. 🛠 building a same-page-scroll link
     6. 🛠 building an infinite-scrolling page
     7. 🛠 building a scrollspy
-    8. 🛠 building a drag & drop component
-15. Accessibility
-    1. What is accessibility
-    2. The relationship between JavaScript and accessibility
-    3. How to use a screen reader
-    4. Common aria attributes
+14. Dealing with Dates
+    1. The Date Object
+        1. Getting Day
+        2. Getting Month
+        3. Getting Year
+        4. Getting Hours
+        5. Getting minutes
+        6. Getting seconds
+        7. Unix Timestamps
+15. Drag and drop (Skip drag drop first; return later)
+    1. Drag events
+    2. 🛠 building a drag & drop component
+16. Accessibility
+    1. Accessibility and JavaScript
+    2. How to use a screen reader
+        1. How to open up screen reader
+        2. Navigating with the keyboard
+            1. Tab
+            2. Numbers (any?)
+            3. Space
+            4. Enter
+    3. Visibility
+        1. Invisible elements
+        2. Visible to screen readers?
+        3. Example: accordion should not be visible to screen readers when hidden.
+        4. State of the accordion too
+        5. Visibility hidden
+        6. Display none
+        7. Hidden element
+        8. Focus states?
+    4. Aria attributes
     5. Live regions
-    6. Accessibility and animations
-    7. 🛠 Accessibility for everything that comes before...
-16. Progressive enhancement
-    1. What is progressive enhancement
-    2. Feature detection and polyfilling
-    3. What if there's no JavaScript
-    4. Detecting vendor prefixes
+    6. Building...
+17. Keyboard support
+    1. Keyboard events
+        1. Detecting key
+    2. Building...
+18. Progressive enhancement
+    1. The progressive enhancement mindset
+        1. Progressive enhancement vs graceful degradation
+    2. Polyfilling
+        1. Detect features
+        2. Polyfill if none
+    3. Vendor prefixes
+    4. If JavaScript is turned off...
     5. 🛠 Carousel transform vendor prefix
     4. 🛠 Enhancing everything that comes before...
-17. Integrating components
+19. Object Oriented Programming
+    1. What is Object Oriented Programming?
+    2. This in Javascript
+    3. Javascript Classes
+    4. Inheritance
+    5. Prototype in Javascript
+    6. Inheritance with Prototype
+    7. Constructing objects
+    8. Composition and inheritance
+    9. Closures
+    10. Private and public variables
+    11. Call, bind and apply
+20. Integrating components
     1. PubSub pattern
     2. Custom events
-    3. Organizing code with ES6 imports
-18. Object Oriented Programming
-    1. Object literal shorthands
-    2. What is Object Oriented Programming?
-    3. This in Javascript
-    4. Javascript Classes
-    5. Inheritance
-    6. Prototype in Javascript
-    7. Inheritance with Prototype
-    8. Constructing objects
-    9. Composition and inheritance
-    10. Closures
-    11. Private and public variables
-    12. Call, bind and apply
-    13. How to use OOP?
-19. Creating libraries
-    1. TBC
-20. Single page applications
+    3. ES6 imports
+    4. Decoupling
+21. The MVC Pattern (Possibly here, for Carousel, Todo, etc. But might not need. Depends on their actual complexity)
+    1. MVC, MVP and MVVM
+22. Single page applications
     1. Authentication
     2. Routing
     3. 🛠 Card generator application
@@ -192,14 +210,23 @@
 
 Extra thoughts that I haven't managed to consolidate.
 
-1. String methods
-2. requestAnimationFrame
-3. Tasks, microtasks and paint tasks
-4. Regular expressions
-5. Recursion
+String manipulation
+    1. String methods
+    2. Regular expressions
+    3. Creating calculator (advanced)
+
+1. requestAnimationFrame
+2. Tasks, microtasks and paint tasks
+3. Recursion
+4. Bonus: Creating libraries?
+5. Pure functions
 
 ## Notes to self:
 
 Modal accessibility: https://css-tricks.slack.com/archives/C7VGZ9UGK/p1522088746000015
 Focus trapping (esp modal: https://css-tricks.com/a-css-approach-to-trap-focus-inside-of-an-element/)
-Accessible animations: https://twitter.com/zellwk/status/960371089615368192
+Easier animations: https://twitter.com/zellwk/status/960371089615368192
+
+In MVP, the P observes models and updates views when models change. The P effectively binds models to views, a responsibility which was previously held by controllers in MVC.
+
+MVVM = two-way data binding

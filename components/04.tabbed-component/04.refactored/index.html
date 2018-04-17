@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Tabs</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,500" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/prefixfree.js"></script>
+</head>
+
+<body>
+  <div class="tabbed-component">
+    <ul class="tabs">
+      <li class="tab is-selected">
+        <a href="#radioactive">
+          <svg class="tab__icon" viewBox="0 0 39.81 39.81" data-icon-color="radioactive">
+            <use xlink:href="images/sprite.svg#radioactive" />
+          </svg>
+          <span class="tab__title">Radioactive</span>
+        </a>
+      </li>
+      <li class="tab">
+        <a href="#flammable">
+          <svg class="tab__icon" viewBox="0 0 296.252 296.252" data-icon-color="flammable">
+            <use xlink:href="images/sprite.svg#flammable" />
+          </svg>
+          <span class="tab__title">flammable</span>
+        </a>
+      </li>
+      <li class="tab">
+        <a href="#biohazard">
+          <svg class="tab__icon" viewBox="0 0 39.81 39.81" data-icon-color="biohazard">
+            <use xlink:href="images/sprite.svg#biohazard" />
+          </svg>
+          <span class="tab__title">biohazard</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="tab-content-container">
+      <section class="tab-content is-selected" id="radioactive">
+        <svg class="tab-content__image" data-icon-color="radioactive">
+          <use xlink:href="images/sprite.svg#radioactive" />
+        </svg>
+        <div class="tab-content__info" data-bg="radioactive">
+          <h2 class="tab-content__title">Radioactive</h2>
+          <p>The process by which an unstable atomic nucleus loses energy by emitting radiation, such as an alpha particle, beta particle with neutrino or only a neutrino in the case of electron capture, gamma ray, or electron in the case of internal conversion. A material containing such unstable nuclei is considered radioactive. </p>
+        </div>
+      </section>
+
+      <section class="tab-content" id="flammable">
+        <svg class="tab-content__image" data-icon-color="flammable">
+          <use xlink:href="images/sprite.svg#flammable" />
+        </svg>
+        <div class="tab-content__info" data-bg="flammable">
+          <h2 class="tab-content__title">flammable</h2>
+          <p>Flammable materials are those which ignite more easily than other materials, whereas those which are less easily ignited or which burn less vigorously are combustible. </p>
+          <p>The degree of flammability or combustibility depends largely upon the chemical composition of the subject material, as well as the ratio of mass versus surface area. </p>
+        </div>
+      </section>
+
+      <section class="tab-content" id="biohazard">
+        <svg class="tab-content__image" data-icon-color="biohazard">
+          <use xlink:href="images/sprite.svg#biohazard" />
+        </svg>
+        <div class="tab-content__info" data-bg="biohazard">
+          <h2 class="tab-content__title ">biohazard</h2>
+          <p>Substances that pose a threat to the health of living organisms, primarily that of humans. This can include nothing or samples of a microorganism, virus or toxin (from a biological source) that can affect human health. It can also include substances harmful to other animals. </p>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="js/main.js "></script>
+</body>
+
+</html>

@@ -10,7 +10,6 @@ tabList.addEventListener('click', e => {
   const tab = link.parentNode
   const href = link.getAttribute('href')
   const tabContent = component.querySelector(href)
-  console.log(tabContent)
 
   // Hiding previous tab and tab content
   tabs.forEach(elem => elem.classList.remove('is-selected'))

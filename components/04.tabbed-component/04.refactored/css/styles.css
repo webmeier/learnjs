@@ -1,0 +1,248 @@
+/* Need to add visually hidden class? */
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+/**
+ * base styles and typography
+ * --------------------------
+ */
+
+:root {
+  --bg-radioactive: linear-gradient(to right, #fd8d62, #fecb42);
+  --color-radioactive: #fecb42;
+  --bg-flammable: linear-gradient(to right, #c53404, #fe4d42);
+  --color-flammable: #fe4d42;
+  --bg-biohazard: linear-gradient(to right, #55a9aa, #3ffdb6);
+  --color-biohazard: #3ffdb6;
+}
+
+html {
+  font-size: 100%;
+  font-family: "Helvetica", sans-serif;
+  line-height: 1.4;
+}
+
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: black;
+  background-image: url("/images/bg-small.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 850px) {
+  body {
+    padding: 5% 1.5em;
+    background-image: url("/images/bg-med.jpg");
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  body {
+    background-image: url("/images/bg-large.jpg");
+  }
+}
+
+h2 {
+  font-size: 3.75em;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+}
+
+p + p {
+  margin-top: 1em;
+}
+
+.tabbed-component {
+  position: relative;
+  max-width: 58em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/**
+ * SVG icons color
+ * ---------------
+ */
+
+[data-icon-color="radioactive"] {
+  color: var(--color-radioactive);
+}
+
+[data-bg="radioactive"] {
+  background-image: var(--bg-radioactive);
+}
+
+[data-icon-color="flammable"] {
+  color: var(--color-flammable);
+}
+
+[data-bg="flammable"] {
+  background-image: var(--bg-flammable);
+  color: white;
+}
+
+[data-icon-color="biohazard"] {
+  color: var(--color-biohazard);
+}
+
+[data-bg="biohazard"] {
+  background-image: var(--bg-biohazard);
+}
+
+/**
+ * # START EDITING HERE
+ * ====================
+ */
+
+.tabs {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.tabs > * {
+  flex-grow: 1;
+}
+
+.tab {
+  font-size: 1em;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.tab > a {
+  display: block;
+  color: white;
+  background-color: #1e1e1e;
+  padding: 1em;
+}
+
+.tab.is-selected > a {
+  background-color: #323232;
+}
+
+.tab > a * {
+  pointer-events: none;
+}
+
+@media screen and (min-width: 450px) {
+  .tab {
+    text-align: left;
+  }
+}
+
+.tab__title {
+  position: relative;
+  display: inline-block;
+  margin-left: 0.35em;
+  margin-top: 0.5em;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 450px) {
+  .tab__title {
+    margin-top: 0;
+  }
+}
+
+/**
+ * Tab icon
+ */
+
+.tab__icon {
+  width: 1.75rem;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* Set inactive tab icons to 50% white */
+
+.tab:not(.is-selected) .tab__icon {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+/**
+ * Tab Content
+ * -----------
+ */
+
+@media screen and (min-width: 850px) {
+  .tab-content-container {
+    background-color: #323232;
+    padding: 0.75em;
+  }
+}
+
+.tab-content {
+  display: none;
+  padding: 2em;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 850px) {
+  .tab-content {
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    grid-column-gap: 3em;
+    padding-top: 2em;
+    background-color: black;
+  }
+  .tab-content > .tab-content__image {
+    grid-column: 2;
+  }
+  .tab-content > .tab-content__info {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+.tab-content.is-selected {
+  display: grid;
+}
+
+.tab-content > * + * {
+  margin-top: 1rem;
+}
+
+.tab-content__image {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 15em;
+}
+
+.tab-content__info {
+  margin-top: 3em;
+  background-color: black;
+  padding: 2em 3em;
+}
+
+@media screen and (min-width: 850px) {
+  .tab-content__info {
+    margin-top: 0;
+    padding: 5em 3em;
+  }
+}
+
+.tab-content__title {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
