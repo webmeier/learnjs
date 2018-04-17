@@ -2,105 +2,77 @@
 // ===============
 
 const track = document.querySelector('.carousel__track')
-const slides = Array.from(track.children)
+const slides = [...track.children]
 const slideWidth = slides[0].getBoundingClientRect().width
 const dotsContainer = document.querySelector('.carousel__nav')
-const dots = Array.from(dotsContainer.children)
+const dots = [...dotsContainer.children]
+const nextButton = document.querySelector('.jsNext')
+const prevButton = document.querySelector('.jsPrev')
 
+const getCurrentIndex = slides =>
+  slides.findIndex(slide => slide.classList.contains('is-selected'))
+
+const moveToSlide = (track, slides, currentIndex, targetIndex) => {
+  const currentSlide = slides[currentIndex]
+  const targetSlide = slides[targetIndex]
+
+  track.style.transform = `translateX(-${targetSlide.style.left})`
+  currentSlide.classList.remove('is-selected')
+  targetSlide.classList.add('is-selected')
+}
+
+const updateDots = (dots, currentIndex, targetIndex) => {
+  dots[currentIndex].classList.remove('is-selected')
+  dots[targetIndex].classList.add('is-selected')
+}
+
+const showHideArrows = (slides, targetIndex, prevButton, nextButton) => {
+  if (targetIndex === 0) {
+    prevButton.classList.add('is-hidden')
+    nextButton.classList.remove('is-hidden')
+  } else if (targetIndex === slides.length - 1) {
+    prevButton.classList.remove('is-hidden')
+    nextButton.classList.add('is-hidden')
+  } else {
+    prevButton.classList.remove('is-hidden')
+    nextButton.classList.remove('is-hidden')
+  }
+}
+
+const goToNextSlide = e => {
+  const currentIndex = getCurrentIndex(slides)
+  const nextIndex = currentIndex + 1
+
+  moveToSlide(track, slides, currentIndex, nextIndex)
+  showHideArrows(slides, nextIndex, prevButton, nextButton)
+  updateDots(dots, currentIndex, nextIndex)
+}
+
+const goToPrevSlide = e => {
+  const currentIndex = getCurrentIndex(slides)
+  const prevIndex = currentIndex - 1
+
+  moveToSlide(track, slides, currentIndex, prevIndex)
+  showHideArrows(slides, prevIndex, prevButton, nextButton)
+  updateDots(dots, currentIndex, prevIndex)
+}
+
+const goToTargetSlide = e => {
+  const targetDot = e.target.closest('button')
+  if (!targetDot) return
+
+  const currentIndex = getCurrentIndex(slides)
+  const targetIndex = dots.findIndex(dot => dot === targetDot)
+
+  moveToSlide(track, slides, currentIndex, targetIndex)
+  showHideArrows(slides, targetIndex, prevButton, nextButton)
+  updateDots(dots, currentIndex, targetIndex)
+}
 // Positioning slides
 slides.forEach((slide, index) => {
   slide.style.left = slideWidth * index + 'px'
 })
 
-const nextButton = document.querySelector('.jsNext')
-const prevButton = document.querySelector('.jsPrev')
-
-// Next button event listener
-nextButton.addEventListener('click', e => {
-  const currentSlide = track.querySelector('.is-selected')
-  const nextSlide = currentSlide.nextElementSibling
-
-  // Move to next slide
-  const amountToMove = nextSlide.style.left
-  track.style.transform = 'translateX(-' + amountToMove + ')'
-  currentSlide.classList.remove('is-selected')
-  nextSlide.classList.add('is-selected')
-
-  // Update arrows
-  prevButton.classList.remove('is-hidden')
-  const isFinalSlide = !nextSlide.nextElementSibling
-  if (isFinalSlide) {
-    nextButton.classList.add('is-hidden')
-  }
-
-  // Update dots
-  const currentDot = dotsContainer.querySelector('.is-selected')
-  const nextDot = currentDot.nextElementSibling
-  currentDot.classList.remove('is-selected')
-  nextDot.classList.add('is-selected')
-})
-
-// previous button event listener
-prevButton.addEventListener('click', e => {
-  const currentSlide = track.querySelector('.is-selected')
-  const prevSlide = currentSlide.previousElementSibling
-
-  // Move to prev slide
-  const amountToMove = prevSlide.style.left
-  track.style.transform = 'translateX(-' + amountToMove + ')'
-  currentSlide.classList.remove('is-selected')
-  prevSlide.classList.add('is-selected')
-
-  // Update arrows
-  nextButton.classList.remove('is-hidden')
-  const isFirstSlide = !prevSlide.previousElementSibling
-  if (isFirstSlide) {
-    prevButton.classList.add('is-hidden')
-  }
-
-  // Update dots
-  const currentDot = dotsContainer.querySelector('.is-selected')
-  const prevDot = currentDot.previousElementSibling
-  currentDot.classList.remove('is-selected')
-  prevDot.classList.add('is-selected')
-})
-
-dotsContainer.addEventListener('click', e => {
-  const targetDot = e.target.closest('button')
-  if (targetDot) {
-    const currentSlide = track.querySelector('.is-selected')
-    const currentDot = dotsContainer.querySelector('.is-selected')
-
-    let targetIndex
-
-    for (let index = 0; index < dots.length; index++) {
-      if (dots[index] === targetDot) {
-        targetIndex = index
-      }
-    }
-
-    const targetSlide = slides[targetIndex]
-
-    // Move to target slide
-    const amountToMove = targetSlide.style.left
-    track.style.transform = 'translateX(-' + amountToMove + ')'
-    currentSlide.classList.remove('is-selected')
-    targetSlide.classList.add('is-selected')
-
-    // Update dots
-    currentDot.classList.remove('is-selected')
-    targetDot.classList.add('is-selected')
-
-    // Update arrows
-    if (targetIndex === 0) {
-      prevButton.classList.add('is-hidden')
-      nextButton.classList.remove('is-hidden')
-    } else if (targetIndex === slides.length - 1) {
-      prevButton.classList.remove('is-hidden')
-      nextButton.classList.add('is-hidden')
-    } else {
-      prevButton.classList.remove('is-hidden')
-      nextButton.classList.remove('is-hidden')
-    }
-  }
-})
+nextButton.addEventListener('click', goToNextSlide)
+prevButton.addEventListener('click', goToPrevSlide)
+dotsContainer.addEventListener('click', goToTargetSlide)

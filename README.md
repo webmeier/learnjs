@@ -116,8 +116,7 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     11. [🛠 Refactoring the modal](lessons/09.javascript-best-practices/11.refactor-modal.md)
     12. [🛠 Refactoring the accordion](lessons/09.javascript-best-practices/12.refactor-accordion.md)
     13. [🛠 Refactoring the tabbed-component](lessons/09.javascript-best-practices/13.refactor-tabbed-component.md)
-    14. [🛠 Refactoring the tabbed-component](lessons/09.javascript-best-practices/14.refactor-tabbed-component.md)
-    15. [🛠 Refactoring the carousel](lessons/09.javascript-best-practices/15.refactor-tabbed-component.md)
+    14. [🛠 Refactoring the carousel](lessons/09.javascript-best-practices/14.refactor-carousel.md)
 
 Note: some content that has been made, but doesn't fit into current structure. I'll complete the restructure by April 20.
 
