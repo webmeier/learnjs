@@ -107,6 +107,17 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     2. [Functions should have one purpose](lessons/09.javascript-best-practices/02.one-purpose.md)
     3. [Understanding scope](lessons/09.javascript-best-practices/03.understanding-scope.md)
     4. [Reduce state changes](lessons/09.javascript-best-practices/04.reduce-state-changes.md)
+    5. [Don't reassign](lessons/09.javascript-best-practices/05.dont-reassign.md)
+    6. [Don't mutate](lessons/09.javascript-best-practices/06.dont-mutate.md)
+    7. [Preventing objects from mutating](lessons/09.javascript-best-practices/07.prevent-objects-from-mutating.md)
+    8. [Preventing arrays from mutating](lessons/09.javascript-best-practices/08.prevent-objects-from-mutating.md)
+    9. [Write pure functions](lessons/09.javascript-best-practices/09.pure-functions.md)
+    10. [🛠 Refactoring the off-canvas menu](lessons/09.javascript-best-practices/10.refactor-off-canvas.md)
+    11. [🛠 Refactoring the modal](lessons/09.javascript-best-practices/11.refactor-modal.md)
+    12. [🛠 Refactoring the accordion](lessons/09.javascript-best-practices/12.refactor-accordion.md)
+    13. [🛠 Refactoring the tabbed-component](lessons/09.javascript-best-practices/13.refactor-tabbed-component.md)
+    14. [🛠 Refactoring the tabbed-component](lessons/09.javascript-best-practices/14.refactor-tabbed-component.md)
+    15. [🛠 Refactoring the carousel](lessons/09.javascript-best-practices/15.refactor-tabbed-component.md)
 
 Note: some content that has been made, but doesn't fit into current structure. I'll complete the restructure by April 20.
 
