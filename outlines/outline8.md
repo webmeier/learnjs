@@ -71,17 +71,7 @@
     9. Animating with JavaScript
     10. The Greensock Animation API (gsap)
     11. 🛠 Animating the modal window
-8. Useful JavaScript features
-    1. Ternary Operators
-    2. And and OR operators
-    3. Early returns
-    4. Template literals
-    5. Enhanced object literals
-    6. Destructuring
-    7. Default arguments
-    8. Rest and spread operators
-    9. Functional array methods
-9. Best Practices
+8. Best Practices
     1. Write declarative code
     2. Build functions with one purpose
     3. Understanding Scope
@@ -91,6 +81,19 @@
     7. Don't mutate
     8. Prevent objects from mutating
     9. Prevent arrays from mutating
+    10. Refactoring the off-canvas
+    11. Refactoring modal window
+    12. Refactoring carousel
+9. Useful JavaScript features
+    1. Ternary Operators
+    2. And and OR operators
+    3. Early returns
+    4. Template literals
+    5. Enhanced object literals
+    6. Destructuring
+    7. Default arguments
+    8. Rest and spread operators
+    9. Functional array methods
 10. Creating HTML Elements
     1. Changing text and HTML
     2. Creating HTML elements
@@ -142,7 +145,7 @@
         5. Getting minutes
         6. Getting seconds
         7. Unix Timestamps
-15. Drag and drop
+15. Drag and drop (Skip drag drop first; return later)
     1. Drag events
     2. 🛠 building a drag & drop component
 16. Accessibility
@@ -216,6 +219,7 @@ String manipulation
 2. Tasks, microtasks and paint tasks
 3. Recursion
 4. Bonus: Creating libraries?
+5. Pure functions
 
 ## Notes to self:
 

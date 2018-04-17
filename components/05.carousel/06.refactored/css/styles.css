@@ -40,6 +40,8 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
 }
 
 .carousel__slide {
@@ -103,10 +105,6 @@ body {
 
 .carousel__dot.is-selected {
   background-color: var(--color-selected-state);
-}
-
-.carousel__dot > * {
-  pointer-events: none;
 }
 
 .is-hidden {

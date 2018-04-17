@@ -1,0 +1,72 @@
+# Write pure functions
+
+Pure functions are functions that have two characteristics:
+
+1. They do not produce side effects
+2. They will return the same output given a specific input
+
+## No side effects
+
+When a function changes the external state, it is said to produce side effects. Pure functions should not produce side effects.
+
+## Returning the same out given a specific input
+
+When you pass a set of input values into a pure function, it should always return the same output value. This is easier to explain with an example.
+
+Let's say you have a function called `sum` that sums two numbers together.
+
+```js
+const sum = (n1, n2) => n1 + n2
+```
+
+If you pass 3 and 5 into `sum`, you will get 8. It doesn't how many times you run `sum(3, 5)`. You will always get 8. The output remains unchanged given the same input.
+
+```js
+sum(3, 5) // 8
+sum(3, 5) // 8
+sum(3, 5) // 8
+sum(3, 5) // 8
+```
+
+An impure function's value can change given the same input. Let's say for example you have the following function that uses `Math.random`.
+
+```js
+const random = _ => Math.random()
+```
+
+`Math.random` is a built-in JavaScript method that gives you a random value between 0 to 1. It changes each time you run it.
+
+```js
+random() // 0.4656
+random() // 0.0037
+random() // 0.4346
+random() // 0.4989
+```
+
+## No external variables
+
+Pure functions cannot depend on variables in the external state. This is because the output value will be different if the external state changes.
+
+```js
+let num = 5
+const addValue = valueToAdd => num + valueToAdd
+
+addValue(10)  // 15
+num = 100
+addValue(10) // 110
+```
+
+## Semi-pure functions
+
+You can still write functions that relies on external variables if you know they won't change.
+
+```js
+const num = 5
+const addValue = valueToAdd => num + valueToAdd
+
+addValue(10)  // 15
+addValue(30)  // 35
+addValue(10)  // 15
+```
+
+Practice this with discretion.
