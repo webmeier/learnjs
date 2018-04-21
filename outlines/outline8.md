@@ -113,20 +113,13 @@
     5. 🛠 building a todo-list
 12. Asynchronous JavaScript (Ajax)
     1. What is AJAX
-        1. Two ways to do AJAX
-            1. XHR
-            2. Fetch API
-        2. With libraries (like jQuery.ajax, Axios)
-    2. Promises
-        1. What is a promise
-        2. How to make a promise
-        3. How to use a promise
-        4. Promise vs Callbacks
-    4. The Fetch API
-    5. Understanding JSON
-    6. Understanding REST APIs
-    7. Handling errors
-    8. Using Axios
+    2. Understanding JSON
+    3. The Fetch API
+    4. Anatomy of a request
+    5. Understanding API documentations
+    6. Sending a post request
+    7. Understanding Promises
+    8. Handling errors
     9. Async/await
     10. 🛠 building a loading indicator
     11. 🛠 building a twitter feed

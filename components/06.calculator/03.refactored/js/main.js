@@ -118,7 +118,7 @@ const display = calculator.querySelector('.calculator__display')
 const keys = calculator.querySelector('.calculator__keys')
 
 keys.addEventListener('click', e => {
-  if (!e.target.matches('button')) return
+  if (!e.target.closest('button')) return
   const key = e.target
   const displayedNum = display.textContent
   const resultString = createResultString(key, displayedNum, calculator.dataset)

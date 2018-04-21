@@ -20,7 +20,7 @@ const display = calculator.querySelector('.calculator__display')
 const keys = calculator.querySelector('.calculator__keys')
 
 keys.addEventListener('click', e => {
-  if (e.target.matches('button')) {
+  if (e.target.closest('button')) {
     const key = e.target
     const action = key.dataset.action
     const keyContent = key.textContent
