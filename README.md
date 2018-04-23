@@ -117,8 +117,15 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     12. [🛠 Refactoring the accordion](lessons/09.javascript-best-practices/12.refactor-accordion.md)
     13. [🛠 Refactoring the tabbed-component](lessons/09.javascript-best-practices/13.refactor-tabbed-component.md)
     14. [🛠 Refactoring the carousel](lessons/09.javascript-best-practices/14.refactor-carousel.md)
-
-Note: some content that has been made, but doesn't fit into current structure. I'll complete the restructure by April 20.
+10. Text and Content
+    1. [Changing text and HTML](lessons/10.text-and-content/01.changing-text-and-html.md)
+    2. [Creating HTML Elements](lessons/10.text-and-content/02.creating-html-elements.md)
+    3. [Adding multiple elements to the DOM](lessons/10.text-and-content/03.adding-multiple-elements.md)
+    4. [Removing elements](lessons/10.text-and-content/04.adding-multiple-elements.md)
+11. Forms
+    1. [Intro to forms](lessons/11.forms/01.forms.md)
+    2. [Getting form fields](lessons/11.forms/02.getting-form-fields.md)
+    3. [Types of form fields](lessons/11.forms/03.types-of-fields.md)
 
 ## Private Community
 
