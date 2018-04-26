@@ -112,18 +112,20 @@
     4. 🛠 building an autocomplete input
     5. 🛠 building a todo-list
 12. Asynchronous JavaScript (Ajax)
-    1. What is AJAX
+    1. Introduction to Ajax
     2. Understanding JSON
     3. The Fetch API
-    4. Anatomy of a request
-    5. Understanding API documentations
-    6. Sending a post request
-    7. Understanding Promises
-    8. Handling errors
-    9. Async/await
-    10. 🛠 building a loading indicator
-    11. 🛠 building a twitter feed
-    12. 🛠 building a google maps component
+    4. JavaScript Promises
+    5. Requests and responses
+    6. Dealing with Pagination
+    7. Sending a post request
+    8. Understanding CURL
+    9. Handling errors
+    10. Using Axios
+    11. Async and await
+    12. 🛠 building a loading indicator
+    13. 🛠 building a twitter feed
+    14. 🛠 building a google maps component
 13. Scroll and browser resize events
     1. Scroll and resize events
     2. Debouncing and throttling
@@ -190,6 +192,7 @@
     9. Closures
     10. Private and public variables
     11. Call, bind and apply
+    12. Factory functions... Need to slot this in somehow
 20. Integrating components
     1. PubSub pattern
     2. Custom events

@@ -126,6 +126,14 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     1. [Intro to forms](lessons/11.forms/01.forms.md)
     2. [Getting form fields](lessons/11.forms/02.getting-form-fields.md)
     3. [Types of form fields](lessons/11.forms/03.types-of-fields.md)
+12. Asynchronous JavaScript
+    1. [Intro to Ajax](lessons/12.asynchronous-javascript/01.ajax.md)
+    2. [Understanding JSON](lessons/12.asynchronous-javascript/02.json.md)
+    3. [The Fetch API](lessons/12.asynchronous-javascript/03.fetch-api.md)
+    4. [Possible data types](lessons/12.asynchronous-javascript/04.data-types.md)
+    5. [JavaScript Promises](lessons/12.asynchronous-javascript/05.promises.md)
+    6. [Requesting many resources at once](lessons/12.asynchronous-javascript/06.reqeusting-many-resources.md)
+    7. [Request and Response](lessons/12.asynchronous-javascript/07.request-and-response.md)
 
 ## Private Community
 
