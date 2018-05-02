@@ -15,16 +15,17 @@
   1. Fetch vs XHR
   2. Fetching with Fetch
   3. Handling Fetch's response
-4. JavaScript Promises
+4. Data Types
+5. JavaScript Promises
   1. What are promises
   2. How to use promises
   3. How to construct promises
   4. Example of a real promise (Fetch)
-5. Requesting multiple resources at once
+6. Requesting multiple resources at once
   1. Event-driven XHR vs Promise driven Fetch (When you request a resource multiple times)
   2. Promise.all
   3. Promise.race
-6. Requests and responses
+7. Requests and responses
   1. The anatomy of a request
     1. Endpoint
     2. Method
@@ -34,12 +35,39 @@
     1. Status
     2. Headers
     3. Payload
-7. Basic authentication
-  1. With Github as example
-8. Oauth Authentication
-  1. With Github as example
-10. Sending a post request
-9. Understanding CURL
+8. Dealing with paginated responses
+  1. Why some responses are paginated
+  2. Increase limit per page
+  3. Perform multiple requests
+    1. Recursion
+    2. Watching the header for clues
+9. Sending Post, Put, Patch and Delete Requests
+  1. Most API require authentication for Post requests
+  2. Some APIs require authentication for GET requests
+  3. What is authentication
+  4. Talk about Fake API with https://jsonplaceholder.typicode.com
+  5. Sending a Post request
+    1. With XHR
+    2. With Fetch
+      1. Content Type application/json
+      2. JSON.stringify
+  4. Sending Put request
+  5. Sending Patch request
+  6. Sending Delete request
+10. Authentication
+  1. What is authentication
+  2. Importance of securing passwords
+  3. Basic authentication
+    1. With XHR
+    2. With Fetch
+  4. Oauth Authentication
+    1. With XHR
+    2. With Fetch
+11. Understanding API Documentations
+  1. How to read API documentations
+  2. API Versions
+  3. API Headers, response, request, etc
+12. Understanding CURL
   1. Why need to understand CURL
   2. Sending a request with CURL
     1. Setting method
@@ -47,38 +75,31 @@
     3. Setting body (with and without line breaks)
   3. Basic Auth with CURL
   4. Verbose mode (for reading response headers)
-10. Understanding API Documentations
-  1. How to read API documentations
-  2. API Versions
-  3. API Headers
-11. Handling errors
+13. Handling errors
   1. Why handle errors
-  2. HTTP statuses
-  3. Handling errors with Fetch
-  4. Removing boilerplate code
-12. Using Axios
-  1. Get request with Axios
-  2. Post request with Axios
-13. Dealing with paginated responses
-  1. Why some responses are paginated
-  2. How to request all pages
-    1. Recursion
-    2. Watching the header for clues
-14. Building some components:
+  2. Types of errors.
+  3. Error object.
+  4. Handling errors with XHR
+  5. Handling errors with Fetch
+  6. Removing boilerplate code
+14. Using Axios
+  1. What is Axios
+  2. Get request with Axios
+  3. Post request with Axios
+  4. Handling errors with Axios
+15. Building some components:
   1. Building a loading indicator
-  2. A Twitter search component (requires Oauth)
+  2. Build a Pokédex
   3. A Google Maps component (requires an API key for auth)
-15. Async and await
+16. Async and await
   1. What is async await
   2. How async await works
   3. Promise catch for async functions (so we don't need try catch!)
   4. awaiting multiple items at once
   5. awaiting in loops
-16. Updating the components
+17. Updating the components
   1. Async/await with twitter component
   2. Async/await with Google maps component
-17. Understanding CORS
-  1. CORS Headers
 
 Ajax with Grahp QL (This is obviously not firmed up yet, as you can tell)
   1. What is GraphQL
