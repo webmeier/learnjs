@@ -34,11 +34,11 @@
     1. Status
     2. Headers
     3. Payload
-7. Sending a post request
-  1. Basic authentication
-  3. How to send a post request (like creating a repo on Github)
-8. Authenticating with Oauth
-  1. How to authenticate with Ouath using Github as an example
+7. Basic authentication
+  1. With Github as example
+8. Oauth Authentication
+  1. With Github as example
+10. Sending a post request
 9. Understanding CURL
   1. Why need to understand CURL
   2. Sending a request with CURL
