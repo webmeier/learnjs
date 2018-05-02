@@ -100,8 +100,11 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     7. [Enhanced object literals](lessons/08.useful-javascript-features/07.enhanced-object-literals.md)
     8. [Rest and spread](lessons/08.useful-javascript-features/08.rest-and-spread.md)
     9. [Useful array methods](lessons/08.useful-javascript-features/09.useful-array-methods.md)
-    10. [🛠 Improving the accordion](lessons/08.useful-javascript-features/10.improving-accordion.md)
-    11. [🛠 Improving the carousel](lessons/08.useful-javascript-features/11.improving-carousel.md)
+    10. [Reduce](lessons/08.useful-javascript-features/10.reduce.md)
+    11. [Looping through objects](lessons/08.useful-javascript-features/11.reduce.md)
+    12. [Returning objects with implicit return](lessons/08.useful-javascript-features/12.implicit-return-object.md)
+    13. [🛠 Improving the accordion](lessons/08.useful-javascript-features/13.improving-accordion.md)
+    14. [🛠 Improving the carousel](lessons/08.useful-javascript-features/14.improving-carousel.md)
 9. JavaScript best practices
     1. [Write declarative code](lessons/09.javascript-best-practices/01.write-declarative-code.md)
     2. [Functions should have one purpose](lessons/09.javascript-best-practices/02.one-purpose.md)
