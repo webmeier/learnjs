@@ -8,18 +8,15 @@ Asynchronous JavaScript
 7. Sending post requests
 8. Authentication
 9. Handling errors
-10. CORS and JSONP
-11. XHR or Fetch?
-12. Using an Ajax library
-  1. What is Axios
-  2. Get request with Axios
-  3. Post request with Axios
-  4. Handling errors with Axios
-13. Understanding API Documentations
+10. Viewing response headers
+11. CORS and JSONP
+12. XHR or Fetch?
+13. Using an Ajax library
+14. Understanding API Documentations
   1. How to read API documentations
   2. API Versions
   3. API Headers, response, request, etc
-14. Understanding CURL
+15. Understanding CURL
   1. Why need to understand CURL
   2. Sending a request with CURL
     1. Setting method
@@ -27,7 +24,7 @@ Asynchronous JavaScript
     3. Setting body (with and without line breaks)
   3. Basic Auth with CURL
   4. Verbose mode (for reading response headers)
-15. Building some components:
+16. Building some components:
   1. Building a loading indicator
   2. Build a Pokédex
   3. A Google Maps component (requires an API key for auth)
