@@ -101,8 +101,8 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     8. [Rest and spread](lessons/08.useful-javascript-features/08.rest-and-spread.md)
     9. [Useful array methods](lessons/08.useful-javascript-features/09.useful-array-methods.md)
     10. [Reduce](lessons/08.useful-javascript-features/10.reduce.md)—new!
-    11. [Looping through objects](lessons/08.useful-javascript-features/11.reduce.md)—new!
-    12. [Returning objects with implicit return](lessons/08.useful-javascript-features/12.implicit-return-object.md)—new!
+    11. [Looping through objects](lessons/08.useful-javascript-features/11.looping-through-objects.md)—new!
+    12. [Returning objects with implicit return](lessons/08.useful-javascript-features/12.implicit-return-objects.md)—new!
     13. [🛠 Improving the accordion](lessons/08.useful-javascript-features/13.improving-accordion.md)
     14. [🛠 Improving the carousel](lessons/08.useful-javascript-features/14.improving-carousel.md)
 9. JavaScript best practices
