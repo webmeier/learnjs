@@ -142,10 +142,6 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     10. [Viewing response headers](lessons/12.asynchronous-javascript/10.viewing-response-headers.md)—new!
     11. [CORS and JSONP](lessons/12.asynchronous-javascript/11.corn-and-jsonp.md)—new!
     12. [XHR or Fetch](lessons/12.asynchronous-javascript/12.xhr-or-fetch.md)—new!
-<!-- 13. Advanced asynchronous JavaScript -->
-    <!-- 10. [Requesting many resources at once](lessons/12.asynchronous-javascript/10.requesting-many-resources.md)—new! -->
-    <!-- 11. [Response headers](lessons/12.asynchronous-javascript/11.response-headers.md)—new! -->
-
 
 ## Private Community
 
