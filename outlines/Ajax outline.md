@@ -1,73 +1,25 @@
+Asynchronous JavaScript
 1. Introduction to Ajax
-  1. What is Ajax
-  2. XML
-  3. XMLHttpRequest
-  4. Sending a request with XMLHttpRequest (fetching repos from Github)
-  5. Note on Rate limits (cause Github has a rate limit of 60/h)
 2. Understanding JSON
-  1. What is JSON
-  2. Converting between JSON and JavaScript
-  3. Parsing the response (from the previous lesson)
-  4. Massaging the data
-  5. Displaying data onto the DOM
-  6. Handling other types of data
 3. The Fetch API
-  1. Fetch vs XHR
-  2. Fetching with Fetch
-  3. Handling Fetch's response
 4. Data Types
 5. JavaScript Promises
-  1. What are promises
-  2. How to use promises
-  3. How to construct promises
-  4. Example of a real promise (Fetch)
-6. Requesting multiple resources at once
-  1. Event-driven XHR vs Promise driven Fetch (When you request a resource multiple times)
-  2. Promise.all
-  3. Promise.race
-7. Requests and responses
-  1. The anatomy of a request
-    1. Endpoint
-    2. Method
-    3. Headers
-    4. Body
-  2. The anatomy of a response
-    1. Status
-    2. Headers
-    3. Payload
-8. Dealing with paginated responses
-  1. Why some responses are paginated
-  2. Increase limit per page
-  3. Perform multiple requests
-    1. Recursion
-    2. Watching the header for clues
-9. Sending Post, Put, Patch and Delete Requests
-  1. Most API require authentication for Post requests
-  2. Some APIs require authentication for GET requests
-  3. What is authentication
-  4. Talk about Fake API with https://jsonplaceholder.typicode.com
-  5. Sending a Post request
-    1. With XHR
-    2. With Fetch
-      1. Content Type application/json
-      2. JSON.stringify
-  4. Sending Put request
-  5. Sending Patch request
-  6. Sending Delete request
-10. Authentication
-  1. What is authentication
-  2. Importance of securing passwords
-  3. Basic authentication
-    1. With XHR
-    2. With Fetch
-  4. Oauth Authentication
-    1. With XHR
-    2. With Fetch
-11. Understanding API Documentations
+6. Requests and responses
+7. Sending post requests
+8. Authentication
+9. Handling errors
+10. CORS and JSONP
+11. XHR or Fetch?
+12. Using an Ajax library
+  1. What is Axios
+  2. Get request with Axios
+  3. Post request with Axios
+  4. Handling errors with Axios
+13. Understanding API Documentations
   1. How to read API documentations
   2. API Versions
   3. API Headers, response, request, etc
-12. Understanding CURL
+14. Understanding CURL
   1. Why need to understand CURL
   2. Sending a request with CURL
     1. Setting method
@@ -75,36 +27,25 @@
     3. Setting body (with and without line breaks)
   3. Basic Auth with CURL
   4. Verbose mode (for reading response headers)
-13. Handling errors
-  1. Why handle errors
-  2. Types of errors.
-  3. Error object.
-  4. Handling errors with XHR
-  5. Handling errors with Fetch
-  6. Removing boilerplate code
-14. Using Axios
-  1. What is Axios
-  2. Get request with Axios
-  3. Post request with Axios
-  4. Handling errors with Axios
 15. Building some components:
   1. Building a loading indicator
   2. Build a Pokédex
   3. A Google Maps component (requires an API key for auth)
-16. Async and await
-  1. What is async await
-  2. How async await works
-  3. Promise catch for async functions (so we don't need try catch!)
-  4. awaiting multiple items at once
-  5. awaiting in loops
-17. Updating the components
-  1. Async/await with twitter component
-  2. Async/await with Google maps component
 
-Ajax with Grahp QL (This is obviously not firmed up yet, as you can tell)
-  1. What is GraphQL
-    1. Rest vs Graph
-    2. Why use Graph
-  2. Querys and Mutations
-  3. Querying Github's GraphQL API
-  4. Creating component that lists multiple Github Repos (using graph). (Open to ideas regarding component)
+Advanced asynchronous JavaScript
+1. Advanced Promises (Then then then chain. Promise.all)
+2. Requesting many resources at once (I can talk purely about Promises here. Forget Callbacks! Yay!)
+3. Promises and loops (for loop vs map. Promises must be returned to be used )
+4. Using Response headers
+5. Parsing Strings
+6. Dealing with paginated responses (parts 1 and 2) Same. Only talk about promises.
+7. Async and await
+  1. The async function
+  2. The await keyword
+  3. Always return promises
+8. Catching errors with Async/await.
+  1. Try catch
+  2. The Error catcher pattern
+9. Awaiting many items at once
+10. Async/await and loops
+11. Improving components we build

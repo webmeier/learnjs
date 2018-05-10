@@ -135,8 +135,17 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     3. [The Fetch API](lessons/12.asynchronous-javascript/03.fetch-api.md)—new!
     4. [Possible data types](lessons/12.asynchronous-javascript/04.data-types.md)—new!
     5. [JavaScript Promises](lessons/12.asynchronous-javascript/05.promises.md)—new!
-    6. [Requesting many resources at once](lessons/12.asynchronous-javascript/06.requesting-many-resources.md)—new!
-    7. [Request and Response](lessons/12.asynchronous-javascript/07.request-and-response.md)—new!
+    6. [Requests and responses](lessons/12.asynchronous-javascript/06.request-and-response.md)—new!
+    7. [Sending post requests](lessons/12.asynchronous-javascript/07.post-request.md)—new!
+    8. [Authentication](lessons/12.asynchronous-javascript/08.authentication.md)—new!
+    9. [Handling errors](lessons/12.asynchronous-javascript/09.handling-errors.md)—new!
+    10. [Viewing response headers](lessons/12.asynchronous-javascript/10.viewing-response-headers.md)—new!
+    11. [CORS and JSONP](lessons/12.asynchronous-javascript/11.corn-and-jsonp.md)—new!
+    12. [XHR or Fetch](lessons/12.asynchronous-javascript/12.xhr-or-fetch.md)—new!
+<!-- 13. Advanced asynchronous JavaScript -->
+    <!-- 10. [Requesting many resources at once](lessons/12.asynchronous-javascript/10.requesting-many-resources.md)—new! -->
+    <!-- 11. [Response headers](lessons/12.asynchronous-javascript/11.response-headers.md)—new! -->
+
 
 ## Private Community
 
