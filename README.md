@@ -150,6 +150,8 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     2. [Response headers in JavaScript](lessons/13.advanced-async/02.response-headers-in-js.md)—new!
     3. [Dealing with paginated responses (part 1)](lessons/13.advanced-async/03.paginated-responses.md)—new!
     4. [Dealing with paginated responses (part 2)](lessons/13.advanced-async/04.paginated-responses.md)—new!
+    5. [Asynchronous functions](lessons/13.advanced-async/05.async-await.md)—new!
+    6. [Timeouts](lessons/13.advanced-async/06.timeouts.md)—new!
 
 
 ## Private Community
