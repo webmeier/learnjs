@@ -13,36 +13,19 @@ Asynchronous JavaScript
 12. XHR or Fetch?
 13. Using an Ajax library
 14. Understanding API Documentations
-  1. How to read API documentations
-  2. API Versions
-  3. API Headers, response, request, etc
 15. Understanding CURL
-  1. Why need to understand CURL
-  2. Sending a request with CURL
-    1. Setting method
-    2. Setting headers
-    3. Setting body (with and without line breaks)
-  3. Basic Auth with CURL
-  4. Verbose mode (for reading response headers)
 16. Building some components:
-  1. Building a loading indicator
-  2. Build a Pokédex
-  3. A Google Maps component (requires an API key for auth)
 
 Advanced asynchronous JavaScript
-1. Advanced Promises (Then then then chain. Promise.all)
-2. Requesting many resources at once (I can talk purely about Promises here. Forget Callbacks! Yay!)
-3. Promises and loops (for loop vs map. Promises must be returned to be used )
-4. Using Response headers
-5. Parsing Strings
-6. Dealing with paginated responses (parts 1 and 2) Same. Only talk about promises.
-7. Async and await
-  1. The async function
-  2. The await keyword
-  3. Always return promises
-8. Catching errors with Async/await.
-  1. Try catch
-  2. The Error catcher pattern
-9. Awaiting many items at once
-10. Async/await and loops
-11. Improving components we build
+1. Requesting many resources at once
+2. Getting Response headers in JavaScript
+3. Dealing with paginated responses (part 1)
+4. Dealing with paginated responses (part 2)
+5. Async and await
+6. Async loops
+  5. Awaiting many items at once
+  6. Async/await and loops
+    for await loop!
+    map. forEach is not async aware 🤔.
+    But how to prove?
+8. Improving components we build
