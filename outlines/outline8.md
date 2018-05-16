@@ -104,28 +104,14 @@
     5. 🛠 Improving carousel
     6. 🛠 Building a calculator
     7. 🛠 building a popover
-11. Forms and dates
+11. Forms
     1. Intro to Forms
     2. Getting form fields
     3. Form fields and their events
     4. Persistent data
     4. 🛠 building an autocomplete input
     5. 🛠 building a todo-list
-12. Asynchronous JavaScript (Ajax)
-    1. Introduction to Ajax
-    2. Understanding JSON
-    3. The Fetch API
-    4. JavaScript Promises
-    5. Requests and responses
-    6. Dealing with Pagination
-    7. Sending a post request
-    8. Understanding CURL
-    9. Handling errors
-    10. Using Axios
-    11. Async and await
-    12. 🛠 building a loading indicator
-    13. 🛠 building a twitter feed
-    14. 🛠 building a google maps component
+12. Asynchronous JavaScript (See Ajax outline.md)
 13. Scroll and browser resize events
     1. Scroll and resize events
     2. Debouncing and throttling
@@ -133,8 +119,10 @@
     5. 🛠 building a same-page-scroll link
     6. 🛠 building an infinite-scrolling page
     7. 🛠 building a scrollspy
-14. Dealing with Dates
-    1. The Date Object
+14. Dates and timeouts
+    1. Timeouts
+    2. Intervals
+    3. The Date Object
         1. Getting Day
         2. Getting Month
         3. Getting Year
@@ -217,9 +205,16 @@ String manipulation
 2. Tasks, microtasks and paint tasks
 3. Recursion
 4. Bonus: Creating libraries?
-5. Pure functions
 
 ## Notes to self:
+
+Might be good to teach these:
+    1. `pop`,
+    2. `push`
+    3. `while` loop
+
+
+
 
 Modal accessibility: https://css-tricks.slack.com/archives/C7VGZ9UGK/p1522088746000015
 Focus trapping (esp modal: https://css-tricks.com/a-css-approach-to-trap-focus-inside-of-an-element/)
