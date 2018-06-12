@@ -140,7 +140,7 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     8. [Authentication](lessons/12.asynchronous-javascript/08.authentication.md)
     9. [Handling errors](lessons/12.asynchronous-javascript/09.handling-errors.md)
     10. [Viewing response headers](lessons/12.asynchronous-javascript/10.viewing-response-headers.md)
-    11. [CORS and JSONP](lessons/12.asynchronous-javascript/11.corn-and-jsonp.md)
+    11. [CORS and JSONP](lessons/12.asynchronous-javascript/11.cors-and-jsonp.md)
     12. [XHR or Fetch](lessons/12.asynchronous-javascript/12.xhr-or-fetch.md)
     13. [Using an Ajax Library](lessons/12.asynchronous-javascript/13.ajax-library.md)—new!
     14. [Reading API Documentation](lessons/12.asynchronous-javascript/14.reading-api-docs.md)—new!
