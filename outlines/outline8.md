@@ -111,18 +111,8 @@
     4. Persistent data
     4. 🛠 building an autocomplete input
     5. 🛠 building a todo-list
-12. Asynchronous JavaScript (See Ajax outline.md)
-13. Scroll and browser resize events
-    1. Scroll and resize events
-    2. Debouncing and throttling
-    4. 🛠 building an auto-hiding sticky nav
-    5. 🛠 building a same-page-scroll link
-    6. 🛠 building an infinite-scrolling page
-    7. 🛠 building a scrollspy
-14. Dates and timeouts
-    1. Timeouts
-    2. Intervals
-    3. The Date Object
+12. Dates
+    1. The Date Object
         1. Getting Day
         2. Getting Month
         3. Getting Year
@@ -130,10 +120,43 @@
         5. Getting minutes
         6. Getting seconds
         7. Unix Timestamps
-15. Drag and drop (Skip drag drop first; return later)
+    2. Building a datepicker
+12. Asynchronous JavaScript
+    1. Introduction to Ajax
+    2. Understanding JSON
+    3. The Fetch API
+    4. Data Types
+    5. JavaScript Promises
+    6. Requests and responses
+    7. Sending post requests
+    8. Authentication
+    9. Handling errors
+    10. Viewing response headers
+    11. CORS and JSONP
+    12. XHR or Fetch?
+    13. Using an Ajax library
+    14. Understanding API Documentations
+    15. Understanding CURL
+    16. Building some components:
+13. Advanced asynchronous JavaScript
+    1. Requesting many resources at once
+    2. Getting Response headers in JavaScript
+    3. Dealing with paginated responses (part 1)
+    4. Dealing with paginated responses (part 2)
+    5. Async and await
+    6. Timeouts
+    6. Async loops
+14. Scroll and browser resize events
+    1. Scroll and resize events
+    2. Debouncing and throttling
+    4. 🛠 building an auto-hiding sticky nav
+    5. 🛠 building a same-page-scroll link
+    6. 🛠 building an infinite-scrolling page
+    7. 🛠 building a scrollspy
+16. Drag and drop (Skip drag drop first; return later)
     1. Drag events
     2. 🛠 building a drag & drop component
-16. Accessibility
+17. Accessibility
     1. Accessibility and JavaScript
     2. How to use a screen reader
         1. How to open up screen reader
@@ -154,11 +177,11 @@
     4. Aria attributes
     5. Live regions
     6. Building...
-17. Keyboard support
+18. Keyboard support
     1. Keyboard events
         1. Detecting key
     2. Building...
-18. Progressive enhancement
+19. Progressive enhancement
     1. The progressive enhancement mindset
         1. Progressive enhancement vs graceful degradation
     2. Polyfilling
@@ -168,7 +191,7 @@
     4. If JavaScript is turned off...
     5. 🛠 Carousel transform vendor prefix
     4. 🛠 Enhancing everything that comes before...
-19. Object Oriented Programming
+20. Object Oriented Programming
     1. What is Object Oriented Programming?
     2. This in Javascript
     3. Javascript Classes
@@ -181,14 +204,15 @@
     10. Private and public variables
     11. Call, bind and apply
     12. Factory functions... Need to slot this in somehow
-20. Integrating components
+21. Integrating components
     1. PubSub pattern
     2. Custom events
     3. ES6 imports
     4. Decoupling
-21. The MVC Pattern (Possibly here, for Carousel, Todo, etc. But might not need. Depends on their actual complexity)
+22. The MVC Pattern (Possibly here, for Carousel, Todo, etc. But might not need. Depends on their actual complexity)
     1. MVC, MVP and MVVM
-22. Single page applications
+    2. Note: Possibly build the single page application first before coming back to MVC. Easier to explain this way, and students can see the difference between non MVC and MVC code.
+23. Single page applications
     1. Authentication
     2. Routing
     3. 🛠 Card generator application
@@ -213,9 +237,6 @@ Might be good to teach these:
     2. `push`
     3. `while` loop
 
-
-
-
 Modal accessibility: https://css-tricks.slack.com/archives/C7VGZ9UGK/p1522088746000015
 Focus trapping (esp modal: https://css-tricks.com/a-css-approach-to-trap-focus-inside-of-an-element/)
 Easier animations: https://twitter.com/zellwk/status/960371089615368192
@@ -223,3 +244,6 @@ Easier animations: https://twitter.com/zellwk/status/960371089615368192
 In MVP, the P observes models and updates views when models change. The P effectively binds models to views, a responsibility which was previously held by controllers in MVC.
 
 MVVM = two-way data binding
+
+On Babel and Polyfills
+https://zellwk.slack.com/archives/C7RQ6GJSG/p1527826048000082?thread_ts=1527772136.000165&cid=C7RQ6GJSG

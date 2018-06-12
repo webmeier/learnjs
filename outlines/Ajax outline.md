@@ -22,10 +22,5 @@ Advanced asynchronous JavaScript
 3. Dealing with paginated responses (part 1)
 4. Dealing with paginated responses (part 2)
 5. Async and await
+6. Timeouts
 6. Async loops
-  5. Awaiting many items at once
-  6. Async/await and loops
-    for await loop!
-    map. forEach is not async aware 🤔.
-    But how to prove?
-8. Improving components we build
