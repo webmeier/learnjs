@@ -128,6 +128,7 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     6. [Building a calculator](lessons/10.text-and-content/06.building-calculator.md)
     7. [Building a calculator (part 2)](lessons/10.text-and-content/07.building-calculator-2.md)
     8. [Refactoring the calculator](lessons/10.text-and-content/08.refactor-calculator.md)
+    9. [Building a Popover](lessons/10.text-and-content/09.building-popover.md)—new!
 11. Forms
     1. [Intro to forms](lessons/11.forms/01.forms.md)
     2. [Getting form fields](lessons/11.forms/02.getting-form-fields.md)
@@ -145,16 +146,16 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     10. [Viewing response headers](lessons/12.asynchronous-javascript/10.viewing-response-headers.md)
     11. [CORS and JSONP](lessons/12.asynchronous-javascript/11.cors-and-jsonp.md)
     12. [XHR or Fetch](lessons/12.asynchronous-javascript/12.xhr-or-fetch.md)
-    13. [Using an Ajax Library](lessons/12.asynchronous-javascript/13.ajax-library.md)—new!
-    14. [Reading API Documentation](lessons/12.asynchronous-javascript/14.reading-api-docs.md)—new!
-    15. [Understanding Curl](lessons/12.asynchronous-javascript/15.curl.md)—new!
+    13. [Using an Ajax Library](lessons/12.asynchronous-javascript/13.ajax-library.md)
+    14. [Reading API Documentation](lessons/12.asynchronous-javascript/14.reading-api-docs.md)
+    15. [Understanding Curl](lessons/12.asynchronous-javascript/15.curl.md)
 13. Advanced asynchronous JavaScript
-    1. [Requesting many resources at once](lessons/13.advanced-async/01.requesting-many-resources.md)—new!
-    2. [Response headers in JavaScript](lessons/13.advanced-async/02.response-headers-in-js.md)—new!
-    3. [Dealing with paginated responses (part 1)](lessons/13.advanced-async/03.paginated-responses.md)—new!
-    4. [Dealing with paginated responses (part 2)](lessons/13.advanced-async/04.paginated-responses.md)—new!
-    5. [Asynchronous functions](lessons/13.advanced-async/05.async-await.md)—new!
-    6. [Timeouts](lessons/13.advanced-async/06.timeouts.md)—new!
+    1. [Requesting many resources at once](lessons/13.advanced-async/01.requesting-many-resources.md)
+    2. [Response headers in JavaScript](lessons/13.advanced-async/02.response-headers-in-js.md)
+    3. [Dealing with paginated responses (part 1)](lessons/13.advanced-async/03.paginated-responses.md)
+    4. [Dealing with paginated responses (part 2)](lessons/13.advanced-async/04.paginated-responses.md)
+    5. [Asynchronous functions](lessons/13.advanced-async/05.async-await.md)
+    6. [Timeouts](lessons/13.advanced-async/06.timeouts.md)
 
 
 ## Private Community
