@@ -189,9 +189,15 @@ h2 {
   border-radius: 6px;
   left: 0;
   max-width: 15em;
+  opacity: 0; 
   padding: 1.5em;
   position: absolute;
   top: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.popover.is-displayed {
+  opacity: 1;
 }
 
 .popover[data-placement]::after {

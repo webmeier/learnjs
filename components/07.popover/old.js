@@ -2,48 +2,48 @@
 // # START EDITING YOUR JAVASCRIPT HERE
 // ===============
 
-const createPopover = origin => {
+const createPopover = trigger => {
   const popover = document.createElement('div')
   popover.classList.add('popover')
-  popover.textContent = origin.dataset.text
-  popover.dataset.placement = origin.dataset.placement
+  popover.textContent = trigger.dataset.text
+  popover.dataset.placement = trigger.dataset.placement
   return popover
 }
 
 const getFontSizeInPx = node => parseFloat(getComputedStyle(node).fontSize)
 
-const getPopoverPos = (origin, popover) => {
+const getPopoverPos = (trigger, popover) => {
   const em = getFontSizeInPx(popover)
   const spaceForArrow = 1.25 * em
-  const originRect = origin.getBoundingClientRect()
+  const triggerRect = trigger.getBoundingClientRect()
   const popoverRect = popover.getBoundingClientRect()
   const { placement } = popover.dataset
 
   if (placement === 'top') {
     return {
-      left: originRect.left + originRect.width / 2 - popoverRect.width / 2,
-      top: originRect.top - popoverRect.height - spaceForArrow
+      left: triggerRect.left + triggerRect.width / 2 - popoverRect.width / 2,
+      top: triggerRect.top - popoverRect.height - spaceForArrow
     }
   }
 
   if (placement === 'right') {
     return {
-      left: originRect.right + spaceForArrow,
-      top: originRect.top + originRect.height / 2 - popoverRect.height / 2
+      left: triggerRect.right + spaceForArrow,
+      top: triggerRect.top + triggerRect.height / 2 - popoverRect.height / 2
     }
   }
 
   if (placement === 'bottom') {
     return {
-      left: originRect.left + originRect.width / 2 - popoverRect.width / 2,
-      top: originRect.bottom + spaceForArrow
+      left: triggerRect.left + triggerRect.width / 2 - popoverRect.width / 2,
+      top: triggerRect.bottom + spaceForArrow
     }
   }
 
   if (placement === 'left') {
     return {
-      left: originRect.left - popoverRect.width - spaceForArrow,
-      top: originRect.top + originRect.height / 2 - popoverRect.height / 2
+      left: triggerRect.left - popoverRect.width - spaceForArrow,
+      top: triggerRect.top + triggerRect.height / 2 - popoverRect.height / 2
     }
   }
 }
@@ -52,42 +52,42 @@ const getPopoverPos = (origin, popover) => {
 const generateId = _ =>
   Math.random().toString(36).substring(7)
 
-const displayPopover = (origin) => {
-  const { target } = origin.dataset
+const displayPopover = (trigger) => {
+  const { target } = trigger.dataset
   let popover = ''
 
   if (target) {
     popover = document.querySelector(`#${target}`)
-    popover.dataset.placement = origin.dataset.placement
+    popover.dataset.placement = trigger.dataset.placement
   } else {
-    popover = createPopover(origin)
+    popover = createPopover(trigger)
     const id = generateId()
-    origin.dataset.target = id
+    trigger.dataset.target = id
     popover.id = id
 
     document.body.appendChild(popover)
   }
 
-  const { left, top } = getPopoverPos(origin, popover)
+  const { left, top } = getPopoverPos(trigger, popover)
   popover.style.transform = `translate3d(${left}px, ${top}px, 0)`
   popover.style.opacity = 1
 }
 
-const hidePopover = (origin) => {
-  const { target } = origin.dataset
+const hidePopover = (trigger) => {
+  const { target } = trigger.dataset
   const popover = document.querySelector(`#${target}`)
   popover.style.opacity = 0
 }
 
-const popoverOrigins = document.querySelectorAll('[data-popover]')
+const triggers = document.querySelectorAll('[data-popover]')
 
-popoverOrigins.forEach(origin => {
-  origin.addEventListener('click', e => {
+triggers.forEach(trigger => {
+  trigger.addEventListener('click', e => {
     const popoverDisplayed = e.target.dataset.popoverDisplayed === 'true'
 
     popoverDisplayed
-      ? hidePopover(origin)
-      : displayPopover(origin)
+      ? hidePopover(trigger)
+      : displayPopover(trigger)
 
     e.target.dataset.popoverDisplayed = !popoverDisplayed
   })

@@ -33,9 +33,15 @@ const calcPopoverPos = (trigger, popover) => {
   }
 }
 
-const trigger = document.querySelector('.trigger[data-placement=left]')
-const popover = document.querySelector('.popover')
-const popoverPos = calcPopoverPos(trigger, popover)
+const triggers = [...document.querySelectorAll('.trigger')]
 
-popover.style.left = `${popoverPos.left}px`
-popover.style.top = `${popoverPos.top}px`
+triggers.forEach(trigger => {
+  const popover = document.querySelector(`#${trigger.dataset.target}`)
+  const popoverPos = calcPopoverPos(trigger, popover)
+  popover.style.left = `${popoverPos.left}px`
+  popover.style.top = `${popoverPos.top}px`
+
+  trigger.addEventListener('click', e => {
+    popover.classList.toggle('is-displayed')
+  })
+})
