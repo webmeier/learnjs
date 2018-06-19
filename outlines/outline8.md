@@ -72,30 +72,35 @@
     10. The Greensock Animation API (gsap)
     11. 🛠 Animating the modal window
 8. Useful JavaScript features
-    1. Ternary Operators
+    1. Ternary operators
     2. And and OR operators
     3. Early returns
     4. Template literals
-    5. Enhanced object literals
-    6. Destructuring
-    7. Default arguments
+    5. Destructuring
+    6. Default parameters
+    7. Enhanced object literals
     8. Rest and spread operators
-    9. Functional array methods
+    9. Useful array methods
+    10. Array.prototype.reduce
+    11. Looping through objects
+    12. Implicit return with objects
+    13. 🛠 Improving the according
+    14. 🛠 Improving the carousel
 9. Best Practices
     1. Write declarative code
     2. Build functions with one purpose
     3. Understanding Scope
     4. Understanding State
-    5. Reduce side effects
-    6. Don't reassign
-    7. Don't mutate
-    8. Prevent objects from mutating
-    9. Prevent arrays from mutating
+    5. Don't reassign
+    6. Don't mutate
+    7. Prevent objects from mutating
+    8. Prevent arrays from mutating
+    9. Write pure functions
     10. 🛠 Refactoring the off-canvas
     11. 🛠 Refactoring modal window
-    11. 🛠 Refactoring accordion
-    11. 🛠 Refactoring tabbed component
-    12. 🛠 Refactoring carousel
+    12. 🛠 Refactoring accordion
+    13. 🛠 Refactoring tabbed component
+    14. 🛠 Refactoring carousel
 10. Creating HTML Elements
     1. Changing text and HTML
     2. Creating HTML elements
@@ -103,14 +108,17 @@
     4. Removing elements
     5. 🛠 Improving carousel
     6. 🛠 Building a calculator
-    7. 🛠 building a popover
+    7. 🛠 Building a calculator (part 2)
+    8. 🛠 Refactoring the calculator
 11. Forms
     1. Intro to Forms
     2. Getting form fields
     3. Form fields and their events
-    4. Persistent data
-    4. 🛠 building an autocomplete input
-    5. 🛠 building a todo-list
+    4. 🛠 building a popover
+    5. 🛠 building an autocomplete input
+    6. 🛠 building a todo-list
+    7. Persistent data
+    8. 🛠 Improving the todo-list
 12. Dates
     1. The Date Object
         1. Getting Day
@@ -133,11 +141,13 @@
     9. Handling errors
     10. Viewing response headers
     11. CORS and JSONP
-    12. XHR or Fetch?
+    12. XHR or Fetch
     13. Using an Ajax library
     14. Understanding API Documentations
     15. Understanding CURL
-    16. Building some components:
+    16. Hands on: Building a loading indicator
+    17. Hands on: Improving the popover
+    18. Hands on: Improving the carousel
 13. Advanced asynchronous JavaScript
     1. Requesting many resources at once
     2. Getting Response headers in JavaScript
@@ -147,12 +157,16 @@
     6. Timeouts
     6. Async loops
 14. Scroll and browser resize events
-    1. Scroll and resize events
-    2. Debouncing and throttling
-    4. 🛠 building an auto-hiding sticky nav
-    5. 🛠 building a same-page-scroll link
-    6. 🛠 building an infinite-scrolling page
-    7. 🛠 building a scrollspy
+    1. Handling Scroll events
+    2. Handling Mouse events
+    3. Handling Touch events
+    4. Hands on: building an auto-hiding sticky nav
+    5. Hands on: building a same-page-scroll link
+    6. Hands on: building an infinite-scrolling page
+    7. Hands on: building a scrollspy
+    8. Hands on: building a drag & drop component
+    9. Hands on: improving the carousel
+    10. Hands on: improving the date picker
 16. Drag and drop (Skip drag drop first; return later)
     1. Drag events
     2. 🛠 building a drag & drop component
