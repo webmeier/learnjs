@@ -1,4 +1,3 @@
-/* globals getComputedStyle */
 const calcPopoverPos = (trigger, popover) => {
   const triggerRect = trigger.getBoundingClientRect()
   const popoverRect = popover.getBoundingClientRect()
@@ -36,7 +35,7 @@ const calcPopoverPos = (trigger, popover) => {
 
 const getOneEm = element => {
   const style = getComputedStyle(element)
-  return parseInt(style.fontSize)
+  return parseFloat(style.fontSize)
 }
 
 const getPopover = trigger => {
