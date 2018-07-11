@@ -129,6 +129,7 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     7. [Building a calculator (part 2)](lessons/10.text-and-content/07.building-calculator-2.md)
     8. [Refactoring the calculator](lessons/10.text-and-content/08.refactor-calculator.md)
     9. [Building a Popover](lessons/10.text-and-content/09.building-popover.md)—new!
+    10. [Building a dynamic Popover](lessons/10.text-and-content/10.building-popover-2.md)—new!
 11. Forms
     1. [Intro to forms](lessons/11.forms/01.forms.md)
     2. [Getting form fields](lessons/11.forms/02.getting-form-fields.md)
@@ -160,7 +161,7 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
 
 ## Private Community
 
-Since you pre-ordered Learn JavaScript, you have access to the Slack (the app we're using for the private community) to learn together with your peers. To join the slack group, head over to [this link](https://zellwk-slack.herokuapp.com) and fill in your best email.
+Since you pre-ordered Learn JavaScript, you have access to the community to learn together with your peers. To join the community, head over to [this link](https://zellwk-slack.herokuapp.com) and fill in your best email.
 
 You'll get an invitation to join a Slack group. **Once you've signed in, join the #learn-javascript Slack channel**.
 
