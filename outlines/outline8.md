@@ -110,15 +110,15 @@
     6. 🛠 Building a calculator
     7. 🛠 Building a calculator (part 2)
     8. 🛠 Refactoring the calculator
+    9. 🛠 Building a popover
+    10. 🛠 Building a popover (part 2)
+    11. 🛠 Building a popover (part 3)
 11. Forms
     1. Intro to Forms
     2. Getting form fields
     3. Form fields and their events
-    4. 🛠 building a popover
-    5. 🛠 building an autocomplete input
-    6. 🛠 building a todo-list
-    7. Persistent data
-    8. 🛠 Improving the todo-list
+    4. 🛠 building an autocomplete input
+    5. 🛠 building a todo-list
 12. Dates
     1. The Date Object
         1. Getting Day
@@ -263,3 +263,6 @@ On Babel and Polyfills
 https://zellwk.slack.com/archives/C7RQ6GJSG/p1527826048000082?thread_ts=1527772136.000165&cid=C7RQ6GJSG
 
 Autocomplete accessibility https://accessibility.blog.gov.uk/2018/05/15/what-we-learned-from-getting-our-autocomplete-tested-for-accessibility/
+
+7. Persistent data --> Let's shift this away
+8. 🛠 Improving the todo-list
