@@ -117,8 +117,8 @@
     1. Intro to Forms
     2. Getting form fields
     3. Form fields and their events
-    4. 🛠 building an autocomplete input
-    5. 🛠 building a todo-list
+    4. 🛠 building a todo-list
+    5. 🛠 building an autocomplete input
 12. Dates
     1. The Date Object
         1. Getting Day
@@ -266,3 +266,5 @@ Autocomplete accessibility https://accessibility.blog.gov.uk/2018/05/15/what-we-
 
 7. Persistent data --> Let's shift this away
 8. 🛠 Improving the todo-list
+
+Scrollmagic for scrolling? http://scrollmagic.io Create something along this lines

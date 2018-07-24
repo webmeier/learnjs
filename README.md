@@ -128,13 +128,14 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     6. [🛠️ Building a calculator](lessons/10.text-and-content/06.building-calculator.md)
     7. [🛠️ Building a calculator (part 2)](lessons/10.text-and-content/07.building-calculator-2.md)
     8. [🛠️ Refactoring the calculator](lessons/10.text-and-content/08.refactor-calculator.md)
-    9. [🛠️ Building a Popover](lessons/10.text-and-content/09.building-popover.md)—new!
+    9. [🛠️ Building a Popover](lessons/10.text-and-content/09.building-popover.md)
     10. [🛠️ Building a dynamic Popover](lessons/10.text-and-content/10.building-popover-2.md)—new!
     11. [🛠️ Improving the popover's space variable](lessons/10.text-and-content/11.building-popover-2.md)—new!
 11. Forms
     1. [Intro to forms](lessons/11.forms/01.forms.md)
     2. [Getting form fields](lessons/11.forms/02.getting-form-fields.md)
     3. [Types of form fields](lessons/11.forms/03.types-of-fields.md)
+    6. [Building a todo list](lessons/11.forms/06.building-todolist.md)—new!
 12. Asynchronous JavaScript
     1. [Intro to Ajax](lessons/12.asynchronous-javascript/01.ajax.md)
     2. [Understanding JSON](lessons/12.asynchronous-javascript/02.json.md)

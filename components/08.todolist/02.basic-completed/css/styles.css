@@ -1,0 +1,167 @@
+:root {
+  --blue: #00a8fb;
+}
+
+html {
+  font-family: "Roboto";
+  line-height: 1.4;
+}
+
+@media (min-width: 600px) {
+  html {
+    font-size: 125%;
+  }
+}
+
+body {
+  background-color: #fdd55b;
+  padding: 1em;
+}
+
+@media (min-width: 600px) {
+  body {
+    padding: 3em;
+  }
+}
+
+button * {
+  pointer-events: none;
+}
+
+.tasklist {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 35em;
+}
+
+/* Styles for adding tasks */
+.tasklist__add {
+  align-items: center;
+  background-color: var(--blue);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: #fff;
+  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 3.5em;
+  grid-template-areas:
+    "label button"
+    "input button";
+  align-content: center;
+  padding: 1.5em 1.5em;
+}
+
+.tasklist__add label {
+  grid-area: label;
+  font-weight: 300;
+  font-size: 0.75em;
+  font-feature-settings: "smcp" 1;
+  letter-spacing: 0.05em;
+}
+
+.tasklist__add input {
+  grid-area: input;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  color: inherit;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.333em;
+  font-weight: 300;
+  min-width: 1em;
+}
+
+.tasklist__add input::placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+
+.tasklist__add button {
+  color: inherit;
+  margin-left: 1em;
+  grid-area: button;
+}
+
+.tasklist__add button > svg {
+  border-radius: 100%;
+  box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Styles for the tasks */
+.task {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 1.5em;
+  margin-right: 2em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+
+.task:first-child {
+  padding-top: 1.25em;
+}
+
+.task:last-child {
+  padding-bottom: 1.25em;
+}
+
+.task + .task {
+  border-top: 1px solid #e7e7e7;
+}
+
+.task [type="checkbox"] + label {
+  border-radius: 100%;
+  border: 1px solid #cfcfcf;
+  display: grid;
+  height: 1.5em;
+  margin-right: 0.75em;
+  place-items: center;
+  width: 1.5em;
+}
+
+.task [type="checkbox"] + label svg {
+  color: white;
+  width: 0.75em;
+}
+
+.task [type="checkbox"]:checked + label {
+  background-color: var(--blue);
+  border-color: var(--blue);
+  color: white;
+}
+
+.task [type="checkbox"]:checked ~ div {
+  color: #bbb;
+  text-decoration: line-through;
+}
+
+.task > div {
+  flex-grow: 1;
+  padding: 0.25em 0.5em;
+}
+
+.task > button {
+  color: #cfcfcf;
+  line-height: 1;
+  margin-left: 0.5em;
+  width: 0.8em;
+}
+
+.task > button svg {
+  display: none;
+}
+
+.task:hover > button svg {
+  display: block;
+}
+
+/* Styles for the empty state */
+.tasks + div {
+  display: none;
+  padding: 1.5em 1.5em;
+}
+
+.tasks:empty + div {
+  display: block;
+}
