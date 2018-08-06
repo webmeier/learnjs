@@ -119,7 +119,7 @@
     3. Form fields and their events
     4. 🛠 building a todo-list
     5. 🛠 building an autocomplete input
-12. Dates
+12. Dealing with Dates
     1. The Date Object
         1. Getting Day
         2. Getting Month
@@ -231,6 +231,21 @@
     2. Routing
     3. 🛠 Card generator application
     4. Transitioning to frameworks
+24. Advanced animations
+    1. Jank free animations
+    2. Request animation frame?
+    2. The Flip technique
+        1. Flip and translate
+        2. Flip and scale
+    3. Parent-child Flips
+        1. What happens (https://codepen.io/zellwk/pen/WKyKje)
+        1. Direct flip
+            1. Reverse scale (1 / scale) for children items
+            2. Note that padding and margins also scale... so if whitespace is a concern, don't scale at all!
+        2. Two-step opacity flip
+            1. Children get opacity 0 first.
+            2. Once parent flipped properly, reveal children.
+    4. Examples
 
 Extra thoughts that I haven't managed to consolidate.
 
@@ -268,3 +283,6 @@ Autocomplete accessibility https://accessibility.blog.gov.uk/2018/05/15/what-we-
 8. 🛠 Improving the todo-list
 
 Scrollmagic for scrolling? http://scrollmagic.io Create something along this lines
+
+Flip for animations:
+https://aerotwist.com/blog/flip-your-animations/
