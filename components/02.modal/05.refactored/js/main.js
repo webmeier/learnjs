@@ -1,14 +1,10 @@
 /* globals TimelineMax Back */
 // # START EDITING YOUR JAVASCRIPT HERE
 // ===============
-
-const toggleButton = document.querySelector('.jsModalToggle')
-const closeButton = document.querySelector('.jsModalClose')
-const container = document.querySelector('.modal-container')
-const hand = document.querySelector('.wave-hand')
-
 const wave = _ => {
+  const hand = document.querySelector('.wave-hand')
   const tl = new TimelineMax({})
+
   tl.set(hand, { transformOrigin: 'bottom center' })
   tl.from(hand, 0.5, {
     scale: 0.5,
@@ -24,19 +20,25 @@ const wave = _ => {
 
 const openModal = _ => {
   document.body.classList.add('modal-is-open')
-  wave()
 }
 
 const closeModal = e => {
-  if (e.target === closeButton) {
-    document.body.classList.remove('modal-is-open')
-  }
-
-  if (!e.target.closest('.modal')) {
-    document.body.classList.remove('modal-is-open')
-  }
+  document.body.classList.remove('modal-is-open')
 }
 
-toggleButton.addEventListener('click', openModal)
-closeButton.addEventListener('click', closeModal)
-container.addEventListener('click', closeModal)
+const toggleButton = document.querySelector('.jsModalToggle')
+const closeButton = document.querySelector('.jsModalClose')
+const container = document.querySelector('.modal-container')
+
+toggleButton.addEventListener('click', e => {
+  openModal()
+  wave()
+})
+
+closeButton.addEventListener('click', e => {
+  closeModal()
+})
+
+container.addEventListener('click', e => {
+  if (!e.target.closest('.modal')) closeModal()
+})
