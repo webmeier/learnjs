@@ -104,7 +104,8 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     11. [Looping through objects](lessons/08.useful-javascript-features/11.looping-through-objects.md)
     12. [Returning objects with implicit return](lessons/08.useful-javascript-features/12.implicit-return-objects.md)
     13. [🛠 Improving the accordion](lessons/08.useful-javascript-features/13.improving-accordion.md)
-    14. [🛠 Improving the carousel](lessons/08.useful-javascript-features/14.improving-carousel.md)
+    14. [🛠 Improving the tabbed-component](lessons/08.useful-javascript-features/14.improving-tabbed-component.md)
+    15. [🛠 Improving the carousel](lessons/08.useful-javascript-features/15.improving-carousel.md)
 9. JavaScript best practices
     1. [Write declarative code](lessons/09.javascript-best-practices/01.write-declarative-code.md)
     2. [Functions should have one purpose](lessons/09.javascript-best-practices/02.one-purpose.md)
