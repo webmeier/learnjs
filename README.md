@@ -116,27 +116,28 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     7. [Preventing objects from mutating](lessons/09.javascript-best-practices/07.prevent-objects-from-mutating.md)
     8. [Preventing arrays from mutating](lessons/09.javascript-best-practices/08.prevent-arrays-from-mutating.md)
     9. [Write pure functions](lessons/09.javascript-best-practices/09.pure-functions.md)
-    10. [🛠 Refactoring the off-canvas menu](lessons/09.javascript-best-practices/10.refactoring-off-canvas.md)
-    11. [🛠 Refactoring the modal](lessons/09.javascript-best-practices/11.refactoring-modal.md)
-    12. [🛠 Refactoring the accordion](lessons/09.javascript-best-practices/12.refactoring-accordion.md)
-    13. [🛠 Refactoring the tabbed-component](lessons/09.javascript-best-practices/13.refactoring-tabbed-component.md)
-    14. [🛠 Refactoring the carousel](lessons/09.javascript-best-practices/14.refactoring-carousel.md)
+    10. [🛠 Refactoring the off-canvas menu](lessons/09.javascript-best-practices/10.refactoring-off-canvas.md)—updated!
+    11. [🛠 Refactoring the modal](lessons/09.javascript-best-practices/11.refactoring-modal.md)—updated!
+    12. [🛠 Refactoring the accordion](lessons/09.javascript-best-practices/12.refactoring-accordion.md)—updated!
+    13. [🛠 Refactoring the tabbed-component](lessons/09.javascript-best-practices/13.refactoring-tabbed-component.md)—updated!
+    14. [🛠 Refactoring the carousel](lessons/09.javascript-best-practices/14.refactoring-carousel.md)—updated!
 10. Text and Content
     1. [Changing text and HTML](lessons/10.text-and-content/01.changing-text-and-html.md)
     2. [Creating HTML Elements](lessons/10.text-and-content/02.creating-html-elements.md)
     3. [Adding multiple elements to the DOM](lessons/10.text-and-content/03.adding-multiple-elements.md)
     4. [Removing elements](lessons/10.text-and-content/04.removing-elements.md)
+    5. [🛠️ Creating dots automatically for the carousel](lessons/10.text-and-content/05.improving-carousel.md)
     6. [🛠️ Building a calculator](lessons/10.text-and-content/06.building-calculator.md)
     7. [🛠️ Building a calculator (part 2)](lessons/10.text-and-content/07.building-calculator-2.md)
     8. [🛠️ Refactoring the calculator](lessons/10.text-and-content/08.refactor-calculator.md)
     9. [🛠️ Building a Popover](lessons/10.text-and-content/09.building-popover.md)
-    10. [🛠️ Building a dynamic Popover](lessons/10.text-and-content/10.building-popover-2.md)—new!
-    11. [🛠️ Improving the popover's space variable](lessons/10.text-and-content/11.building-popover-2.md)—new!
+    10. [🛠️ Building a dynamic Popover](lessons/10.text-and-content/10.building-popover-2.md)
+    11. [🛠️ Improving the popover's space variable](lessons/10.text-and-content/11.building-popover-2.md)
 11. Forms
     1. [Intro to forms](lessons/11.forms/01.forms.md)
     2. [Getting form fields](lessons/11.forms/02.getting-form-fields.md)
     3. [Types of form fields](lessons/11.forms/03.types-of-fields.md)
-    6. [Building a todo list](lessons/11.forms/06.building-todolist.md)—new!
+    6. [Building a todo list](lessons/11.forms/06.building-todolist.md)
 12. Asynchronous JavaScript
     1. [Intro to Ajax](lessons/12.asynchronous-javascript/01.ajax.md)
     2. [Understanding JSON](lessons/12.asynchronous-javascript/02.json.md)
