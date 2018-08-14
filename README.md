@@ -137,6 +137,7 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     1. [Intro to forms](lessons/11.forms/01.forms.md)
     2. [Getting form fields](lessons/11.forms/02.getting-form-fields.md)
     3. [Types of form fields](lessons/11.forms/03.types-of-fields.md)
+    4. [Sanitize your output](lessons/11.forms/04.sanitize-output.md)
     6. [Building a todo list](lessons/11.forms/06.building-todolist.md)
 12. Asynchronous JavaScript
     1. [Intro to Ajax](lessons/12.asynchronous-javascript/01.ajax.md)
