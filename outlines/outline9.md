@@ -14,3 +14,4 @@ Notes to self about new outline:
 6. Talk about scroll and resize events before Ajax.
 7. Shift drag/drop after Component integration.
 8. OOP... Might need to shift up.
+9. Add Flip as advanced animation
