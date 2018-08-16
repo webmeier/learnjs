@@ -1,3 +1,5 @@
+/* globals DOMPurify */
+
 // # START EDITING YOUR JAVASCRIPT HERE
 // ===============
 const generateUnique = length =>
@@ -9,7 +11,7 @@ const makeTask = value => {
   const taskContainer = tasklist.querySelector('.tasks')
 
   task.classList.add('task')
-  task.innerHTML = `
+  task.innerHTML = DOMPurify.sanitize(`
     <input type="checkbox" class="vh" id="done${id}" name="done${id}">
     <label for="done${id}">
       <svg viewBox="0 0 20 15">
@@ -22,7 +24,7 @@ const makeTask = value => {
         <use xlink:href="#trash"></use>
       </svg>
     </button>
-  `
+  `)
   taskContainer.appendChild(task)
 }
 
