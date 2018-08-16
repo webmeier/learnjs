@@ -15,3 +15,14 @@ Notes to self about new outline:
 7. Shift drag/drop after Component integration.
 8. OOP... Might need to shift up.
 9. Add Flip as advanced animation
+10. Should add a fun with String methods. Or Useful string methods. To talk about string methods that are extremely useful.
+  1. startsWith (Build autocomplete lesson )
+  2. includes
+  3. substring (Generate unique id lesson)
+  4. replace
+  5. split
+  6. toLowerCase
+  7. toUpperCase
+  8. trim
+  9. indexOf
+  10. lastIndexOf
