@@ -262,9 +262,10 @@ const dropdown = document.querySelector('.dropdown')
 autocomplete.addEventListener('input', event => {
   const val = autocomplete.value.trim().toLowerCase()
   autocomplete.classList.remove('is-filled')
-  if (!val) return
 
+  if (!val) return
   autocomplete.classList.add('is-filled')
+
   dropdown.innerHTML = countries.filter(country =>
     country.name.toLowerCase().startsWith(val) ||
     country.code.toLowerCase().startsWith(val)
