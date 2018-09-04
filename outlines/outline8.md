@@ -167,9 +167,20 @@
     8. Hands on: building a drag & drop component
     9. Hands on: improving the carousel
     10. Hands on: improving the date picker
-16. Drag and drop (Skip drag drop first; return later)
-    1. Drag events
-    2. 🛠 building a drag & drop component
+15. Progressive enhancement
+    1. The progressive enhancement mindset
+        1. Progressive enhancement vs graceful degradation
+    2. Polyfilling
+        1. Detect features
+        2. Polyfill if none
+    3. Vendor prefixes
+    4. If JavaScript is turned off...
+    5. 🛠 Carousel transform vendor prefix
+    4. 🛠 Enhancing everything that comes before...
+16. Keyboard support
+    1. Keyboard events
+        1. Detecting key
+    2. Building...
 17. Accessibility
     1. Accessibility and JavaScript
     2. How to use a screen reader
@@ -191,20 +202,9 @@
     4. Aria attributes
     5. Live regions
     6. Building...
-18. Keyboard support
-    1. Keyboard events
-        1. Detecting key
-    2. Building...
-19. Progressive enhancement
-    1. The progressive enhancement mindset
-        1. Progressive enhancement vs graceful degradation
-    2. Polyfilling
-        1. Detect features
-        2. Polyfill if none
-    3. Vendor prefixes
-    4. If JavaScript is turned off...
-    5. 🛠 Carousel transform vendor prefix
-    4. 🛠 Enhancing everything that comes before...
+18. Drag and drop (Skip drag drop first; return later)
+    1. Drag events
+    2. 🛠 building a drag & drop component
 20. Object Oriented Programming
     1. What is Object Oriented Programming?
     2. This in Javascript
