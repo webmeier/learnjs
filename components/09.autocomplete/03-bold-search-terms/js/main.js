@@ -256,20 +256,26 @@ const countries = [
 // # START EDITING YOUR JAVASCRIPT HERE
 // ===============
 
+const boldTerms = (string, length) => {
+  const toBold = string.substring(0, length)
+  const rest = string.substring(length)
+  return `<strong>${toBold}</strong>${rest}`
+}
+
 const autocomplete = document.querySelector('input')
 const dropdown = document.querySelector('.dropdown')
 
 autocomplete.addEventListener('input', event => {
   const val = autocomplete.value.trim().toLowerCase()
   autocomplete.classList.remove('is-filled')
-  if (!val) return
 
+  if (!val) return
   autocomplete.classList.add('is-filled')
+
   dropdown.innerHTML = countries.filter(country =>
-    country.name.toLowerCase().startsWith(val) ||
-    country.code.toLowerCase().startsWith(val)
+    country.name.toLowerCase().startsWith(val)
   )
-    .map(match => `<li>${match.name}</li>`)
+    .map(match => `<li>${boldTerms(match.name, val.length)}</li>`)
     .join('')
 })
 
@@ -279,69 +285,3 @@ dropdown.addEventListener('click', e => {
   autocomplete.classList.remove('is-filled')
   dropdown.innerHTML = ''
 })
-
-// input.addEventListener('input', event => {
-//   const val = event.target.value.trim().toLowerCase()
-//   const input = event.target
-
-//   if (val) {
-//     input.classList.add('is-filled')
-//   } else {
-//     input.classList.remove('is-filled')
-//   }
-
-//   const matches = getMatches(countries, val)
-//   if (!matches) return
-
-//   matches.forEach(match => {
-//     const li = document.createElement('li')
-//     li.textContent = match.name // Level 1
-//     // li.innerHTML = val.split('').reduce((acc, char) => {
-//     //   const searchStartIndex = acc.lastIndexOf('</strong>') === -1
-//     //     ? 0
-//     //     : acc.lastIndexOf('</strong>') + 9 // Because </strong> has 9 characters
-
-//     //   const index = acc.toLowerCase().indexOf(char, searchStartIndex)
-//     //   const letter = acc.charAt(index)
-//     //   const string = acc.substring(0, index) +
-//     //     `<strong>${letter}</strong>` +
-//     //     acc.substring(index + 1)
-
-//     //   return string
-//     // }, match.name)
-
-//     console.log(li.innerHTML)
-
-//     dropdown.appendChild(li)
-//   })
-
-//   const frag = document.createDocumentFragment()
-// })
-
-// const getMatches = (haystack, needle) => {
-//   return haystack.filter(country =>
-//     country.name.toLowerCase().startsWith(needle) ||
-//     country.code.toLowerCase().startsWith(needle)
-//   )
-// }
-
-// const val = 'us'
-// let name = 'United States'
-
-// // const val = 'n'
-// // let name = '<strong>U</strong>nited States'
-
-// val.split('').forEach(char => {
-//   const searchStartIndex = name.lastIndexOf('</strong>') === -1
-//     ? 0
-//     : name.lastIndexOf('</strong>') + 9 // Because </strong> has 9 characters
-
-//   const index = name.toLowerCase().indexOf(char, searchStartIndex)
-//   const letter = name.charAt(index)
-
-//   const string = name.substring(0, index) +
-//     `<strong>${letter}</strong>` +
-//     name.substring(index + 1)
-
-//   name = string
-// })
