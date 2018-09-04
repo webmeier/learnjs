@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Autocomplete</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/prefixfree.js"></script>
+</head>
+
+<body>
+  <div class="autocomplete">
+    <h1>Autocomplete</h1>
+    <p>Type your country in the box below and see what happens ✨</p>
+
+    <form action="#" autocomplete="off">
+      <div class="input">
+        <input type="text" name="country" id="country">
+        <button type="submit" class="search-icon">
+          <svg viewBox="0 0 41 40">
+            <title>Search</title>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9847 28.0685C22.6057 28.0685 27.9731 22.6827 27.9731 16.0391C27.9731 9.3955 22.6057 4.00978 15.9847 4.00978C9.36359 4.00978 3.99616 9.3955 3.99616 16.0391C3.99616 22.6827 9.36359 28.0685 15.9847 28.0685ZM15.9847 32.0782C24.8127 32.0782 31.9693 24.8973 31.9693 16.0391C31.9693 7.18096 24.8127 0 15.9847 0C7.15657 0 0 7.18096 0 16.0391C0 24.8973 7.15657 32.0782 15.9847 32.0782Z" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M37.1768 39.9792L22.9745 25.8767L25.8149 23.0562L40.0172 37.1587L37.1768 39.9792Z" />
+          </svg>
+        </button>
+        <ul class="dropdown"></ul>
+      </div>
+    </form>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
