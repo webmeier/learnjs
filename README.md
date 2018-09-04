@@ -139,7 +139,8 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     3. [Types of form fields](lessons/11.forms/03.types-of-fields.md)
     4. [Sanitize your output](lessons/11.forms/04.sanitize-output.md)
     5. [Generating unique IDs](lessons/11.forms/05.generate-unique-ids.md)
-    6. [Building a todo list](lessons/11.forms/06.building-todolist.md)
+    6. [🛠️ Building a todo list](lessons/11.forms/06.building-todolist.md)
+    7. [🛠️ Building an autocomplete](lessons/11.forms/07.building-autocomplete.md)—new!
 12. Asynchronous JavaScript
     1. [Intro to Ajax](lessons/12.asynchronous-javascript/01.ajax.md)
     2. [Understanding JSON](lessons/12.asynchronous-javascript/02.json.md)
