@@ -138,7 +138,7 @@ Input:
 
 Field  | Type    | Description
 -------|---------|------------
-`task` | String  | **Required**. The task
+`name` | String  | **Required**. The task
 `done` | Boolean | Whether the task completed
 
 Example:
@@ -146,7 +146,7 @@ Example:
 ```js
 zlFetch(`${rootendpoint}/users/zellwk/tasks`, {
   method: 'post',
-  body: { task: 'Poo' }
+  body: { name: 'Poo' }
 })
 ```
 
@@ -157,7 +157,7 @@ The server will respond with the created task if successful.
 ```js
 {
   "id": "5b8f7b2713b6e114ab5e5645"
-  "task": "Learn JavaScript for 30 minutes"
+  "name": "Learn JavaScript for 30 minutes"
   "done": "false"
 }
 ```
@@ -174,10 +174,10 @@ Input:
 
 Field  | Type    | Description
 -------|---------|------------
-`task` | String  | The task.
+`name` | String  | The task.
 `done` | Boolean | Whether the task completed
 
-Note: Both `task` and `done` are optional. If you are editing a task, make sure to change one of them. Otherwise, what's the point in making this request?
+Note: Both `name` and `done` are optional. If you are editing a task, make sure to change one of them. Otherwise, what's the point in making this request?
 
 Example:
 
@@ -193,7 +193,7 @@ The server will respond with the edited task if successful:
 ```js
 {
   "id": "5b8f7b2713b6e114ab5e5645",
-  "task": "Poo",
+  "name": "Poo",
   "done": "true"
 }
 ```
@@ -223,7 +223,7 @@ The server will respond with a message and the deleted task.
   "message": "Task deleted",
   "deletedTask": {
     "id": "5b8f7b2713b6e114ab5e5645",
-    "task": "Poo",
+    "name": "Poo",
     "done": "true"
   }
 }
