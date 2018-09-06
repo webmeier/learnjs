@@ -8,7 +8,7 @@ const apiURL = 'http://localhost:4000/tasklist'
 const generateUnique = length =>
   Math.random().toString(36).substring(2, 2 + length)
 
-const makeTask = ({ task: name, id, done }) => {
+const makeTask = ({ name, id, done }) => {
   const task = document.createElement('li')
   const taskContainer = tasklist.querySelector('.tasks')
 
@@ -37,7 +37,8 @@ const newTaskForm = tasklist.querySelector('form')
 zlFetch(`${apiURL}/users/zellwk/tasks`)
   .then(response => {
     const tasks = response.body
-    tasks.forEach(task => makeTask(task))
+    console.log(tasks)
+    tasks.forEach(makeTask)
   })
   .catch(error => console.log(error))
 
