@@ -158,7 +158,8 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     13. [Using an Ajax Library](lessons/12.asynchronous-javascript/13.ajax-library.md)
     14. [Reading API Documentation](lessons/12.asynchronous-javascript/14.reading-api-docs.md)
     15. [Understanding Curl](lessons/12.asynchronous-javascript/15.curl.md)
-    16. [🛠️ Todolist: The Todolist API](lessons/12.asynchronous-javascript/16.todolist-api.md)
+    16. [🛠️ Todolist: The Todolist API](lessons/12.asynchronous-javascript/16.todolist-api.md)—new!
+    17. [🛠️ Todolist: Using the Todolist API](lessons/12.asynchronous-javascript/17.todolist-ajax.md)—new!
 13. Advanced asynchronous JavaScript
     1. [Requesting many resources at once](lessons/13.advanced-async/01.requesting-many-resources.md)
     2. [Response headers in JavaScript](lessons/13.advanced-async/02.response-headers-in-js.md)
