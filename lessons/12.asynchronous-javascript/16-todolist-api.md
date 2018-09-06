@@ -1,4 +1,4 @@
-# 🛠️ Todolist: Using the Todolist API
+# 🛠️ Todolist: The Todolist API
 
 When you refresh the tasklist you created in the previous module, you'll notice that all items in the tasklist are gone.
 
