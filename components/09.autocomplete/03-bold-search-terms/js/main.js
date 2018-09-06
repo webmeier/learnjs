@@ -256,7 +256,8 @@ const countries = [
 // # START EDITING YOUR JAVASCRIPT HERE
 // ===============
 
-const boldTerms = (string, length) => {
+const boldSearchTerms = (string, searchTerms) => {
+  const length = searchTerms.length
   const toBold = string.substring(0, length)
   const rest = string.substring(length)
   return `<strong>${toBold}</strong>${rest}`
@@ -275,7 +276,7 @@ autocomplete.addEventListener('input', event => {
   dropdown.innerHTML = countries.filter(country =>
     country.name.toLowerCase().startsWith(val)
   )
-    .map(match => `<li>${boldTerms(match.name, val.length)}</li>`)
+    .map(match => `<li>${boldSearchTerms(match.name, val)}</li>`)
     .join('')
 })
 
