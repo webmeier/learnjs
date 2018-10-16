@@ -1,0 +1,135 @@
+/**
+ * base styles and typography
+ * ---------------
+ */
+
+:root {
+  --dark: hsl(0, 0%, 10%);
+  --light: hsl(0, 0%, 95%);
+}
+
+html {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 112.5%;
+  line-height: 1.4;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 0 1em;
+}
+
+h1 {
+  font-size: calc(1.333 * 1.333 * 1.333 * 1rem);
+  font-family: Georgia, Times, serif;
+  font-weight: 300;
+  margin-bottom: 0.75rem;
+  /* text-transform: uppercase; */
+  /* letter-spacing: 0.1em; */
+}
+
+header {
+  padding: 2em 0 1em;
+  max-width: 45em;
+  margin: auto;
+}
+
+main {
+  max-width: 45em;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.75em;
+  border-bottom: 3px solid hsl(0, 0%, 25%);
+  padding-bottom: 1rem;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 0.75em;
+  border: 3px solid hsl(0, 0%, 25%);
+}
+
+.filter svg {
+  height: 0.5em;
+  width: auto;
+}
+
+.popover {
+  /* position: absolute; */
+  /* display: none; */
+  background-color: var(--dark);
+  top: 11.4em;
+  width: 14.5em;
+  padding: 0.5em 1em;
+  border: 3px solid hsl(0, 0%, 25%);
+}
+
+.filter__option label {
+  position: relative;
+  margin-left: 0.25rem;
+}
+
+.filter__option svg {
+  position: absolute;
+  left: -1.1em;
+  top: 0.2em;
+  width: 0.85em;
+  opacity: 0;
+}
+
+input[type="checkbox"] {
+  border: 1px solid gray;
+  height: 0.75em;
+  width: 0.75em;
+  display: inline-block;
+}
+
+input[type="checkbox"]:checked + label > svg {
+  opacity: 1;
+}
+
+/* 
+.filter {
+  font-size: calc(0.8333 * 1rem);
+  margin-bottom: 1rem;
+  border-bottom: 1px solid gray;
+  padding-bottom: 1rem;
+}
+
+.filter input:checked + label {
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  margin-top: 0.125em;
+  margin-bottom: 0.125em;
+  border-radius: 4px;
+  background: hsl(0, 0%, 85%);
+  color: red;
+}
+
+.filter input:checked + label {
+  color: red;
+} */
+
+.heroes {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 0.75em;
+}
+
+.hero .hero__name {
+  margin-top: 0.175em;
+  font-weight: 400;
+}
+
+img {
+  display: block;
+}
