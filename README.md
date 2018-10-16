@@ -140,8 +140,8 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     4. [Sanitize your output](lessons/11.forms/04.sanitize-output.md)
     5. [Generating unique IDs](lessons/11.forms/05.generate-unique-ids.md)
     6. [🛠️ Todolist: Building the component](lessons/11.forms/06.building-todolist.md)
-    7. [🛠️ Autocomplete: Building the component](lessons/11.forms/07.building-autocomplete.md)—new!
-    8. [🛠️ Autocomplete: Bolding terms](lessons/11.forms/08.improving-autocomplete.md)—new!
+    7. [🛠️ Autocomplete: Building the component](lessons/11.forms/07.building-autocomplete.md)
+    8. [🛠️ Autocomplete: Bolding terms](lessons/11.forms/08.improving-autocomplete.md)
 12. Asynchronous JavaScript
     1. [Intro to Ajax](lessons/12.asynchronous-javascript/01.ajax.md)
     2. [Understanding JSON](lessons/12.asynchronous-javascript/02.json.md)
@@ -158,8 +158,10 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     13. [Using an Ajax Library](lessons/12.asynchronous-javascript/13.ajax-library.md)
     14. [Reading API Documentation](lessons/12.asynchronous-javascript/14.reading-api-docs.md)
     15. [Understanding Curl](lessons/12.asynchronous-javascript/15.curl.md)
-    16. [🛠️ Todolist: The Todolist API](lessons/12.asynchronous-javascript/16.todolist-api.md)—new!
-    17. [🛠️ Todolist: Using the Todolist API](lessons/12.asynchronous-javascript/17.todolist-ajax.md)—new!
+    16. [🛠️ Todolist: The Todolist API](lessons/12.asynchronous-javascript/16.todolist-api.md)
+    17. [🛠️ Todolist: Using the Todolist API](lessons/12.asynchronous-javascript/17.todolist-ajax.md)
+    20. [🛠️ Dota Heroes Explorer: Building the app](lessons/12.asynchronous-javascript/20.dota-heroes.md)—new!
+    21.  [🛠️ Dota Heroes Explorer: Filtering heroes](lessons/12.asynchronous-javascript/21.dota-heroes-2.md)—new!
 13. Advanced asynchronous JavaScript
     1. [Requesting many resources at once](lessons/13.advanced-async/01.requesting-many-resources.md)
     2. [Response headers in JavaScript](lessons/13.advanced-async/02.response-headers-in-js.md)
