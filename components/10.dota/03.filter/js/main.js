@@ -23,35 +23,27 @@ const init = data => {
     const selectedAttributeEls = primaryAttributeDiv.querySelectorAll('input:checked')
     const attackTypeDiv = document.querySelector('#attack-type')
     const selectedTypeEls = attackTypeDiv.querySelectorAll('input:checked')
-    const roleDiv = document.querySelector('#role')
+    const roleDiv = document.querySelector('#roles')
     const selectedRoleEls = roleDiv.querySelectorAll('input:checked')
 
     const filteredList = data.body.filter(hero => {
       if (!selectedAttributeEls.length) return true
-
-      const primaryAttribute = hero['primary_attr']
-      // return selectedAttributeEls.some(el =>
-      //   el.id === primaryAttribute
-      // )
-
+      const heroAttribute = hero['primary_attr']
       for (const el of selectedAttributeEls) {
-        return el.id === primaryAttribute
+        return el.id === heroAttribute
       }
     }).filter(hero => {
       if (!selectedTypeEls.length) return true
-      const attackType = hero['attack_type'].toLowerCase()
-
+      const heroType = hero['attack_type'].toLowerCase()
       for (const el of selectedTypeEls) {
-        return el.id === attackType
+        return el.id === heroType
       }
     }).filter(hero => {
-      const roles = hero.roles
-
+      const heroRoles = hero.roles
       for (const el of selectedRoleEls) {
-        const role = el.id.substring(0, 1).toUpperCase() + el.id.substring(1)
-        if (!roles.includes(role)) return false
+        const selectedRole = el.id.substring(0, 1).toUpperCase() + el.id.substring(1)
+        if (!heroRoles.includes(selectedRole)) return false
       }
-
       return true
     })
 
