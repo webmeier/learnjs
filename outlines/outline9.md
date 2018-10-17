@@ -11,7 +11,7 @@ Notes to self about new outline:
 3. Change Animations into Basic Animations.
 4. Add Advanced animations section farther below. After Component Integration.
 5. SHift dealing with dates after advanced animations. This will be one of the final components.
-6. Talk about scroll and resize events before Ajax.
+6. Talk about scroll and resize events early, right after animations
 7. Shift drag/drop after Component integration.
 8. OOP... Might need to shift up.
 9. Add Flip as advanced animation
