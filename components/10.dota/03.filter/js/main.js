@@ -49,7 +49,7 @@ const init = data => {
 
       for (const el of selectedRoleEls) {
         const role = el.id.substring(0, 1).toUpperCase() + el.id.substring(1)
-        if (!hero.roles.includes(role)) return false
+        if (!roles.includes(role)) return false
       }
 
       return true
