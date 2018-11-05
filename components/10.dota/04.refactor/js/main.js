@@ -15,8 +15,9 @@ const init = data => {
     }
   })
 
-  const filters = document.querySelector('.filters')
   renderHeroes(heroes)
+
+  const filters = document.querySelector('.filters')
   filters.addEventListener('change', _ => {
     renderHeroes(filterHeroes(heroes))
   })
