@@ -59,11 +59,13 @@ button[class="secondary"]:active {
   bottom: 0;
 }
 
+/* 
+ * Styling Controls form
+ * ============================
+*/
 .controls {
   position: relative;
   z-index: 1;
-  /* top: 0; */
-  /* left: 0; */
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25);
   max-width: 27em;
 }
@@ -194,10 +196,66 @@ button[class="secondary"]:active {
   display: none !important;
 }
 
-/* Styling Directions API panel */
-.directions-panel {
-  /* padding: 1.5em 2em; */
+/* 
+ * Styling Google Autocomplete 
+ * ============================
+*/
+/* .pac-container {
+  position: relative !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 0;
+  width: 100% !important;
+  max-width: 27em !important;
+  background-color: #f6f7ff;
+  border: 0;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25);
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
 
+.pac-container::after {
+  display: none;
+}
+
+.pac-item {
+  border-top: 0;
+  padding: 1em 1.5em;
+  line-height: inherit;
+  font: inherit;
+}
+
+.pac-item:hover,
+.pac-item-selected,
+.pac-item-selected:hover {
+  background-color: #ebf2fd;
+}
+
+.pac-icon,
+.hdpi .pac-icon,
+.pac-item-selected .pac-icon,
+.hdpi .pac-item-selected .pac-icon {
+  background-image: url("/images/destination.svg");
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 1em;
+  height: 1.1em;
+  margin-top: 0;
+  margin-right: 0.5em;
+}
+
+.pac-item-query {
+  font: inherit;
+  padding-right: 0.5em;
+} */
+
+/* 
+ * Styling Directions API panel 
+ * ============================
+*/
+/* 
+.directions-panel {
   border-top: 1px solid #dfe0f1;
 }
 
@@ -205,7 +263,6 @@ button[class="secondary"]:active {
   border-spacing: 0;
 }
 
-/* For choosing route */
 .directions-panel .adp-list {
   border: 0;
   padding: 0;
@@ -213,15 +270,8 @@ button[class="secondary"]:active {
 }
 
 .directions-panel .adp-listheader {
-  /* padding: 0;
-  padding-bottom: 0.5rem;
-  font-size: 1.33em; */
   display: none;
 }
-/* 
-.directions-panel .adp-list tr + tr {
-  border-top: 1px solid black;
-} */
 
 .directions-panel .adp-list td {
   padding: 1em 1.5em;
@@ -237,11 +287,6 @@ button[class="secondary"]:active {
   border-color: #424abf;
   background-color: transparent;
 }
-
-/* 
-  Text for via CTE 
-  About 25 minutes
- */
 
 .directions-panel .adp-listinfo {
   display: grid;
@@ -274,7 +319,6 @@ button[class="secondary"]:active {
   text-align: right;
 }
 
-/* For step-by-step direcitons */
 .directions-panel .adp {
   border-top: 1px solid #dfe0f0;
 }
@@ -331,55 +375,4 @@ button[class="secondary"]:active {
 
 .directions-panel .adp-legal {
   display: none;
-}
-
-/* Styling Google Autocomplete */
-.pac-container {
-  position: relative !important;
-  top: 0 !important;
-  left: 0 !important;
-  z-index: 0;
-  width: 100% !important;
-  max-width: 27em !important;
-  background-color: #f6f7ff;
-  border: 0;
-  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25);
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-
-.pac-container::after {
-  display: none;
-}
-
-.pac-item {
-  border-top: 0;
-  padding: 1em 1.5em;
-  line-height: inherit;
-  font: inherit;
-}
-
-.pac-item:hover,
-.pac-item-selected,
-.pac-item-selected:hover {
-  background-color: #ebf2fd;
-}
-
-.pac-icon,
-.hdpi .pac-icon,
-.pac-item-selected .pac-icon,
-.hdpi .pac-item-selected .pac-icon {
-  background-image: url("/images/destination.svg");
-  background-size: cover;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  width: 1em;
-  height: 1.1em;
-  margin-top: 0;
-  margin-right: 0.5em;
-}
-
-.pac-item-query {
-  font: inherit;
-  padding-right: 0.5em;
-}
+} */
