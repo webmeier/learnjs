@@ -27,7 +27,7 @@ const places = {
 // ===============
 
 // Please change this to use your own API key!
-const apiKey = 'AIzaSyBOSppjMrbl5YQAUla6O9WNAL1w2zeWtLc'
+const apiKey = 'YOUR_API_KEY'
 const gmapsURI = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places`
 
 const fetchWithJSONP = (uri, callback, err = console.error) => {
