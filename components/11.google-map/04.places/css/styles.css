@@ -1,0 +1,378 @@
+/**
+ * base styles and typography
+ * ---------------
+ */
+
+html {
+  font-size: 87.5%;
+  line-height: 1.4;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1.7689em;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1em;
+}
+
+button {
+  border: 0;
+}
+
+button[class="primary"] {
+  background: #28309b;
+  padding: 0.75em 1em;
+  color: white;
+}
+
+button[class="primary"]:hover,
+button[class="primary"]:focus {
+  background: #424abf;
+}
+
+button[class="secondary"] {
+  display: flex;
+  align-items: center;
+}
+
+button[class="secondary"]:hover,
+button[class="secondary"]:focus,
+button[class="secondary"]:active {
+  text-decoration: underline;
+}
+
+#map {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* 
+ * Styling Controls form
+ * ============================
+*/
+.controls {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25);
+  max-width: 27em;
+}
+
+.controls header {
+  background-color: #28309b;
+  color: white;
+  padding: 2em;
+}
+
+.controls header p {
+  margin-top: 0.25em;
+}
+
+.controls__body {
+  background-color: #fff;
+  padding: 1.5em 2em;
+  color: #7d7ea8;
+}
+
+.controls__input {
+  display: flex;
+  align-items: center;
+}
+
+.controls__input + .controls__input {
+  position: relative;
+  padding: 0.5em 0;
+}
+.controls__input + .controls__input::before {
+  content: "";
+  position: absolute;
+  top: -1.2em;
+  left: 0.35em;
+  width: 0.3em;
+  height: 3em;
+  background: repeating-linear-gradient(
+    to bottom,
+    #dfe0f2 0.1em,
+    #dfe0f2 0.4em,
+    transparent 0.5em,
+    transparent 0.7em
+  );
+}
+
+.controls__input input[type="search"] {
+  border: 0;
+  border-bottom: 1px solid #dfe0f1;
+  width: 100%;
+  margin-left: 0.75em;
+  padding: 0.75em 0em;
+}
+
+.controls__input ::placeholder {
+  color: inherit;
+}
+
+.control__icon {
+  position: relative;
+  z-index: 1;
+  order: -1;
+  background-image: url("/images/circle.svg");
+  background-size: cover;
+  width: 1em;
+  height: 1em;
+}
+
+.controls__input:nth-last-child(2) .control__icon {
+  background-image: url("/images/destination.svg");
+  color: red;
+}
+
+.controls__input button[type="submit"] {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.controls__input button[type="submit"]:hover,
+.controls__input button[type="submit"]:focus,
+.controls__input button[type="submit"]:active {
+  position: relative;
+  height: initial;
+  width: initial;
+  clip: inherit;
+}
+
+.controls__input button[type="submit"] svg {
+  border: 0;
+  width: 1em;
+  height: auto;
+  fill: #28309b;
+}
+
+.controls__buttons {
+  display: flex;
+  align-items: center;
+  margin-left: 1.5em;
+  padding-left: 0;
+  margin-top: 0.75em;
+}
+
+.controls__buttons > * + * {
+  margin-left: 0.5em;
+}
+
+.controls__buttons svg {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.25em;
+}
+
+.is-invisible {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* 
+ * Styling Google Autocomplete 
+ * ============================
+*/
+.pac-container {
+  position: relative !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 0;
+  width: 100% !important;
+  max-width: 27em !important;
+  background-color: #f6f7ff;
+  border: 0;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25);
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.pac-container::after {
+  display: none;
+}
+
+.pac-item {
+  border-top: 0;
+  padding: 1em 1.5em;
+  line-height: inherit;
+  font: inherit;
+}
+
+.pac-item:hover,
+.pac-item-selected,
+.pac-item-selected:hover {
+  background-color: #ebf2fd;
+}
+
+.pac-icon,
+.hdpi .pac-icon,
+.pac-item-selected .pac-icon,
+.hdpi .pac-item-selected .pac-icon {
+  background-image: url("/images/destination.svg");
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 1em;
+  height: 1.1em;
+  margin-top: 0;
+  margin-right: 0.5em;
+}
+
+.pac-item-query {
+  font: inherit;
+  padding-right: 0.5em;
+}
+
+/* 
+ * Styling Directions API panel 
+ * ============================
+*/
+.directions-panel {
+  border-top: 1px solid #dfe0f1;
+}
+
+.adp-fullwidth {
+  border-spacing: 0;
+}
+
+/* For choosing route */
+.directions-panel .adp-list {
+  border: 0;
+  padding: 0;
+  font: inherit;
+}
+
+.directions-panel .adp-listheader {
+  display: none;
+}
+
+.directions-panel .adp-list td {
+  padding: 1em 1.5em;
+  border-left: 0.25em solid transparent;
+  background-color: transparent;
+}
+
+.directions-panel .adp-list td:first-child {
+  padding-top: 1.5em;
+}
+
+.directions-panel .adp-list .adp-listsel {
+  border-color: #424abf;
+  background-color: transparent;
+}
+
+.directions-panel .adp-listinfo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "route time"
+    "route distance";
+}
+
+.directions-panel .adp-listinfo > *:nth-child(1) {
+  grid-area: route;
+  font-size: 1.333em;
+}
+
+.directions-panel .adp-listinfo > *:nth-child(2) {
+  grid-area: distance;
+  text-align: right;
+}
+
+.directions-panel .adp-listinfo > *:nth-child(1)::before {
+  content: "via ";
+}
+
+.directions-panel .adp-listinfo > *:nth-child(3) {
+  display: none;
+}
+
+.directions-panel .adp-listinfo > *:nth-child(4) {
+  grid-area: time;
+  text-align: right;
+}
+
+.directions-panel .adp {
+  border-top: 1px solid #dfe0f0;
+}
+
+.directions-panel .adp table {
+  display: block;
+  font: inherit;
+}
+
+.directions-panel .adp .adp-placemark {
+  display: block;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.directions-panel .adp-placemark tr {
+  display: grid;
+  grid-template-columns: 2em 1fr;
+  grid-gap: 0.5em;
+  align-items: center;
+  padding: 1em 0 1em 1.75em;
+  font-weight: 700;
+}
+
+.directions-panel .adp-summary {
+  display: none;
+}
+
+.directions-panel .adp .adp-directions tr {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1.5em 1fr 3em;
+  grid-gap: 0.5em;
+  padding: 0.5em 1.75em 0.5em 4.2em;
+}
+
+.directions-panel .adp-substep {
+  border-top: 0;
+  padding: 0;
+}
+
+.directions-panel .adp-substep .adp-stepicon {
+  display: block !important;
+}
+
+.directions-panel .adp-substep:nth-child(2) {
+  display: none;
+}
+
+.directions-panel .adp-substep:last-child {
+  text-align: right;
+}
+
+.directions-panel .adp-legal {
+  display: none;
+}
