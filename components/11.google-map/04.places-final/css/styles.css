@@ -254,7 +254,8 @@ button[class="secondary"]:active {
  * Styling Directions API panel 
  * ============================
 */
-.directions-panel {
+
+/* .directions-panel {
   border-top: 1px solid #dfe0f1;
 }
 
@@ -262,7 +263,6 @@ button[class="secondary"]:active {
   border-spacing: 0;
 }
 
-/* For choosing route */
 .directions-panel .adp-list {
   border: 0;
   padding: 0;
@@ -375,4 +375,4 @@ button[class="secondary"]:active {
 
 .directions-panel .adp-legal {
   display: none;
-}
+} */
