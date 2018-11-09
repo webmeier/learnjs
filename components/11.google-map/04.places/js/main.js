@@ -12,6 +12,7 @@ const fetchWithJSONP = (uri, callback, err = console.error) => {
   const prefix = uri.indexOf('?' + 1) ? '&' : '?'
 
   if (typeof callback !== 'function') throw Error('callback must be a function')
+  if (typeof err !== 'function') throw Error('err must be a function')
 
   script.src = `${uri}${prefix}callback=${callback.name}`
   document.body.appendChild(script)
