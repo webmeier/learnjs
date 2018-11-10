@@ -165,7 +165,8 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     22.  [🛠️ Dota Heroes: Refactoring](lessons/12.asynchronous-javascript/22.refactor-dota-heroes.md)
     23.  [🛠️ Google Maps Clone: Creating your first Google Map](lessons/12.asynchronous-javascript/23.google-map.md)—new
     24.  [🛠️ Google Maps Clone: Fetching JSONP via JavaScript](lessons/12.asynchronous-javascript/24.google-map-2.md)—new
-    25.  [🛠️ Google Maps Clone: Getting directions](lessons/12.asynchronous-javascript/24.google-map-3.md)—new
+    25.  [🛠️ Google Maps Clone: Getting directions](lessons/12.asynchronous-javascript/25.google-map-3.md)—new
+    26.  [🛠️ Google Map Clone: Searching for places](lessons/12.asynchronous-javascript/26.google-map-4.md)—new
 13. Advanced asynchronous JavaScript
     1. [Requesting many resources at once](lessons/13.advanced-async/01.requesting-many-resources.md)
     2. [Response headers in JavaScript](lessons/13.advanced-async/02.response-headers-in-js.md)

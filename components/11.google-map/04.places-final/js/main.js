@@ -35,18 +35,19 @@ function initMap () {
       fields: ['formatted_address', 'geometry']
     })
     autocomplete.bindTo('bounds', map)
+    el.autocompleteWidget = autocomplete
   })
 
   form.addEventListener('submit', evt => {
     evt.preventDefault()
 
-    const origin = inputFields[0].value.trim()
-    const destination = inputFields[1].value.trim()
+    const origin = inputFields[0].autocompleteWidget.getPlace()
+    const destination = inputFields[1].autocompleteWidget.getPlace()
 
     const directionsService = new google.maps.DirectionsService()
     const request = {
-      origin,
-      destination,
+      origin: origin.formatted_address,
+      destination: destination.formatted_address,
       travelMode: 'DRIVING'
     }
 
