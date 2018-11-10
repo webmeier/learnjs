@@ -21,47 +21,12 @@ const fetchWithJSONP = (uri, callback, err = console.error) => {
 
 // fetchWithJSONP(`${gmapsURI}&callback=initMap`)
 
-// Usable Latlngs
-const places = {
-  gardensByTheBay: '18 Marina Gardens Dr, Singapore 018953',
-  artScienceMuseum: '6 Bayfront Ave, Singapore 018974',
-  sentosa: 'Sentosa, Singapore',
-  littleIndia: 'Little India, Singapore',
-  singaporeZoo: '80 Mandai Lake Rd, Singapore 729826'
-}
-
 // All of a sudden there's this error called geolocate is not defined.
 // On Googling: Realized that Google wants the geolocated function.defined ni your own scope. Because they freak hell didn't do functional programming!
 // (See, even Google makes mistakes! So any mistakes you make is OK!)
 // Read this stack overflow: https://stackoverflow.com/questions/45061032/uncaught-referenceerror-geolocate-is-not-defined
 
-// Step 2: Create direction route
-function initMap () {
-  const directionsService = new google.maps.DirectionsService()
-  const mapDiv = document.querySelector('#map')
-
-  const map = new google.maps.Map(mapDiv, {
-    center: { lat: 1.3521, lng: 103.8198 },
-    zoom: 13
-  })
-
-  const request = {
-    origin: places.singaporeZoo,
-    destination: places.sentosa,
-    travelMode: 'DRIVING'
-  }
-
-  directionsService.route(request, function (result, status) {
-    if (status === 'OK') {
-      new google.maps.DirectionsRenderer({ map, directions: result })
-    }
-  })
-}
-fetchWithJSONP(gmapsURI, initMap)
-
 // Step 3: Find a place and substitute places fake object with the real ones
-// Google Maps require initMap to be a normal function.
-// Can't use arrow function
 // function initMap () {
 //   let map = document.querySelector('#map')
 //   map = new google.maps.Map(map, {
@@ -154,111 +119,102 @@ fetchWithJSONP(gmapsURI, initMap)
 
 // Bias the autocomplete object to the user's geographical location,
 // as supplied by the browser's 'navigator.geolocation' object.
-// function geolocate () {
-//   console.log('running geolocate')
-//   if (navigator.geolocation) {
-//     navigator.geolocation.getCurrentPosition(function (position) {
-//       var geolocation = {
-//         lat: position.coords.latitude,
-//         lng: position.coords.longitude
-//       }
-//       var circle = new google.maps.Circle({
-//         center: geolocation,
-//         radius: position.coords.accuracy
-//       })
-//       // autocomplete.setBounds(circle.getBounds())
-//     })
-//   }
-// }
 
 // Step 4: Autocompletion.
-// Deciding whether to use this step BEFORE step 3...
-// Ok! Must talk about places first, then we can talk about directions, because what do you set in the directions? It's the same thing as get places. Best to set a location, because latlng is difficult to get, as you'll see later....?
-// Because need no geocode...Because latlng are functions?
-// Lets try getting the latlng from the functions.
+function initAutocomplete () {
+  let map = document.querySelector('#map')
+  map = new google.maps.Map(map, {
+    center: { lat: 1.3521, lng: 103.8198 },
+    zoom: 13
+  })
 
-// function initAutocomplete () {
-//   let map = document.querySelector('#map')
-//   map = new google.maps.Map(map, {
-//     center: { lat: 1.3521, lng: 103.8198 },
-//     zoom: 13
-//   })
+  // Basically set 2 or more directions... But should I have latlng here to create directions?
+  // What if I use placeID? Would it be good enough? Might be!
+  const directionsService = new google.maps.DirectionsService()
+  const directionsDisplay = new google.maps.DirectionsRenderer()
+  directionsDisplay.setMap(map)
 
-//   // Basically set 2 or more directions... But should I have latlng here to create directions?
-//   // What if I use placeID? Would it be good enough? Might be!
-//   const directionsService = new google.maps.DirectionsService()
-//   const directionsDisplay = new google.maps.DirectionsRenderer()
-//   directionsDisplay.setMap(map)
+  const form = document.querySelector('form')
+  const autocompletes = Array.from(form.querySelectorAll('input[data-type="autocomplete"]'))
 
-//   const form = document.querySelector('form')
-//   const autocompletes = Array.from(form.querySelectorAll('input[data-type="autocomplete"]'))
+  form.addEventListener('submit', evt => {
+    evt.preventDefault()
+  })
 
-//   autocompletes.forEach(el => {
-//     let autocomplete = new google.maps.places.Autocomplete(el)
-//     autocomplete.setFields(['place_id', 'geometry', 'adr_address', 'formatted_address'])
-//     // This creates priority bounds
-//     autocomplete.bindTo('bounds', map)
-//     autocomplete.addListener('place_changed', drawDirections)
-//     // Google's instances cannot be placed directly as a property.
-//     // This is abit strange. I can't answer why. So let's leave it here...
-//     // You just kinda have to expect strangeness to occur when using Google's API.
-//     el.props = {
-//       autocomplete: autocomplete
-//     }
-//   })
+  autocompletes.forEach(el => {
+    const autocomplete = new google.maps.places.Autocomplete(el, {
+      fields: ['geometry', 'formatted_address']
+    })
+    autocomplete.bindTo('bounds', map)
+    autocomplete.addListener('place_changed', drawDirections)
 
-//   function drawDirections () {
-//     const start = autocompletes[0].props.autocomplete.getPlace()
-//     const end = autocompletes[1].props.autocomplete.getPlace()
+    // autocomplete.setFields(['place_id', 'geometry', 'formatted_address'])
+    // // This creates priority bounds
+    // autocomplete.bindTo('bounds', map)
+    // Google's instances cannot be placed directly as a property.
+    // This is abit strange. I can't answer why. So let's leave it here...
+    // You just kinda have to expect strangeness to occur when using Google's API.
+    el.props = { autocomplete }
+  })
 
-//     console.log(start.geometry.location.lng.toString())
-//     // console.log(start.geometry.location.lat(), start.geometry.location.lng())
-//     if (!start || !end) return
+  function drawDirections () {
+    const start = autocompletes[0].props.autocomplete.getPlace()
+    const end = autocompletes[1].props.autocomplete.getPlace()
 
-//     console.log('sending request')
-//     // Can either use formatted_address or get latlng through functions.
-//     // But since we're calling latlng through functions... not sure if it'l be another extra charge... Oh it's fine... it's just returning private variables.
-//     const request = {
-//       origin: start.formatted_address,
-//       destination: end.formatted_address,
-//       travelMode: 'DRIVING'
-//       //   waypoints: [{
-//       //     location: places.singaporeIndoorStadium,
-//       //     stopover: true
-//       //   }, {
-//       //     location: places.esplanadeMall,
-//       //     stopover: true
-//       //   }],
-//     }
+    const placesService = new google.maps.places.PlacesService(map)
+    const theStart = placesService.findPlaceFromQuery({
+      query: start.name,
+      fields: ['geometry', 'formatted_address']
+      // locationBias:
+    })
+    console.log(theStart)
+    // console.log(start.geometry.location.lat(), start.geometry.location.lng())
+    if (!start || !end) return
 
-//     directionsService.route(request, function (result, status) {
-//       console.log('got status!')
-//       if (status === 'OK') {
-//         console.log(status, result)
-//         directionsDisplay.setDirections(result)
-//       }
-//     })
-//   }
-// }
+    console.log('sending request')
+    // Can either use formatted_address or get latlng through functions.
+    // But since we're calling latlng through functions... not sure if it'l be another extra charge... Oh it's fine... it's just returning private variables.
+    const request = {
+      origin: start.formatted_address,
+      destination: end.formatted_address,
+      travelMode: 'DRIVING'
+      //   waypoints: [{
+      //     location: places.singaporeIndoorStadium,
+      //     stopover: true
+      //   }, {
+      //     location: places.esplanadeMall,
+      //     stopover: true
+      //   }],
+    }
 
-// function geolocate () {
-//   console.log('running geolocate')
-//   if (navigator.geolocation) {
-//     navigator.geolocation.getCurrentPosition(function (position) {
-//       var geolocation = {
-//         lat: position.coords.latitude,
-//         lng: position.coords.longitude
-//       }
-//       var circle = new google.maps.Circle({
-//         center: geolocation,
-//         radius: position.coords.accuracy
-//       })
-//       // autocomplete.setBounds(circle.getBounds())
-//     })
-//   }
-// }
+    directionsService.route(request, function (result, status) {
+      console.log('got status!')
+      if (status === 'OK') {
+        console.log(status, result)
+        directionsDisplay.setDirections(result)
+      }
+    })
+  }
+}
 
-// fetchWithJSONP(gmapsURI, initAutocomplete)
+function geolocate () {
+  console.log('running geolocate')
+  // if (navigator.geolocation) {
+  //   navigator.geolocation.getCurrentPosition(function (position) {
+  //     var geolocation = {
+  //       lat: position.coords.latitude,
+  //       lng: position.coords.longitude
+  //     }
+  //     var circle = new google.maps.Circle({
+  //       center: geolocation,
+  //       radius: position.coords.accuracy
+  //     })
+  //     // autocomplete.setBounds(circle.getBounds())
+  //   })
+  // }
+}
+
+fetchWithJSONP(gmapsURI, initAutocomplete)
 
 // So... if half fucked query, means one got autocomplete one don't have, we need to fallback to using a placesSearch. Search by Text would be good right? Have to test. Easier to test in isolation. Now, everything comes together it's pretty difficult.
 // I can work on improving the rest of the program later. The styles here work well as of now.

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Google Maps Clone</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/prefixfree.js"></script>
+  </head>
+
+  <body>
+    <div id="map"></div>
+
+    <form action="#" class="controls" autocomplete="off">
+      <header>
+        <h1>Get driving directions</h1>
+        <p>
+          This app is a lite version of Google Maps. You can get driving
+          directions from one location to another.
+        </p>
+      </header>
+
+      <div class="controls__body">
+        <div class="controls__input">
+          <label class="is-invisible" for="startpoint">Starting point</label>
+          <input
+            type="search"
+            id="startpoint"
+            name="startpoint"
+            placeholder="Choose your starting point"
+            required
+          />
+          <span class="control__icon"></span>
+        </div>
+
+        <div class="controls__input">
+          <label class="is-invisible" for="destination">Destination</label>
+          <input
+            id="destination"
+            type="search"
+            name="destination"
+            placeholder="Choose your destination"
+            required
+          />
+          <span class="control__icon"></span>
+        </div>
+
+        <div class="controls__buttons">
+          <button type="submit" class="primary">Get directions</button>
+          <button class="secondary" hidden>
+            <span>Add new destination</span>
+          </button>
+        </div>
+      </div>
+
+      <div id="panel" style="background: white;"></div>
+    </form>
+    <script src="js/main.js"></script>
+  </body>
+</html>
