@@ -160,9 +160,12 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     15. [Understanding Curl](lessons/12.asynchronous-javascript/15.curl.md)
     16. [🛠️ Todolist: The Todolist API](lessons/12.asynchronous-javascript/16.todolist-api.md)
     17. [🛠️ Todolist: Using the Todolist API](lessons/12.asynchronous-javascript/17.todolist-ajax.md)
-    20. [🛠️ Dota Heroes: Building the app](lessons/12.asynchronous-javascript/20.dota-heroes.md)—new!
-    21.  [🛠️ Dota Heroes: Filtering heroes](lessons/12.asynchronous-javascript/21.dota-heroes-2.md)—new!
-    22.  [🛠️ Dota Heroes: Refactoring](lessons/12.asynchronous-javascript/22.refactor-dota-heroes.md)—new!
+    20. [🛠️ Dota Heroes: Building the app](lessons/12.asynchronous-javascript/20.dota-heroes.md)
+    21.  [🛠️ Dota Heroes: Filtering heroes](lessons/12.asynchronous-javascript/21.dota-heroes-2.md)
+    22.  [🛠️ Dota Heroes: Refactoring](lessons/12.asynchronous-javascript/22.refactor-dota-heroes.md)
+    23.  [🛠️ Google Maps Clone: Creating your first Google Map](lessons/12.asynchronous-javascript/23.google-map.md)—new
+    24.  [🛠️ Google Maps Clone: Fetching JSONP via JavaScript](lessons/12.asynchronous-javascript/24.google-map-2.md)—new
+    25.  [🛠️ Google Maps Clone: Getting directions](lessons/12.asynchronous-javascript/24.google-map-3.md)—new
 13. Advanced asynchronous JavaScript
     1. [Requesting many resources at once](lessons/13.advanced-async/01.requesting-many-resources.md)
     2. [Response headers in JavaScript](lessons/13.advanced-async/02.response-headers-in-js.md)
