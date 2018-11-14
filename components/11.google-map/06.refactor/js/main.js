@@ -20,6 +20,51 @@ const fetchWithJSONP = (uri, callback, err = console.error) => {
   script.addEventListener('error', err)
 }
 
+const initAutocomplete = (map, el) => {
+  const autocomplete = new google.maps.places.Autocomplete(el, {
+    fields: ['formatted_address', 'geometry']
+  })
+  autocomplete.bindTo('bounds', map)
+  el.autocompleteWidget = autocomplete
+}
+
+const isValidPlace = place => typeof place === 'object' && place.formatted_address
+
+const getFormattedAddress = (fields, index) => {
+  const place = fields[index].autocompleteWidget.getPlace()
+  if (isValidPlace(place)) return place.formatted_address
+
+  const dropdown = document.querySelectorAll('.pac-container')[index]
+  const queryEl = dropdown.querySelector('.pac-item-query')
+  const queryText = queryEl.innerHTML
+    .replace('<span class="pac-matched">', '')
+    .replace('</span>', '')
+  const country = queryEl.nextElementSibling.textContent
+  return `${queryText}, ${country}`
+}
+
+const renderAutocompleteValues = fields => {
+  fields.forEach((el, index) => {
+    const address = getFormattedAddress(fields, index)
+    el.value = address
+  })
+}
+
+const drawDirections = (map, request) => {
+  const directionsService = new google.maps.DirectionsService()
+  directionsService.route(request, (result, status) => {
+    if (status === 'OK') {
+      new google.maps.DirectionsRenderer({
+        map,
+        directions: result
+      })
+    } else {
+      console.error(status)
+      console.log(result)
+    }
+  })
+}
+
 function initMap () {
   const mapDiv = document.querySelector('#map')
   const map = new google.maps.Map(mapDiv, {
@@ -29,61 +74,19 @@ function initMap () {
 
   const form = document.querySelector('form')
   const inputFields = [...form.querySelectorAll('input')]
+  inputFields.forEach(el => initAutocomplete(map, el))
 
-  inputFields.forEach(el => {
-    const autocomplete = new google.maps.places.Autocomplete(el, {
-      fields: ['formatted_address', 'geometry']
-    })
-    autocomplete.bindTo('bounds', map)
-    el.autocompleteWidget = autocomplete
-  })
-
-  form.addEventListener('submit', async evt => {
+  form.addEventListener('submit', evt => {
     evt.preventDefault()
 
-    let origin = inputFields[0].autocompleteWidget.getPlace()
-    let destination = inputFields[1].autocompleteWidget.getPlace()
-
-    if (typeof origin !== 'object' || !origin.formatted_address) {
-      const dropdown = document.querySelectorAll('.pac-container')[0]
-      const queryEl = dropdown.querySelector('.pac-item-query')
-      const queryText = queryEl.innerHTML.replace('<span class="pac-matched">', '')
-        .replace('</span>', '')
-      const country = queryEl.nextElementSibling.textContent
-      const address = `${queryText}, ${country}`
-      origin = { formatted_address: address }
-      inputFields[0].value = address
-    }
-
-    if (typeof destination !== 'object' || !destination.formatted_address) {
-      const dropdown = document.querySelectorAll('.pac-container')[1]
-      const queryEl = dropdown.querySelector('.pac-item-query')
-      const queryText = queryEl.innerHTML.replace('<span class="pac-matched">', '')
-        .replace('</span>', '')
-      const country = queryEl.nextElementSibling.textContent
-      const address = `${queryText}, ${country}`
-      destination = { formatted_address: address }
-      inputFields[1].value = address
-    }
-
-    const directionsService = new google.maps.DirectionsService()
     const request = {
-      origin: origin.formatted_address,
-      destination: destination.formatted_address,
+      origin: getFormattedAddress(inputFields, 0),
+      destination: getFormattedAddress(inputFields, 1),
       travelMode: 'DRIVING'
     }
 
-    directionsService.route(request, (result, status) => {
-      if (status === 'OK') {
-        new google.maps.DirectionsRenderer({
-          map,
-          directions: result
-        })
-      } else {
-        console.error(status)
-        console.log(result)
-      }
-    })
+    renderAutocompleteValues(inputFields)
+    drawDirections(map, request)
   })
 }
 
