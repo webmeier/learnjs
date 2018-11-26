@@ -20,19 +20,24 @@ const fetchWithJSONP = (uri, callback, err = console.error) => {
   script.addEventListener('error', err)
 }
 
-const initAutocomplete = (map, el) => {
-  const autocomplete = new google.maps.places.Autocomplete(el, {
-    fields: ['formatted_address', 'geometry']
+const initAutocompleteFields = (map, inputFields) => {
+  inputFields.forEach(el => {
+    const autocomplete = new google.maps.places.Autocomplete(el, {
+      fields: ['formatted_address', 'geometry']
+    })
+    autocomplete.bindTo('bounds', map)
+    el.autocompleteWidget = autocomplete
   })
-  autocomplete.bindTo('bounds', map)
-  el.autocompleteWidget = autocomplete
 }
-
-const isValidPlace = place => typeof place === 'object' && place.formatted_address
 
 const getFormattedAddress = (fields, index) => {
   const place = fields[index].autocompleteWidget.getPlace()
-  if (isValidPlace(place)) return place.formatted_address
+
+  // Place is valid only if place has `formatted_address`.
+  // Required checks because we don't control code for Google's Autocomplete widget
+  if (typeof place === 'object' && place.formatted_address) {
+    return place.formatted_address
+  }
 
   const dropdown = document.querySelectorAll('.pac-container')[index]
   const queryEl = dropdown.querySelector('.pac-item-query')
@@ -43,10 +48,9 @@ const getFormattedAddress = (fields, index) => {
   return `${queryText}, ${country}`
 }
 
-const renderAutocompleteValues = fields => {
-  fields.forEach((el, index) => {
-    const address = getFormattedAddress(fields, index)
-    el.value = address
+const updateInputValues = inputFields => {
+  inputFields.forEach((el, index) => {
+    el.value = getFormattedAddress(inputFields, index)
   })
 }
 
@@ -74,7 +78,7 @@ function initMap () {
 
   const form = document.querySelector('form')
   const inputFields = [...form.querySelectorAll('input')]
-  inputFields.forEach(el => initAutocomplete(map, el))
+  initAutocompleteFields(map, inputFields)
 
   form.addEventListener('submit', evt => {
     evt.preventDefault()
@@ -85,7 +89,7 @@ function initMap () {
       travelMode: 'DRIVING'
     }
 
-    renderAutocompleteValues(inputFields)
+    updateInputValues(inputFields)
     drawDirections(map, request)
   })
 }
