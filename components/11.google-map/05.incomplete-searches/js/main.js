@@ -4,7 +4,7 @@
 // ===============
 
 // Please change this to use your own API key!
-const apiKey = 'YOUR_API_KEY'
+const apiKey = 'AIzaSyBOSppjMrbl5YQAUla6O9WNAL1w2zeWtLc'
 const gmapsURI = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places`
 
 const fetchWithJSONP = (uri, callback, err = console.error) => {
@@ -28,11 +28,11 @@ function initMap () {
   })
 
   const form = document.querySelector('form')
-  const inputFields = [...form.querySelectorAll('input')]
+  const searchFields = [...form.querySelectorAll('input')]
 
-  inputFields.forEach(el => {
+  searchFields.forEach(el => {
     const autocomplete = new google.maps.places.Autocomplete(el, {
-      fields: ['formatted_address', 'geometry']
+      fields: ['formatted_address']
     })
     autocomplete.bindTo('bounds', map)
     el.autocompleteWidget = autocomplete
@@ -41,29 +41,31 @@ function initMap () {
   form.addEventListener('submit', async evt => {
     evt.preventDefault()
 
-    let origin = inputFields[0].autocompleteWidget.getPlace()
-    let destination = inputFields[1].autocompleteWidget.getPlace()
+    let origin = searchFields[0].autocompleteWidget.getPlace()
+    let destination = searchFields[1].autocompleteWidget.getPlace()
 
     if (typeof origin !== 'object' || !origin.formatted_address) {
       const dropdown = document.querySelectorAll('.pac-container')[0]
       const queryEl = dropdown.querySelector('.pac-item-query')
-      const queryText = queryEl.innerHTML.replace('<span class="pac-matched">', '')
+      const queryText = queryEl.innerHTML
+        .replace('<span class="pac-matched">', '')
         .replace('</span>', '')
-      const country = queryEl.nextElementSibling.textContent
-      const address = `${queryText}, ${country}`
+      const street = queryEl.nextElementSibling.textContent
+      const address = `${queryText}, ${street}`
       origin = { formatted_address: address }
-      inputFields[0].value = address
+      searchFields[0].value = address
     }
 
     if (typeof destination !== 'object' || !destination.formatted_address) {
       const dropdown = document.querySelectorAll('.pac-container')[1]
       const queryEl = dropdown.querySelector('.pac-item-query')
-      const queryText = queryEl.innerHTML.replace('<span class="pac-matched">', '')
+      const queryText = queryEl.innerHTML
+        .replace('<span class="pac-matched">', '')
         .replace('</span>', '')
-      const country = queryEl.nextElementSibling.textContent
-      const address = `${queryText}, ${country}`
+      const street = queryEl.nextElementSibling.textContent
+      const address = `${queryText}, ${street}`
       destination = { formatted_address: address }
-      inputFields[1].value = address
+      searchFields[1].value = address
     }
 
     const directionsService = new google.maps.DirectionsService()

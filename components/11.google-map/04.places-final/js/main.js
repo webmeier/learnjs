@@ -28,26 +28,25 @@ function initMap () {
   })
 
   const form = document.querySelector('form')
-  const inputFields = [...form.querySelectorAll('input')]
+  const searchFields = [...form.querySelectorAll('input')]
 
-  inputFields.forEach(el => {
+  searchFields.forEach(el => {
     const autocomplete = new google.maps.places.Autocomplete(el, {
-      fields: ['formatted_address', 'geometry']
+      fields: ['formatted_address']
     })
     autocomplete.bindTo('bounds', map)
-    el.autocompleteWidget = autocomplete
   })
 
   form.addEventListener('submit', evt => {
     evt.preventDefault()
 
-    const origin = inputFields[0].autocompleteWidget.getPlace()
-    const destination = inputFields[1].autocompleteWidget.getPlace()
+    const origin = searchFields[0].value.trim()
+    const destination = searchFields[1].value.trim()
 
     const directionsService = new google.maps.DirectionsService()
     const request = {
-      origin: origin.formatted_address,
-      destination: destination.formatted_address,
+      origin: origin,
+      destination: destination,
       travelMode: 'DRIVING'
     }
 

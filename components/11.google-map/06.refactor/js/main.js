@@ -4,7 +4,7 @@
 // ===============
 
 // Please change this to use your own API key!
-const apiKey = 'AIzaSyBOSppjMrbl5YQAUla6O9WNAL1w2zeWtLc'
+const apiKey = 'YOUR_API_KEY'
 const gmapsURI = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places`
 
 const fetchWithJSONP = (uri, callback, err = console.error) => {
@@ -20,10 +20,10 @@ const fetchWithJSONP = (uri, callback, err = console.error) => {
   script.addEventListener('error', err)
 }
 
-const initAutocompleteFields = (map, inputFields) => {
-  inputFields.forEach(el => {
+const initAutocompleteFields = (map, searchFields) => {
+  searchFields.forEach(el => {
     const autocomplete = new google.maps.places.Autocomplete(el, {
-      fields: ['formatted_address', 'geometry']
+      fields: ['formatted_address']
     })
     autocomplete.bindTo('bounds', map)
     el.autocompleteWidget = autocomplete
@@ -33,8 +33,8 @@ const initAutocompleteFields = (map, inputFields) => {
 const getFormattedAddress = (fields, index) => {
   const place = fields[index].autocompleteWidget.getPlace()
 
-  // Place is valid only if place has `formatted_address`.
-  // Required checks because we don't control code for Google's Autocomplete widget
+  // Place is valid only if it has `formatted_address` property.
+  // Check this way because Google Autocomplete Widget can sometimes return 'undefined' when getPlace is called.
   if (typeof place === 'object' && place.formatted_address) {
     return place.formatted_address
   }
@@ -44,13 +44,13 @@ const getFormattedAddress = (fields, index) => {
   const queryText = queryEl.innerHTML
     .replace('<span class="pac-matched">', '')
     .replace('</span>', '')
-  const country = queryEl.nextElementSibling.textContent
-  return `${queryText}, ${country}`
+  const street = queryEl.nextElementSibling.textContent
+  return `${queryText}, ${street}`
 }
 
-const updateInputValues = inputFields => {
-  inputFields.forEach((el, index) => {
-    el.value = getFormattedAddress(inputFields, index)
+const updateSearchFields = searchFields => {
+  searchFields.forEach((el, index) => {
+    el.value = getFormattedAddress(searchFields, index)
   })
 }
 
@@ -77,19 +77,19 @@ function initMap () {
   })
 
   const form = document.querySelector('form')
-  const inputFields = [...form.querySelectorAll('input')]
-  initAutocompleteFields(map, inputFields)
+  const searchFields = [...form.querySelectorAll('input')]
+  initAutocompleteFields(map, searchFields)
 
   form.addEventListener('submit', evt => {
     evt.preventDefault()
 
     const request = {
-      origin: getFormattedAddress(inputFields, 0),
-      destination: getFormattedAddress(inputFields, 1),
+      origin: getFormattedAddress(searchFields, 0),
+      destination: getFormattedAddress(searchFields, 1),
       travelMode: 'DRIVING'
     }
 
-    updateInputValues(inputFields)
+    updateSearchFields(searchFields)
     drawDirections(map, request)
   })
 }
