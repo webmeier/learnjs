@@ -141,10 +141,10 @@ function initMap () {
 
     if (searchBoxParent.children.length < 4) {
       searchBoxParent.classList.remove('can-remove-search-box')
-      // searchBoxParent[0].querySelector('input').placeholder = 'Choose your starting point'
-      // searchBoxParent[0].querySelector('label').textContent = 'Choose your starting point'
-      // searchBoxParent[1].querySelector('input').placeholder = 'Choose your starting point'
-      // searchBoxParent[1].querySelector('label').textContent = 'Choose your destination'
+      searchBoxParent[0].querySelector('input').placeholder = 'Choose your starting point'
+      searchBoxParent[0].querySelector('label').textContent = 'Choose your starting point'
+      searchBoxParent[1].querySelector('input').placeholder = 'Choose your starting point'
+      searchBoxParent[1].querySelector('label').textContent = 'Choose your destination'
     }
   })
 
