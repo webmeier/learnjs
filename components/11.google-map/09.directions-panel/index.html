@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Google Maps Clone</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/prefixfree.js"></script>
+  </head>
+
+  <body>
+    <div id="map"></div>
+
+    <form action="#" class="controls" autocomplete="off">
+      <header>
+        <h1>Get driving directions</h1>
+        <p>
+          This app is a lite version of Google Maps. You can get driving
+          directions from one location to another.
+        </p>
+      </header>
+
+      <div class="controls__body">
+        <div class="controls__search-box">
+          <label class="is-invisible" for="startpoint">Starting point</label>
+          <input
+            type="search"
+            id="startpoint"
+            name="startpoint"
+            placeholder="Choose your starting point"
+          />
+          <button type="button" class="search-box__delete-icon">
+            <svg viewBox="0 0 20 20">
+              <path
+                d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"
+              />
+            </svg>
+          </button>
+          <span class="search-box__icon"></span>
+        </div>
+
+        <div class="controls__search-box">
+          <label class="is-invisible" for="destination">Destination</label>
+          <input
+            id="destination"
+            type="search"
+            name="destination"
+            placeholder="Choose your destination"
+          />
+          <button type="button" class="search-box__delete-icon">
+            <svg viewBox="0 0 20 20">
+              <path
+                d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"
+              />
+            </svg>
+          </button>
+          <span class="search-box__icon"></span>
+        </div>
+
+        <div class="controls__buttons">
+          <button type="submit" class="primary">Get directions</button>
+          <button type="button" class="secondary">
+            <span>+ Add new destination</span>
+          </button>
+        </div>
+      </div>
+    </form>
+    <script src="js/main.js"></script>
+  </body>
+</html>
