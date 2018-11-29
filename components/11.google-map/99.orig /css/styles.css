@@ -121,7 +121,7 @@ button[class="secondary"]:active {
   color: inherit;
 }
 
-.control__icon {
+.search-box__icon {
   position: relative;
   z-index: 1;
   order: -1;
@@ -131,7 +131,7 @@ button[class="secondary"]:active {
   height: 1em;
 }
 
-.controls__search-box:nth-last-child(2) .control__icon {
+.controls__search-box:nth-last-child(2) .search-box__icon {
   background-image: url("/images/destination.svg");
   color: red;
 }

@@ -29,6 +29,10 @@ button {
   border: 0;
 }
 
+button * {
+  pointer-events: none;
+}
+
 button[class="primary"] {
   background: #28309b;
   padding: 0.75em 1em;
@@ -41,8 +45,7 @@ button[class="primary"]:focus {
 }
 
 button[class="secondary"] {
-  display: flex;
-  align-items: center;
+  cursor: pointer;
 }
 
 button[class="secondary"]:hover,
@@ -83,7 +86,7 @@ button[class="secondary"]:active {
 .controls__body {
   background-color: #fff;
   padding: 1.5em 2em;
-  color: #7d7ea8;
+  color: #575bb5;
 }
 
 .controls__search-box {
@@ -95,6 +98,7 @@ button[class="secondary"]:active {
   position: relative;
   padding: 0.5em 0;
 }
+
 .controls__search-box + .controls__search-box::before {
   content: "";
   position: absolute;
@@ -114,8 +118,8 @@ button[class="secondary"]:active {
 .controls__search-box input[type="search"] {
   border: 0;
   border-bottom: 1px solid #dfe0f1;
-  width: 100%;
   margin-left: 0.75em;
+  width: 100%;
   padding: 0.75em 0em;
 }
 
@@ -125,6 +129,7 @@ button[class="secondary"]:active {
 
 .search-box__icon {
   position: relative;
+  flex-shrink: 0;
   z-index: 1;
   order: -1;
   background-image: url("/images/circle.svg");
@@ -138,31 +143,18 @@ button[class="secondary"]:active {
   color: red;
 }
 
-.controls__search-box button[type="submit"] {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px);
-  display: flex;
-  align-items: center;
+.search-box__delete-icon {
+  display: none;
+  margin-left: 0.5em;
   padding: 0;
 }
 
-.controls__search-box button[type="submit"]:hover,
-.controls__search-box button[type="submit"]:focus,
-.controls__search-box button[type="submit"]:active {
-  position: relative;
-  height: initial;
-  width: initial;
-  clip: inherit;
+.can-remove-search-box .controls__search-box:hover .search-box__delete-icon {
+  display: block;
 }
 
-.controls__search-box button[type="submit"] svg {
-  border: 0;
+.search-box__delete-icon svg {
   width: 1em;
-  height: auto;
-  fill: #28309b;
 }
 
 .controls__buttons {
@@ -177,12 +169,6 @@ button[class="secondary"]:active {
   margin-left: 0.5em;
 }
 
-.controls__buttons svg {
-  width: 1em;
-  height: 1em;
-  margin-right: 0.25em;
-}
-
 .is-invisible {
   position: absolute !important;
   height: 1px;
@@ -190,10 +176,6 @@ button[class="secondary"]:active {
   overflow: hidden;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
-}
-
-[hidden] {
-  display: none !important;
 }
 
 /* 
@@ -254,8 +236,8 @@ button[class="secondary"]:active {
  * Styling Directions API panel 
  * ============================
 */
-/* #panel {
-  background-color: white;
+
+/* #panel {
   border-top: 1px solid #dfe0f1;
 }
 
@@ -263,32 +245,32 @@ button[class="secondary"]:active {
   border-spacing: 0;
 }
 
-#panel .adp-list {
+#panel .adp-list {
   border: 0;
   padding: 0;
   font: inherit;
 }
 
-#panel .adp-listheader {
+#panel .adp-listheader {
   display: none;
 }
 
-#panel .adp-list td {
+#panel .adp-list td {
   padding: 1em 1.5em;
   border-left: 0.25em solid transparent;
   background-color: transparent;
 }
 
-#panel .adp-list td:first-child {
+#panel .adp-list td:first-child {
   padding-top: 1.5em;
 }
 
-#panel .adp-list .adp-listsel {
+#panel .adp-list .adp-listsel {
   border-color: #424abf;
   background-color: transparent;
 }
 
-#panel .adp-listinfo {
+#panel .adp-listinfo {
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-areas:
@@ -296,83 +278,83 @@ button[class="secondary"]:active {
     "route distance";
 }
 
-#panel .adp-listinfo > *:nth-child(1) {
+#panel .adp-listinfo > *:nth-child(1) {
   grid-area: route;
   font-size: 1.333em;
 }
 
-#panel .adp-listinfo > *:nth-child(2) {
+#panel .adp-listinfo > *:nth-child(2) {
   grid-area: distance;
   text-align: right;
 }
 
-#panel .adp-listinfo > *:nth-child(1)::before {
+#panel .adp-listinfo > *:nth-child(1)::before {
   content: "via ";
 }
 
-#panel .adp-listinfo > *:nth-child(3) {
+#panel .adp-listinfo > *:nth-child(3) {
   display: none;
 }
 
-#panel .adp-listinfo > *:nth-child(4) {
+#panel .adp-listinfo > *:nth-child(4) {
   grid-area: time;
   text-align: right;
 }
 
-#panel .adp {
+#panel .adp {
   border-top: 1px solid #dfe0f0;
 }
 
-#panel .adp table {
+#panel .adp table {
   display: block;
   font: inherit;
 }
 
-#panel .adp .adp-placemark {
+#panel .adp .adp-placemark {
   display: block;
   margin: 0;
   border: 0;
   background-color: transparent;
 }
 
-#panel .adp-placemark tr {
+#panel .adp-placemark tr {
   display: grid;
   grid-template-columns: 2em 1fr;
   grid-gap: 0.5em;
   align-items: center;
-  padding: 1em 0 1em 0.9em;
+  padding: 1em 0 1em 1.75em;
   font-weight: 700;
 }
 
-#panel .adp-summary {
+#panel .adp-summary {
   display: none;
 }
 
-#panel .adp .adp-directions tr {
+#panel .adp .adp-directions tr {
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 1.5em 1fr 3em;
   grid-gap: 0.5em;
-  padding: 0.25em 1.75em 0.25em 1.45em;
+  padding: 0.5em 1.75em 0.5em 4.2em;
 }
 
-#panel .adp-substep {
+#panel .adp-substep {
   border-top: 0;
   padding: 0;
 }
 
-#panel .adp-substep .adp-stepicon {
+#panel .adp-substep .adp-stepicon {
   display: block !important;
 }
 
-#panel .adp-substep:nth-child(2) {
+#panel .adp-substep:nth-child(2) {
   display: none;
 }
 
-#panel .adp-substep:last-child {
+#panel .adp-substep:last-child {
   text-align: right;
 }
 
-#panel .adp-legal {
+#panel .adp-legal {
   display: none;
 } */

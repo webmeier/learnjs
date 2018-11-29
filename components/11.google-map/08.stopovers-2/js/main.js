@@ -4,8 +4,11 @@
 // ===============
 
 // Please change this to use your own API key!
-const apiKey = 'YOUR_API_KEY'
+const apiKey = 'AIzaSyBOSppjMrbl5YQAUla6O9WNAL1w2zeWtLc'
 const gmapsURI = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places`
+
+const generateUnique = length =>
+  Math.random().toString(36).substring(2, 2 + length)
 
 const fetchWithJSONP = (uri, callback, err = console.error) => {
   const script = document.createElement('script')
@@ -85,26 +88,31 @@ function initMap () {
   })
 
   const form = document.querySelector('form')
+  const searchBoxParent = form.querySelector('.controls__body')
   const newDestinationButton = form.querySelector('.secondary')
   const searchFields = [...form.querySelectorAll('input')]
 
   initAutocompleteFields(map, searchFields)
 
   newDestinationButton.addEventListener('click', evt => {
-    const searchFields = form.querySelectorAll('input')
-    const numFields = searchFields.length
-    const index = numFields
-
+    const unique = generateUnique(5)
     const div = document.createElement('div')
     div.classList.add('controls__search-box')
     div.innerHTML = `
-      <label class="is-invisible" for="destination-${index}">Destination ${index}</label>
+      <label class="is-invisible" for="destination-${unique}">Choose another destination </label>
       <input
         type="search"
-        id="destination-${index}"
-        name="destination-${index}"
-        placeholder="Choose destination ${index}"
+        id="destination-${unique}"
+        name="destination-${unique}"
+        placeholder="Choose another destination"
       />
+      <button type="button" class="search-box__delete-icon">
+        <svg viewBox="0 0 20 20">
+          <path
+            d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"
+          />
+        </svg>
+      </button>
       <span class="search-box__icon"></span>
     `
 
@@ -118,6 +126,26 @@ function initMap () {
     })
     autocomplete.bindTo('bounds', map)
     searchField.autocompleteWidget = autocomplete
+
+    parent.classList.add('can-remove-search-box')
+  })
+
+  searchBoxParent.addEventListener('click', evt => {
+    if (!evt.target.matches('.search-box__delete-icon')) return
+    const searchBox = evt.target.closest('.controls__search-box')
+    const index = [...searchBoxParent.children].findIndex(el => el === searchBox)
+    const dropdown = document.querySelectorAll('.pac-container')[index]
+
+    searchBoxParent.removeChild(searchBox)
+    dropdown.parentNode.removeChild(dropdown)
+
+    if (searchBoxParent.children.length < 4) {
+      searchBoxParent.classList.remove('can-remove-search-box')
+      // searchBoxParent[0].querySelector('input').placeholder = 'Choose your starting point'
+      // searchBoxParent[0].querySelector('label').textContent = 'Choose your starting point'
+      // searchBoxParent[1].querySelector('input').placeholder = 'Choose your starting point'
+      // searchBoxParent[1].querySelector('label').textContent = 'Choose your destination'
+    }
   })
 
   form.addEventListener('submit', evt => {

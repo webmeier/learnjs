@@ -170,6 +170,7 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     27.  [🛠️ Google Map Clone: Handling incomplete searches](lessons/12.asynchronous-javascript/27.google-map-incomplete-searches.md)
     28.  [🛠️ Google Map Clone: The first refactor](lessons/12.asynchronous-javascript/28.google-map-first-refactor.md)—new!
     29.  [🛠️ Google Map Clone: Adding stopovers](lessons/12.asynchronous-javascript/29.google-map-stopovers.md)—new!
+    30.  [🛠️ Google Map Clone: Removing stopovers](lessons/12.asynchronous-javascript/30.google-map-stopovers-2.md)—new!
 13. Advanced asynchronous JavaScript
     1. [Requesting many resources at once](lessons/13.advanced-async/01.requesting-many-resources.md)
     2. [Response headers in JavaScript](lessons/13.advanced-async/02.response-headers-in-js.md)
