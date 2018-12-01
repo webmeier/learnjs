@@ -73,7 +73,7 @@ const getWaypoints = searchFields =>
   searchFields
     .map((el, index) => ({
       location: getFormattedAddress(searchFields, index),
-      stopover: false
+      stopover: true
     }))
     .filter((el, index) => index !== 0 && index !== searchFields.length - 1)
 
