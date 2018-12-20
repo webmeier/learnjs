@@ -132,7 +132,7 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     8. [🛠️ Refactoring the calculator](lessons/10.text-and-content/08.refactor-calculator.md)
     9. [🛠️ Building a Popover](lessons/10.text-and-content/09.building-popover.md)
     10. [🛠️ Building a dynamic Popover](lessons/10.text-and-content/10.building-popover-2.md)
-    11. [🛠️ Improving the popover's space variable](lessons/10.text-and-content/10.building-popover-2.md)
+    11. [🛠️ Improving the popover's space variable](lessons/10.text-and-content/11.building-popover-3.md)
 11. Forms
     1. [Intro to forms](lessons/11.forms/01.forms.md)
     2. [Getting form fields](lessons/11.forms/02.getting-form-fields.md)
