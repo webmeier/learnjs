@@ -352,7 +352,7 @@ const luke = characters.querySelector('.luke')
 const luke = characters.querySelector('li')
 
 // With attribute
-const luke = characters.querySelector('[hero]')
+const luke = characters.querySelector('[data-type=hero]')
 ```
 
 - From the `#star-wars-characters` list, get Yoda with `class` and `attribute` selectors
@@ -362,7 +362,7 @@ const luke = characters.querySelector('[hero]')
 const yoda = characters.querySelector('.yoda')
 
 // With attribute
-const yoda = characters.querySelector('[master]')
+const yoda = characters.querySelector('[data-type=master]')
 ```
 
 - From the `#star-wars-characters` list, get Darth Vader with `class` and `attribute` selectors
@@ -372,7 +372,7 @@ const yoda = characters.querySelector('[master]')
 const darthVader = characters.querySelector('.badboy')
 
 // With attribute
-const darthVader = characters.querySelector('[villain]')
+const darthVader = characters.querySelector('[data-type=villain]')
 ```
 
 ---
