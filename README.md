@@ -178,7 +178,13 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     4. [Dealing with paginated responses (part 2)](lessons/13.advanced-async/04.paginated-responses.md)
     5. [Asynchronous functions](lessons/13.advanced-async/05.async-await.md)
     6. [Timeouts](lessons/13.advanced-async/06.timeouts.md)
-
+14. Date
+  1. [The Date Object](lessons/14.dates/01.date-object.md)
+  2. [Getting a formatted date](lessons/14.dates/02.getting-formatted-date.md)
+  3. [Getting the time](lessons/14.dates/03.getting-time.md)
+  4. [Local time and UTC Time](lessons/14.dates/04.timezones.md)
+  5. [Setting a specific date](lessons/14.dates/05.set-date.md)
+  8. [Comparing Dates and times](lessons/14.dates/08.compare-date.md)
 
 ## Private Community
 
