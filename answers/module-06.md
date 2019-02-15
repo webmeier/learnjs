@@ -87,8 +87,8 @@ Here's a list of famous people. Do the following:
 // With `closest`
 const list = document.querySelector('ul')
 list.addEventListener('click', ev => {
-  if (ev.currentTarget.closest('li')) {
-	  console.log(ev.currentTarget)
+  if (ev.target.closest('li')) {
+	  console.log(ev.target)
   }
 })
 ```
@@ -105,8 +105,8 @@ li a {
 // With pointer events `closest`
 const list = document.querySelector('ul')
 list.addEventListener('click', ev => {
-  if (ev.currentTarget.matches('li')) {
-	  console.log(ev.currentTarget)
+  if (ev.target.matches('li')) {
+	  console.log(ev.target)
   }
 })
 ```
@@ -130,11 +130,16 @@ button.addEventListener('click', listenForOneClick)
 - Create an event listener that listens for five clicks.
 
 ```js
-let count = 0
 const listenForFiveClicks = e => {
-  count = count + 1
-  if (count === 5) {
-    e.currentTarget.removeEventListener('click', listenForFiveClicks)
+  const elem = e.currentTarget
+  const prevCount = parseInt(elem.dataset.count) || 0
+  const currentCount = prevCount + 1
+
+  elem.dataset.count = currentCount
+  console.log(`clicked ${currentCount} times`)
+
+  if (currentCount === 5) {
+    elem.removeEventListener('click', listenForFiveClicks)
   }
 }
 

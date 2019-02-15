@@ -254,7 +254,7 @@ console.log(human.lastName]) // Zell
 
 ```js
 const human = {
-	sayName: () {
+	sayName: function () {
 		console.log('My name is Zell')
 	}
 }
