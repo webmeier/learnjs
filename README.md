@@ -175,7 +175,7 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     1. [Requesting many resources at once](lessons/13.advanced-async/01.requesting-many-resources.md)
     2. [Response headers in JavaScript](lessons/13.advanced-async/02.response-headers-in-js.md)
     3. [Dealing with paginated responses (part 1)](lessons/13.advanced-async/03.paginated-responses.md)
-    4. [Dealing with paginated responses (part 2)](lessons/13.advanced-async/04.paginated-responses.md)
+    4. [Dealing with paginated responses (part 2)](lessons/13.advanced-async/04.paginated-responses-2.md)
     5. [Asynchronous functions](lessons/13.advanced-async/05.async-await.md)
     6. [Timeouts](lessons/13.advanced-async/06.timeouts.md)
 14. Date
