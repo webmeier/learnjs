@@ -161,16 +161,16 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     16. [🛠️ Todolist: The Todolist API](lessons/12.asynchronous-javascript/16.todolist-api.md)
     17. [🛠️ Todolist: Using the Todolist API](lessons/12.asynchronous-javascript/17.todolist-ajax.md)
     20. [🛠️ Dota Heroes: Building the app](lessons/12.asynchronous-javascript/20.dota-heroes.md)
-    21.  [🛠️ Dota Heroes: Filtering heroes](lessons/12.asynchronous-javascript/21.dota-heroes-2.md)
-    22.  [🛠️ Dota Heroes: Refactoring](lessons/12.asynchronous-javascript/22.refactor-dota-heroes.md)
-    23.  [🛠️ Google Maps Clone: Creating your first Google Map](lessons/12.asynchronous-javascript/23.google-map-first-map.md)
-    24.  [🛠️ Google Maps Clone: Fetching JSONP via JavaScript](lessons/12.asynchronous-javascript/24.google-map-jsonp.md)
-    25.  [🛠️ Google Maps Clone: Getting directions](lessons/12.asynchronous-javascript/25.google-map-directions.md)
-    26.  [🛠️ Google Map Clone: Searching for places](lessons/12.asynchronous-javascript/26.google-map-places.md)
-    27.  [🛠️ Google Map Clone: Handling incomplete searches](lessons/12.asynchronous-javascript/27.google-map-incomplete-searches.md)
-    28.  [🛠️ Google Map Clone: The first refactor](lessons/12.asynchronous-javascript/28.google-map-first-refactor.md)—new!
-    29.  [🛠️ Google Map Clone: Adding stopovers](lessons/12.asynchronous-javascript/29.google-map-stopovers.md)—new!
-    30.  [🛠️ Google Map Clone: Removing stopovers](lessons/12.asynchronous-javascript/30.google-map-stopovers-2.md)—new!
+    21. [🛠️ Dota Heroes: Filtering heroes](lessons/12.asynchronous-javascript/21.dota-heroes-2.md)
+    22. [🛠️ Dota Heroes: Refactoring](lessons/12.asynchronous-javascript/22.refactor-dota-heroes.md)
+    23. [🛠️ Google Maps Clone: Creating your first Google Map](lessons/12.asynchronous-javascript/23.google-map-first-map.md)
+    24. [🛠️ Google Maps Clone: Fetching JSONP via JavaScript](lessons/12.asynchronous-javascript/24.google-map-jsonp.md)
+    25. [🛠️ Google Maps Clone: Getting directions](lessons/12.asynchronous-javascript/25.google-map-directions.md)
+    26. [🛠️ Google Map Clone: Searching for places](lessons/12.asynchronous-javascript/26.google-map-places.md)
+    27. [🛠️ Google Map Clone: Handling incomplete searches](lessons/12.asynchronous-javascript/27.google-map-incomplete-searches.md)
+    28. [🛠️ Google Map Clone: The first refactor](lessons/12.asynchronous-javascript/28.google-map-first-refactor.md)—new!
+    29. [🛠️ Google Map Clone: Adding stopovers](lessons/12.asynchronous-javascript/29.google-map-stopovers.md)—new!
+    30. [🛠️ Google Map Clone: Removing stopovers](lessons/12.asynchronous-javascript/30.google-map-stopovers-2.md)—new!
 13. Advanced asynchronous JavaScript
     1. [Requesting many resources at once](lessons/13.advanced-async/01.requesting-many-resources.md)
     2. [Response headers in JavaScript](lessons/13.advanced-async/02.response-headers-in-js.md)
@@ -179,12 +179,12 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     5. [Asynchronous functions](lessons/13.advanced-async/05.async-await.md)
     6. [Timeouts](lessons/13.advanced-async/06.timeouts.md)
 14. Date
-  1. [The Date Object](lessons/14.dates/01.date-object.md)
-  2. [Getting a formatted date](lessons/14.dates/02.getting-formatted-date.md)
-  3. [Getting the time](lessons/14.dates/03.getting-time.md)
-  4. [Local time and UTC Time](lessons/14.dates/04.timezones.md)
-  5. [Setting a specific date](lessons/14.dates/05.set-date.md)
-  8. [Comparing Dates and times](lessons/14.dates/08.compare-date.md)
+    1. [The Date Object](lessons/14.dates/01.date-object.md)
+    2. [Getting a formatted date](lessons/14.dates/02.getting-formatted-date.md)
+    3. [Getting the time](lessons/14.dates/03.getting-time.md)
+    4. [Local time and UTC Time](lessons/14.dates/04.timezones.md)
+    5. [Setting a specific date](lessons/14.dates/05.set-date.md)
+    8. [Comparing Dates and times](lessons/14.dates/08.compare-date.md)
 
 ## Private Community
 
