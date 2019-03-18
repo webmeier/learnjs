@@ -168,9 +168,9 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     25. [🛠️ Google Maps Clone: Getting directions](lessons/12.asynchronous-javascript/25.google-map-directions.md)
     26. [🛠️ Google Map Clone: Searching for places](lessons/12.asynchronous-javascript/26.google-map-places.md)
     27. [🛠️ Google Map Clone: Handling incomplete searches](lessons/12.asynchronous-javascript/27.google-map-incomplete-searches.md)
-    28. [🛠️ Google Map Clone: The first refactor](lessons/12.asynchronous-javascript/28.google-map-first-refactor.md)—new!
-    29. [🛠️ Google Map Clone: Adding stopovers](lessons/12.asynchronous-javascript/29.google-map-stopovers.md)—new!
-    30. [🛠️ Google Map Clone: Removing stopovers](lessons/12.asynchronous-javascript/30.google-map-stopovers-2.md)—new!
+    28. [🛠️ Google Map Clone: The first refactor](lessons/12.asynchronous-javascript/28.google-map-first-refactor.md)
+    29. [🛠️ Google Map Clone: Adding stopovers](lessons/12.asynchronous-javascript/29.google-map-stopovers.md)
+    30. [🛠️ Google Map Clone: Removing stopovers](lessons/12.asynchronous-javascript/30.google-map-stopovers-2.md)
 13. Advanced asynchronous JavaScript
     1. [Requesting many resources at once](lessons/13.advanced-async/01.requesting-many-resources.md)
     2. [Response headers in JavaScript](lessons/13.advanced-async/02.response-headers-in-js.md)
@@ -184,6 +184,8 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     3. [Getting the time](lessons/14.dates/03.getting-time.md)
     4. [Local time and UTC Time](lessons/14.dates/04.timezones.md)
     5. [Setting a specific date](lessons/14.dates/05.set-date.md)
+    6. [Setting a date with Date methods](lessons/14.dates/06.set-date-methods.md)—new!
+    7. [Adding (or subtracting) date and time](lessons/14.dates/07.add-and-subtract-date.md)—new!
     8. [Comparing Dates and times](lessons/14.dates/08.compare-date.md)
 
 ## Private Community
