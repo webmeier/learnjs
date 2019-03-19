@@ -63,9 +63,14 @@ keys.addEventListener('click', e => {
         calculator.dataset.operator = ''
       }
 
-      display.textContent = 0
+      display.textContent = '0'
       key.textContent = 'AC'
       calculator.dataset.previousKeyType = 'clear'
+    }
+
+    if (action !== 'clear') {
+      const clearButton = calculator.querySelector('[data-action=clear]')
+      clearButton.textContent = 'CE'
     }
 
     if (action === 'calculate') {
@@ -75,11 +80,6 @@ keys.addEventListener('click', e => {
 
       display.textContent = calculate(firstValue, operator, secondValue)
       calculator.dataset.previousKeyType = 'calculate'
-    }
-
-    if (action !== 'clear') {
-      const clearButton = calculator.querySelector('[data-action=clear]')
-      clearButton.textContent = 'CE'
     }
   }
 })
