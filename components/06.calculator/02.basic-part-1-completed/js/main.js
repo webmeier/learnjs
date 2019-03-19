@@ -58,7 +58,13 @@ keys.addEventListener('click', e => {
     }
 
     if (action === 'clear') {
-      console.log('clear key!')
+      if (key.textContent === 'AC') {
+        calculator.dataset.firstValue = ''
+        calculator.dataset.operator = ''
+      }
+
+      display.textContent = 0
+      key.textContent = 'AC'
       calculator.dataset.previousKeyType = 'clear'
     }
 
@@ -69,6 +75,11 @@ keys.addEventListener('click', e => {
 
       display.textContent = calculate(firstValue, operator, secondValue)
       calculator.dataset.previousKeyType = 'calculate'
+    }
+
+    if (action !== 'clear') {
+      const clearButton = calculator.querySelector('[data-action=clear]')
+      clearButton.textContent = 'CE'
     }
   }
 })
