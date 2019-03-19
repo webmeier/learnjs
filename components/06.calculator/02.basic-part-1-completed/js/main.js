@@ -36,10 +36,13 @@ keys.addEventListener('click', e => {
       } else {
         display.textContent = displayedNum + keyContent
       }
+
+      calculator.dataset.previousKeyType = 'number'
     }
 
     if (action === 'decimal') {
       display.textContent = displayedNum + '.'
+      calculator.dataset.previousKeyType = 'decimal'
     }
 
     if (
@@ -56,6 +59,7 @@ keys.addEventListener('click', e => {
 
     if (action === 'clear') {
       console.log('clear key!')
+      calculator.dataset.previousKeyType = 'clear'
     }
 
     if (action === 'calculate') {
@@ -64,6 +68,7 @@ keys.addEventListener('click', e => {
       const secondValue = displayedNum
 
       display.textContent = calculate(firstValue, operator, secondValue)
+      calculator.dataset.previousKeyType = 'calculate'
     }
   }
 })
