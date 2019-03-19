@@ -66,8 +66,8 @@
           </svg>
         </button>
 
-        <button class="filter" data-placement="bottom" data-target="roles">
-          <span>Roles</span>
+        <button class="filter" data-placement="bottom" data-target="role">
+          <span>Role</span>
           <svg viewbox="0 0 12 8">
             <use xlink:href="#chevron-down"></use>
           </svg>
@@ -126,103 +126,11 @@
           </div>
         </div>
 
-        <div class="popover" id="roles" data-placement="bottom">
-          <div class="filter__option">
-            <input type="checkbox" id="carry" />
-            <label for="carry">
-              <svg viewbox="0 0 20 15">
-                <use xlink:href="#checkmark"></use>
-              </svg>
-              <span>Carry</span>
-            </label>
-          </div>
-
-          <div class="filter__option">
-            <input type="checkbox" id="disabler" />
-            <label for="disabler">
-              <svg viewbox="0 0 20 15">
-                <use xlink:href="#checkmark"></use>
-              </svg>
-              <span>Disabler</span>
-            </label>
-          </div>
-
-          <div class="filter__option">
-            <input type="checkbox" id="durable" />
-            <label for="durable">
-              <svg viewbox="0 0 20 15">
-                <use xlink:href="#checkmark"></use>
-              </svg>
-              <span>Durable</span>
-            </label>
-          </div>
-
-          <div class="filter__option">
-            <input type="checkbox" id="escape" />
-            <label for="escape">
-              <svg viewbox="0 0 20 15">
-                <use xlink:href="#checkmark"></use>
-              </svg>
-              <span>Escape</span>
-            </label>
-          </div>
-
-          <div class="filter__option">
-            <input type="checkbox" id="initiator" />
-            <label for="initiator">
-              <svg viewbox="0 0 20 15">
-                <use xlink:href="#checkmark"></use>
-              </svg>
-              <span>Initiator</span>
-            </label>
-          </div>
-
-          <div class="filter__option">
-            <input type="checkbox" id="jungler" />
-            <label for="jungler">
-              <svg viewbox="0 0 20 15">
-                <use xlink:href="#checkmark"></use>
-              </svg>
-              <span>Jungler</span>
-            </label>
-          </div>
-
-          <div class="filter__option">
-            <input type="checkbox" id="nuker" />
-            <label for="nuker">
-              <svg viewbox="0 0 20 15">
-                <use xlink:href="#checkmark"></use>
-              </svg>
-              <span>Nuker</span>
-            </label>
-          </div>
-
-          <div class="filter__option">
-            <input type="checkbox" id="pusher" />
-            <label for="pusher">
-              <svg viewbox="0 0 20 15">
-                <use xlink:href="#checkmark"></use>
-              </svg>
-              <span>Pusher</span>
-            </label>
-          </div>
-
-          <div class="filter__option">
-            <input type="checkbox" id="support" />
-            <label for="support">
-              <svg viewbox="0 0 20 15">
-                <use xlink:href="#checkmark"></use>
-              </svg>
-              <span>Support</span>
-            </label>
-          </div>
-        </div>
+        <div class="popover" id="role" data-placement="bottom"></div>
       </div>
 
       <ul class="heroes"></ul>
     </main>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/1.0.7/purify.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/zl-fetch@2.2.1"></script>
     <script src="js/main.js"></script>
   </body>
