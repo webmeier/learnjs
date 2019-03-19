@@ -17,6 +17,6 @@ const init = data => {
   heroesDiv.innerHTML = DOMPurify.sanitize(innerHTML)
 }
 
-zlFetch(`${dotaApi}/heroStats`)
+zlFetch(`https://api.opendota.com/api/heroStats`)
   .then(init)
   .catch(console.log)
