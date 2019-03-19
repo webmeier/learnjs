@@ -8,9 +8,9 @@ const init = data => {
   const heroes = data.body.map(hero => {
     return {
       name: hero['localized_name'],
-      primaryAttr: hero['primary_attribute'],
-      attackType: hero['attack_type'],
-      roles: hero.roles,
+      primaryAttr: hero['primary_attr'].toLowerCase(),
+      attackType: hero['attack_type'].toLowerCase(),
+      roles: hero.roles.map(role => role.toLowerCase()),
       img: `https://api.opendota.com${hero.img}`
     }
   })
@@ -48,7 +48,9 @@ const filterByPrimaryAttribute = heroes => {
   ).map(el => el.id)
 
   if (!selectedAttributes.length) return heroes
-  return heroes.filter(hero => selectedAttributes.includes(hero.primaryAttr))
+  return heroes.filter(hero => {
+    return selectedAttributes.includes(hero.primaryAttr)
+  })
 }
 
 const filterByAttackType = heroes => {
@@ -58,7 +60,9 @@ const filterByAttackType = heroes => {
   ).map(el => el.id)
 
   if (!selectedAttackTypes.length) return heroes
-  return heroes.filter(hero => selectedAttackTypes.includes(hero.attackType))
+  return heroes.filter(hero => {
+    return selectedAttackTypes.includes(hero.attackType)
+  })
 }
 
 const filterByRoles = heroes => {
@@ -67,9 +71,11 @@ const filterByRoles = heroes => {
       .querySelectorAll(('input:checked'))
   ).map(el => el.id)
 
-  return heroes.filter(hero =>
-    selectedRoles.every(selectedRole => hero.roles.includes(selectedRole))
-  )
+  return heroes.filter(hero => {
+    return selectedRoles.every(selectedRole => {
+      return hero.roles.includes(selectedRole)
+    })
+  })
 }
 
 zlFetch(`${dotaApi}/heroStats`)
