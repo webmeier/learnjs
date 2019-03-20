@@ -151,7 +151,8 @@ input::placeholder {
 
 .datepicker__dayOfWeek,
 .datepicker__date-grid {
-  /* Insert grid CSS here */
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
 }
 
 .datepicker__dayOfWeek {
@@ -175,7 +176,7 @@ input::placeholder {
 
 /* Positioning the dates */
 .datepicker__date-grid button:first-child {
-  /* Add CSS to change first date here */
+  grid-column: var(--firstDayOfMonth);
 }
 
 .datepicker__date-grid button {
@@ -205,3 +206,29 @@ input::placeholder {
   background-color: var(--teal-100);
   color: var(--teal-900);
 }
+
+/* Calendar Layout with Flexbox */
+/*
+.datepicker__date-grid,
+.datepicker__dayOfWeek {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: calc((2ch + 1em) * 7 + 1px);
+}
+
+.datepicker__date-grid > * {
+  flex: 0 0 calc(2ch + 1em);
+} */
+
+/* Note: Have to adjust max-width because I changed the font-size of the thing... to make them smaller. The weeknday/weeknd indicator */
+/* .datepicker__dayOfWeek {
+  max-width: calc(1 / 0.75 * ((2ch + 1em) * 7) + 1px);
+}
+
+.datepicker__dayOfWeek > * {
+  flex: 0 0 calc(1 / 0.75 * (2ch + 1em));
+}
+
+.datepicker__date-grid > button:first-child {
+  margin-inline-start: calc(5 * (2ch + 1em));
+} */

@@ -151,7 +151,8 @@ input::placeholder {
 
 .datepicker__dayOfWeek,
 .datepicker__date-grid {
-  /* Insert grid CSS here */
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
 }
 
 .datepicker__dayOfWeek {
@@ -175,7 +176,7 @@ input::placeholder {
 
 /* Positioning the dates */
 .datepicker__date-grid button:first-child {
-  /* Add CSS to change first date here */
+  grid-column: var(--firstDayOfMonth);
 }
 
 .datepicker__date-grid button {

@@ -86,7 +86,7 @@ input {
 }
 
 .datepicker__dayOfWeek,
-.datepicker__dates {
+.datepicker__date-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-gap: 1px;
@@ -102,11 +102,11 @@ input {
   text-align: center;
 }
 
-.datepicker__dates {
+.datepicker__date-grid {
   margin-top: 0.5em;
 }
 
-.datepicker__dates button {
+.datepicker__date-grid button {
   position: relative;
   border: 0;
   padding: 0.25em 0.5em;
@@ -126,18 +126,18 @@ Color scheme:
   6.
  */
 
-.datepicker__dates button[data-today] {
+.datepicker__date-grid button[data-today] {
   color: rgb(39, 182, 168);
 }
 
-.datepicker__dates button:hover,
-.datepicker__dates button:focus,
-.datepicker__dates button:active {
+.datepicker__date-grid button:hover,
+.datepicker__date-grid button:focus,
+.datepicker__date-grid button:active {
   outline: none;
   background-color: #dedede;
 }
 
-.datepicker__dates button.is-selected {
+.datepicker__date-grid button.is-selected {
   background-color: hsl(174, 89%, 59%);
   color: hsl(0, 0%, 20%);
 }
@@ -145,6 +145,6 @@ Color scheme:
 /* This is for date-range */
 /* border-radius: 50% 0 0 50%; */
 
-.datepicker__dates button:first-child {
+.datepicker__date-grid button:first-child {
   grid-column: var(--first-day, 1);
 }

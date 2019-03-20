@@ -127,8 +127,8 @@ class Datepicker {
         <div>Fr</div>
         <div>Sa</div>
       </div>
-      <div class="datepicker__dates">
-        ${this.getDates(date)}
+      <div class="datepicker__date-grid">
+        ${this.dategridHTML(date)}
       </div>
     `
   }
@@ -162,7 +162,7 @@ class Datepicker {
   }
 
   // Create a button for each date of the month
-  getDates (date) {
+  dategridHTML (date) {
     const firstDayOfMonth = this.getFirstDayOfMonth(date)
     const daysInMonth = this.getDaysInMonth(date)
     const year = date.getFullYear()

@@ -26,4 +26,4 @@ const month = getMonthName(today.getMonth())
 // Initial Setup (Lesson 1 on creating the table...)
 const gridFirstDate = day + 1
 document.querySelector('.datepicker__monthIndicator').textContent = month
-document.querySelector('.datepicker__dates').children[0].style.setProperty('--first-day', gridFirstDate)
+document.querySelector('.datepicker__date-grid').children[0].style.setProperty('--first-day', gridFirstDate)

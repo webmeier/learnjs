@@ -65,7 +65,7 @@ const createMonth = (year, month) => {
       <div>Sa</div>
     </div>
 
-    <div class="datepicker__dates">
+    <div class="datepicker__date-grid">
       ${buttons}
     </div>`
 
