@@ -14,16 +14,18 @@ const makeTask = value => {
 
   task.classList.add('task')
   task.innerHTML = DOMPurify.sanitize(`
-    <input type="checkbox" class="vh" id="done${id}" name="done${id}">
-    <label for="done${id}">
+    <input type="checkbox" class="vh" id="task-${id}" name="task-${id}">
+    <label for="task-${id}">
       <svg viewBox="0 0 20 15">
-        <use xlink:href="#check"></use>
+        <title>Done</title>
+        <path d="M0 8l2-2 5 5L18 0l2 2L7 15z" fill="currentColor" fill-rule="nonzero" />
       </svg>
     </label>
     <div>${value}</div>
     <button class="task__trash">
       <svg viewBox="0 0 16 20">
-        <use xlink:href="#trash"></use>
+        <title>Trash</title>
+        <path d="M4 2l2-2h4l2 2h4v2H0V2h4zM1 6h14l-1 14H2L1 6zm5 2v10h1V8H6zm3 0v10h1V8H9z" fill="currentColor" fill-rule="nonzero" />
       </svg>
     </button>
   `)
