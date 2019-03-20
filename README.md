@@ -187,6 +187,9 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     6. [Setting a date with Date methods](lessons/14.dates/06.set-date-methods.md)—new!
     7. [Adding (or subtracting) date and time](lessons/14.dates/07.add-and-subtract-date.md)—new!
     8. [Comparing Dates and times](lessons/14.dates/08.compare-date.md)
+    9. [🔨 Datepicker: Initial HTML and CSS](lessons/14.dates/09.datepicker.md)—new!
+    10. [🔨 Datepicker: Building the calendar with JavaScript](lessons/14.dates/10.datepicker-2.md)—new!
+    11. [🔨 Datepicker: Refactoring the calendar ](lessons/14.dates/011.datepicker-3.md)—new!
 
 ## Private Community
 
