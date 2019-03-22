@@ -1,4 +1,3 @@
-// Defining functions upfront
 const getMonthName = (month, style = 'long') => {
   const monthsInAYear = [
     { shortname: 'Jan', longname: 'January' },
@@ -37,7 +36,7 @@ const getNumDaysInMonth = date => {
   return lastDayInMonth.getDate()
 }
 
-const dategridHTML = date => {
+const getDategridHTML = date => {
   const year = date.getFullYear()
   const month = date.getMonth()
   return Array.from({ length: getNumDaysInMonth(date) })
@@ -87,7 +86,7 @@ const createDatepicker = date => {
         <div>Fr</div>
         <div>Sa</div>
       </div>
-      <div class="datepicker__date-grid">${dategridHTML(date)}</div>
+      <div class="datepicker__date-grid">${getDategridHTML(date)}</div>
     </div>
   `
 

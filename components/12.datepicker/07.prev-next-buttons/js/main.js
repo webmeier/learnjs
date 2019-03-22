@@ -1,0 +1,214 @@
+const getMonthName = (month, style = 'long') => {
+  const monthsInAYear = [
+    { shortname: 'Jan', longname: 'January' },
+    { shortname: 'Feb', longname: 'February' },
+    { shortname: 'Mar', longname: 'March' },
+    { shortname: 'Apr', longname: 'April' },
+    { shortname: 'May', longname: 'May' },
+    { shortname: 'Jun', longname: 'June' },
+    { shortname: 'Jul', longname: 'July' },
+    { shortname: 'Aug', longname: 'August' },
+    { shortname: 'Sep', longname: 'September' },
+    { shortname: 'Oct', longname: 'October' },
+    { shortname: 'Nov', longname: 'November' },
+    { shortname: 'Dec', longname: 'December' }
+  ]
+
+  const m = monthsInAYear[month]
+  if (style === 'long') return m.longname
+  return m.shortname
+}
+
+const getMonthIndicatorText = (date) => {
+  const monthName = getMonthName(date.getMonth())
+  const year = date.getFullYear()
+  return `${monthName} ${year}`
+}
+
+const getFirstDayOfMonth = date => {
+  const firstDayOfMonth = new Date(date.setDate(1))
+  return firstDayOfMonth.getDay()
+}
+
+const getNumDaysInMonth = date => {
+  const year2 = date.getFullYear()
+  const month = date.getMonth()
+  const lastDayInMonth = new Date(year2, month + 1, 0)
+  return lastDayInMonth.getDate()
+}
+
+const getDategridHTML = date => {
+  const year = date.getFullYear()
+  const month = date.getMonth()
+  return Array.from({ length: getNumDaysInMonth(date) })
+    .map((value, index) => {
+      const day = index + 1
+      const firstDayStyle = day === 1
+        ? `--firstDayOfMonth: ${getFirstDayOfMonth(date) + 1}"`
+        : ''
+
+      return `
+        <button style="${firstDayStyle}">
+          <time datetime="${year}-${month + 1}-${day}">${day}</time>
+        </button>
+      `
+    })
+    .join('')
+}
+
+const createDatepicker = date => {
+  const year = date.getFullYear()
+  const month = date.getMonth()
+  const datepicker = document.createElement('div')
+  datepicker.classList.add('datepicker')
+
+  const buttonsHTML = `
+    <div class="datepicker__buttons">
+      <button class="datepicker__previous">
+        <svg viewBox="0 0 20 20">
+          <path fill="currentColor" d="M7.05 9.293L6.343 10 12 15.657l1.414-1.414L9.172 10l4.242-4.243L12 4.343z" /></svg>
+        </svg>
+      </button>
+      <button class="datepicker__next">
+        <svg viewBox="0 0 20 20">
+          <path fill="currentColor" d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" />
+        </svg>
+      </button>
+    </div>
+  `
+
+  const calendarHTML = `
+    <div class="datepicker__calendar">
+      <div class="datepicker__monthIndicator">
+        <time datetime="${year}-${month + 1}">${getMonthIndicatorText(date)}</time>
+      </div>
+      <div class="datepicker__dayOfWeek">
+        <div>Su</div>
+        <div>Mo</div>
+        <div>Tu</div>
+        <div>We</div>
+        <div>Th</div>
+        <div>Fr</div>
+        <div>Sa</div>
+      </div>
+      <div class="datepicker__date-grid">${getDategridHTML(date)}</div>
+    </div>
+  `
+
+  datepicker.innerHTML = `
+    ${buttonsHTML}
+    ${calendarHTML}
+  `
+
+  const buttonsContainer = datepicker.querySelector('.datepicker__buttons')
+  buttonsContainer.addEventListener('click', e => {
+    if (!e.target.matches('button')) return
+
+    // Left button click
+    if (e.target.matches('.datepicker__prev')) {
+      // Show previous month
+    }
+
+    // Right button click
+    if (e.target.matches('.datepicker__next')) {
+      // Show next month
+      // To show next month, we have to:
+      // 1. Find out what's the currently selected month
+      const monthIndicatorElement = datepicker.querySelector('.datepicker__monthIndicator').firstElementChild
+      const datetime = monthIndicatorElement.getAttribute('datetime')
+      const currentDate = new Date(datetime)
+      // NOTE: Datetime cannot be 2019-13... That means we have to change this value for datetime... Ideally and preferably we have the correct datetime format function here to make it count...
+      console.log(datetime)
+
+      // 2. Figure out what's the next month
+      const year = currentDate.getFullYear()
+      const month = currentDate.getMonth()
+      const nextMonthNum = month + 1
+      const nextMonthDate = new Date(year, nextMonthNum)
+
+      console.log(year, nextMonthNum)
+
+      // 3. Update the year/month indicator
+      monthIndicatorElement.textContent = getMonthIndicatorText(nextMonthDate)
+      monthIndicatorElement.setAttribute('datetime', `${year}-${nextMonthNum + 1}`)
+
+      // 4. Update the date-grid
+      const dategrid = datepicker.querySelector('.datepicker__date-grid')
+      dategrid.innerHTML = getDategridHTML(nextMonthDate)
+    }
+  })
+
+  return datepicker
+}
+
+// Execution
+const date = new Date(2019, 1)
+const datepicker = createDatepicker(date)
+
+// Adding to DOM
+const form = document.querySelector('form')
+form.appendChild(datepicker)
+
+// const createButtons = _ => {
+//   const container = document.createElement('div')
+//   container.classList.add('datepicker__buttons')
+//   container.innerHTML = `
+//     <button class="datepicker__previous">
+//       <svg viewBox="0 0 20 20">
+//         <path fill="currentColor" d="M7.05 9.293L6.343 10 12 15.657l1.414-1.414L9.172 10l4.242-4.243L12 4.343z" /></svg>
+//       </svg>
+//     </button>
+
+//     <button class="datepicker__next">
+//       <svg viewBox="0 0 20 20">
+//         <path fill="currentColor" d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" />
+//       </svg>
+//     </button>
+//   `
+
+//   return container
+// }
+
+// const buttons = createButtons()
+
+// const buttonsContainer = datepicker.querySelector('datepicker__buttons')
+//   buttonsContainer.addEventListener('click', e => {
+//     if (!e.target.matches('button')) return
+
+//     // Left button click
+//     if (e.target.classlist.contains('.datepicker__prev')) {
+//       // Show previous month
+//     }
+
+//     // Right button click
+//     if (e.target.classlist.contains('.datepicker__next')) {
+//       // Show next month
+//     }
+//   })
+
+// Note This works right up to the point where... we hit January 2020. From then on, longname is undefined.
+// Problem = Datetime cannot be 2019-13... That means we have to change this value for datetime... Ideally and preferably we have the correct datetime format function here to make it count... Show the debugging process (By dedubbing month first, then debugging date, which shown NaN, then debug the value we use to obtain the date).
+// Probably don't have to because we have to create a function that defines the date anyway, so there's no harm.
+// Right button click
+// if (e.target.matches('.datepicker__next')) {
+//   // Show next month
+//   // To show next month, we have to:
+//   // 1. Find out what's the currently selected month
+//   const monthIndicatorElement = datepicker.querySelector('.datepicker__monthIndicator').firstElementChild
+//   const datetime = monthIndicatorElement.getAttribute('datetime')
+//   const currentDate = new Date(datetime)
+
+//   // 2. Figure out what's the next month
+//   const year = currentDate.getFullYear()
+//   const month = currentDate.getMonth()
+//   const nextMonthNum = month + 1
+//   const nextMonthDate = new Date(year, nextMonthNum)
+
+//   // 3. Update the year/month indicator
+//   monthIndicatorElement.textContent = getMonthIndicatorText(nextMonthDate)
+//   monthIndicatorElement.setAttribute('datetime', `${year}-${nextMonthNum + 1}`)
+
+//   // 4. Update the date-grid
+//   const dategrid = datepicker.querySelector('.datepicker__date-grid')
+//   dategrid.innerHTML = getDategridHTML(nextMonthDate)
+// }
