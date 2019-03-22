@@ -1,4 +1,3 @@
-// Defining functions upfront
 const getMonthName = (month, style = 'long') => {
   const monthsInAYear = [
     { shortname: 'Jan', longname: 'January' },
@@ -20,9 +19,16 @@ const getMonthName = (month, style = 'long') => {
 }
 
 const getMonthIndicatorText = (date) => {
-  const monthName = getMonthName(date.getMonth())
   const year = date.getFullYear()
+  const month = date.getMonth()
+  const monthName = getMonthName(month)
   return `${monthName} ${year}`
+}
+
+const getMonthIndicatorDatetime = date => {
+  const year = date.getFullYear()
+  const month = date.getMonth()
+  return `${year}-${month + 1}`
 }
 
 const getFirstDayOfMonth = date => {
@@ -62,7 +68,9 @@ const date = new Date(2019, 1)
 // Setting Month indicator text
 const datepicker = document.querySelector('.datepicker')
 const monthIndicatorDiv = datepicker.querySelector('.datepicker__monthIndicator')
-monthIndicatorDiv.textContent = getMonthIndicatorText(date)
+const monthIndicatorTimeElement = monthIndicatorDiv.firstElementCHild
+monthIndicatorTimeElement.textContent = getMonthIndicatorText(date)
+monthIndicatorTimeElement.setAttribute('datetime', getMonthIndicatorDatetime(date))
 
 // Creating Dates
 const datesDiv = document.querySelector('.datepicker__date-grid')

@@ -1,4 +1,3 @@
-// Write your JavaScript here
 const getMonthName = (month, style = 'long') => {
   const monthsInAYear = [
     { shortname: 'Jan', longname: 'January' },
@@ -21,20 +20,21 @@ const getMonthName = (month, style = 'long') => {
 
 // Getting and setting month indicator text
 const date = new Date(2019, 4)
-const monthName = getMonthName(date.getMonth())
 const year = date.getFullYear()
+const month = date.getMonth()
+const monthName = getMonthName(month)
 const monthIndicatorText = `${monthName} ${year}`
 
 const datepicker = document.querySelector('.datepicker')
-const monthIndicatorDiv = datepicker.querySelector('.datepicker__monthIndicator')
-monthIndicatorDiv.textContent = monthIndicatorText
+const monthIndicatorTimeElement = datepicker.querySelector('.datepicker__monthIndicator').firstElementChild
+monthIndicatorTimeElement.textContent = monthIndicatorText
+monthIndicatorTimeElement.setAttribute('datetime', `${year}-${month + 1}`)
 
 // Creating the grid
 const firstDayOfMonth = new Date(date.setDate(1)).getDay()
-
 const year2 = date.getFullYear()
-const month = date.getMonth()
-const lastDayInMonth = new Date(year2, month + 1, 0)
+const month2 = date.getMonth()
+const lastDayInMonth = new Date(year2, month2 + 1, 0)
 const daysInMonth = lastDayInMonth.getDate()
 
 let dategridHTML = ''
