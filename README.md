@@ -189,7 +189,8 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     8. [Comparing Dates and times](lessons/14.dates/08.compare-date.md)
     9. [🔨 Datepicker: Initial HTML and CSS](lessons/14.dates/09.datepicker.md)—new!
     10. [🔨 Datepicker: Building the calendar with JavaScript](lessons/14.dates/10.datepicker-2.md)—new!
-    11. [🔨 Datepicker: Refactoring the calendar ](lessons/14.dates/011.datepicker-3.md)—new!
+    11. [🔨 Datepicker: Refactoring the calendar](lessons/14.dates/11.datepicker-3.md)—new!
+    12. [🔨 Datepicker: Building the datepicker with JavaScript](lessons/14.dates/12.datepicker-4.md)—new!
 
 ## Private Community
 

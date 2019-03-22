@@ -82,18 +82,20 @@ const createDatepicker = date => {
   `
 
   const calendar = `
-    <div class="datepicker__calendar">
-      <div class="datepicker__monthIndicator">${getMonthIndicatorText(date)}</div>
-      <div class="datepicker__dayOfWeek">
-        <div>Su</div>
-        <div>Mo</div>
-        <div>Tu</div>
-        <div>We</div>
-        <div>Th</div>
-        <div>Fr</div>
-        <div>Sa</div>
-      </div>
-      <div class="datepicker__date-grid">${getDategridHTML(date)}</div>
+    <div class="datepicker__monthIndicator">
+      <time datetime="${getMonthIndicatorDatetime(date)}">${getMonthIndicatorText(date)}</time>
+    </div>
+    <div class="datepicker__dayOfWeek">
+      <div>Su</div>
+      <div>Mo</div>
+      <div>Tu</div>
+      <div>We</div>
+      <div>Th</div>
+      <div>Fr</div>
+      <div>Sa</div>
+    </div>
+    <div class="datepicker__date-grid">
+      ${getDategridHTML(date)}
     </div>
   `
 
