@@ -20,9 +20,16 @@ const getMonthName = (month, style = 'long') => {
 }
 
 const getMonthIndicatorText = (date) => {
-  const monthName = getMonthName(date.getMonth())
   const year = date.getFullYear()
+  const month = date.getMonth()
+  const monthName = getMonthName(month)
   return `${monthName} ${year}`
+}
+
+const getMonthIndicatorDatetime = date => {
+  const year = date.getFullYear()
+  const month = date.getMonth()
+  return `${year}-${month + 1}`
 }
 
 const getFirstDayOfMonth = date => {
