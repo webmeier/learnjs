@@ -55,7 +55,7 @@ const getDategridHTML = date => {
         : ''
 
       return `
-        <button style="${firstDayStyle}">
+        <button type="button" style="${firstDayStyle}">
           <time datetime="${year}-${month + 1}-${day}">${day}</time>
         </button>
       `
@@ -63,7 +63,7 @@ const getDategridHTML = date => {
     .join('')
 }
 
-const createDatepicker = date => {
+const createDatepicker = (date, dateField) => {
   const year = date.getFullYear()
   const month = date.getMonth()
   const datepicker = document.createElement('div')
@@ -71,12 +71,12 @@ const createDatepicker = date => {
 
   const buttonsHTML = `
     <div class="datepicker__buttons">
-      <button class="datepicker__previous">
+      <button type="button" class="datepicker__previous" type="button">
         <svg viewBox="0 0 20 20">
           <path fill="currentColor" d="M7.05 9.293L6.343 10 12 15.657l1.414-1.414L9.172 10l4.242-4.243L12 4.343z" /></svg>
         </svg>
       </button>
-      <button class="datepicker__next">
+      <button type="button" class="datepicker__next">
         <svg viewBox="0 0 20 20">
           <path fill="currentColor" d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" />
         </svg>
@@ -108,7 +108,6 @@ const createDatepicker = date => {
   `
 
   const buttonsDiv = datepicker.querySelector('.datepicker__buttons')
-
   buttonsDiv.addEventListener('click', ev => {
     if (!ev.target.matches('button')) return
 
@@ -131,13 +130,38 @@ const createDatepicker = date => {
     dategrid.innerHTML = getDategridHTML(targetMonth)
   })
 
+  const dategrid = datepicker.querySelector('.datepicker__date-grid')
+  dategrid.addEventListener('click', ev => {
+    if (!ev.target.matches('button')) return
+    const button = ev.target
+
+    const timeEl = button.firstElementChild
+    const datetime = timeEl.getAttribute('datetime')
+    const selectedDate = new Date(datetime)
+
+    const year = selectedDate.getFullYear()
+    let month = selectedDate.getMonth() + 1
+    let day = selectedDate.getDate()
+
+    if (month < 10) month = '0' + month
+    if (day < 10) day = '0' + day
+
+    const formatted = `${day}/${month}/${year}`
+    dateField.value = formatted
+
+    // Highlight the selected button
+    const buttons = [...button.parentElement.children]
+    buttons.forEach(button => button.classList.remove('is-selected'))
+    button.classList.add('is-selected')
+  })
+
   return datepicker
 }
 
-// Execution
+// Creating and Adding the Datepicker to the DOM
 const date = new Date(2019, 1)
-const datepicker = createDatepicker(date)
-
-// Adding to DOM
 const form = document.querySelector('form')
+const input = form.querySelector('input')
+const datepicker = createDatepicker(date, input)
+
 form.appendChild(datepicker)
