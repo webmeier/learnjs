@@ -241,7 +241,6 @@ const createDatepicker = (date, dateField) => {
           // Change selected date...Ugh
           // But this is good. I know what I need to do here.
         }
-
       }
     }
   })

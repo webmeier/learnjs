@@ -73,7 +73,7 @@ h1 {
 }
 
 main {
-  max-width: max-content;
+  max-width: 700px;
   margin: 3em auto 0 auto;
   padding: 2em;
 }
@@ -96,7 +96,8 @@ input {
   background-color: var(--blue-grey-050);
 }
 
-input:focus {
+input:focus,
+input.datepicker-opened {
   outline: none;
   background: white;
 }

@@ -55,7 +55,7 @@ const getDategridHTML = date => {
         : ''
 
       return `
-        <button type="button" style="${firstDayStyle}">
+        <button style="${firstDayStyle}">
           <time datetime="${year}-${month + 1}-${day}">${day}</time>
         </button>
       `
@@ -71,7 +71,7 @@ const createDatepicker = (date, dateField) => {
 
   const buttonsHTML = `
     <div class="datepicker__buttons">
-      <button type="button" class="datepicker__previous" type="button">
+      <button type="button" class="datepicker__previous">
         <svg viewBox="0 0 20 20">
           <path fill="currentColor" d="M7.05 9.293L6.343 10 12 15.657l1.414-1.414L9.172 10l4.242-4.243L12 4.343z" /></svg>
         </svg>

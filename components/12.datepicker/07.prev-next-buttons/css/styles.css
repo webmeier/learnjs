@@ -92,14 +92,14 @@ form {
 
 input {
   padding: 0.5em 0.75em;
-  border: 0px solid var(--blue-grey-500);
   border-radius: 6px;
-  box-shadow: 0 2px 3px hsla(0, 0%, 0%, 0.12), 0 1px 3px hsla(0, 0%, 0%, 0.2);
+  background-color: var(--blue-grey-050);
 }
 
-input:focus {
+input:focus,
+input.datepicker-opened {
   outline: none;
-  border-color: var(--blue-grey-900);
+  background: white;
 }
 
 input::placeholder {
