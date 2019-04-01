@@ -55,7 +55,7 @@ const getDategridHTML = date => {
         : ''
 
       return `
-        <button style="${firstDayStyle}">
+        <button type="button" style="${firstDayStyle}">
           <time datetime="${year}-${month + 1}-${day}">${day}</time>
         </button>
       `
