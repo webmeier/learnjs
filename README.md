@@ -184,15 +184,19 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     3. [Getting the time](lessons/14.dates/03.getting-time.md)
     4. [Local time and UTC Time](lessons/14.dates/04.timezones.md)
     5. [Setting a specific date](lessons/14.dates/05.set-date.md)
-    6. [Setting a date with Date methods](lessons/14.dates/06.set-date-methods.md)—new!
-    7. [Adding (or subtracting) date and time](lessons/14.dates/07.add-and-subtract-date.md)—new!
+    6. [Setting a date with Date methods](lessons/14.dates/06.set-date-methods.md)
+    7. [Adding (or subtracting) date and time](lessons/14.dates/07.add-and-subtract-date.md)
     8. [Comparing Dates and times](lessons/14.dates/08.compare-date.md)
-    9. [🔨 Datepicker: Initial HTML and CSS](lessons/14.dates/09.datepicker.md)—new!
-    10. [🔨 Datepicker: Building the calendar with JavaScript](lessons/14.dates/10.datepicker-2.md)—new!
-    11. [🔨 Datepicker: Refactoring the calendar](lessons/14.dates/11.datepicker-3.md)—new!
-    12. [🔨 Datepicker: Building the datepicker with JavaScript](lessons/14.dates/12.datepicker-4.md)—new!
-    13. [🔨 Datepicker: Previous and next buttons](lessons/14.dates/13.datepicker-5.md)—new!
-    14. [🔨 Datepicker: Selecting a date](lessons/14.dates/14.datepicker-6.md)—new!
+    9. [🔨 Datepicker: Initial HTML and CSS](lessons/14.dates/09.datepicker.md)
+    10. [🔨 Datepicker: Building the calendar with JavaScript](lessons/14.dates/10.datepicker-2.md)
+    11. [🔨 Datepicker: Refactoring the calendar](lessons/14.dates/11.datepicker-3.md)
+    12. [🔨 Datepicker: Building the datepicker with JavaScript](lessons/14.dates/12.datepicker-4.md)
+    13. [🔨 Datepicker: Previous and next buttons](lessons/14.dates/13.datepicker-5.md)
+    14. [🔨 Datepicker: Selecting a date](lessons/14.dates/14.datepicker-6.md)
+    14. [🔨 Datepicker: Refactor #2](lessons/14.dates/14.datepicker-7.md)
+    14. [🔨 Datepicker: Showing and hiding the datepicker](lessons/14.dates/14.datepicker-8.md)
+    14. [🔨 Datepicker: Testing across browsers](lessons/14.dates/14.datepicker-9.md)
+    14. [🔨 Datepicker: A function to format dates](lessons/14.dates/14.datepicker-10.md)
 
 ## Private Community
 

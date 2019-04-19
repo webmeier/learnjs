@@ -26,13 +26,6 @@ const getMonthIndicatorText = (date) => {
   return `${monthName} ${year}`
 }
 
-const getMonthIndicatorDatetime = date => {
-  const year = date.getFullYear()
-  let month = date.getMonth() + 1
-  if (month < 10) month = '0' + month
-  return `${year}-${month}`
-}
-
 const getFirstDayOfMonth = date => {
   const firstDayOfMonth = new Date(date.setDate(1))
   return firstDayOfMonth.getDay()
@@ -78,7 +71,7 @@ const getTargetMonth = (datepicker, delta) => {
 const updateYearMonthIndicator = (datepicker, targetMonth) => {
   const timeEl = datepicker.querySelector('.datepicker__monthIndicator').firstElementChild
   timeEl.textContent = getMonthIndicatorText(targetMonth)
-  timeEl.setAttribute('datetime', getMonthIndicatorDatetime(targetMonth))
+  timeEl.setAttribute('datetime', formatDate(targetMonth, 'YYYY-MM'))
 }
 
 const updateDateGrid = (datepicker, targetMonth) => {
@@ -228,7 +221,7 @@ const createDatepicker = (date, dateField) => {
 }
 
 // Creating and Adding the Datepicker to the DOM
-const date = new Date(2019, 1, 16)
+const date = new Date(2019, 1)
 const form = document.querySelector('form')
 const input = form.querySelector('input')
 const datepicker = createDatepicker(date, input)

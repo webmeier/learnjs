@@ -45,20 +45,23 @@ const getNumDaysInMonth = date => {
   return lastDayInMonth.getDate()
 }
 
+// Fixing datetime for date grid
 const getDategridHTML = date => {
   const year = date.getFullYear()
-  const month = date.getMonth()
+  let month = date.getMonth() + 1
+  if (month < 10) month = '0' + month
 
   return Array.from({ length: getNumDaysInMonth(date) })
     .map((value, index) => {
       const day = index + 1
+      const dayString = day < 10 ? '0' + day : day
       const firstDayStyle = day === 1
         ? `--firstDayOfMonth: ${getFirstDayOfMonth(date) + 1}"`
         : ''
 
       return `
         <button type="button" style="${firstDayStyle}">
-          <time datetime="${formatDate(new Date(year, month, day), 'YYYY-MM-DD')}">${day}</time>
+          <time datetime="${year}-${month}-${dayString}">${day}</time>
         </button>
       `
     })
@@ -92,18 +95,15 @@ const getSelectedDate = selectedButton => {
   return createDateFromDateTime(datetime)
 }
 
-const formatDate = (date, format) => {
-  const year = date.getFullYear()
-  let month = date.getMonth() + 1
-  let day = date.getDate()
+const formatDate = selectedDate => {
+  const year = selectedDate.getFullYear()
+  let month = selectedDate.getMonth() + 1
+  let day = selectedDate.getDate()
 
   if (month < 10) month = '0' + month
   if (day < 10) day = '0' + day
 
-  // Return the required format
-  if (format === 'YYYY-MM') return `${year}-${month}`
-  if (format === 'YYYY-MM-DD') return `${year}-${month}-${day}`
-  if (format === 'DD/MM/YYYY') return `${day}/${month}/${year}`
+  return `${day}/${month}/${year}`
 }
 
 const updateDateField = (dateField, date) => {
@@ -132,7 +132,7 @@ const handleSelectedDate = (ev, dateField) => {
   if (!ev.target.matches('button')) return
 
   const selectedDate = getSelectedDate(ev.target)
-  const formattedDate = formatDate(selectedDate, 'DD/MM/YYYY')
+  const formattedDate = formatDate(selectedDate)
   updateDateField(dateField, formattedDate)
   highlightSelectedButton(ev.target)
 }
@@ -188,7 +188,7 @@ const createDatepicker = (date, dateField) => {
   const calendarHTML = `
     <div class="datepicker__calendar">
       <div class="datepicker__monthIndicator">
-        <time datetime="${formatDate(date, 'YYYY-MM')}">${getMonthIndicatorText(date)}</time>
+        <time datetime="${getMonthIndicatorDatetime(date)}">${getMonthIndicatorText(date)}</time>
       </div>
       <div class="datepicker__dayOfWeek">
         <div>Su</div>
