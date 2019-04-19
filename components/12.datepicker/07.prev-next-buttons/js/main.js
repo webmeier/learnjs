@@ -64,8 +64,6 @@ const getDategridHTML = date => {
 }
 
 const createDatepicker = date => {
-  const year = date.getFullYear()
-  const month = date.getMonth()
   const datepicker = document.createElement('div')
   datepicker.classList.add('datepicker')
 
@@ -87,7 +85,7 @@ const createDatepicker = date => {
   const calendarHTML = `
     <div class="datepicker__calendar">
       <div class="datepicker__monthIndicator">
-        <time datetime="${year}-${month + 1}">${getMonthIndicatorText(date)}</time>
+        <time datetime="${getMonthIndicatorDatetime(date)}">${getMonthIndicatorText(date)}</time>
       </div>
       <div class="datepicker__dayOfWeek">
         <div>Su</div>

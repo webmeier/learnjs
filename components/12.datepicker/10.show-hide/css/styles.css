@@ -1,0 +1,234 @@
+:root {
+  --teal-050: #effcf6;
+  --teal-100: #c6f7e2;
+  --teal-200: #8eedc7;
+  --teal-300: #65d6ad;
+  --teal-400: #3ebd93;
+  --teal-500: #27ab83;
+  --teal-600: #199473;
+  --teal-700: #147d64;
+  --teal-800: #0c6b58;
+  --teal-900: #014d40;
+
+  --blue-grey-050: #f0f4f8;
+  --blue-grey-100: #d9e2ec;
+  --blue-grey-200: #bcccdc;
+  --blue-grey-300: #9fb3c8;
+  --blue-grey-400: #829ab1;
+  --blue-grey-500: #627d98;
+  --blue-grey-600: #486581;
+  --blue-grey-700: #334e68;
+  --blue-grey-800: #243b53;
+  --blue-grey-900: #102a43;
+
+  --purple-050: #eae2f8;
+  --purple-100: #cfbcf2;
+  --purple-200: #a081d9;
+  --purple-300: #8662c7;
+  --purple-400: #724bb7;
+  --purple-500: #653cad;
+  --purple-600: #51279b;
+  --purple-700: #421987;
+  --purple-800: #34126f;
+  --purple-900: #240754;
+
+  --red-050: #ffeeee;
+  --red-100: #facdcd;
+  --red-200: #f29b9b;
+  --red-300: #e66a6a;
+  --red-400: #d64545;
+  --red-500: #ba2525;
+  --red-600: #a61b1b;
+  --red-700: #911111;
+  --red-800: #780a0a;
+  --red-900: #610404;
+
+  --yellow-050: #fffaeb;
+  --yellow-100: #fcefc7;
+  --yellow-200: #f8e3a3;
+  --yellow-300: #f9da8b;
+  --yellow-400: #f7d070;
+  --yellow-500: #e9b949;
+  --yellow-600: #c99a2e;
+  --yellow-700: #a27c1a;
+  --yellow-800: #7c5e10;
+  --yellow-900: #513c06;
+}
+
+html {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 125%;
+  line-height: 1.4;
+  font-weight: 400;
+  color: var(--blue-grey-900);
+}
+
+body {
+  min-height: 100vh;
+  background: var(--blue-grey-100);
+}
+
+h1 {
+  font-weight: 500;
+}
+
+main {
+  max-width: max-content;
+  margin: 3em auto 0 auto;
+  padding: 2em;
+}
+
+form {
+  margin-top: 1.5em;
+}
+
+.input label {
+  display: block;
+}
+
+.input label + input {
+  margin-top: 0.25em;
+}
+
+input {
+  padding: 0.5em 0.75em;
+  border-radius: 6px;
+  background-color: var(--blue-grey-050);
+}
+
+input:focus,
+input.datepicker-opened {
+  outline: none;
+  background: white;
+}
+
+input::placeholder {
+  color: var(--blue-grey-500);
+}
+
+/* Datepicker */
+.datepicker {
+  --horizontal-padding: 1.5em;
+  --border-size: 1px;
+  position: relative;
+  max-width: max-content;
+  margin-top: 1em;
+  padding: var(--horizontal-padding);
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 3px 6px hsla(0, 0%, 0%, 0.15), 0 2px 4px hsla(0, 0%, 0%, 0.12);
+}
+
+/* Previous & next buttons */
+.datepicker .datepicker__previous,
+.datepicker .datepicker__next {
+  position: absolute;
+  padding: 0;
+  color: var(--blue-grey-700);
+  border: 0;
+}
+
+.datepicker__previous svg,
+.datepicker__next svg {
+  height: auto;
+  width: 1.5em;
+}
+
+.datepicker__previous {
+  left: 1.85em;
+}
+
+.datepicker__next {
+  right: 1.85em;
+}
+
+/* Calendar */
+.datepicker__monthIndicator {
+  color: var(--blue-grey-700);
+  text-align: center;
+  font-weight: 500;
+}
+
+.datepicker__dayOfWeek,
+.datepicker__date-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.datepicker__dayOfWeek {
+  --fz: 0.7;
+  margin-top: calc(1 / var(--fz) * 1.25em);
+  font-size: calc(var(--fz) * 1em);
+  color: var(--blue-grey-400);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-feature-settings: "smcp" 1;
+}
+
+.datepicker__dayOfWeek > * {
+  text-align: center;
+}
+
+/* Dates */
+.datepicker__date-grid {
+  margin-top: 0.5em;
+}
+
+/* Positioning the dates */
+.datepicker__date-grid button:first-child {
+  grid-column: var(--firstDayOfMonth);
+}
+
+.datepicker__date-grid button {
+  position: relative;
+  border: 0;
+  width: 4.5ch;
+  height: 4.5ch;
+  border-radius: 50%;
+  background-color: transparent;
+  color: var(--blue-grey-600);
+}
+
+.datepicker__date-grid button[data-today] {
+  color: var(--yellow-700);
+  background-color: var(--yellow-100);
+}
+
+.datepicker__date-grid button:hover,
+.datepicker__date-grid button:focus {
+  outline: none;
+  background-color: var(--blue-grey-050);
+  color: var(--blue-grey-700);
+}
+
+.datepicker__date-grid button:active,
+.datepicker__date-grid button.is-selected {
+  background-color: var(--teal-100);
+  color: var(--teal-900);
+}
+
+/* Calendar Layout with Flexbox */
+/*
+.datepicker__date-grid,
+.datepicker__dayOfWeek {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: calc((2ch + 1em) * 7 + 1px);
+}
+
+.datepicker__date-grid > * {
+  flex: 0 0 calc(2ch + 1em);
+} */
+
+/* Note: Have to adjust max-width because I changed the font-size of the thing... to make them smaller. The weeknday/weeknd indicator */
+/* .datepicker__dayOfWeek {
+  max-width: calc(1 / 0.75 * ((2ch + 1em) * 7) + 1px);
+}
+
+.datepicker__dayOfWeek > * {
+  flex: 0 0 calc(1 / 0.75 * (2ch + 1em));
+}
+
+.datepicker__date-grid > button:first-child {
+  margin-inline-start: calc(5 * (2ch + 1em));
+} */
