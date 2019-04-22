@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Todolist</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"
+      rel="stylesheet"
+    />
+
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/prefixfree.js"></script>
+  </head>
+
+  <body>
+    <form action="#" class="todolist" autocomplete="off">
+      <div class="todolist__new-task">
+        <div class="new-task__input-group">
+          <label>Add a task</label>
+          <input
+            type="text"
+            id="new-task"
+            name="new-task"
+            placeholder="E.g. Buy groceries"
+          />
+        </div>
+        <button type="submit">
+          <svg viewBox="0 0 10 10">
+            <path d="M6 4h4v2H6v4H4V6H0V4h4V0h2z" fill-rule="nonzero" />
+          </svg>
+          <span>Add task</span>
+        </button>
+      </div>
+
+      <ul class="todolist__tasks">
+        <li class="task">
+          <input
+            type="checkbox"
+            name="task"
+            id="task"
+            class="visually-hidden"
+          />
+          <label for="task">
+            <svg viewBox="0 0 20 15">
+              <path d="M0 8l2-2 5 5L18 0l2 2L7 15z" fill-rule="nonzero" />
+            </svg>
+          </label>
+          <input type="text" class="task__name" value="Drink water"></input>
+          <button type="button" class="task__delete-button">
+            <svg width="16" height="20">
+              <path
+                d="M4 2l2-2h4l2 2h4v2H0V2h4zM1 6h14l-1 14H2L1 6zm5 2v10h1V8H6zm3 0v10h1V8H9z"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </button>
+        </li>
+
+        <li class="task">
+          <input
+            type="checkbox"
+            name="task-2"
+            id="task-2"
+            class="visually-hidden"
+          />
+          <label for="task-2">
+            <svg viewBox="0 0 20 15">
+              <path
+                d="M0 8l2-2 5 5L18 0l2 2L7 15z"
+                fill="currentColor"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </label>
+          <input type="text" class="task__name" value="Learn JavaScript for 30 minutes"></input>
+          <button type="button" class="task__delete-button">
+            <svg width="16" height="20">
+              <path
+                d="M4 2l2-2h4l2 2h4v2H0V2h4zM1 6h14l-1 14H2L1 6zm5 2v10h1V8H6zm3 0v10h1V8H9z"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </button>
+        </li>
+      </ul>
+      <div class="todolist__empty-state">
+        Your todo list is empty. Hurray! 🎉
+      </div>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/1.0.7/purify.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
