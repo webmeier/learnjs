@@ -1,5 +1,4 @@
-/* Use border-box for everything */
-
+/* Set box-sizing to border-box for all elements */
 html {
   box-sizing: border-box;
 }
@@ -10,20 +9,8 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  margin: 0;
-}
-
-/* Responsive Images */
-
-embed,
-iframe,
-img,
-object,
-video {
-  max-width: 100%;
-}
-
+/* Reset margins and paddings on most elements */
+body,
 h1,
 h2,
 h3,
@@ -39,63 +26,65 @@ blockquote,
 figure,
 hr {
   margin: 0;
-  padding-right: 0;
-  padding-left: 0;
+  padding: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
-a:focus {
-  outline: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  display: block;
-}
-
-/* Removes all decimals and discs from lists */
-
-ol,
+/* Removes discs from ul */
 ul {
   list-style: none;
 }
 
-/* 
- * Completely resets form items
- * ----------------------------
- * Super hard reset that removes all borders
- * and radiuses of all form items (including
- * checkboxes and radios)
- */
+/* Reset forms and buttons */
+input,
+textarea,
+select,
+button {
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+}
 
 input,
 textarea,
 button {
-  border: 0;
-  border-radius: 0;
-  background-color: transparent;
-  font: inherit;
-  outline: none;
-  appearance: none;
-  text-align: left;
-  padding: 0;
+  border: 1px solid gray;
 }
 
-input:hover,
-input:active,
-input:focus,
-textarea:hover,
-textarea:active,
-textarea:focus,
-button:hover,
-button:active,
-button:focus {
-  outline: none;
+button {
+  border-radius: 0;
+  padding: 0.75em 1em;
+  background-color: transparent;
+}
+
+button * {
+  pointer-events: none;
+}
+
+/* Easy responsive for media elements */
+embed,
+iframe,
+img,
+object,
+video,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Useful table styles */
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* Hidden */
+[hidden] {
+  display: none !important;
+}
+
+/* noscript styles */
+noscript {
+  display: block;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
