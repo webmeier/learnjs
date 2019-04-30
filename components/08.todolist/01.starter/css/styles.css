@@ -160,7 +160,20 @@ button * {
 .todolist__new-task button:active {
   background-color: var(--teal-300);
   color: var(--teal-900);
+}
+
+.todolist__new-task button:focus,
+.todolist__new-task button:active {
   outline: none;
+}
+
+.todolist__new-task button:active {
+  background-color: var(--teal-500);
+}
+
+.todolist__new-task button[disabled] {
+  background-color: var(--blue-grey-100);
+  color: var(--blue-grey-300);
 }
 
 .todolist__new-task + * {
@@ -228,7 +241,6 @@ button * {
 
 .task input[type="checkbox"]:checked ~ .task__name {
   color: var(--blue-grey-200);
-  text-decoration: line-through;
 }
 
 .task__delete-button {
@@ -236,10 +248,6 @@ button * {
   margin-right: -0.5em;
   line-height: 1;
   border: 0;
-}
-
-.task__delete-button {
-  opacity: 0;
 }
 
 .task:hover .task__delete-button,
@@ -258,6 +266,7 @@ button * {
 .task__delete-button > svg {
   color: var(--blue-grey-500);
   fill: currentColor;
+  width: 1em;
 }
 
 /* Styles for the empty state */
@@ -268,14 +277,4 @@ button * {
 
 .todolist__tasks:empty + .todolist__empty-state {
   display: block;
-}
-
-/* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
-.visually-hidden {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
 }
