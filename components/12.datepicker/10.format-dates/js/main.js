@@ -26,6 +26,13 @@ const getMonthIndicatorText = (date) => {
   return `${monthName} ${year}`
 }
 
+const getMonthIndicatorDatetime = date => {
+  const year = date.getFullYear()
+  const month = date.getMonth()
+  const datetimeMonth = `${month + 1}`.padStart(2, '0')
+  return `${year}-${datetimeMonth}`
+}
+
 const getFirstDayOfMonth = date => {
   const firstDayOfMonth = new Date(date.setDate(1))
   return firstDayOfMonth.getDay()
@@ -58,10 +65,18 @@ const getDategridHTML = date => {
     .join('')
 }
 
+const createDateFromDatetime = datetime => {
+  const [year, month, day = 1] = datetime.split('-')
+    .map(num => parseInt(num))
+
+  // Remember, `month` needs to be zero-indexed
+  return new Date(year, month - 1, day)
+}
+
 const getTargetMonth = (datepicker, delta) => {
   const timeEl = datepicker.querySelector('.datepicker__monthIndicator').firstElementChild
   const datetime = timeEl.getAttribute('datetime')
-  const currentDate = createDateFromDateTime(datetime)
+  const currentDate = createDateFromDatetime(datetime)
   const year = currentDate.getFullYear()
   const month = currentDate.getMonth()
 
@@ -71,7 +86,7 @@ const getTargetMonth = (datepicker, delta) => {
 const updateYearMonthIndicator = (datepicker, targetMonth) => {
   const timeEl = datepicker.querySelector('.datepicker__monthIndicator').firstElementChild
   timeEl.textContent = getMonthIndicatorText(targetMonth)
-  timeEl.setAttribute('datetime', formatDate(targetMonth, 'YYYY-MM'))
+  timeEl.setAttribute('datetime', getMonthIndicatorDatetime(targetMonth))
 }
 
 const updateDateGrid = (datepicker, targetMonth) => {
@@ -82,16 +97,13 @@ const updateDateGrid = (datepicker, targetMonth) => {
 const getSelectedDate = selectedButton => {
   const timeEl = selectedButton.firstElementChild
   const datetime = timeEl.getAttribute('datetime')
-  return createDateFromDateTime(datetime)
+  return createDateFromDatetime(datetime)
 }
 
 const formatDate = (date, format) => {
   const year = date.getFullYear()
-  let month = date.getMonth() + 1
-  let day = date.getDate()
-
-  if (month < 10) month = '0' + month
-  if (day < 10) day = '0' + day
+  const month = `${date.getMonth() + 1}`.padStart(2, '0')
+  const day = `${date.getDate()}`.padStart(2, '0')
 
   // Return the required format
   if (format === 'YYYY-MM') return `${year}-${month}`
@@ -130,38 +142,9 @@ const handleSelectedDate = (ev, dateField) => {
   highlightSelectedButton(ev.target)
 }
 
-const showDatepicker = (datepicker, dateField) => {
-  datepicker.removeAttribute('hidden')
-  dateField.classList.add('datepicker-opened')
-}
-
-const hideDatepicker = (datepicker, dateField) => {
-  datepicker.setAttribute('hidden', true)
-  dateField.classList.remove('datepicker-opened')
-}
-
-const showHideDatepicker = (ev, datepicker, dateField) => {
-  if (ev.target.closest('.datepicker')) return
-  if (ev.target === dateField) {
-    showDatepicker(datepicker, dateField)
-  } else {
-    hideDatepicker(datepicker, dateField)
-  }
-}
-
-const createDateFromDateTime = datetime => {
-  const [year, month, day] = datetime.split('-')
-    .map(v => parseInt(v))
-
-  // 'month' needs to be zero-indexed
-  // 'day' cannot be undefined. Defaults to 1
-  return new Date(year, month - 1, day || 1)
-}
-
 const createDatepicker = (date, dateField) => {
   const datepicker = document.createElement('div')
   datepicker.classList.add('datepicker')
-  hideDatepicker(datepicker, dateField)
 
   const buttonsHTML = `
     <div class="datepicker__buttons">
@@ -181,7 +164,7 @@ const createDatepicker = (date, dateField) => {
   const calendarHTML = `
     <div class="datepicker__calendar">
       <div class="datepicker__monthIndicator">
-        <time datetime="${formatDate(date, 'YYYY-MM')}">${getMonthIndicatorText(date)}</time>
+        <time datetime="${getMonthIndicatorDatetime(date)}">${getMonthIndicatorText(date)}</time>
       </div>
       <div class="datepicker__dayOfWeek">
         <div>Su</div>
@@ -201,21 +184,11 @@ const createDatepicker = (date, dateField) => {
     ${calendarHTML}
   `
 
-  // Event Listeners
   const previousNextButtonsParentDiv = datepicker.querySelector('.datepicker__buttons')
+  previousNextButtonsParentDiv.addEventListener('click', ev => handlePreviousNextMonthButtons(ev, datepicker))
+
   const dategrid = datepicker.querySelector('.datepicker__date-grid')
-
-  previousNextButtonsParentDiv.addEventListener('click', ev => {
-    handlePreviousNextMonthButtons(ev, datepicker)
-  })
-
-  dategrid.addEventListener('click', ev => {
-    handleSelectedDate(ev, dateField)
-  })
-
-  document.addEventListener('click', ev => {
-    showHideDatepicker(ev, datepicker, dateField)
-  })
+  dategrid.addEventListener('click', ev => handleSelectedDate(ev, dateField))
 
   return datepicker
 }

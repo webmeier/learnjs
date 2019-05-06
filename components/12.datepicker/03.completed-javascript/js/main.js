@@ -19,7 +19,7 @@ const getMonthName = (month, style = 'long') => {
 }
 
 // Getting and setting month indicator text
-const date = new Date(2019, 4)
+const date = new Date(2019, 1)
 const year = date.getFullYear()
 const month = date.getMonth()
 const monthName = getMonthName(month)
@@ -28,7 +28,13 @@ const monthIndicatorText = `${monthName} ${year}`
 const datepicker = document.querySelector('.datepicker')
 const monthIndicatorTimeElement = datepicker.querySelector('.datepicker__monthIndicator').firstElementChild
 monthIndicatorTimeElement.textContent = monthIndicatorText
-monthIndicatorTimeElement.setAttribute('datetime', `${year}-${month + 1}`)
+
+// Setting month indicator datetime attribute
+const datetimeMonth = month + 1 < 10
+  ? `0${month + 1}`
+  : month + 1
+const datetimeValue = `${year}-${datetimeMonth}`
+monthIndicatorTimeElement.setAttribute('datetime', datetimeValue)
 
 // Creating the grid
 const firstDayOfMonth = new Date(date.setDate(1)).getDay()
@@ -38,13 +44,21 @@ const lastDayInMonth = new Date(year2, month2 + 1, 0)
 const daysInMonth = lastDayInMonth.getDate()
 
 let dategridHTML = ''
+const datetimeMonth2 = month2 + 1 < 10
+  ? `0${month2 + 1}`
+  : month2 + 1
+
 for (let day = 1; day < daysInMonth; day++) {
+  const datetimeDay = day + 1 < 10
+    ? `0${day}`
+    : day
+
   const firstDayStyle = day === 1
     ? `--firstDayOfMonth: ${firstDayOfMonth + 1}"`
     : ''
 
   dategridHTML += `<button style="${firstDayStyle}">
-    <time datetime="${year}-${month + 1}-${day}">${day}</time>
+    <time datetime="${year}-${datetimeMonth2}-${datetimeDay}">${day}</time>
   </button>
   `
 }

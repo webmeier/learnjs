@@ -29,7 +29,8 @@ const getMonthIndicatorText = (date) => {
 const getMonthIndicatorDatetime = date => {
   const year = date.getFullYear()
   const month = date.getMonth()
-  return `${year}-${month + 1}`
+  const datetimeMonth = `${month + 1}`.padStart(2, '0')
+  return `${year}-${datetimeMonth}`
 }
 
 const getFirstDayOfMonth = date => {
@@ -47,20 +48,31 @@ const getNumDaysInMonth = date => {
 const getDategridHTML = date => {
   const year = date.getFullYear()
   const month = date.getMonth()
+  const datetimeMonth = `${month + 1}`.padStart(2, '0')
+
   return Array.from({ length: getNumDaysInMonth(date) })
     .map((value, index) => {
       const day = index + 1
+      const datetimeDay = `${day}`.padStart(2, '0')
       const firstDayStyle = day === 1
         ? `--firstDayOfMonth: ${getFirstDayOfMonth(date) + 1}"`
         : ''
 
       return `
         <button type="button" style="${firstDayStyle}">
-          <time datetime="${year}-${month + 1}-${day}">${day}</time>
+          <time datetime="${year}-${datetimeMonth}-${datetimeDay}">${day}</time>
         </button>
       `
     })
     .join('')
+}
+
+const createDateFromDatetime = datetime => {
+  const [year, month, day = 1] = datetime.split('-')
+    .map(num => parseInt(num))
+
+  // Remember, `month` needs to be zero-indexed
+  return new Date(year, month - 1, day)
 }
 
 const createDatepicker = (date, dateField) => {
@@ -111,7 +123,7 @@ const createDatepicker = (date, dateField) => {
 
     const timeEl = datepicker.querySelector('.datepicker__monthIndicator').firstElementChild
     const datetime = timeEl.getAttribute('datetime')
-    const currentDate = new Date(datetime)
+    const currentDate = createDateFromDatetime(datetime)
     const year = currentDate.getFullYear()
     const month = currentDate.getMonth()
 
@@ -135,16 +147,13 @@ const createDatepicker = (date, dateField) => {
 
     const timeEl = button.firstElementChild
     const datetime = timeEl.getAttribute('datetime')
-    const selectedDate = new Date(datetime)
+    const selectedDate = createDateFromDatetime(datetime)
 
     const year = selectedDate.getFullYear()
-    let month = selectedDate.getMonth() + 1
-    let day = selectedDate.getDate()
-
-    if (month < 10) month = '0' + month
-    if (day < 10) day = '0' + day
-
+    const month = `${selectedDate.getMonth() + 1}`.padStart(2, '0')
+    const day = `${selectedDate.getDate()}`.padStart(2, '0')
     const formatted = `${day}/${month}/${year}`
+
     dateField.value = formatted
 
     // Highlight the selected button

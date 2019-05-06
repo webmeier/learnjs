@@ -28,7 +28,8 @@ const getMonthIndicatorText = (date) => {
 const getMonthIndicatorDatetime = date => {
   const year = date.getFullYear()
   const month = date.getMonth()
-  return `${year}-${month + 1}`
+  const datetimeMonth = `${month + 1}`.padStart(2, '0')
+  return `${year}-${datetimeMonth}`
 }
 
 const getFirstDayOfMonth = date => {
@@ -46,16 +47,19 @@ const getNumDaysInMonth = date => {
 const getDategridHTML = date => {
   const year = date.getFullYear()
   const month = date.getMonth()
+  const datetimeMonth = `${month + 1}`.padStart(2, '0')
+
   return Array.from({ length: getNumDaysInMonth(date) })
     .map((value, index) => {
       const day = index + 1
+      const datetimeDay = `${day}`.padStart(2, '0')
       const firstDayStyle = day === 1
         ? `--firstDayOfMonth: ${getFirstDayOfMonth(date) + 1}"`
         : ''
 
       return `
         <button style="${firstDayStyle}">
-          <time datetime="${year}-${month + 1}-${day}">${day}</time>
+          <time datetime="${year}-${datetimeMonth}-${datetimeDay}">${day}</time>
         </button>
       `
     })

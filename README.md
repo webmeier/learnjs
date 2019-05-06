@@ -193,10 +193,10 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     12. [🔨 Datepicker: Building the datepicker with JavaScript](lessons/14.dates/12.datepicker-4.md)
     13. [🔨 Datepicker: Previous and next buttons](lessons/14.dates/13.datepicker-5.md)
     14. [🔨 Datepicker: Selecting a date](lessons/14.dates/14.datepicker-6.md)
-    15. [🔨 Datepicker: Refactor #2](lessons/14.dates/15.datepicker-7.md)—new!
-    16. [🔨 Datepicker: Showing and hiding the datepicker](lessons/14.dates/16.datepicker-8.md)—new!
-    17. [🔨 Datepicker: Testing across browsers](lessons/14.dates/17.datepicker-9.md)—new!
-    18. [🔨 Datepicker: A function to format dates](lessons/14.dates/18.datepicker-10.md)—new!
+    15. [🔨 Datepicker: Refactor #2](lessons/14.dates/15.datepicker-7.md)
+    16. [🔨 Datepicker: A function to format dates](lessons/14.dates/16.datepicker-8.md)
+    17. [🔨 Datepicker: Showing and hiding the datepicker](lessons/14.dates/17.datepicker-9.md)
+
 
 ## Private Community
 
