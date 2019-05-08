@@ -139,9 +139,11 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     3. [Types of form fields](lessons/11.forms/03.types-of-fields.md)
     4. [Sanitize your output](lessons/11.forms/04.sanitize-output.md)
     5. [Generating unique IDs](lessons/11.forms/05.generate-unique-ids.md)
-    6. [🛠️ Todolist: Building the component](lessons/11.forms/06.building-todolist.md)
-    7. [🛠️ Autocomplete: Building the component](lessons/11.forms/07.building-autocomplete.md)
-    8. [🛠️ Autocomplete: Bolding terms](lessons/11.forms/08.improving-autocomplete.md)
+    6. [🛠️ Autocomplete: Building the component](lessons/11.forms/06.autocomplete.md)
+    7. [🛠️ Autocomplete: Bolding terms](lessons/11.forms/07.autocomplete-2.md)
+    8. [🛠️ Todolist: Building the component](lessons/11.forms/08.todolist.md)—new!
+    9. [🛠️ Todolist: Building the component](lessons/11.forms/09.todolist-2.md)—new!
+    10. [🛠️ Todolist: Building the component](lessons/11.forms/10.todolist-3.md)—new!
 12. Asynchronous JavaScript
     1. [Intro to Ajax](lessons/12.asynchronous-javascript/01.ajax.md)
     2. [Understanding JSON](lessons/12.asynchronous-javascript/02.json.md)
@@ -158,8 +160,10 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     13. [Using an Ajax Library](lessons/12.asynchronous-javascript/13.ajax-library.md)
     14. [Reading API Documentation](lessons/12.asynchronous-javascript/14.reading-api-docs.md)
     15. [Understanding Curl](lessons/12.asynchronous-javascript/15.curl.md)
-    16. [🛠️ Todolist: The Todolist API](lessons/12.asynchronous-javascript/16.todolist-api.md)
-    17. [🛠️ Todolist: Using the Todolist API](lessons/12.asynchronous-javascript/17.todolist-ajax.md)
+    16. [🛠️ Todolist: The Todolist API](lessons/12.asynchronous-javascript/16.todolist-1.md)—new!
+    17. [🛠️ Todolist: Fetching tasks](lessons/12.asynchronous-javascript/17.todolist-2.md)—new!
+    18. [🛠️ Todolist: Creating tasks](lessons/12.asynchronous-javascript/18.todolist-3.md)—new!
+    19. [🛠️ Todolist: Editing tasks](lessons/12.asynchronous-javascript/19.todolist-4.md)—new!
     20. [🛠️ Dota Heroes: Building the app](lessons/12.asynchronous-javascript/20.dota-heroes.md)
     21. [🛠️ Dota Heroes: Filtering heroes](lessons/12.asynchronous-javascript/21.dota-heroes-2.md)
     22. [🛠️ Dota Heroes: Refactoring](lessons/12.asynchronous-javascript/22.refactor-dota-heroes.md)

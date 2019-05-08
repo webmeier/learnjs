@@ -37,19 +37,19 @@ todolist.addEventListener('submit', ev => {
   const newTaskField = todolist.querySelector('input')
   const inputValue = newTaskField.value.trim()
 
-  // // Clear the new task field
+  // Clear the new task field
   newTaskField.value = ''
 
-  // // Bring focus back to input field
+  // Bring focus back to input field
   newTaskField.focus()
 
-  // // Prevent adding of empty task
+  // Prevent adding of empty task
   if (!inputValue) return
 
-  // // Create task
+  // Create task
   const taskEl = makeTaskEl(inputValue)
 
-  // // Append to the DOM
+  // Append to the DOM
   const tasksEl = todolist.querySelector('.todolist__tasks')
   tasksEl.appendChild(taskEl)
 })
