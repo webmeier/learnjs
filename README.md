@@ -141,9 +141,9 @@ You may check out the [course outline](outlines/outline8.md) if you're curious a
     5. [Generating unique IDs](lessons/11.forms/05.generate-unique-ids.md)
     6. [🛠️ Autocomplete: Building the component](lessons/11.forms/06.autocomplete.md)
     7. [🛠️ Autocomplete: Bolding terms](lessons/11.forms/07.autocomplete-2.md)
-    8. [🛠️ Todolist: Building the component](lessons/11.forms/08.todolist.md)—new!
-    9. [🛠️ Todolist: Building the component](lessons/11.forms/09.todolist-2.md)—new!
-    10. [🛠️ Todolist: Building the component](lessons/11.forms/10.todolist-3.md)—new!
+    8. [🛠️ Todolist: The HTML and CSS](lessons/11.forms/08.todolist.md)—new!
+    9. [🛠️ Todolist: Creating tasks with JavaScript](lessons/11.forms/09.todolist-2.md)—new!
+    10. [🛠️ Todolist: Deleting tasks with JavaScript](lessons/11.forms/10.todolist-3.md)—new!
 12. Asynchronous JavaScript
     1. [Intro to Ajax](lessons/12.asynchronous-javascript/01.ajax.md)
     2. [Understanding JSON](lessons/12.asynchronous-javascript/02.json.md)
